@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/modules/stitching
+# Install script for directory: ${CMAKE_CURRENT_SOURCE_DIR}/opencv/modules/stitching
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -33,66 +33,66 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/x64/vc14/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/opencv_stitching341.lib")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/x64/vc14/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/lib/opencv_stitching341.lib")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xlibsx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/x64/vc14/bin" TYPE SHARED_LIBRARY OPTIONAL FILES "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/bin/opencv_stitching341.dll")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/x64/vc14/bin" TYPE SHARED_LIBRARY OPTIONAL FILES "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/bin/opencv_stitching341.dll")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2" TYPE FILE OPTIONAL FILES "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/modules/stitching/include/opencv2/stitching.hpp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2" TYPE FILE OPTIONAL FILES "${CMAKE_CURRENT_SOURCE_DIR}/opencv/modules/stitching/include/opencv2/stitching.hpp")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/stitching" TYPE FILE OPTIONAL FILES "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/modules/stitching/include/opencv2/stitching/warpers.hpp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/stitching" TYPE FILE OPTIONAL FILES "${CMAKE_CURRENT_SOURCE_DIR}/opencv/modules/stitching/include/opencv2/stitching/warpers.hpp")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/stitching/detail" TYPE FILE OPTIONAL FILES "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/modules/stitching/include/opencv2/stitching/detail/autocalib.hpp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/stitching/detail" TYPE FILE OPTIONAL FILES "${CMAKE_CURRENT_SOURCE_DIR}/opencv/modules/stitching/include/opencv2/stitching/detail/autocalib.hpp")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/stitching/detail" TYPE FILE OPTIONAL FILES "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/modules/stitching/include/opencv2/stitching/detail/blenders.hpp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/stitching/detail" TYPE FILE OPTIONAL FILES "${CMAKE_CURRENT_SOURCE_DIR}/opencv/modules/stitching/include/opencv2/stitching/detail/blenders.hpp")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/stitching/detail" TYPE FILE OPTIONAL FILES "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/modules/stitching/include/opencv2/stitching/detail/camera.hpp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/stitching/detail" TYPE FILE OPTIONAL FILES "${CMAKE_CURRENT_SOURCE_DIR}/opencv/modules/stitching/include/opencv2/stitching/detail/camera.hpp")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/stitching/detail" TYPE FILE OPTIONAL FILES "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/modules/stitching/include/opencv2/stitching/detail/exposure_compensate.hpp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/stitching/detail" TYPE FILE OPTIONAL FILES "${CMAKE_CURRENT_SOURCE_DIR}/opencv/modules/stitching/include/opencv2/stitching/detail/exposure_compensate.hpp")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/stitching/detail" TYPE FILE OPTIONAL FILES "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/modules/stitching/include/opencv2/stitching/detail/matchers.hpp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/stitching/detail" TYPE FILE OPTIONAL FILES "${CMAKE_CURRENT_SOURCE_DIR}/opencv/modules/stitching/include/opencv2/stitching/detail/matchers.hpp")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/stitching/detail" TYPE FILE OPTIONAL FILES "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/modules/stitching/include/opencv2/stitching/detail/motion_estimators.hpp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/stitching/detail" TYPE FILE OPTIONAL FILES "${CMAKE_CURRENT_SOURCE_DIR}/opencv/modules/stitching/include/opencv2/stitching/detail/motion_estimators.hpp")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/stitching/detail" TYPE FILE OPTIONAL FILES "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/modules/stitching/include/opencv2/stitching/detail/seam_finders.hpp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/stitching/detail" TYPE FILE OPTIONAL FILES "${CMAKE_CURRENT_SOURCE_DIR}/opencv/modules/stitching/include/opencv2/stitching/detail/seam_finders.hpp")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/stitching/detail" TYPE FILE OPTIONAL FILES "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/modules/stitching/include/opencv2/stitching/detail/timelapsers.hpp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/stitching/detail" TYPE FILE OPTIONAL FILES "${CMAKE_CURRENT_SOURCE_DIR}/opencv/modules/stitching/include/opencv2/stitching/detail/timelapsers.hpp")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/stitching/detail" TYPE FILE OPTIONAL FILES "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/modules/stitching/include/opencv2/stitching/detail/util.hpp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/stitching/detail" TYPE FILE OPTIONAL FILES "${CMAKE_CURRENT_SOURCE_DIR}/opencv/modules/stitching/include/opencv2/stitching/detail/util.hpp")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/stitching/detail" TYPE FILE OPTIONAL FILES "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/modules/stitching/include/opencv2/stitching/detail/util_inl.hpp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/stitching/detail" TYPE FILE OPTIONAL FILES "${CMAKE_CURRENT_SOURCE_DIR}/opencv/modules/stitching/include/opencv2/stitching/detail/util_inl.hpp")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/stitching/detail" TYPE FILE OPTIONAL FILES "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/modules/stitching/include/opencv2/stitching/detail/warpers.hpp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/stitching/detail" TYPE FILE OPTIONAL FILES "${CMAKE_CURRENT_SOURCE_DIR}/opencv/modules/stitching/include/opencv2/stitching/detail/warpers.hpp")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/stitching/detail" TYPE FILE OPTIONAL FILES "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/modules/stitching/include/opencv2/stitching/detail/warpers_inl.hpp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/stitching/detail" TYPE FILE OPTIONAL FILES "${CMAKE_CURRENT_SOURCE_DIR}/opencv/modules/stitching/include/opencv2/stitching/detail/warpers_inl.hpp")
 endif()
 

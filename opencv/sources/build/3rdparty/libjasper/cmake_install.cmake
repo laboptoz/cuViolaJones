@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/3rdparty/libjasper
+# Install script for directory: ${CMAKE_CURRENT_SOURCE_DIR}/opencv/3rdparty/libjasper
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

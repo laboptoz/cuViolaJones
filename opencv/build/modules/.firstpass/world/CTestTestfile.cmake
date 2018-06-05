@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/world
-# Build directory: C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/modules/.firstpass/world
+# Source directory: ${CMAKE_CURRENT_SOURCE_DIR}/opencv/sources/modules/world
+# Build directory: ${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/modules/.firstpass/world
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

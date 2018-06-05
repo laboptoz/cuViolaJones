@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/apps/visualisation
+# Install script for directory: ${CMAKE_CURRENT_SOURCE_DIR}/opencv/apps/visualisation
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -33,6 +33,6 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/x64/vc14/bin" TYPE EXECUTABLE FILES "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/bin/opencv_visualisation.exe")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/x64/vc14/bin" TYPE EXECUTABLE FILES "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/bin/opencv_visualisation.exe")
 endif()
 

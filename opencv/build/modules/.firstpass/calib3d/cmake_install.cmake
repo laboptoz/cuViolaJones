@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/calib3d
+# Install script for directory: ${CMAKE_CURRENT_SOURCE_DIR}/opencv/sources/modules/calib3d
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/install")
+  set(CMAKE_INSTALL_PREFIX "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

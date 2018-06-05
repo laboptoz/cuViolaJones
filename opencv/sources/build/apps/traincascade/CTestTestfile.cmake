@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/apps/traincascade
-# Build directory: C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/apps/traincascade
+# Source directory: ${CMAKE_CURRENT_SOURCE_DIR}/opencv/apps/traincascade
+# Build directory: ${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/apps/traincascade
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

@@ -32,7 +32,10 @@ add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
         "${CMAKE_CURRENT_BINARY_DIR}/$<CONFIG>"
 	COMMAND ${CMAKE_COMMAND} -E copy
 		"${CMAKE_CURRENT_SOURCE_DIR}/opencv/sources/data/haarcascades/haarcascade_frontalface_default.xml"
-		"${CMAKE_CURRENT_BINARY_DIR}/$<CONFIG>/haarcascade_frontalface_default.xml"
+		"${CMAKE_CURRENT_BINARY_DIR}/data/haarcascade_frontalface_default.xml"
+	COMMAND ${CMAKE_COMMAND} -E copy
+		"${CMAKE_CURRENT_SOURCE_DIR}/faces.jpg"
+		"${CMAKE_CURRENT_BINARY_DIR}/data/faces.jpg"
 	)
 		
 target_link_libraries( 

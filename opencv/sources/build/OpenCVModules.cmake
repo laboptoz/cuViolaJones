@@ -163,239 +163,239 @@ set_target_properties(opencv_videostab PROPERTIES
 # Import target "opencv_core" for configuration "Debug"
 set_property(TARGET opencv_core APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(opencv_core PROPERTIES
-  IMPORTED_IMPLIB_DEBUG "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/Debug/opencv_core341d.lib"
-  IMPORTED_LOCATION_DEBUG "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/bin/Debug/opencv_core341d.dll"
+  IMPORTED_IMPLIB_DEBUG "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/lib/Debug/opencv_core341d.lib"
+  IMPORTED_LOCATION_DEBUG "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/bin/Debug/opencv_core341d.dll"
   )
 
 # Import target "opencv_flann" for configuration "Debug"
 set_property(TARGET opencv_flann APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(opencv_flann PROPERTIES
-  IMPORTED_IMPLIB_DEBUG "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/Debug/opencv_flann341d.lib"
-  IMPORTED_LOCATION_DEBUG "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/bin/Debug/opencv_flann341d.dll"
+  IMPORTED_IMPLIB_DEBUG "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/lib/Debug/opencv_flann341d.lib"
+  IMPORTED_LOCATION_DEBUG "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/bin/Debug/opencv_flann341d.dll"
   )
 
 # Import target "opencv_imgproc" for configuration "Debug"
 set_property(TARGET opencv_imgproc APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(opencv_imgproc PROPERTIES
-  IMPORTED_IMPLIB_DEBUG "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/Debug/opencv_imgproc341d.lib"
-  IMPORTED_LOCATION_DEBUG "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/bin/Debug/opencv_imgproc341d.dll"
+  IMPORTED_IMPLIB_DEBUG "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/lib/Debug/opencv_imgproc341d.lib"
+  IMPORTED_LOCATION_DEBUG "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/bin/Debug/opencv_imgproc341d.dll"
   )
 
 # Import target "opencv_ml" for configuration "Debug"
 set_property(TARGET opencv_ml APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(opencv_ml PROPERTIES
-  IMPORTED_IMPLIB_DEBUG "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/Debug/opencv_ml341d.lib"
-  IMPORTED_LOCATION_DEBUG "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/bin/Debug/opencv_ml341d.dll"
+  IMPORTED_IMPLIB_DEBUG "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/lib/Debug/opencv_ml341d.lib"
+  IMPORTED_LOCATION_DEBUG "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/bin/Debug/opencv_ml341d.dll"
   )
 
 # Import target "opencv_objdetect" for configuration "Debug"
 set_property(TARGET opencv_objdetect APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(opencv_objdetect PROPERTIES
-  IMPORTED_IMPLIB_DEBUG "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/Debug/opencv_objdetect341d.lib"
-  IMPORTED_LOCATION_DEBUG "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/bin/Debug/opencv_objdetect341d.dll"
+  IMPORTED_IMPLIB_DEBUG "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/lib/Debug/opencv_objdetect341d.lib"
+  IMPORTED_LOCATION_DEBUG "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/bin/Debug/opencv_objdetect341d.dll"
   )
 
 # Import target "opencv_photo" for configuration "Debug"
 set_property(TARGET opencv_photo APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(opencv_photo PROPERTIES
-  IMPORTED_IMPLIB_DEBUG "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/Debug/opencv_photo341d.lib"
-  IMPORTED_LOCATION_DEBUG "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/bin/Debug/opencv_photo341d.dll"
+  IMPORTED_IMPLIB_DEBUG "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/lib/Debug/opencv_photo341d.lib"
+  IMPORTED_LOCATION_DEBUG "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/bin/Debug/opencv_photo341d.dll"
   )
 
 # Import target "opencv_video" for configuration "Debug"
 set_property(TARGET opencv_video APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(opencv_video PROPERTIES
-  IMPORTED_IMPLIB_DEBUG "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/Debug/opencv_video341d.lib"
-  IMPORTED_LOCATION_DEBUG "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/bin/Debug/opencv_video341d.dll"
+  IMPORTED_IMPLIB_DEBUG "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/lib/Debug/opencv_video341d.lib"
+  IMPORTED_LOCATION_DEBUG "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/bin/Debug/opencv_video341d.dll"
   )
 
 # Import target "opencv_dnn" for configuration "Debug"
 set_property(TARGET opencv_dnn APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(opencv_dnn PROPERTIES
-  IMPORTED_IMPLIB_DEBUG "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/Debug/opencv_dnn341d.lib"
-  IMPORTED_LOCATION_DEBUG "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/bin/Debug/opencv_dnn341d.dll"
+  IMPORTED_IMPLIB_DEBUG "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/lib/Debug/opencv_dnn341d.lib"
+  IMPORTED_LOCATION_DEBUG "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/bin/Debug/opencv_dnn341d.dll"
   )
 
 # Import target "opencv_imgcodecs" for configuration "Debug"
 set_property(TARGET opencv_imgcodecs APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(opencv_imgcodecs PROPERTIES
-  IMPORTED_IMPLIB_DEBUG "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/Debug/opencv_imgcodecs341d.lib"
-  IMPORTED_LOCATION_DEBUG "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/bin/Debug/opencv_imgcodecs341d.dll"
+  IMPORTED_IMPLIB_DEBUG "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/lib/Debug/opencv_imgcodecs341d.lib"
+  IMPORTED_LOCATION_DEBUG "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/bin/Debug/opencv_imgcodecs341d.dll"
   )
 
 # Import target "opencv_shape" for configuration "Debug"
 set_property(TARGET opencv_shape APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(opencv_shape PROPERTIES
-  IMPORTED_IMPLIB_DEBUG "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/Debug/opencv_shape341d.lib"
-  IMPORTED_LOCATION_DEBUG "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/bin/Debug/opencv_shape341d.dll"
+  IMPORTED_IMPLIB_DEBUG "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/lib/Debug/opencv_shape341d.lib"
+  IMPORTED_LOCATION_DEBUG "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/bin/Debug/opencv_shape341d.dll"
   )
 
 # Import target "opencv_videoio" for configuration "Debug"
 set_property(TARGET opencv_videoio APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(opencv_videoio PROPERTIES
-  IMPORTED_IMPLIB_DEBUG "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/Debug/opencv_videoio341d.lib"
-  IMPORTED_LOCATION_DEBUG "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/bin/Debug/opencv_videoio341d.dll"
+  IMPORTED_IMPLIB_DEBUG "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/lib/Debug/opencv_videoio341d.lib"
+  IMPORTED_LOCATION_DEBUG "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/bin/Debug/opencv_videoio341d.dll"
   )
 
 # Import target "opencv_highgui" for configuration "Debug"
 set_property(TARGET opencv_highgui APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(opencv_highgui PROPERTIES
-  IMPORTED_IMPLIB_DEBUG "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/Debug/opencv_highgui341d.lib"
-  IMPORTED_LOCATION_DEBUG "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/bin/Debug/opencv_highgui341d.dll"
+  IMPORTED_IMPLIB_DEBUG "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/lib/Debug/opencv_highgui341d.lib"
+  IMPORTED_LOCATION_DEBUG "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/bin/Debug/opencv_highgui341d.dll"
   )
 
 # Import target "opencv_superres" for configuration "Debug"
 set_property(TARGET opencv_superres APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(opencv_superres PROPERTIES
-  IMPORTED_IMPLIB_DEBUG "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/Debug/opencv_superres341d.lib"
-  IMPORTED_LOCATION_DEBUG "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/bin/Debug/opencv_superres341d.dll"
+  IMPORTED_IMPLIB_DEBUG "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/lib/Debug/opencv_superres341d.lib"
+  IMPORTED_LOCATION_DEBUG "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/bin/Debug/opencv_superres341d.dll"
   )
 
 # Import target "opencv_features2d" for configuration "Debug"
 set_property(TARGET opencv_features2d APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(opencv_features2d PROPERTIES
-  IMPORTED_IMPLIB_DEBUG "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/Debug/opencv_features2d341d.lib"
-  IMPORTED_LOCATION_DEBUG "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/bin/Debug/opencv_features2d341d.dll"
+  IMPORTED_IMPLIB_DEBUG "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/lib/Debug/opencv_features2d341d.lib"
+  IMPORTED_LOCATION_DEBUG "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/bin/Debug/opencv_features2d341d.dll"
   )
 
 # Import target "opencv_calib3d" for configuration "Debug"
 set_property(TARGET opencv_calib3d APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(opencv_calib3d PROPERTIES
-  IMPORTED_IMPLIB_DEBUG "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/Debug/opencv_calib3d341d.lib"
-  IMPORTED_LOCATION_DEBUG "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/bin/Debug/opencv_calib3d341d.dll"
+  IMPORTED_IMPLIB_DEBUG "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/lib/Debug/opencv_calib3d341d.lib"
+  IMPORTED_LOCATION_DEBUG "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/bin/Debug/opencv_calib3d341d.dll"
   )
 
 # Import target "opencv_stitching" for configuration "Debug"
 set_property(TARGET opencv_stitching APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(opencv_stitching PROPERTIES
-  IMPORTED_IMPLIB_DEBUG "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/Debug/opencv_stitching341d.lib"
-  IMPORTED_LOCATION_DEBUG "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/bin/Debug/opencv_stitching341d.dll"
+  IMPORTED_IMPLIB_DEBUG "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/lib/Debug/opencv_stitching341d.lib"
+  IMPORTED_LOCATION_DEBUG "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/bin/Debug/opencv_stitching341d.dll"
   )
 
 # Import target "opencv_videostab" for configuration "Debug"
 set_property(TARGET opencv_videostab APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(opencv_videostab PROPERTIES
-  IMPORTED_IMPLIB_DEBUG "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/Debug/opencv_videostab341d.lib"
-  IMPORTED_LOCATION_DEBUG "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/bin/Debug/opencv_videostab341d.dll"
+  IMPORTED_IMPLIB_DEBUG "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/lib/Debug/opencv_videostab341d.lib"
+  IMPORTED_LOCATION_DEBUG "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/bin/Debug/opencv_videostab341d.dll"
   )
 
 # Import target "opencv_core" for configuration "Release"
 set_property(TARGET opencv_core APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(opencv_core PROPERTIES
-  IMPORTED_IMPLIB_RELEASE "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/Release/opencv_core341.lib"
-  IMPORTED_LOCATION_RELEASE "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/bin/Release/opencv_core341.dll"
+  IMPORTED_IMPLIB_RELEASE "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/lib/Release/opencv_core341.lib"
+  IMPORTED_LOCATION_RELEASE "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/bin/Release/opencv_core341.dll"
   )
 
 # Import target "opencv_flann" for configuration "Release"
 set_property(TARGET opencv_flann APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(opencv_flann PROPERTIES
-  IMPORTED_IMPLIB_RELEASE "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/Release/opencv_flann341.lib"
-  IMPORTED_LOCATION_RELEASE "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/bin/Release/opencv_flann341.dll"
+  IMPORTED_IMPLIB_RELEASE "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/lib/Release/opencv_flann341.lib"
+  IMPORTED_LOCATION_RELEASE "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/bin/Release/opencv_flann341.dll"
   )
 
 # Import target "opencv_imgproc" for configuration "Release"
 set_property(TARGET opencv_imgproc APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(opencv_imgproc PROPERTIES
-  IMPORTED_IMPLIB_RELEASE "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/Release/opencv_imgproc341.lib"
-  IMPORTED_LOCATION_RELEASE "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/bin/Release/opencv_imgproc341.dll"
+  IMPORTED_IMPLIB_RELEASE "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/lib/Release/opencv_imgproc341.lib"
+  IMPORTED_LOCATION_RELEASE "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/bin/Release/opencv_imgproc341.dll"
   )
 
 # Import target "opencv_ml" for configuration "Release"
 set_property(TARGET opencv_ml APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(opencv_ml PROPERTIES
-  IMPORTED_IMPLIB_RELEASE "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/Release/opencv_ml341.lib"
-  IMPORTED_LOCATION_RELEASE "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/bin/Release/opencv_ml341.dll"
+  IMPORTED_IMPLIB_RELEASE "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/lib/Release/opencv_ml341.lib"
+  IMPORTED_LOCATION_RELEASE "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/bin/Release/opencv_ml341.dll"
   )
 
 # Import target "opencv_objdetect" for configuration "Release"
 set_property(TARGET opencv_objdetect APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(opencv_objdetect PROPERTIES
-  IMPORTED_IMPLIB_RELEASE "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/Release/opencv_objdetect341.lib"
-  IMPORTED_LOCATION_RELEASE "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/bin/Release/opencv_objdetect341.dll"
+  IMPORTED_IMPLIB_RELEASE "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/lib/Release/opencv_objdetect341.lib"
+  IMPORTED_LOCATION_RELEASE "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/bin/Release/opencv_objdetect341.dll"
   )
 
 # Import target "opencv_photo" for configuration "Release"
 set_property(TARGET opencv_photo APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(opencv_photo PROPERTIES
-  IMPORTED_IMPLIB_RELEASE "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/Release/opencv_photo341.lib"
-  IMPORTED_LOCATION_RELEASE "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/bin/Release/opencv_photo341.dll"
+  IMPORTED_IMPLIB_RELEASE "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/lib/Release/opencv_photo341.lib"
+  IMPORTED_LOCATION_RELEASE "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/bin/Release/opencv_photo341.dll"
   )
 
 # Import target "opencv_video" for configuration "Release"
 set_property(TARGET opencv_video APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(opencv_video PROPERTIES
-  IMPORTED_IMPLIB_RELEASE "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/Release/opencv_video341.lib"
-  IMPORTED_LOCATION_RELEASE "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/bin/Release/opencv_video341.dll"
+  IMPORTED_IMPLIB_RELEASE "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/lib/Release/opencv_video341.lib"
+  IMPORTED_LOCATION_RELEASE "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/bin/Release/opencv_video341.dll"
   )
 
 # Import target "opencv_dnn" for configuration "Release"
 set_property(TARGET opencv_dnn APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(opencv_dnn PROPERTIES
-  IMPORTED_IMPLIB_RELEASE "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/Release/opencv_dnn341.lib"
-  IMPORTED_LOCATION_RELEASE "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/bin/Release/opencv_dnn341.dll"
+  IMPORTED_IMPLIB_RELEASE "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/lib/Release/opencv_dnn341.lib"
+  IMPORTED_LOCATION_RELEASE "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/bin/Release/opencv_dnn341.dll"
   )
 
 # Import target "opencv_imgcodecs" for configuration "Release"
 set_property(TARGET opencv_imgcodecs APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(opencv_imgcodecs PROPERTIES
-  IMPORTED_IMPLIB_RELEASE "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/Release/opencv_imgcodecs341.lib"
-  IMPORTED_LOCATION_RELEASE "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/bin/Release/opencv_imgcodecs341.dll"
+  IMPORTED_IMPLIB_RELEASE "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/lib/Release/opencv_imgcodecs341.lib"
+  IMPORTED_LOCATION_RELEASE "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/bin/Release/opencv_imgcodecs341.dll"
   )
 
 # Import target "opencv_shape" for configuration "Release"
 set_property(TARGET opencv_shape APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(opencv_shape PROPERTIES
-  IMPORTED_IMPLIB_RELEASE "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/Release/opencv_shape341.lib"
-  IMPORTED_LOCATION_RELEASE "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/bin/Release/opencv_shape341.dll"
+  IMPORTED_IMPLIB_RELEASE "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/lib/Release/opencv_shape341.lib"
+  IMPORTED_LOCATION_RELEASE "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/bin/Release/opencv_shape341.dll"
   )
 
 # Import target "opencv_videoio" for configuration "Release"
 set_property(TARGET opencv_videoio APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(opencv_videoio PROPERTIES
-  IMPORTED_IMPLIB_RELEASE "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/Release/opencv_videoio341.lib"
-  IMPORTED_LOCATION_RELEASE "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/bin/Release/opencv_videoio341.dll"
+  IMPORTED_IMPLIB_RELEASE "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/lib/Release/opencv_videoio341.lib"
+  IMPORTED_LOCATION_RELEASE "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/bin/Release/opencv_videoio341.dll"
   )
 
 # Import target "opencv_highgui" for configuration "Release"
 set_property(TARGET opencv_highgui APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(opencv_highgui PROPERTIES
-  IMPORTED_IMPLIB_RELEASE "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/Release/opencv_highgui341.lib"
-  IMPORTED_LOCATION_RELEASE "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/bin/Release/opencv_highgui341.dll"
+  IMPORTED_IMPLIB_RELEASE "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/lib/Release/opencv_highgui341.lib"
+  IMPORTED_LOCATION_RELEASE "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/bin/Release/opencv_highgui341.dll"
   )
 
 # Import target "opencv_superres" for configuration "Release"
 set_property(TARGET opencv_superres APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(opencv_superres PROPERTIES
-  IMPORTED_IMPLIB_RELEASE "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/Release/opencv_superres341.lib"
-  IMPORTED_LOCATION_RELEASE "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/bin/Release/opencv_superres341.dll"
+  IMPORTED_IMPLIB_RELEASE "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/lib/Release/opencv_superres341.lib"
+  IMPORTED_LOCATION_RELEASE "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/bin/Release/opencv_superres341.dll"
   )
 
 # Import target "opencv_features2d" for configuration "Release"
 set_property(TARGET opencv_features2d APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(opencv_features2d PROPERTIES
-  IMPORTED_IMPLIB_RELEASE "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/Release/opencv_features2d341.lib"
-  IMPORTED_LOCATION_RELEASE "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/bin/Release/opencv_features2d341.dll"
+  IMPORTED_IMPLIB_RELEASE "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/lib/Release/opencv_features2d341.lib"
+  IMPORTED_LOCATION_RELEASE "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/bin/Release/opencv_features2d341.dll"
   )
 
 # Import target "opencv_calib3d" for configuration "Release"
 set_property(TARGET opencv_calib3d APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(opencv_calib3d PROPERTIES
-  IMPORTED_IMPLIB_RELEASE "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/Release/opencv_calib3d341.lib"
-  IMPORTED_LOCATION_RELEASE "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/bin/Release/opencv_calib3d341.dll"
+  IMPORTED_IMPLIB_RELEASE "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/lib/Release/opencv_calib3d341.lib"
+  IMPORTED_LOCATION_RELEASE "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/bin/Release/opencv_calib3d341.dll"
   )
 
 # Import target "opencv_stitching" for configuration "Release"
 set_property(TARGET opencv_stitching APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(opencv_stitching PROPERTIES
-  IMPORTED_IMPLIB_RELEASE "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/Release/opencv_stitching341.lib"
-  IMPORTED_LOCATION_RELEASE "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/bin/Release/opencv_stitching341.dll"
+  IMPORTED_IMPLIB_RELEASE "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/lib/Release/opencv_stitching341.lib"
+  IMPORTED_LOCATION_RELEASE "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/bin/Release/opencv_stitching341.dll"
   )
 
 # Import target "opencv_videostab" for configuration "Release"
 set_property(TARGET opencv_videostab APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(opencv_videostab PROPERTIES
-  IMPORTED_IMPLIB_RELEASE "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/Release/opencv_videostab341.lib"
-  IMPORTED_LOCATION_RELEASE "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/bin/Release/opencv_videostab341.dll"
+  IMPORTED_IMPLIB_RELEASE "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/lib/Release/opencv_videostab341.lib"
+  IMPORTED_LOCATION_RELEASE "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/bin/Release/opencv_videostab341.dll"
   )
 
 # This file does not depend on other imported targets which have

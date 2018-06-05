@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/modules/imgproc
+# Install script for directory: ${CMAKE_CURRENT_SOURCE_DIR}/opencv/modules/imgproc
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -33,38 +33,38 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/x64/vc14/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/opencv_imgproc341.lib")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/x64/vc14/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/lib/opencv_imgproc341.lib")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xlibsx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/x64/vc14/bin" TYPE SHARED_LIBRARY OPTIONAL FILES "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/bin/opencv_imgproc341.dll")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/x64/vc14/bin" TYPE SHARED_LIBRARY OPTIONAL FILES "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/bin/opencv_imgproc341.dll")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2" TYPE FILE OPTIONAL FILES "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/modules/imgproc/include/opencv2/imgproc.hpp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2" TYPE FILE OPTIONAL FILES "${CMAKE_CURRENT_SOURCE_DIR}/opencv/modules/imgproc/include/opencv2/imgproc.hpp")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/imgproc" TYPE FILE OPTIONAL FILES "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/modules/imgproc/include/opencv2/imgproc/imgproc.hpp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/imgproc" TYPE FILE OPTIONAL FILES "${CMAKE_CURRENT_SOURCE_DIR}/opencv/modules/imgproc/include/opencv2/imgproc/imgproc.hpp")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/imgproc" TYPE FILE OPTIONAL FILES "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/modules/imgproc/include/opencv2/imgproc/imgproc_c.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/imgproc" TYPE FILE OPTIONAL FILES "${CMAKE_CURRENT_SOURCE_DIR}/opencv/modules/imgproc/include/opencv2/imgproc/imgproc_c.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/imgproc" TYPE FILE OPTIONAL FILES "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/modules/imgproc/include/opencv2/imgproc/types_c.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/imgproc" TYPE FILE OPTIONAL FILES "${CMAKE_CURRENT_SOURCE_DIR}/opencv/modules/imgproc/include/opencv2/imgproc/types_c.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/imgproc/hal" TYPE FILE OPTIONAL FILES "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/modules/imgproc/include/opencv2/imgproc/hal/hal.hpp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/imgproc/hal" TYPE FILE OPTIONAL FILES "${CMAKE_CURRENT_SOURCE_DIR}/opencv/modules/imgproc/include/opencv2/imgproc/hal/hal.hpp")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/imgproc/hal" TYPE FILE OPTIONAL FILES "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/modules/imgproc/include/opencv2/imgproc/hal/interface.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/imgproc/hal" TYPE FILE OPTIONAL FILES "${CMAKE_CURRENT_SOURCE_DIR}/opencv/modules/imgproc/include/opencv2/imgproc/hal/interface.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/imgproc/detail" TYPE FILE OPTIONAL FILES "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/modules/imgproc/include/opencv2/imgproc/detail/distortion_model.hpp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/imgproc/detail" TYPE FILE OPTIONAL FILES "${CMAKE_CURRENT_SOURCE_DIR}/opencv/modules/imgproc/include/opencv2/imgproc/detail/distortion_model.hpp")
 endif()
 

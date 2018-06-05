@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/apps
+# Install script for directory: ${CMAKE_CURRENT_SOURCE_DIR}/opencv/apps
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,12 +34,12 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/apps/traincascade/cmake_install.cmake")
-  include("C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/apps/createsamples/cmake_install.cmake")
-  include("C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/apps/annotation/cmake_install.cmake")
-  include("C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/apps/visualisation/cmake_install.cmake")
-  include("C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/apps/interactive-calibration/cmake_install.cmake")
-  include("C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/apps/version/cmake_install.cmake")
+  include("${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/apps/traincascade/cmake_install.cmake")
+  include("${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/apps/createsamples/cmake_install.cmake")
+  include("${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/apps/annotation/cmake_install.cmake")
+  include("${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/apps/visualisation/cmake_install.cmake")
+  include("${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/apps/interactive-calibration/cmake_install.cmake")
+  include("${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/apps/version/cmake_install.cmake")
 
 endif()
 

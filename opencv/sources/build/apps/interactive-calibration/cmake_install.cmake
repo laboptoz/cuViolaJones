@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/apps/interactive-calibration
+# Install script for directory: ${CMAKE_CURRENT_SOURCE_DIR}/opencv/apps/interactive-calibration
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -33,6 +33,6 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/x64/vc14/bin" TYPE EXECUTABLE OPTIONAL FILES "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/bin/opencv_interactive-calibration.exe")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/x64/vc14/bin" TYPE EXECUTABLE OPTIONAL FILES "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/bin/opencv_interactive-calibration.exe")
 endif()
 

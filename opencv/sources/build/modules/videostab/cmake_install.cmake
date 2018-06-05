@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/modules/videostab
+# Install script for directory: ${CMAKE_CURRENT_SOURCE_DIR}/opencv/modules/videostab
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -33,70 +33,70 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/x64/vc14/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/opencv_videostab341.lib")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/x64/vc14/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/lib/opencv_videostab341.lib")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xlibsx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/x64/vc14/bin" TYPE SHARED_LIBRARY OPTIONAL FILES "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/bin/opencv_videostab341.dll")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/x64/vc14/bin" TYPE SHARED_LIBRARY OPTIONAL FILES "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/bin/opencv_videostab341.dll")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2" TYPE FILE OPTIONAL FILES "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/modules/videostab/include/opencv2/videostab.hpp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2" TYPE FILE OPTIONAL FILES "${CMAKE_CURRENT_SOURCE_DIR}/opencv/modules/videostab/include/opencv2/videostab.hpp")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/videostab" TYPE FILE OPTIONAL FILES "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/modules/videostab/include/opencv2/videostab/deblurring.hpp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/videostab" TYPE FILE OPTIONAL FILES "${CMAKE_CURRENT_SOURCE_DIR}/opencv/modules/videostab/include/opencv2/videostab/deblurring.hpp")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/videostab" TYPE FILE OPTIONAL FILES "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/modules/videostab/include/opencv2/videostab/fast_marching.hpp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/videostab" TYPE FILE OPTIONAL FILES "${CMAKE_CURRENT_SOURCE_DIR}/opencv/modules/videostab/include/opencv2/videostab/fast_marching.hpp")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/videostab" TYPE FILE OPTIONAL FILES "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/modules/videostab/include/opencv2/videostab/fast_marching_inl.hpp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/videostab" TYPE FILE OPTIONAL FILES "${CMAKE_CURRENT_SOURCE_DIR}/opencv/modules/videostab/include/opencv2/videostab/fast_marching_inl.hpp")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/videostab" TYPE FILE OPTIONAL FILES "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/modules/videostab/include/opencv2/videostab/frame_source.hpp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/videostab" TYPE FILE OPTIONAL FILES "${CMAKE_CURRENT_SOURCE_DIR}/opencv/modules/videostab/include/opencv2/videostab/frame_source.hpp")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/videostab" TYPE FILE OPTIONAL FILES "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/modules/videostab/include/opencv2/videostab/global_motion.hpp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/videostab" TYPE FILE OPTIONAL FILES "${CMAKE_CURRENT_SOURCE_DIR}/opencv/modules/videostab/include/opencv2/videostab/global_motion.hpp")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/videostab" TYPE FILE OPTIONAL FILES "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/modules/videostab/include/opencv2/videostab/inpainting.hpp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/videostab" TYPE FILE OPTIONAL FILES "${CMAKE_CURRENT_SOURCE_DIR}/opencv/modules/videostab/include/opencv2/videostab/inpainting.hpp")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/videostab" TYPE FILE OPTIONAL FILES "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/modules/videostab/include/opencv2/videostab/log.hpp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/videostab" TYPE FILE OPTIONAL FILES "${CMAKE_CURRENT_SOURCE_DIR}/opencv/modules/videostab/include/opencv2/videostab/log.hpp")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/videostab" TYPE FILE OPTIONAL FILES "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/modules/videostab/include/opencv2/videostab/motion_core.hpp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/videostab" TYPE FILE OPTIONAL FILES "${CMAKE_CURRENT_SOURCE_DIR}/opencv/modules/videostab/include/opencv2/videostab/motion_core.hpp")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/videostab" TYPE FILE OPTIONAL FILES "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/modules/videostab/include/opencv2/videostab/motion_stabilizing.hpp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/videostab" TYPE FILE OPTIONAL FILES "${CMAKE_CURRENT_SOURCE_DIR}/opencv/modules/videostab/include/opencv2/videostab/motion_stabilizing.hpp")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/videostab" TYPE FILE OPTIONAL FILES "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/modules/videostab/include/opencv2/videostab/optical_flow.hpp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/videostab" TYPE FILE OPTIONAL FILES "${CMAKE_CURRENT_SOURCE_DIR}/opencv/modules/videostab/include/opencv2/videostab/optical_flow.hpp")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/videostab" TYPE FILE OPTIONAL FILES "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/modules/videostab/include/opencv2/videostab/outlier_rejection.hpp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/videostab" TYPE FILE OPTIONAL FILES "${CMAKE_CURRENT_SOURCE_DIR}/opencv/modules/videostab/include/opencv2/videostab/outlier_rejection.hpp")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/videostab" TYPE FILE OPTIONAL FILES "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/modules/videostab/include/opencv2/videostab/ring_buffer.hpp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/videostab" TYPE FILE OPTIONAL FILES "${CMAKE_CURRENT_SOURCE_DIR}/opencv/modules/videostab/include/opencv2/videostab/ring_buffer.hpp")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/videostab" TYPE FILE OPTIONAL FILES "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/modules/videostab/include/opencv2/videostab/stabilizer.hpp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/videostab" TYPE FILE OPTIONAL FILES "${CMAKE_CURRENT_SOURCE_DIR}/opencv/modules/videostab/include/opencv2/videostab/stabilizer.hpp")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/videostab" TYPE FILE OPTIONAL FILES "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/modules/videostab/include/opencv2/videostab/wobble_suppression.hpp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2/videostab" TYPE FILE OPTIONAL FILES "${CMAKE_CURRENT_SOURCE_DIR}/opencv/modules/videostab/include/opencv2/videostab/wobble_suppression.hpp")
 endif()
 

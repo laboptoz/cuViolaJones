@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources
+# Install script for directory: ${CMAKE_CURRENT_SOURCE_DIR}/opencv/sources
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/install")
+  set(CMAKE_INSTALL_PREFIX "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,18 +33,18 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2" TYPE FILE FILES "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/cvconfig.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2" TYPE FILE FILES "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/cvconfig.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2" TYPE FILE FILES "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/opencv2/opencv_modules.hpp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2" TYPE FILE FILES "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/opencv2/opencv_modules.hpp")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevx" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/x64/vc14/lib/OpenCVModules.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/x64/vc14/lib/OpenCVModules.cmake"
-         "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/Export/x64/vc14/lib/OpenCVModules.cmake")
+         "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/CMakeFiles/Export/x64/vc14/lib/OpenCVModules.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/x64/vc14/lib/OpenCVModules-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -53,45 +53,45 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevx" OR NOT CMAKE_INSTALL_COMPONEN
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/x64/vc14/lib" TYPE FILE FILES "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/Export/x64/vc14/lib/OpenCVModules.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/x64/vc14/lib" TYPE FILE FILES "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/CMakeFiles/Export/x64/vc14/lib/OpenCVModules.cmake")
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/x64/vc14/lib" TYPE FILE FILES "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/Export/x64/vc14/lib/OpenCVModules-debug.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/x64/vc14/lib" TYPE FILE FILES "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/CMakeFiles/Export/x64/vc14/lib/OpenCVModules-debug.cmake")
   endif()
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/x64/vc14/lib" TYPE FILE FILES "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/Export/x64/vc14/lib/OpenCVModules-release.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/x64/vc14/lib" TYPE FILE FILES "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/CMakeFiles/Export/x64/vc14/lib/OpenCVModules-release.cmake")
   endif()
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/x64/vc14/lib" TYPE FILE FILES
-    "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/win-install/OpenCVConfig-version.cmake"
-    "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/win-install/x64/vc14/lib/OpenCVConfig.cmake"
+    "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/win-install/OpenCVConfig-version.cmake"
+    "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/win-install/x64/vc14/lib/OpenCVConfig.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE FILE FILES
-    "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/win-install/OpenCVConfig-version.cmake"
-    "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/win-install/OpenCVConfig.cmake"
+    "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/win-install/OpenCVConfig-version.cmake"
+    "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/win-install/OpenCVConfig.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xlibsx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE FILE PERMISSIONS OWNER_READ GROUP_READ WORLD_READ FILES "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/LICENSE")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE FILE PERMISSIONS OWNER_READ GROUP_READ WORLD_READ FILES "${CMAKE_CURRENT_SOURCE_DIR}/opencv/sources/LICENSE")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/3rdparty/zlib/cmake_install.cmake")
-  include("C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/3rdparty/libjpeg/cmake_install.cmake")
-  include("C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/3rdparty/libwebp/cmake_install.cmake")
-  include("C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/3rdparty/libpng/cmake_install.cmake")
-  include("C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/3rdparty/openexr/cmake_install.cmake")
-  include("C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/3rdparty/protobuf/cmake_install.cmake")
-  include("C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/include/cmake_install.cmake")
-  include("C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/modules/cmake_install.cmake")
-  include("C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/doc/cmake_install.cmake")
-  include("C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/data/cmake_install.cmake")
+  include("${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/3rdparty/zlib/cmake_install.cmake")
+  include("${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/3rdparty/libjpeg/cmake_install.cmake")
+  include("${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/3rdparty/libwebp/cmake_install.cmake")
+  include("${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/3rdparty/libpng/cmake_install.cmake")
+  include("${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/3rdparty/openexr/cmake_install.cmake")
+  include("${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/3rdparty/protobuf/cmake_install.cmake")
+  include("${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/include/cmake_install.cmake")
+  include("${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/modules/cmake_install.cmake")
+  include("${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/doc/cmake_install.cmake")
+  include("${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/data/cmake_install.cmake")
 
 endif()
 
@@ -103,5 +103,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -75,71 +75,71 @@ set_target_properties(opencv_highgui PROPERTIES
 # Import target "opencv_core" for configuration "Debug"
 set_property(TARGET opencv_core APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(opencv_core PROPERTIES
-  IMPORTED_IMPLIB_DEBUG "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/Debug/opencv_core341d.lib"
-  IMPORTED_LOCATION_DEBUG "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/bin/Debug/opencv_core341d.dll"
+  IMPORTED_IMPLIB_DEBUG "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/lib/Debug/opencv_core341d.lib"
+  IMPORTED_LOCATION_DEBUG "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/bin/Debug/opencv_core341d.dll"
   )
 
 # Import target "opencv_imgproc" for configuration "Debug"
 set_property(TARGET opencv_imgproc APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(opencv_imgproc PROPERTIES
-  IMPORTED_IMPLIB_DEBUG "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/Debug/opencv_imgproc341d.lib"
-  IMPORTED_LOCATION_DEBUG "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/bin/Debug/opencv_imgproc341d.dll"
+  IMPORTED_IMPLIB_DEBUG "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/lib/Debug/opencv_imgproc341d.lib"
+  IMPORTED_LOCATION_DEBUG "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/bin/Debug/opencv_imgproc341d.dll"
   )
 
 # Import target "opencv_objdetect" for configuration "Debug"
 set_property(TARGET opencv_objdetect APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(opencv_objdetect PROPERTIES
-  IMPORTED_IMPLIB_DEBUG "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/Debug/opencv_objdetect341d.lib"
-  IMPORTED_LOCATION_DEBUG "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/bin/Debug/opencv_objdetect341d.dll"
+  IMPORTED_IMPLIB_DEBUG "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/lib/Debug/opencv_objdetect341d.lib"
+  IMPORTED_LOCATION_DEBUG "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/bin/Debug/opencv_objdetect341d.dll"
   )
 
 # Import target "opencv_imgcodecs" for configuration "Debug"
 set_property(TARGET opencv_imgcodecs APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(opencv_imgcodecs PROPERTIES
-  IMPORTED_IMPLIB_DEBUG "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/Debug/opencv_imgcodecs341d.lib"
-  IMPORTED_LOCATION_DEBUG "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/bin/Debug/opencv_imgcodecs341d.dll"
+  IMPORTED_IMPLIB_DEBUG "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/lib/Debug/opencv_imgcodecs341d.lib"
+  IMPORTED_LOCATION_DEBUG "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/bin/Debug/opencv_imgcodecs341d.dll"
   )
 
 # Import target "opencv_highgui" for configuration "Debug"
 set_property(TARGET opencv_highgui APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(opencv_highgui PROPERTIES
-  IMPORTED_IMPLIB_DEBUG "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/Debug/opencv_highgui341d.lib"
-  IMPORTED_LOCATION_DEBUG "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/bin/Debug/opencv_highgui341d.dll"
+  IMPORTED_IMPLIB_DEBUG "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/lib/Debug/opencv_highgui341d.lib"
+  IMPORTED_LOCATION_DEBUG "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/bin/Debug/opencv_highgui341d.dll"
   )
 
 # Import target "opencv_core" for configuration "Release"
 set_property(TARGET opencv_core APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(opencv_core PROPERTIES
-  IMPORTED_IMPLIB_RELEASE "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/Release/opencv_core341.lib"
-  IMPORTED_LOCATION_RELEASE "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/bin/Release/opencv_core341.dll"
+  IMPORTED_IMPLIB_RELEASE "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/lib/Release/opencv_core341.lib"
+  IMPORTED_LOCATION_RELEASE "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/bin/Release/opencv_core341.dll"
   )
 
 # Import target "opencv_imgproc" for configuration "Release"
 set_property(TARGET opencv_imgproc APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(opencv_imgproc PROPERTIES
-  IMPORTED_IMPLIB_RELEASE "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/Release/opencv_imgproc341.lib"
-  IMPORTED_LOCATION_RELEASE "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/bin/Release/opencv_imgproc341.dll"
+  IMPORTED_IMPLIB_RELEASE "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/lib/Release/opencv_imgproc341.lib"
+  IMPORTED_LOCATION_RELEASE "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/bin/Release/opencv_imgproc341.dll"
   )
 
 # Import target "opencv_objdetect" for configuration "Release"
 set_property(TARGET opencv_objdetect APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(opencv_objdetect PROPERTIES
-  IMPORTED_IMPLIB_RELEASE "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/Release/opencv_objdetect341.lib"
-  IMPORTED_LOCATION_RELEASE "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/bin/Release/opencv_objdetect341.dll"
+  IMPORTED_IMPLIB_RELEASE "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/lib/Release/opencv_objdetect341.lib"
+  IMPORTED_LOCATION_RELEASE "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/bin/Release/opencv_objdetect341.dll"
   )
 
 # Import target "opencv_imgcodecs" for configuration "Release"
 set_property(TARGET opencv_imgcodecs APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(opencv_imgcodecs PROPERTIES
-  IMPORTED_IMPLIB_RELEASE "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/Release/opencv_imgcodecs341.lib"
-  IMPORTED_LOCATION_RELEASE "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/bin/Release/opencv_imgcodecs341.dll"
+  IMPORTED_IMPLIB_RELEASE "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/lib/Release/opencv_imgcodecs341.lib"
+  IMPORTED_LOCATION_RELEASE "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/bin/Release/opencv_imgcodecs341.dll"
   )
 
 # Import target "opencv_highgui" for configuration "Release"
 set_property(TARGET opencv_highgui APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(opencv_highgui PROPERTIES
-  IMPORTED_IMPLIB_RELEASE "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/Release/opencv_highgui341.lib"
-  IMPORTED_LOCATION_RELEASE "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/bin/Release/opencv_highgui341.dll"
+  IMPORTED_IMPLIB_RELEASE "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/lib/Release/opencv_highgui341.lib"
+  IMPORTED_LOCATION_RELEASE "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/bin/Release/opencv_highgui341.dll"
   )
 
 # This file does not depend on other imported targets which have

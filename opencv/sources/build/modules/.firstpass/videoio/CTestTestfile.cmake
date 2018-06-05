@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/modules/videoio
-# Build directory: C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/modules/.firstpass/videoio
+# Source directory: ${CMAKE_CURRENT_SOURCE_DIR}/opencv/modules/videoio
+# Build directory: ${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/modules/.firstpass/videoio
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

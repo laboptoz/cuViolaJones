@@ -2,11 +2,11 @@
 # File that provides "make uninstall" target
 #  We use the file 'install_manifest.txt'
 # -----------------------------------------------
-IF(NOT EXISTS "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/install_manifest.txt")
-  MESSAGE(FATAL_ERROR "Cannot find install manifest: \"C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/install_manifest.txt\"")
-ENDIF(NOT EXISTS "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/install_manifest.txt")
+IF(NOT EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/install_manifest.txt")
+  MESSAGE(FATAL_ERROR "Cannot find install manifest: \"${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/install_manifest.txt\"")
+ENDIF(NOT EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/install_manifest.txt")
 
-FILE(READ "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/install_manifest.txt" files)
+FILE(READ "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/install_manifest.txt" files)
 STRING(REGEX REPLACE "\n" ";" files "${files}")
 FOREACH(file ${files})
   MESSAGE(STATUS "Uninstalling \"$ENV{DESTDIR}${file}\"")

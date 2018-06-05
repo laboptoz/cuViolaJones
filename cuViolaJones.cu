@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <opencv2/opencv.hpp>
 #include "cpuViolaJones.hpp"
+#include "paths.hpp"
 //#include "gpuViolaJones.cuh"
 
 using namespace cv;
@@ -8,9 +9,10 @@ using namespace cv;
 
 int main(int argc, char** argv )
 {
+	FILE * test = fopen("text.txt", "w");
     Mat image;
-    image = imread("C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/faces.jpg", 1 );
-	String face_cascade_path = "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/data/haarcascades/haarcascade_frontalface_default.xml";
+    image = imread(FACE_PATH, 1 );
+	String face_cascade_path = CASCADE_PATH;
 	Mat smallimage;
 	resize(image, smallimage, Size(), 0.75, 0.75);
     if ( !image.data )

@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/python/python2
-# Build directory: C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/modules/.firstpass/python/python2
+# Source directory: ${CMAKE_CURRENT_SOURCE_DIR}/opencv/sources/modules/python/python2
+# Build directory: ${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/modules/.firstpass/python/python2
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

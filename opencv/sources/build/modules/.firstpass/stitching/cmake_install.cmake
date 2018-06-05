@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/modules/stitching
+# Install script for directory: ${CMAKE_CURRENT_SOURCE_DIR}/opencv/modules/stitching
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

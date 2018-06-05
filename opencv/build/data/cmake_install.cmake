@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/data
+# Install script for directory: ${CMAKE_CURRENT_SOURCE_DIR}/opencv/sources/data
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/install")
+  set(CMAKE_INSTALL_PREFIX "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,33 +34,33 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xlibsx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/etc/haarcascades" TYPE FILE FILES
-    "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/data/haarcascades/haarcascade_eye.xml"
-    "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/data/haarcascades/haarcascade_eye_tree_eyeglasses.xml"
-    "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/data/haarcascades/haarcascade_frontalcatface.xml"
-    "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/data/haarcascades/haarcascade_frontalcatface_extended.xml"
-    "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/data/haarcascades/haarcascade_frontalface_alt.xml"
-    "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/data/haarcascades/haarcascade_frontalface_alt2.xml"
-    "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/data/haarcascades/haarcascade_frontalface_alt_tree.xml"
-    "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/data/haarcascades/haarcascade_frontalface_default.xml"
-    "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/data/haarcascades/haarcascade_fullbody.xml"
-    "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/data/haarcascades/haarcascade_lefteye_2splits.xml"
-    "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/data/haarcascades/haarcascade_licence_plate_rus_16stages.xml"
-    "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/data/haarcascades/haarcascade_lowerbody.xml"
-    "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/data/haarcascades/haarcascade_profileface.xml"
-    "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/data/haarcascades/haarcascade_righteye_2splits.xml"
-    "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/data/haarcascades/haarcascade_russian_plate_number.xml"
-    "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/data/haarcascades/haarcascade_smile.xml"
-    "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/data/haarcascades/haarcascade_upperbody.xml"
+    "${CMAKE_CURRENT_SOURCE_DIR}/opencv/sources/data/haarcascades/haarcascade_eye.xml"
+    "${CMAKE_CURRENT_SOURCE_DIR}/opencv/sources/data/haarcascades/haarcascade_eye_tree_eyeglasses.xml"
+    "${CMAKE_CURRENT_SOURCE_DIR}/opencv/sources/data/haarcascades/haarcascade_frontalcatface.xml"
+    "${CMAKE_CURRENT_SOURCE_DIR}/opencv/sources/data/haarcascades/haarcascade_frontalcatface_extended.xml"
+    "${CMAKE_CURRENT_SOURCE_DIR}/opencv/sources/data/haarcascades/haarcascade_frontalface_alt.xml"
+    "${CMAKE_CURRENT_SOURCE_DIR}/opencv/sources/data/haarcascades/haarcascade_frontalface_alt2.xml"
+    "${CMAKE_CURRENT_SOURCE_DIR}/opencv/sources/data/haarcascades/haarcascade_frontalface_alt_tree.xml"
+    "${CMAKE_CURRENT_SOURCE_DIR}/opencv/sources/data/haarcascades/haarcascade_frontalface_default.xml"
+    "${CMAKE_CURRENT_SOURCE_DIR}/opencv/sources/data/haarcascades/haarcascade_fullbody.xml"
+    "${CMAKE_CURRENT_SOURCE_DIR}/opencv/sources/data/haarcascades/haarcascade_lefteye_2splits.xml"
+    "${CMAKE_CURRENT_SOURCE_DIR}/opencv/sources/data/haarcascades/haarcascade_licence_plate_rus_16stages.xml"
+    "${CMAKE_CURRENT_SOURCE_DIR}/opencv/sources/data/haarcascades/haarcascade_lowerbody.xml"
+    "${CMAKE_CURRENT_SOURCE_DIR}/opencv/sources/data/haarcascades/haarcascade_profileface.xml"
+    "${CMAKE_CURRENT_SOURCE_DIR}/opencv/sources/data/haarcascades/haarcascade_righteye_2splits.xml"
+    "${CMAKE_CURRENT_SOURCE_DIR}/opencv/sources/data/haarcascades/haarcascade_russian_plate_number.xml"
+    "${CMAKE_CURRENT_SOURCE_DIR}/opencv/sources/data/haarcascades/haarcascade_smile.xml"
+    "${CMAKE_CURRENT_SOURCE_DIR}/opencv/sources/data/haarcascades/haarcascade_upperbody.xml"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xlibsx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/etc/lbpcascades" TYPE FILE FILES
-    "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/data/lbpcascades/lbpcascade_frontalcatface.xml"
-    "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/data/lbpcascades/lbpcascade_frontalface.xml"
-    "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/data/lbpcascades/lbpcascade_frontalface_improved.xml"
-    "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/data/lbpcascades/lbpcascade_profileface.xml"
-    "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/data/lbpcascades/lbpcascade_silverware.xml"
+    "${CMAKE_CURRENT_SOURCE_DIR}/opencv/sources/data/lbpcascades/lbpcascade_frontalcatface.xml"
+    "${CMAKE_CURRENT_SOURCE_DIR}/opencv/sources/data/lbpcascades/lbpcascade_frontalface.xml"
+    "${CMAKE_CURRENT_SOURCE_DIR}/opencv/sources/data/lbpcascades/lbpcascade_frontalface_improved.xml"
+    "${CMAKE_CURRENT_SOURCE_DIR}/opencv/sources/data/lbpcascades/lbpcascade_profileface.xml"
+    "${CMAKE_CURRENT_SOURCE_DIR}/opencv/sources/data/lbpcascades/lbpcascade_silverware.xml"
     )
 endif()
 

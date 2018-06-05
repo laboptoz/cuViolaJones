@@ -106,7 +106,7 @@ set(OpenCV_SHARED ON)
 set(OpenCV_USE_MANGLED_PATHS FALSE)
 
 set(OpenCV_LIB_COMPONENTS opencv_core;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_objdetect)
-set(OpenCV_INCLUDE_DIRS "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build" "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/include" "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/include/opencv" "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include" "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/include" "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/objdetect/include" "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/include" "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/highgui/include")
+set(OpenCV_INCLUDE_DIRS "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build" "${CMAKE_CURRENT_SOURCE_DIR}/opencv/sources/include" "${CMAKE_CURRENT_SOURCE_DIR}/opencv/sources/include/opencv" "${CMAKE_CURRENT_SOURCE_DIR}/opencv/sources/modules/core/include" "${CMAKE_CURRENT_SOURCE_DIR}/opencv/sources/modules/imgproc/include" "${CMAKE_CURRENT_SOURCE_DIR}/opencv/sources/modules/objdetect/include" "${CMAKE_CURRENT_SOURCE_DIR}/opencv/sources/modules/imgcodecs/include" "${CMAKE_CURRENT_SOURCE_DIR}/opencv/sources/modules/highgui/include")
 
 if(NOT TARGET opencv_core)
   include(${CMAKE_CURRENT_LIST_DIR}/OpenCVModules${OpenCV_MODULES_SUFFIX}.cmake)

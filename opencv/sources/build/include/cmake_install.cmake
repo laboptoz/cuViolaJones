@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/include
+# Install script for directory: ${CMAKE_CURRENT_SOURCE_DIR}/opencv/include
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,21 +34,21 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv" TYPE FILE FILES
-    "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/include/opencv/cv.h"
-    "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/include/opencv/cv.hpp"
-    "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/include/opencv/cvaux.h"
-    "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/include/opencv/cvaux.hpp"
-    "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/include/opencv/cvwimage.h"
-    "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/include/opencv/cxcore.h"
-    "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/include/opencv/cxcore.hpp"
-    "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/include/opencv/cxeigen.hpp"
-    "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/include/opencv/cxmisc.h"
-    "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/include/opencv/highgui.h"
-    "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/include/opencv/ml.h"
+    "${CMAKE_CURRENT_SOURCE_DIR}/opencv/include/opencv/cv.h"
+    "${CMAKE_CURRENT_SOURCE_DIR}/opencv/include/opencv/cv.hpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/opencv/include/opencv/cvaux.h"
+    "${CMAKE_CURRENT_SOURCE_DIR}/opencv/include/opencv/cvaux.hpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/opencv/include/opencv/cvwimage.h"
+    "${CMAKE_CURRENT_SOURCE_DIR}/opencv/include/opencv/cxcore.h"
+    "${CMAKE_CURRENT_SOURCE_DIR}/opencv/include/opencv/cxcore.hpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/opencv/include/opencv/cxeigen.hpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/opencv/include/opencv/cxmisc.h"
+    "${CMAKE_CURRENT_SOURCE_DIR}/opencv/include/opencv/highgui.h"
+    "${CMAKE_CURRENT_SOURCE_DIR}/opencv/include/opencv/ml.h"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2" TYPE FILE FILES "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/include/opencv2/opencv.hpp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/opencv2" TYPE FILE FILES "${CMAKE_CURRENT_SOURCE_DIR}/opencv/include/opencv2/opencv.hpp")
 endif()
 
