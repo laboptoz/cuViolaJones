@@ -20,14 +20,11 @@ file(GLOB HEADERS *.h *.cuh)
 source_group("Headers" FILES ${HEADERS})
 
 cuda_add_executable( ${PROJECT_NAME} 
-#${HEADERS}
+${HEADERS}
 cuViolaJones.cu
 OPTIONS --cudart=shared  -lineinfo -arch sm_52 -use_fast_math
 DEBUG -Xptxas -v -g -G 
 )
-message("${PROJECT_NAME}")
-message("${OpenCV_DIR}/x64/vc14/bin")
-message("${CMAKE_CURRENT_BINARY_DIR}/$<CONFIG>")
 
 add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
     COMMAND ${CMAKE_COMMAND} -E copy_directory
