@@ -1,0 +1,4 @@
+﻿  Building Custom Rule C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/objdetect/CMakeLists.txt
+  CMake does not need to re-run because C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/modules/objdetect/CMakeFiles/generate.stamp is up-to-date.
+  haar.avx.cpp
+  opencv_objdetect_AVX.vcxproj -> C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\objdetect\opencv_objdetect_AVX.dir\Debug\opencv_objdetect_AVX.lib

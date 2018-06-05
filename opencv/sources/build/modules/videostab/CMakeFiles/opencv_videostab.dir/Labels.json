@@ -1,0 +1,13 @@
+{
+	"sources" : [],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Main",
+			"opencv_videostab",
+			"Module"
+		],
+		"name" : "opencv_videostab"
+	}
+}

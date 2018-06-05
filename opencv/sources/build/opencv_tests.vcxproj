@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D331B51E-D95F-321F-BB7C-6388DEA01033}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>opencv_tests</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\CMakeLists.txt">
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\ZERO_CHECK.vcxproj">
+      <Project>{663334D7-9D02-3793-8626-E8858EF60ADC}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\calib3d\opencv_test_calib3d.vcxproj">
+      <Project>{0E96AACD-5577-3442-AA05-8BF6B98CFBC6}</Project>
+      <Name>opencv_test_calib3d</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\core\opencv_test_core.vcxproj">
+      <Project>{D305CEE2-09DF-3BF1-8051-5FA9F33D9F39}</Project>
+      <Name>opencv_test_core</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\dnn\opencv_test_dnn.vcxproj">
+      <Project>{BC5BBB3A-3F94-3E40-A254-986226F91149}</Project>
+      <Name>opencv_test_dnn</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\features2d\opencv_test_features2d.vcxproj">
+      <Project>{E3622DA4-E416-3CC3-AEC8-C0B033082EC9}</Project>
+      <Name>opencv_test_features2d</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\flann\opencv_test_flann.vcxproj">
+      <Project>{00734D50-9350-372A-BBD5-5B4FBE6E51AE}</Project>
+      <Name>opencv_test_flann</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\highgui\opencv_test_highgui.vcxproj">
+      <Project>{6FD2C202-25B3-3AC7-9FC1-B0EB8F154BBE}</Project>
+      <Name>opencv_test_highgui</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\imgcodecs\opencv_test_imgcodecs.vcxproj">
+      <Project>{409259E4-D299-30E3-8F09-1FFFEEF656BC}</Project>
+      <Name>opencv_test_imgcodecs</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\imgproc\opencv_test_imgproc.vcxproj">
+      <Project>{3D5829E9-4AC0-3413-9DC1-330A6CE49704}</Project>
+      <Name>opencv_test_imgproc</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\ml\opencv_test_ml.vcxproj">
+      <Project>{F3EB537C-7C90-340C-8D8F-56769DF7CCC9}</Project>
+      <Name>opencv_test_ml</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\objdetect\opencv_test_objdetect.vcxproj">
+      <Project>{75A2E254-B458-3AAB-B21D-42F40A04F542}</Project>
+      <Name>opencv_test_objdetect</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\photo\opencv_test_photo.vcxproj">
+      <Project>{697CF6CE-8320-3867-9BB3-A9A020E7824A}</Project>
+      <Name>opencv_test_photo</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\shape\opencv_test_shape.vcxproj">
+      <Project>{FD634790-194C-39CE-998E-0CD86A82EB4E}</Project>
+      <Name>opencv_test_shape</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\stitching\opencv_test_stitching.vcxproj">
+      <Project>{9BF26017-581D-352D-8504-720965776148}</Project>
+      <Name>opencv_test_stitching</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\superres\opencv_test_superres.vcxproj">
+      <Project>{01F15D05-295D-3ED2-AF9E-8969ED47CEBD}</Project>
+      <Name>opencv_test_superres</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\video\opencv_test_video.vcxproj">
+      <Project>{144CB1BE-E8D0-3086-837D-26CDB802C9A6}</Project>
+      <Name>opencv_test_video</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\videoio\opencv_test_videoio.vcxproj">
+      <Project>{CEE1C17E-CA19-3E44-9E70-36F880D67599}</Project>
+      <Name>opencv_test_videoio</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\videostab\opencv_test_videostab.vcxproj">
+      <Project>{8BE19E63-46CB-3120-97E1-E13D45501E75}</Project>
+      <Name>opencv_test_videostab</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

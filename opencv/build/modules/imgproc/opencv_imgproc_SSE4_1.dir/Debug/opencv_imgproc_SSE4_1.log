@@ -1,0 +1,5 @@
+﻿  Building Custom Rule C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/CMakeLists.txt
+  CMake does not need to re-run because C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/modules/imgproc/CMakeFiles/generate.stamp is up-to-date.
+  imgwarp.sse4_1.cpp
+  resize.sse4_1.cpp
+  opencv_imgproc_SSE4_1.vcxproj -> C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\imgproc\opencv_imgproc_SSE4_1.dir\Debug\opencv_imgproc_SSE4_1.lib

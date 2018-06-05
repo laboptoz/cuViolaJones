@@ -1,0 +1,13 @@
+{
+	"sources" : [],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Main",
+			"opencv_imgcodecs",
+			"Module"
+		],
+		"name" : "opencv_imgcodecs"
+	}
+}

@@ -1,0 +1,13 @@
+{
+	"sources" : [],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Main",
+			"opencv_imgproc",
+			"Module"
+		],
+		"name" : "opencv_imgproc"
+	}
+}

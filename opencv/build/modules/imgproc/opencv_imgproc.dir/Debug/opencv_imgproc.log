@@ -1,0 +1,61 @@
+﻿  Building Custom Rule C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/CMakeLists.txt
+  CMake does not need to re-run because C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/modules/imgproc/CMakeFiles/generate.stamp is up-to-date.
+  Processing OpenCL kernels (imgproc)
+  opencv_imgproc_pch.cpp
+  accum.cpp
+  accum.dispatch.cpp
+  approx.cpp
+  blend.cpp
+  canny.cpp
+  clahe.cpp
+  color.cpp
+  colormap.cpp
+  connectedcomponents.cpp
+  contours.cpp
+  convhull.cpp
+  corner.cpp
+  cornersubpix.cpp
+  demosaicing.cpp
+  deriv.cpp
+  distransform.cpp
+  drawing.cpp
+  emd.cpp
+  featureselect.cpp
+  filter.cpp
+  floodfill.cpp
+  gabor.cpp
+  generalized_hough.cpp
+  geometry.cpp
+  grabcut.cpp
+  hershey_fonts.cpp
+  histogram.cpp
+  hough.cpp
+  imgwarp.cpp
+  intersection.cpp
+  linefit.cpp
+  lsd.cpp
+  main.cpp
+  matchcontours.cpp
+  min_enclosing_triangle.cpp
+  moments.cpp
+  morph.cpp
+  phasecorr.cpp
+  pyramids.cpp
+  resize.cpp
+  rotcalipers.cpp
+  samplers.cpp
+  segmentation.cpp
+  shapedescr.cpp
+  smooth.cpp
+  spatialgradient.cpp
+  subdivision2d.cpp
+  sumpixels.cpp
+  tables.cpp
+  templmatch.cpp
+  thresh.cpp
+  undistort.cpp
+  utils.cpp
+  opencl_kernels_imgproc.cpp
+     Creating library C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/Debug/opencv_imgproc341d.lib and object C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/Debug/opencv_imgproc341d.exp
+  opencv_imgproc.vcxproj -> C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\bin\Debug\opencv_imgproc341d.dll
+  opencv_imgproc.vcxproj -> C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/bin/Debug/opencv_imgproc341d.pdb (Full PDB)

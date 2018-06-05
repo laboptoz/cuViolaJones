@@ -1,0 +1,15 @@
+﻿  Building Custom Rule C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/objdetect/CMakeLists.txt
+  CMake does not need to re-run because C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/modules/objdetect/CMakeFiles/generate.stamp is up-to-date.
+  Processing OpenCL kernels (objdetect)
+  -- C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/modules/objdetect/opencl_kernels_objdetect.hpp contains the same content
+  opencv_objdetect_pch.cpp
+  cascadedetect.cpp
+  cascadedetect_convert.cpp
+  detection_based_tracker.cpp
+  haar.cpp
+  hog.cpp
+  main.cpp
+  opencl_kernels_objdetect.cpp
+     Creating library C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/Release/opencv_objdetect341.lib and object C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/Release/opencv_objdetect341.exp
+  opencv_objdetect.vcxproj -> C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\bin\Release\opencv_objdetect341.dll
+  opencv_objdetect.vcxproj -> C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/bin/Release/opencv_objdetect341.pdb (Full PDB)

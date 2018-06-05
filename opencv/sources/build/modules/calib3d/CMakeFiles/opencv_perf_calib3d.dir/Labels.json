@@ -1,0 +1,13 @@
+{
+	"sources" : [],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Main",
+			"opencv_calib3d",
+			"PerfTest"
+		],
+		"name" : "opencv_perf_calib3d"
+	}
+}

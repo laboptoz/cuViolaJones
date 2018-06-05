@@ -1,0 +1,5 @@
+# CMake generation dependency list for this directory.
+C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/modules/videostab/CMakeLists.txt
+C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/cmake/templates/vs_version.rc.in
+C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/modules/videostab/CMakeFiles/cuda_compile.dir/src/cuda/cuda_compile_generated_global_motion.cu.obj.depend
+C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/cmake/FindCUDA/run_nvcc.cmake

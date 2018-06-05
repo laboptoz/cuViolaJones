@@ -1,0 +1,13 @@
+{
+	"sources" : [],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Main",
+			"opencv_features2d",
+			"PerfTest"
+		],
+		"name" : "opencv_perf_features2d"
+	}
+}

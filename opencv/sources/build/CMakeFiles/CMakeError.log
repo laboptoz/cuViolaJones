@@ -1,0 +1,262 @@
+Compilation failed:
+    source file: 'C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/cmake/checks/cpu_avx512.cpp'
+    check option: '    '
+===== BUILD LOG =====
+Change Dir: C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_3e8e8.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.25123.0
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 6/4/2018 9:31:05 PM.
+Project "C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_3e8e8.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_3e8e8.dir\Debug\".
+  Creating directory "C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_3e8e8.dir\Debug\cmTC_3e8e8.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_3e8e8.dir\Debug\cmTC_3e8e8.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_3e8e8.dir\Debug\\" /Fd"cmTC_3e8e8.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\cmake\checks\cpu_avx512.cpp
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23918 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_3e8e8.dir\Debug\\" /Fd"cmTC_3e8e8.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\cmake\checks\cpu_avx512.cpp
+  
+  cpu_avx512.cpp
+C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\cmake\checks\cpu_avx512.cpp(8): fatal error C1189: #error:  "AVX512 is not supported" [C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_3e8e8.vcxproj]
+Done Building Project "C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_3e8e8.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_3e8e8.vcxproj" (default target) (1) ->
+(ClCompile target) -> 
+  C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\cmake\checks\cpu_avx512.cpp(8): fatal error C1189: #error:  "AVX512 is not supported" [C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_3e8e8.vcxproj]
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.34
+
+===== END =====
+
+Compilation failed:
+    source file: 'C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/cmake/checks/cpu_avx512skx.cpp'
+    check option: '    '
+===== BUILD LOG =====
+Change Dir: C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_18d10.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.25123.0
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 6/4/2018 9:31:05 PM.
+Project "C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_18d10.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_18d10.dir\Debug\".
+  Creating directory "C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_18d10.dir\Debug\cmTC_18d10.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_18d10.dir\Debug\cmTC_18d10.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_18d10.dir\Debug\\" /Fd"cmTC_18d10.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\cmake\checks\cpu_avx512skx.cpp
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23918 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_18d10.dir\Debug\\" /Fd"cmTC_18d10.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\cmake\checks\cpu_avx512skx.cpp
+  
+  cpu_avx512skx.cpp
+C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\cmake\checks\cpu_avx512skx.cpp(12): fatal error C1189: #error:  "AVX512-SKX is not supported" [C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_18d10.vcxproj]
+Done Building Project "C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_18d10.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_18d10.vcxproj" (default target) (1) ->
+(ClCompile target) -> 
+  C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\cmake\checks\cpu_avx512skx.cpp(12): fatal error C1189: #error:  "AVX512-SKX is not supported" [C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_18d10.vcxproj]
+
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.32
+
+===== END =====
+
+Determining if the function fseeko exists failed with the following output:
+Change Dir: C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_c6504.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.25123.0
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 6/4/2018 9:31:13 PM.
+Project "C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_c6504.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_c6504.dir\Debug\".
+  Creating directory "C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_c6504.dir\Debug\cmTC_c6504.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_c6504.dir\Debug\cmTC_c6504.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D CHECK_FUNCTION_EXISTS=fseeko /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c6504.dir\Debug\\" /Fd"cmTC_c6504.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Program Files\CMake\share\cmake-3.10\Modules\CheckFunctionExists.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23918 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D CHECK_FUNCTION_EXISTS=fseeko /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c6504.dir\Debug\\" /Fd"cmTC_c6504.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Program Files\CMake\share\cmake-3.10\Modules\CheckFunctionExists.c"
+  
+  CheckFunctionExists.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_c6504.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_c6504.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_c6504.lib" /MACHINE:X64  /machine:x64 cmTC_c6504.dir\Debug\CheckFunctionExists.obj
+CheckFunctionExists.obj : error LNK2019: unresolved external symbol fseeko referenced in function main [C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_c6504.vcxproj]
+C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_c6504.exe : fatal error LNK1120: 1 unresolved externals [C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_c6504.vcxproj]
+Done Building Project "C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_c6504.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_c6504.vcxproj" (default target) (1) ->
+(Link target) -> 
+  CheckFunctionExists.obj : error LNK2019: unresolved external symbol fseeko referenced in function main [C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_c6504.vcxproj]
+  C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_c6504.exe : fatal error LNK1120: 1 unresolved externals [C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_c6504.vcxproj]
+
+    0 Warning(s)
+    2 Error(s)
+
+Time Elapsed 00:00:00.43
+
+
+Determining size of off64_t failed with the following output:
+Change Dir: C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_ebb73.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.25123.0
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 6/4/2018 9:31:13 PM.
+Project "C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_ebb73.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_ebb73.dir\Debug\".
+  Creating directory "C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_ebb73.dir\Debug\cmTC_ebb73.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_ebb73.dir\Debug\cmTC_ebb73.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ebb73.dir\Debug\\" /Fd"cmTC_ebb73.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CheckTypeSize\OFF64_T.c
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23918 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ebb73.dir\Debug\\" /Fd"cmTC_ebb73.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CheckTypeSize\OFF64_T.c
+  
+  OFF64_T.c
+C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CheckTypeSize\OFF64_T.c(25): error C2065: 'off64_t': undeclared identifier [C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_ebb73.vcxproj]
+C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CheckTypeSize\OFF64_T.c(26): error C2065: 'off64_t': undeclared identifier [C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_ebb73.vcxproj]
+C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CheckTypeSize\OFF64_T.c(27): error C2065: 'off64_t': undeclared identifier [C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_ebb73.vcxproj]
+C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CheckTypeSize\OFF64_T.c(28): error C2065: 'off64_t': undeclared identifier [C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_ebb73.vcxproj]
+C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CheckTypeSize\OFF64_T.c(29): error C2065: 'off64_t': undeclared identifier [C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_ebb73.vcxproj]
+Done Building Project "C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_ebb73.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_ebb73.vcxproj" (default target) (1) ->
+(ClCompile target) -> 
+  C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CheckTypeSize\OFF64_T.c(25): error C2065: 'off64_t': undeclared identifier [C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_ebb73.vcxproj]
+  C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CheckTypeSize\OFF64_T.c(26): error C2065: 'off64_t': undeclared identifier [C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_ebb73.vcxproj]
+  C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CheckTypeSize\OFF64_T.c(27): error C2065: 'off64_t': undeclared identifier [C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_ebb73.vcxproj]
+  C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CheckTypeSize\OFF64_T.c(28): error C2065: 'off64_t': undeclared identifier [C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_ebb73.vcxproj]
+  C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CheckTypeSize\OFF64_T.c(29): error C2065: 'off64_t': undeclared identifier [C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_ebb73.vcxproj]
+
+    0 Warning(s)
+    5 Error(s)
+
+Time Elapsed 00:00:00.31
+
+C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CheckTypeSize/OFF64_T.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(off64_t))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the function strcasecmp exists failed with the following output:
+Change Dir: C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_5990e.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.25123.0
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 6/4/2018 9:31:29 PM.
+Project "C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_5990e.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_5990e.dir\Debug\".
+  Creating directory "C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_5990e.dir\Debug\cmTC_5990e.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_5990e.dir\Debug\cmTC_5990e.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D CHECK_FUNCTION_EXISTS=strcasecmp /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_5990e.dir\Debug\\" /Fd"cmTC_5990e.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Program Files\CMake\share\cmake-3.10\Modules\CheckFunctionExists.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23918 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D CHECK_FUNCTION_EXISTS=strcasecmp /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_5990e.dir\Debug\\" /Fd"cmTC_5990e.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Program Files\CMake\share\cmake-3.10\Modules\CheckFunctionExists.c"
+  
+  CheckFunctionExists.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_5990e.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_5990e.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_5990e.lib" /MACHINE:X64  /machine:x64 cmTC_5990e.dir\Debug\CheckFunctionExists.obj
+CheckFunctionExists.obj : error LNK2019: unresolved external symbol strcasecmp referenced in function main [C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_5990e.vcxproj]
+C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_5990e.exe : fatal error LNK1120: 1 unresolved externals [C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_5990e.vcxproj]
+Done Building Project "C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_5990e.vcxproj" (default targets) -- FAILED.
+
+Build FAILED.
+
+"C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_5990e.vcxproj" (default target) (1) ->
+(Link target) -> 
+  CheckFunctionExists.obj : error LNK2019: unresolved external symbol strcasecmp referenced in function main [C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_5990e.vcxproj]
+  C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_5990e.exe : fatal error LNK1120: 1 unresolved externals [C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_5990e.vcxproj]
+
+    0 Warning(s)
+    2 Error(s)
+
+Time Elapsed 00:00:00.44
+
+

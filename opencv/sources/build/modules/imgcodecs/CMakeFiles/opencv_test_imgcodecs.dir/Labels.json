@@ -1,0 +1,13 @@
+{
+	"sources" : [],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Main",
+			"opencv_imgcodecs",
+			"AccuracyTest"
+		],
+		"name" : "opencv_test_imgcodecs"
+	}
+}

@@ -1,0 +1,13 @@
+{
+	"sources" : [],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Main",
+			"opencv_objdetect",
+			"AccuracyTest"
+		],
+		"name" : "opencv_test_objdetect"
+	}
+}

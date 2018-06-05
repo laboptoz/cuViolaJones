@@ -1,0 +1,13 @@
+{
+	"sources" : [],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Main",
+			"opencv_ts",
+			"Module"
+		],
+		"name" : "opencv_ts"
+	}
+}

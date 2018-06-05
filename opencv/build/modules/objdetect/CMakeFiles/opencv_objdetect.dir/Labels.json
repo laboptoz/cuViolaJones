@@ -1,0 +1,195 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/objdetect/include/opencv2/objdetect.hpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_objdetect",
+				"Module"
+			]
+		},
+		{
+			"file" : "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/objdetect/include/opencv2/objdetect/detection_based_tracker.hpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_objdetect",
+				"Module"
+			]
+		},
+		{
+			"file" : "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/objdetect/include/opencv2/objdetect/objdetect.hpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_objdetect",
+				"Module"
+			]
+		},
+		{
+			"file" : "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/objdetect/include/opencv2/objdetect/objdetect_c.h",
+			"labels" : 
+			[
+				"Main",
+				"opencv_objdetect",
+				"Module"
+			]
+		},
+		{
+			"file" : "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/objdetect/src/cascadedetect.cpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_objdetect",
+				"Module"
+			]
+		},
+		{
+			"file" : "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/objdetect/src/cascadedetect_convert.cpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_objdetect",
+				"Module"
+			]
+		},
+		{
+			"file" : "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/objdetect/src/detection_based_tracker.cpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_objdetect",
+				"Module"
+			]
+		},
+		{
+			"file" : "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/objdetect/src/haar.cpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_objdetect",
+				"Module"
+			]
+		},
+		{
+			"file" : "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/objdetect/src/hog.cpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_objdetect",
+				"Module"
+			]
+		},
+		{
+			"file" : "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/objdetect/src/main.cpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_objdetect",
+				"Module"
+			]
+		},
+		{
+			"file" : "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/objdetect/src/opencl/cascadedetect.cl",
+			"labels" : 
+			[
+				"Main",
+				"opencv_objdetect",
+				"Module"
+			]
+		},
+		{
+			"file" : "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/objdetect/src/opencl/objdetect_hog.cl",
+			"labels" : 
+			[
+				"Main",
+				"opencv_objdetect",
+				"Module"
+			]
+		},
+		{
+			"file" : "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/modules/objdetect/opencl_kernels_objdetect.cpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_objdetect",
+				"Module"
+			]
+		},
+		{
+			"file" : "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/modules/objdetect/opencl_kernels_objdetect.hpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_objdetect",
+				"Module"
+			]
+		},
+		{
+			"file" : "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/objdetect/src/cascadedetect.hpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_objdetect",
+				"Module"
+			]
+		},
+		{
+			"file" : "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/objdetect/src/haar.hpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_objdetect",
+				"Module"
+			]
+		},
+		{
+			"file" : "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/objdetect/src/precomp.hpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_objdetect",
+				"Module"
+			]
+		},
+		{
+			"file" : "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/modules/objdetect/opencv_objdetect_AVX.dir/$(Configuration)/haar.avx.obj"
+		},
+		{
+			"file" : "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/cvconfig.h"
+		},
+		{
+			"file" : "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/opencv2/opencv_modules.hpp"
+		},
+		{
+			"file" : "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/modules/objdetect/opencv_objdetect_pch.cpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_objdetect",
+				"Module"
+			]
+		},
+		{
+			"file" : "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/modules/objdetect/vs_version.rc"
+		},
+		{
+			"file" : "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/objdetect/CMakeLists.txt"
+		},
+		{
+			"file" : "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/04352e2d3f07d2688f2471f31977d5ba/opencl_kernels_objdetect.cpp.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Main",
+			"opencv_objdetect",
+			"Module"
+		],
+		"name" : "opencv_objdetect"
+	}
+}

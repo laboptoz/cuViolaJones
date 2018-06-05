@@ -1,0 +1,13 @@
+{
+	"sources" : [],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Main",
+			"opencv_imgproc",
+			"PerfTest"
+		],
+		"name" : "opencv_perf_imgproc"
+	}
+}

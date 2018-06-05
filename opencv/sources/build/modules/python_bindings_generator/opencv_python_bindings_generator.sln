@@ -1,0 +1,53 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CMakeTargets", "CMakeTargets", "{DF5B9BB6-ACA7-3FA2-885D-F64420A3E274}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ALL_BUILD", "ALL_BUILD.vcxproj", "{73BFBFD0-40CE-395B-A20D-E7D575B1BC8D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{663334D7-9D02-3793-8626-E8858EF60ADC} = {663334D7-9D02-3793-8626-E8858EF60ADC}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "INSTALL", "INSTALL.vcxproj", "{25E634B4-C3A6-3063-B049-65132D7E0CEE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{73BFBFD0-40CE-395B-A20D-E7D575B1BC8D} = {73BFBFD0-40CE-395B-A20D-E7D575B1BC8D}
+		{663334D7-9D02-3793-8626-E8858EF60ADC} = {663334D7-9D02-3793-8626-E8858EF60ADC}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PACKAGE", "PACKAGE.vcxproj", "{1FC9F25D-699B-3F81-8510-2C19D4854BAC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{73BFBFD0-40CE-395B-A20D-E7D575B1BC8D} = {73BFBFD0-40CE-395B-A20D-E7D575B1BC8D}
+		{663334D7-9D02-3793-8626-E8858EF60ADC} = {663334D7-9D02-3793-8626-E8858EF60ADC}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RUN_TESTS", "RUN_TESTS.vcxproj", "{17D54E8F-32CC-31E5-B588-2878688A24CA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{663334D7-9D02-3793-8626-E8858EF60ADC} = {663334D7-9D02-3793-8626-E8858EF60ADC}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ZERO_CHECK", "..\..\\ZERO_CHECK.vcxproj", "{663334D7-9D02-3793-8626-E8858EF60ADC}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gen_opencv_python_source", "gen_opencv_python_source.vcxproj", "{CEE09392-4BE5-3A3B-BDD3-D2DFCB216E0A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{663334D7-9D02-3793-8626-E8858EF60ADC} = {663334D7-9D02-3793-8626-E8858EF60ADC}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{73BFBFD0-40CE-395B-A20D-E7D575B1BC8D} = {DF5B9BB6-ACA7-3FA2-885D-F64420A3E274}
+		{25E634B4-C3A6-3063-B049-65132D7E0CEE} = {DF5B9BB6-ACA7-3FA2-885D-F64420A3E274}
+		{1FC9F25D-699B-3F81-8510-2C19D4854BAC} = {DF5B9BB6-ACA7-3FA2-885D-F64420A3E274}
+		{17D54E8F-32CC-31E5-B588-2878688A24CA} = {DF5B9BB6-ACA7-3FA2-885D-F64420A3E274}
+		{663334D7-9D02-3793-8626-E8858EF60ADC} = {DF5B9BB6-ACA7-3FA2-885D-F64420A3E274}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A91C5B47-2021-35C8-A79C-3E449F92D658}
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,4 @@
+﻿  Building Custom Rule C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/CMakeLists.txt
+  CMake does not need to re-run because C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/modules/core/CMakeFiles/generate.stamp is up-to-date.
+  convert.sse4_1.cpp
+  opencv_core_SSE4_1.vcxproj -> C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\core\opencv_core_SSE4_1.dir\Debug\opencv_core_SSE4_1.lib

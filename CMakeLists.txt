@@ -1,4 +1,4 @@
-set(OpenCV_DIR "lib/opencv/build")
+set(OpenCV_DIR "opencv/build")
 cmake_minimum_required(VERSION 2.8)
 project("cuViolaJones")
 find_package( OpenCV REQUIRED )
@@ -28,10 +28,12 @@ DEBUG -Xptxas -v -g -G
 
 add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
     COMMAND ${CMAKE_COMMAND} -E copy_directory
-        "${CMAKE_CURRENT_SOURCE_DIR}/${OpenCV_DIR}/x64/vc14/bin"
+        "${CMAKE_CURRENT_SOURCE_DIR}/${OpenCV_DIR}/bin/$<CONFIG>/"
         "${CMAKE_CURRENT_BINARY_DIR}/$<CONFIG>"
+	COMMAND ${CMAKE_COMMAND} -E copy
+		"${CMAKE_CURRENT_SOURCE_DIR}/opencv/sources/data/haarcascades/haarcascade_frontalface_default.xml"
+		"${CMAKE_CURRENT_BINARY_DIR}/$<CONFIG>/haarcascade_frontalface_default.xml"
 	)
-		
 		
 target_link_libraries( 
 ${PROJECT_NAME}

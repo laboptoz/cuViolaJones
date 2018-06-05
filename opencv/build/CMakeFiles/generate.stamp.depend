@@ -1,0 +1,86 @@
+# CMake generation dependency list for this directory.
+C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/CMakeLists.txt
+C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/cmake/OpenCVMinDepVersions.cmake
+C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/cmake/OpenCVUtils.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/CMakeParseArguments.cmake
+C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/3.10.2/CMakeSystem.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/CMakeSystemSpecificInitialize.cmake
+C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/3.10.2/CMakeCXXCompiler.cmake
+C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/3.10.2/CMakeCCompiler.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/CMakeGenericSystem.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/Platform/Windows.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/Platform/WindowsPaths.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/CMakeCXXInformation.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/Compiler/MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/Platform/Windows-MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/Platform/Windows-MSVC.cmake
+C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/3.10.2/CMakeRCCompiler.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/CMakeRCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/CMakeCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/Platform/Windows-MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/Platform/Windows-MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/CMakeCommonLanguageInclude.cmake
+C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/cmake/OpenCVDownload.cmake
+C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/cmake/OpenCVDetectCXXCompiler.cmake
+C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/cmake/OpenCVVersion.cmake
+C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/version.hpp
+C:/Program Files/CMake/share/cmake-3.10/Modules/FindGit.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/FindPackageMessage.cmake
+C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/cmake/OpenCVDetectPython.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/FindPythonInterp.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/FindPythonInterp.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/FindPythonInterp.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/FindPythonInterp.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/FindPackageMessage.cmake
+C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/cmake/OpenCVCompilerOptions.cmake
+C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/cmake/OpenCVCompilerOptimizations.cmake
+C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/cmake/OpenCVCRTLinkage.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/ProcessorCount.cmake
+C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/cmake/OpenCVPCHSupport.cmake
+C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/cmake/OpenCVModule.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/TestBigEndian.cmake
+C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/cmake/OpenCVFindLibsGrfmt.cmake
+C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/cmake/OpenCVFindLibsGUI.cmake
+C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/cmake/checks/win32uitest.cpp
+C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/cmake/OpenCVFindLibsVideo.cmake
+C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/cmake/checks/vfwtest.cpp
+C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/cmake/OpenCVFindLibsPerf.cmake
+C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/cmake/OpenCVFindLAPACK.cmake
+C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/cmake/OpenCVFindProtobuf.cmake
+C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/cmake/OpenCVDetectVTK.cmake
+C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/cmake/templates/custom_hal.hpp.in
+C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/cmake/OpenCVDetectTrace.cmake
+C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/cmake/OpenCVExtraTargets.cmake
+C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/cmake/templates/cmake_uninstall.cmake.in
+C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/cmake/OpenCVGenHeaders.cmake
+C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/cmake/templates/cvconfig.h.in
+C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/cmake/templates/cvconfig.h.in
+C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/cmake/templates/cv_cpu_config.h.in
+C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/cmake/templates/opencv_modules.hpp.in
+C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/cmake/OpenCVGenPkgconfig.cmake
+C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/cmake/OpenCVGenAndroidMK.cmake
+C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/cmake/OpenCVGenConfig.cmake
+C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/cmake/templates/OpenCVConfig.cmake.in
+C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/cmake/templates/OpenCVConfig-version.cmake.in
+C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/cmake/templates/OpenCVConfig-version.cmake.in
+C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/cmake/templates/OpenCVConfig.cmake.in
+C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/cmake/templates/OpenCVConfig.root-WIN32.cmake.in
+C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/cmake/OpenCVGenABI.cmake
+C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/cmake/OpenCVPackaging.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/CPack.cmake
+C:/Program Files/CMake/share/cmake-3.10/Modules/CPackComponent.cmake
+C:/Program Files/CMake/share/cmake-3.10/Templates/CPackConfig.cmake.in
+C:/Program Files/CMake/share/cmake-3.10/Templates/CPackConfig.cmake.in

@@ -1,0 +1,7 @@
+﻿  Building Custom Rule C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/CMakeLists.txt
+  CMake does not need to re-run because C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/modules/imgproc/CMakeFiles/generate.stamp is up-to-date.
+  filter.avx2.cpp
+  imgwarp.avx2.cpp
+  resize.avx2.cpp
+  undistort.avx2.cpp
+  opencv_imgproc_AVX2.vcxproj -> C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\imgproc\opencv_imgproc_AVX2.dir\Debug\opencv_imgproc_AVX2.lib

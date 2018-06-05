@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{73BFBFD0-40CE-395B-A20D-E7D575B1BC8D}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\CMakeLists.txt">
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\ZERO_CHECK.vcxproj">
+      <Project>{663334D7-9D02-3793-8626-E8858EF60ADC}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\3rdparty\openexr\IlmImf.vcxproj">
+      <Project>{17AFBAC1-B748-3E61-BD29-B1F7B520FB45}</Project>
+      <Name>IlmImf</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\3rdparty\ippiw\ippiw.vcxproj">
+      <Project>{9C98CF53-3F94-3967-82F3-AE3554457B73}</Project>
+      <Name>ippiw</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\3rdparty\ittnotify\ittnotify.vcxproj">
+      <Project>{9D9336E1-0ACA-379B-8035-19C4DE2D838E}</Project>
+      <Name>ittnotify</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\3rdparty\libjasper\libjasper.vcxproj">
+      <Project>{CF9E66FA-A572-3FA5-86B3-36671212A23D}</Project>
+      <Name>libjasper</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\3rdparty\libjpeg\libjpeg.vcxproj">
+      <Project>{FB7C69EF-D070-31A9-B55C-D125DA0B2F7C}</Project>
+      <Name>libjpeg</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\3rdparty\libpng\libpng.vcxproj">
+      <Project>{DE426FEB-755A-3596-B1B3-4DC51C1B6CB1}</Project>
+      <Name>libpng</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\3rdparty\protobuf\libprotobuf.vcxproj">
+      <Project>{DD7C5603-2A3A-3FB4-8CCC-377027F52965}</Project>
+      <Name>libprotobuf</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\3rdparty\libtiff\libtiff.vcxproj">
+      <Project>{FFCFEB79-37F2-339A-B542-AE4C5FEBE1BA}</Project>
+      <Name>libtiff</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\3rdparty\libwebp\libwebp.vcxproj">
+      <Project>{C56A87C9-CBC1-397F-9304-3D007CC7360A}</Project>
+      <Name>libwebp</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\apps\annotation\opencv_annotation.vcxproj">
+      <Project>{DDCB6427-2E48-3C68-94A5-750888F68D35}</Project>
+      <Name>opencv_annotation</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\calib3d\opencv_calib3d.vcxproj">
+      <Project>{DCD1EE01-C5EF-32CB-887B-E90B4565DE43}</Project>
+      <Name>opencv_calib3d</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\core\opencv_core.vcxproj">
+      <Project>{11906921-766A-367C-A152-6252CAE29B10}</Project>
+      <Name>opencv_core</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\core\opencv_core_AVX.vcxproj">
+      <Project>{C3F8E56E-6B1A-3E6B-961C-C99827E2B1A5}</Project>
+      <Name>opencv_core_AVX</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\core\opencv_core_AVX2.vcxproj">
+      <Project>{B07D56F7-2468-3F19-A2E6-DA53709C595B}</Project>
+      <Name>opencv_core_AVX2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\core\opencv_core_FP16.vcxproj">
+      <Project>{3367A20B-24AF-31F0-8DC8-C9B27D967FD4}</Project>
+      <Name>opencv_core_FP16</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\core\opencv_core_SSE4_1.vcxproj">
+      <Project>{6FB55E73-E381-3D06-BC5D-9904A07B112B}</Project>
+      <Name>opencv_core_SSE4_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\core\opencv_core_SSE4_2.vcxproj">
+      <Project>{7A1BDB0A-1A10-380C-B780-75B936001530}</Project>
+      <Name>opencv_core_SSE4_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\apps\createsamples\opencv_createsamples.vcxproj">
+      <Project>{78AAEA0E-8B34-3037-9381-04DC8B933204}</Project>
+      <Name>opencv_createsamples</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\dnn\opencv_dnn.vcxproj">
+      <Project>{EBE1C0AB-2071-35E0-8E32-29DFBAA4A4AC}</Project>
+      <Name>opencv_dnn</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\dnn\opencv_dnn_AVX.vcxproj">
+      <Project>{02AB9836-132B-3765-ADEE-EB62417DC37B}</Project>
+      <Name>opencv_dnn_AVX</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\dnn\opencv_dnn_AVX2.vcxproj">
+      <Project>{BF567D3F-EDCE-3D29-A40D-2F5A86B3C7F2}</Project>
+      <Name>opencv_dnn_AVX2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\features2d\opencv_features2d.vcxproj">
+      <Project>{CBEE9C95-D7FC-3685-8AE8-E287A35EA3F0}</Project>
+      <Name>opencv_features2d</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\features2d\opencv_features2d_AVX2.vcxproj">
+      <Project>{B88FFF58-BD6C-383A-AED4-EAEBC23CD1AB}</Project>
+      <Name>opencv_features2d_AVX2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\flann\opencv_flann.vcxproj">
+      <Project>{718DD039-B4AB-329F-8336-DB060CBD93EC}</Project>
+      <Name>opencv_flann</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\highgui\opencv_highgui.vcxproj">
+      <Project>{19CBF1F5-6145-311E-9BBF-76C16B39E239}</Project>
+      <Name>opencv_highgui</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\imgcodecs\opencv_imgcodecs.vcxproj">
+      <Project>{DD8F6E27-5EE1-3550-B490-F1DE58CEC68A}</Project>
+      <Name>opencv_imgcodecs</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\imgproc\opencv_imgproc.vcxproj">
+      <Project>{4831F710-826F-3509-BBDD-130C58BC74D5}</Project>
+      <Name>opencv_imgproc</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\imgproc\opencv_imgproc_AVX.vcxproj">
+      <Project>{E4AF52C5-78F9-397B-ADD8-229552025E4A}</Project>
+      <Name>opencv_imgproc_AVX</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\imgproc\opencv_imgproc_AVX2.vcxproj">
+      <Project>{1065104B-70AB-3DCA-AD4F-2F69F5C57CE6}</Project>
+      <Name>opencv_imgproc_AVX2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\imgproc\opencv_imgproc_SSE4_1.vcxproj">
+      <Project>{596F8BF2-551C-3867-BFD7-4A8126695481}</Project>
+      <Name>opencv_imgproc_SSE4_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\apps\interactive-calibration\opencv_interactive-calibration.vcxproj">
+      <Project>{71852D3A-5E54-38DD-89DA-E2667A69CF47}</Project>
+      <Name>opencv_interactive-calibration</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\ml\opencv_ml.vcxproj">
+      <Project>{5707D04A-71E8-3509-93D4-5E868FF020DF}</Project>
+      <Name>opencv_ml</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\objdetect\opencv_objdetect.vcxproj">
+      <Project>{D11BE70E-4256-3DA6-816A-72423D8EFE85}</Project>
+      <Name>opencv_objdetect</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\objdetect\opencv_objdetect_AVX.vcxproj">
+      <Project>{A6B58BDD-7EED-30AA-AE4A-E3770AD8E079}</Project>
+      <Name>opencv_objdetect_AVX</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\calib3d\opencv_perf_calib3d.vcxproj">
+      <Project>{BF43B4D0-57F6-3AB7-8330-3F81B98A555E}</Project>
+      <Name>opencv_perf_calib3d</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\core\opencv_perf_core.vcxproj">
+      <Project>{6B9F343C-ED8D-38E4-BA81-2E6A6E52039A}</Project>
+      <Name>opencv_perf_core</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\dnn\opencv_perf_dnn.vcxproj">
+      <Project>{D3A2C1E1-C072-34B9-A3EC-7BC2CFF0FB0F}</Project>
+      <Name>opencv_perf_dnn</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\features2d\opencv_perf_features2d.vcxproj">
+      <Project>{A9A1CAC9-F1F9-3044-865F-A1A315B1C413}</Project>
+      <Name>opencv_perf_features2d</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\imgcodecs\opencv_perf_imgcodecs.vcxproj">
+      <Project>{E5075143-589D-36EE-AAA1-5ECCDA1D9980}</Project>
+      <Name>opencv_perf_imgcodecs</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\imgproc\opencv_perf_imgproc.vcxproj">
+      <Project>{AE85605D-71D3-358A-98A2-7173A66E8275}</Project>
+      <Name>opencv_perf_imgproc</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\objdetect\opencv_perf_objdetect.vcxproj">
+      <Project>{D21B957B-D0C3-3002-A4F1-6E2A93EBCA11}</Project>
+      <Name>opencv_perf_objdetect</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\photo\opencv_perf_photo.vcxproj">
+      <Project>{407BDEA3-BFEA-3471-8A38-2C530112B0BC}</Project>
+      <Name>opencv_perf_photo</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\stitching\opencv_perf_stitching.vcxproj">
+      <Project>{F330FA98-FD46-3192-BD7B-A27B6945FA02}</Project>
+      <Name>opencv_perf_stitching</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\superres\opencv_perf_superres.vcxproj">
+      <Project>{ABCBA071-29CD-3C8B-9AB1-AF13CC9D678C}</Project>
+      <Name>opencv_perf_superres</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\video\opencv_perf_video.vcxproj">
+      <Project>{DD5DD6D4-03F4-390F-9E2D-4FE389C0D565}</Project>
+      <Name>opencv_perf_video</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\videoio\opencv_perf_videoio.vcxproj">
+      <Project>{770C4EE8-3CB4-3A22-B0AD-870B1893EFDB}</Project>
+      <Name>opencv_perf_videoio</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\photo\opencv_photo.vcxproj">
+      <Project>{5E007115-76DB-3777-A253-08B1AA3BAE20}</Project>
+      <Name>opencv_photo</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\shape\opencv_shape.vcxproj">
+      <Project>{EFBA766B-00C4-378D-9330-B2D62CCC07BB}</Project>
+      <Name>opencv_shape</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\stitching\opencv_stitching.vcxproj">
+      <Project>{672A53B0-0E7E-324B-9E30-A3A3A52D640B}</Project>
+      <Name>opencv_stitching</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\superres\opencv_superres.vcxproj">
+      <Project>{01F5588E-864B-3279-AED7-65D59590F59F}</Project>
+      <Name>opencv_superres</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\calib3d\opencv_test_calib3d.vcxproj">
+      <Project>{0E96AACD-5577-3442-AA05-8BF6B98CFBC6}</Project>
+      <Name>opencv_test_calib3d</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\core\opencv_test_core.vcxproj">
+      <Project>{D305CEE2-09DF-3BF1-8051-5FA9F33D9F39}</Project>
+      <Name>opencv_test_core</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\core\opencv_test_core_FP16.vcxproj">
+      <Project>{5B6807AE-B2FC-38D7-99DF-9258445C20B3}</Project>
+      <Name>opencv_test_core_FP16</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\dnn\opencv_test_dnn.vcxproj">
+      <Project>{BC5BBB3A-3F94-3E40-A254-986226F91149}</Project>
+      <Name>opencv_test_dnn</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\features2d\opencv_test_features2d.vcxproj">
+      <Project>{E3622DA4-E416-3CC3-AEC8-C0B033082EC9}</Project>
+      <Name>opencv_test_features2d</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\flann\opencv_test_flann.vcxproj">
+      <Project>{00734D50-9350-372A-BBD5-5B4FBE6E51AE}</Project>
+      <Name>opencv_test_flann</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\highgui\opencv_test_highgui.vcxproj">
+      <Project>{6FD2C202-25B3-3AC7-9FC1-B0EB8F154BBE}</Project>
+      <Name>opencv_test_highgui</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\imgcodecs\opencv_test_imgcodecs.vcxproj">
+      <Project>{409259E4-D299-30E3-8F09-1FFFEEF656BC}</Project>
+      <Name>opencv_test_imgcodecs</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\imgproc\opencv_test_imgproc.vcxproj">
+      <Project>{3D5829E9-4AC0-3413-9DC1-330A6CE49704}</Project>
+      <Name>opencv_test_imgproc</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\ml\opencv_test_ml.vcxproj">
+      <Project>{F3EB537C-7C90-340C-8D8F-56769DF7CCC9}</Project>
+      <Name>opencv_test_ml</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\objdetect\opencv_test_objdetect.vcxproj">
+      <Project>{75A2E254-B458-3AAB-B21D-42F40A04F542}</Project>
+      <Name>opencv_test_objdetect</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\photo\opencv_test_photo.vcxproj">
+      <Project>{697CF6CE-8320-3867-9BB3-A9A020E7824A}</Project>
+      <Name>opencv_test_photo</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\shape\opencv_test_shape.vcxproj">
+      <Project>{FD634790-194C-39CE-998E-0CD86A82EB4E}</Project>
+      <Name>opencv_test_shape</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\stitching\opencv_test_stitching.vcxproj">
+      <Project>{9BF26017-581D-352D-8504-720965776148}</Project>
+      <Name>opencv_test_stitching</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\superres\opencv_test_superres.vcxproj">
+      <Project>{01F15D05-295D-3ED2-AF9E-8969ED47CEBD}</Project>
+      <Name>opencv_test_superres</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\video\opencv_test_video.vcxproj">
+      <Project>{144CB1BE-E8D0-3086-837D-26CDB802C9A6}</Project>
+      <Name>opencv_test_video</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\videoio\opencv_test_videoio.vcxproj">
+      <Project>{CEE1C17E-CA19-3E44-9E70-36F880D67599}</Project>
+      <Name>opencv_test_videoio</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\videostab\opencv_test_videostab.vcxproj">
+      <Project>{8BE19E63-46CB-3120-97E1-E13D45501E75}</Project>
+      <Name>opencv_test_videostab</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\apps\traincascade\opencv_traincascade.vcxproj">
+      <Project>{AECDBD9E-7106-3BE6-8C74-34428F8DE308}</Project>
+      <Name>opencv_traincascade</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\ts\opencv_ts.vcxproj">
+      <Project>{1C56234D-B92B-322B-93D8-2650D32264CD}</Project>
+      <Name>opencv_ts</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\apps\version\opencv_version.vcxproj">
+      <Project>{29C436BA-0B17-32BD-9A69-D3B8AB574DCE}</Project>
+      <Name>opencv_version</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\video\opencv_video.vcxproj">
+      <Project>{27E3A6B5-C35B-3838-BCFA-D2640162F678}</Project>
+      <Name>opencv_video</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\videoio\opencv_videoio.vcxproj">
+      <Project>{AE4041AB-4AC8-3AAD-8FFD-8036582F5D08}</Project>
+      <Name>opencv_videoio</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\videostab\opencv_videostab.vcxproj">
+      <Project>{76A335A5-6FC7-38D8-B57F-0AA6CA7353DE}</Project>
+      <Name>opencv_videostab</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\apps\visualisation\opencv_visualisation.vcxproj">
+      <Project>{1EDAAD74-A7BA-37BE-AC18-E4322669EE64}</Project>
+      <Name>opencv_visualisation</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\3rdparty\zlib\zlib.vcxproj">
+      <Project>{709A57DD-20FB-343C-862C-937A3DE3D8D8}</Project>
+      <Name>zlib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

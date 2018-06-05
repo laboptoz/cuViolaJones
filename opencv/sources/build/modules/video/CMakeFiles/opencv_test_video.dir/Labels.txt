@@ -1,0 +1,5 @@
+# Target labels
+ Main
+ opencv_video
+ AccuracyTest
+# Source files and their labels

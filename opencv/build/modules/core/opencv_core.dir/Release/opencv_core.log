@@ -1,0 +1,86 @@
+﻿  Building Custom Rule C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/CMakeLists.txt
+  CMake does not need to re-run because C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/modules/core/CMakeFiles/generate.stamp is up-to-date.
+  Processing OpenCL kernels (core)
+  -- C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/modules/core/opencl_kernels_core.hpp contains the same content
+  opencv_core_pch.cpp
+  algorithm.cpp
+  arithm.cpp
+  array.cpp
+  batch_distance.cpp
+  channels.cpp
+  command_line_parser.cpp
+  conjugate_gradient.cpp
+  convert.cpp
+  convert_c.cpp
+  convert_scale.cpp
+  copy.cpp
+  count_non_zero.cpp
+  cuda_gpu_mat.cpp
+  cuda_host_mem.cpp
+  cuda_info.cpp
+  cuda_stream.cpp
+  datastructs.cpp
+  directx.cpp
+  downhill_simplex.cpp
+  dxt.cpp
+  gl_core_3_1.cpp
+  glob.cpp
+  hal_internal.cpp
+  kmeans.cpp
+  lapack.cpp
+  lda.cpp
+  logger.cpp
+  lpsolver.cpp
+  lut.cpp
+  mathfuncs.cpp
+  mathfuncs_core.dispatch.cpp
+  matmul.cpp
+  matrix.cpp
+  matrix_c.cpp
+  matrix_decomp.cpp
+  matrix_expressions.cpp
+  matrix_iterator.cpp
+  matrix_operations.cpp
+  matrix_sparse.cpp
+  matrix_wrap.cpp
+  mean.cpp
+  merge.cpp
+  minmax.cpp
+  norm.cpp
+  ocl.cpp
+  opencl_clamdblas.cpp
+  opencl_clamdfft.cpp
+  opencl_core.cpp
+  opengl.cpp
+  out.cpp
+  ovx.cpp
+  parallel.cpp
+  parallel_impl.cpp
+  pca.cpp
+  persistence.cpp
+  persistence_base64.cpp
+  persistence_c.cpp
+  persistence_cpp.cpp
+  persistence_json.cpp
+  persistence_types.cpp
+  persistence_xml.cpp
+  persistence_yml.cpp
+  rand.cpp
+  softfloat.cpp
+  split.cpp
+  stat.dispatch.cpp
+  stat_c.cpp
+  stl.cpp
+  sum.cpp
+  system.cpp
+  tables.cpp
+  trace.cpp
+  types.cpp
+  umatrix.cpp
+  filesystem.cpp
+  va_intel.cpp
+  opencl_kernels_core.cpp
+  alloc.cpp
+     Creating library C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/Release/opencv_core341.lib and object C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/Release/opencv_core341.exp
+  opencv_core.vcxproj -> C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\bin\Release\opencv_core341.dll
+  opencv_core.vcxproj -> C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/bin/Release/opencv_core341.pdb (Full PDB)

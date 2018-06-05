@@ -1,10 +1,9 @@
 #include <opencv2/opencv.hpp>
 
 using namespace cv;
-void cpuViolaJones(Mat face) {
-	String face_cascade_path = "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/lib/opencv/sources/data/haarcascades/haarcascade_frontalface_default.xml";
+void cpuViolaJones(Mat face, String cascade_path) {
 	CascadeClassifier face_cascade; 
-	if (!face_cascade.load(face_cascade_path)) {
+	if (!face_cascade.load(cascade_path)) {
 		printf("Error loading face cascade");
 	}
 	Mat gray_face;
