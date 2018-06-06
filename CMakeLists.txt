@@ -16,7 +16,7 @@ include_directories(
 
 #######################################
 #######################################
-file(GLOB HEADERS *.h *.cuh)
+file(GLOB HEADERS *.h *.cuh *.hpp)
 source_group("Headers" FILES ${HEADERS})
 
 cuda_add_executable( ${PROJECT_NAME} 

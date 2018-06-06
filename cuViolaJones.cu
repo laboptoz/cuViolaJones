@@ -2,26 +2,44 @@
 #include <opencv2/opencv.hpp>
 #include "cpuViolaJones.hpp"
 #include "paths.hpp"
-//#include "gpuViolaJones.cuh"
+#include "gpuViolaJones.cuh"
 
 using namespace cv;
 
 
 int main(int argc, char** argv )
 {
-	FILE * test = fopen("text.txt", "w");
     Mat image;
     image = imread(FACE_PATH, 1 );
 	String face_cascade_path = CASCADE_PATH;
-	Mat smallimage;
-	resize(image, smallimage, Size(), 0.75, 0.75);
     if ( !image.data )
     {
         printf("No image data \n");
         return -1;
     }
+	
+	Mat gray_face;
+	cvtColor(image, gray_face, CV_BGR2GRAY);
+	unsigned char * face;
+	unsigned int height = 0;
+	unsigned int width = 0;
+	if (gray_face.isContinuous()) {
+		face = gray_face.data;
+		height = gray_face.rows;
+		width = gray_face.cols;
+	}
+	else {
+		fprintf(stderr, "Stop\n");
+	}
 
-	cpuViolaJones(smallimage, face_cascade_path);
+	printf("%d, %d\n", height, width);
+
+	unsigned char * img_gpu;
+
+	CHECK(cudaMalloc(&img_gpu, sizeof(unsigned char)*height*width));
+	CHECK(cudaMemcpy(img_gpu, face, sizeof(unsigned char)*height*width, cudaMemcpyHostToDevice));
+
+	cpuViolaJones(image, face_cascade_path);
     waitKey(0);
 
     return 0;

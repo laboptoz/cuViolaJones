@@ -16,5 +16,5 @@ void cpuViolaJones(Mat face, String cascade_path) {
 		rectangle(face, faces[i], Scalar(255, 0, 0),3);
 	}
 
-	imshow("Face result", face);
+	imshow("CPU Result", face);
 }
