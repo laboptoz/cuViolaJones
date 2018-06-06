@@ -43,7 +43,7 @@ __device__ void rowScan(float * input, unsigned int width) {
 				if (idx < i) {
 					float swap = input[width + offset*(2 * idx + 1) - 1 + width_offset];
 					input[width + offset*(2 * idx + 1) - 1 + width_offset] = input[width + offset*(2 * idx + 2) - 1 + width_offset];
-					input[width + offset*(2 * idx + 2) - 1 + width_offset] = swap;
+					input[width + offset*(2 * idx + 2) - 1 + width_offset] += swap;
 				}
 			}
 			if (idx < pw2) {
@@ -63,45 +63,48 @@ __device__ void rowScan(float * input, unsigned int width) {
 __global__ void colScan(float * in_arr, unsigned int height, unsigned int width) {
 	extern __shared__ float input[];
 	unsigned int idx = threadIdx.x;
-	unsigned int width_offset = 0;
+	input[idx] = (float)in_arr[idx*width + blockIdx.y];
+	input[height + idx] = input[idx];
+	unsigned int height_offset = 0;
 	unsigned int remainder = 0;
-	while (width_offset < width) {
+	while (height_offset < height) {
 		unsigned int offset = 1;
-		unsigned int pw2 = smallPow2(width - width_offset);
+		unsigned int pw2 = smallPow2(height - height_offset);
 		unsigned int working_rem = remainder;
 		if (pw2 != 1) {
 			for (int i = pw2 / 2; i > 0; i /= 2) {
 				__syncthreads();
 				if (idx < i) {
-					input[width + offset * (2 * idx + 2) - 1 + width_offset] += input[width + offset * (2 * idx + 1) - 1 + width_offset];
+					input[height + offset * (2 * idx + 2) - 1 + height_offset] += input[height + offset * (2 * idx + 1) - 1 + height_offset];
 				}
 				offset *= 2;
 			}
+			remainder += input[height + pw2 + height_offset - 1];
 			if (idx == 0) {
-				remainder += input[width + pw2 + width_offset - 1];
-				input[width + pw2 + width_offset - 1] = 0;
+				input[height + pw2 + height_offset - 1] = 0;
 			}
 			for (int i = 1; i < pw2; i *= 2) {
 				offset /= 2;
 				__syncthreads();
 				if (idx < i) {
-					float swap = input[width + offset*(2 * idx + 1) - 1 + width_offset];
-					input[width + offset*(2 * idx + 1) - 1 + width_offset] = input[width + offset*(2 * idx + 2) - 1 + width_offset];
-					input[width + offset*(2 * idx + 2) - 1 + width_offset] = swap;
+					float swap = input[height + offset*(2 * idx + 1) - 1 + height_offset];
+					input[height + offset*(2 * idx + 1) - 1 + height_offset] = input[height + offset*(2 * idx + 2) - 1 + height_offset];
+					input[height + offset*(2 * idx + 2) - 1 + height_offset] += swap;
 				}
 			}
 			if (idx < pw2) {
-				input[width + idx + width_offset] += input[idx + width_offset] + working_rem;
+				input[height + idx + height_offset] += input[idx + height_offset] + working_rem;
 			}
 		}
 		else {
 			if (idx < pw2) {
-				input[width + idx + width_offset] = input[idx + width_offset] + working_rem;
+				input[height + idx + height_offset] = input[idx + height_offset] + working_rem;
 			}
 		}
 		__syncthreads();
-		width_offset += pw2;
+		height_offset += pw2;
 	}
+	in_arr[idx*width + blockIdx.y] = input[height + idx];
 }
 
 __inline__ __device__ unsigned int smallPow2(unsigned int width) {
