@@ -33,13 +33,8 @@ int main(int argc, char** argv )
 	}
 
 	printf("%d, %d\n", height, width);
-
-	unsigned char * img_gpu;
-
-	CHECK(cudaMalloc(&img_gpu, sizeof(unsigned char)*height*width));
-	CHECK(cudaMemcpy(img_gpu, face, sizeof(unsigned char)*height*width, cudaMemcpyHostToDevice));
-
-	cpuViolaJones(image, face_cascade_path);
+	gpuViolaJones();
+	//cpuViolaJones(image, face_cascade_path);
     waitKey(0);
 
     return 0;
