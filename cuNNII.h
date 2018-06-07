@@ -1,77 +1,134 @@
 #include <cuda_runtime.h>
 
-__device__ void rowScan(float * input, unsigned int width);
+__device__ void rowSum(float * input, unsigned int width);
 __inline__ __device__ unsigned int smallPow2(unsigned int width);
 
 __global__ void downsampleAndRow(unsigned char * input, float * output, unsigned int width, float scale) {
 	unsigned int idx = threadIdx.x;
 	unsigned int row = blockIdx.y;
+
+	//Determine scaled measurements
 	unsigned int row_scaled = (unsigned int)(round(scale*blockIdx.y));
 	unsigned int width_scaled = round(width / scale);
+
+	//blockIdx.x should be 1 for now
 	unsigned int idx_scaled = (unsigned int)(round(scale*idx) + blockIdx.x*1024);
 
+	//SMEM is 2 x width (dynamically allocated during the kernel call)
 	extern __shared__ float smem[];
+
+	//Assign input values to shared memory, scale with nearest neighbor
 	smem[idx] = (float) input[idx_scaled + row_scaled*width];
+
+	//Copy smem to second half of shared memory
 	smem[width_scaled + idx] = smem[idx];
-	rowScan(smem, width_scaled);
+
+	//Determine the row cumulative sum for the scaled matrix
+	rowSum(smem, width_scaled);
+
+	//Assign the values to global memory
 	output[idx+blockIdx.y*width_scaled] = smem[width_scaled + idx];
 }
 
-__device__ void rowScan(float * input, unsigned int width) {
+__device__ void rowSum(float * input, unsigned int width) {
 	unsigned int idx = threadIdx.x;
+
+	//How much of the width is processed
 	unsigned int width_offset = 0;
+
+	//The last value of the previous width segment
 	unsigned int remainder = 0;
+
+	//Loops over largest possible segments of 2^N
 	while (width_offset < width) {
+
+		//Offset is the offset between added samples
 		unsigned int offset = 1;
+
+		//The largest available power of 2
 		unsigned int pw2 = smallPow2(width-width_offset);
+
+		//The previous remainder value
 		unsigned int working_rem = remainder;
+
+		//If pw2 is not 1
 		if (pw2 != 1) {
+
+			//Loop through binary addition tree
 			for (int i = pw2 / 2; i > 0; i /= 2) {
 				__syncthreads();
 				if (idx < i) {
 					input[width + offset * (2 * idx + 2) - 1 + width_offset] += input[width + offset * (2 * idx + 1) - 1 + width_offset];
 				}
+
+				//Increase the offset between sample additions
 				offset *= 2;
 			}
+
+			//Set the remainder to be the last value
+			remainder += input[width + pw2 + width_offset - 1];
+
+			//Set last value in segment to zero
 			if (idx == 0) {
-				remainder += input[width + pw2 + width_offset - 1];
 				input[width + pw2 + width_offset - 1] = 0;
 			}
+
+			//Reverse the binary tree
 			for (int i = 1; i < pw2; i *= 2) {
 				offset /= 2;
 				__syncthreads();
 				if (idx < i) {
+
+					//Swap and add
 					float swap = input[width + offset*(2 * idx + 1) - 1 + width_offset];
 					input[width + offset*(2 * idx + 1) - 1 + width_offset] = input[width + offset*(2 * idx + 2) - 1 + width_offset];
 					input[width + offset*(2 * idx + 2) - 1 + width_offset] += swap;
+
 				}
 			}
+
+			//Add the original values and the working remainder
 			if (idx < pw2) {
 				input[width + idx + width_offset] += input[idx + width_offset] + working_rem;
 			}
 		} else {
+			//Set to the original values and the working remainder
 			if (idx < pw2) {
 				input[width + idx + width_offset] = input[idx + width_offset] + working_rem;
 			}
 		}
 		__syncthreads();
+
+		//Adjust the width offset
 		width_offset += pw2;
 	}
 	
 }
 
-__global__ void colScan(float * in_arr, unsigned int height, unsigned int width) {
+__global__ void colSum(float * in_arr, unsigned int height, unsigned int width) {
+	//The shared memory
 	extern __shared__ float input[];
 	unsigned int idx = threadIdx.x;
+
+	//Copy data into shared memory
 	input[idx] = (float)in_arr[idx*width + blockIdx.y];
 	input[height + idx] = input[idx];
+
 	unsigned int height_offset = 0;
 	unsigned int remainder = 0;
+
+	//Loop through 2^N sized segments of the columns
 	while (height_offset < height) {
 		unsigned int offset = 1;
+
+		//Find next smallest 2^N
 		unsigned int pw2 = smallPow2(height - height_offset);
 		unsigned int working_rem = remainder;
+
+		//If pw2 is 1, don't go through this whole process
 		if (pw2 != 1) {
+
+			//Loop through the binary tree
 			for (int i = pw2 / 2; i > 0; i /= 2) {
 				__syncthreads();
 				if (idx < i) {
@@ -79,24 +136,35 @@ __global__ void colScan(float * in_arr, unsigned int height, unsigned int width)
 				}
 				offset *= 2;
 			}
+
+			//Add the highest value as the remainder
 			remainder += input[height + pw2 + height_offset - 1];
+
+			//Set highest value to zero
 			if (idx == 0) {
 				input[height + pw2 + height_offset - 1] = 0;
 			}
+
+			//Reverse through the binary tree
 			for (int i = 1; i < pw2; i *= 2) {
 				offset /= 2;
 				__syncthreads();
 				if (idx < i) {
+
+					//Swap and add
 					float swap = input[height + offset*(2 * idx + 1) - 1 + height_offset];
 					input[height + offset*(2 * idx + 1) - 1 + height_offset] = input[height + offset*(2 * idx + 2) - 1 + height_offset];
 					input[height + offset*(2 * idx + 2) - 1 + height_offset] += swap;
 				}
 			}
+
+			//Add original values and remainder
 			if (idx < pw2) {
 				input[height + idx + height_offset] += input[idx + height_offset] + working_rem;
 			}
 		}
 		else {
+			//Set to original values and remainder
 			if (idx < pw2) {
 				input[height + idx + height_offset] = input[idx + height_offset] + working_rem;
 			}
@@ -104,9 +172,12 @@ __global__ void colScan(float * in_arr, unsigned int height, unsigned int width)
 		__syncthreads();
 		height_offset += pw2;
 	}
+
+	//Move shared memory to input array
 	in_arr[idx*width + blockIdx.y] = input[height + idx];
 }
 
+//Find the next smallest 2^N
 __inline__ __device__ unsigned int smallPow2(unsigned int width) {
 	width = width | (width >> 1);
 	width = width | (width >> 2);
