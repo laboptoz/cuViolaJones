@@ -92,7 +92,7 @@ class Stage {
 			for (int i = 0; i < num_filt; i++) {
 				activations += filters[i].getValue(arr, arr_width);
 			}
-			return (activations >= threshold);
+			return (activations >= 0.4*threshold);
 		}
 
 };

@@ -5,9 +5,11 @@
 #include "paths.hpp"
 #include "cuda_error_check.h"
 
-Stage * loadParametersToGPU() {
+Stage * loadParametersToGPU(unsigned int * numStages) {
 	FILE * stage_info_file = fopen(INFO_PATH, "r");
 	FILE * filter_info_file = fopen(CLASS_PATH, "r");
+
+	//READ IN THE NUMBER OF STAGES
 	unsigned int num_stages;
 	fscanf(stage_info_file, "%u\n", &num_stages);
 	printf("There are %u stages.\n", num_stages);
@@ -16,7 +18,10 @@ Stage * loadParametersToGPU() {
 	Stage * stages_gpu;
 	CHECK(cudaMalloc(&stages_gpu, sizeof(Stage)*num_stages));
 
+	//MAKE THE STAGE LIST ON CPU
 	Stage * stages_cpu = new Stage[num_stages];
+
+	//READ IN THE FILTER INFORMATION
 	for (int i = 0; i < num_stages; i++) {
 		unsigned int num_filters;
 		fscanf(stage_info_file, "%u\n", &num_filters);
@@ -43,22 +48,32 @@ Stage * loadParametersToGPU() {
 		stages_cpu[i].threshold = threshold;
 	}
 
+	//MAKE A COPY OF THE STAGE LIST
 	Stage * stages_to_copy = (Stage *)malloc(sizeof(Stage)*num_stages);
 	memcpy(stages_to_copy, stages_cpu, sizeof(Stage)*num_stages);
+
+	//ALLOCATE DEVICE POINTERS IN THE COPY
 	for (int i = 0; i < num_stages; i++) {
 		CHECK(cudaMalloc(&(stages_to_copy[i].filters), sizeof(Filter)*stages_to_copy[i].num_filters));
 	}
 
+	//COPY STAGES TO GPU
 	CHECK(cudaMemcpy(stages_gpu, stages_to_copy, sizeof(Stage)*num_stages, cudaMemcpyHostToDevice));
 
+	//COPY FILTERS TO STAGE OBJECTS ON GPU
 	for (int i = 0; i < num_stages; i++) {
 		CHECK(cudaMemcpy(stages_to_copy[i].filters, stages_cpu[i].filters, sizeof(Filter)*stages_cpu[i].num_filters, cudaMemcpyHostToDevice));
 	}
 
+	//DELETE CPU SIZE STAGES
 	free(stages_to_copy);
 	free(stages_cpu);
 
+	//CLOSE STAGE AND FILTER FILES
 	fclose(stage_info_file);
 	fclose(filter_info_file);
+
+	//RETURN STAGE POINTER AND NUMBER OF STAGES
+	*numStages = num_stages;
 	return stages_gpu;
 }
