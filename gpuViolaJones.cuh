@@ -1,10 +1,9 @@
 #include <cuda_runtime.h>
-//#include "cuIntegralImage.cuh"
 #include "cuNNII.h"
 #include "Filter.cuh"
 #include "cuda_error_check.h"
 #include "parameter_loader.h"
-#define TEST 0
+#define TEST 1
 
 void gpuViolaJones() {
 	Stage * stages_gpu = loadParametersToGPU();
@@ -16,6 +15,8 @@ void gpuViolaJones() {
 	}
 	unsigned int * pyramidSizes = nullptr;
 	unsigned int pyramidDepth = 0;
-	float ** gpuPyramid = generateImagePyramid(input, &pyramidSizes, pyramidDepth, 2, 8, 8, 1.2);
+	float ** gpuPyramid = generateImagePyramid<false>(input, &pyramidSizes, &pyramidDepth, 2, 8, 8, 1.2);
+	printf("Pyramid depth is %u\n", pyramidDepth);
+
 #endif
 }

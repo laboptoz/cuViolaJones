@@ -7,7 +7,7 @@ __inline__ __device__ unsigned int smallPow2(unsigned int width);
 template <class T> __global__ void downsampleAndRow(T * input, float * float_img, float * output, unsigned int width, float scale);
 __global__ void colSum(float * in_arr, float * out_arr, unsigned int height, unsigned int width);
 
-
+template<bool variance>
 float ** generateImagePyramid(unsigned char * original, unsigned int ** sizes_ptr, unsigned int * depth, unsigned int min_size, unsigned int width, unsigned int height, float scale) {
 	printf("Generating image pyramid on GPU\n");
 	//CUDA MALLOC AND COPY THE ORIGINAL IMAGE
@@ -68,7 +68,7 @@ float ** generateImagePyramid(unsigned char * original, unsigned int ** sizes_pt
 	dim3 unit_rowblock(scaled_width);
 	dim3 unit_rowgrid(1, scaled_height);  //DOES NOT SUPPORT LARGE IMAGES RIGHT NOW
 	
-	downsampleAndRow <unsigned char> <<< unit_rowgrid, unit_rowblock, 2 * scaled_width * sizeof(float) >>> (orig_img_gpu, float_img_gpu, integralimages_gpu[0], scaled_width, 1);
+	downsampleAndRow <unsigned char, variance> <<< unit_rowgrid, unit_rowblock, 2 * scaled_width * sizeof(float) >>> (orig_img_gpu, float_img_gpu, integralimages_gpu[0], scaled_width, 1);
 	CHECK(cudaDeviceSynchronize());
 
 	dim3 unit_colblock(scaled_height);
@@ -101,7 +101,7 @@ float ** generateImagePyramid(unsigned char * original, unsigned int ** sizes_pt
 		dim3 rowblock = dim3(scaled_width);
 		dim3 rowgrid = dim3(1, scaled_height);
 
-		downsampleAndRow <float> <<< rowgrid, rowblock, 2 * scaled_width * sizeof(float) >> > (float_img_gpu, float_img_gpu, integralimages_gpu[i], scaled_width, 1);
+		downsampleAndRow <float, variance> <<< rowgrid, rowblock, 2 * scaled_width * sizeof(float) >> > (float_img_gpu, float_img_gpu, integralimages_gpu[i], scaled_width, 1);
 		CHECK(cudaDeviceSynchronize());
 
 		dim3 colblock = dim3(scaled_height);
@@ -135,7 +135,7 @@ float ** generateImagePyramid(unsigned char * original, unsigned int ** sizes_pt
 	return integralimages_gpu;
 }
 
-template <class T>
+template <class T, bool variance>
 __global__ void downsampleAndRow(T * input, float * float_img, float * output, unsigned int width, float scale) {
 	unsigned int idx = threadIdx.x;
 	unsigned int row = blockIdx.y;
@@ -152,7 +152,10 @@ __global__ void downsampleAndRow(T * input, float * float_img, float * output, u
 
 	//Assign input values to shared memory, scale with nearest neighbor
 	smem[idx] = (float) input[idx_scaled + row_scaled*width];
-	float_img[idx + blockIdx.y*width_scaled] = (float)input[idx_scaled + row_scaled*width];
+	if (variance) {
+		smem[idx] = smem[idx] * smem[idx];
+	}
+	float_img[idx + blockIdx.y*width_scaled] = smem[idx];
 
 	//Copy smem to second half of shared memory
 	smem[width_scaled + idx] = smem[idx];
