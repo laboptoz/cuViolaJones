@@ -3,9 +3,9 @@
 #include "cpuViolaJones.hpp"
 #include "paths.hpp"
 #include "gpuViolaJones.cuh"
+#include "load_images.hpp"
 
-
-
+using namespace std;
 using namespace cv;
 
 
@@ -37,8 +37,10 @@ int main(int argc, char** argv )
 	
 	// Load test images
 	int *numImgs = new int;
-	Image *imgs = loadData(LABELS, IMAGE_PATH, numImgs);
-	
+	Image *imgs = loadData(LABEL_PATH, IMAGE_PATH, numImgs);
+	imshow("", imgs[1699].image);
+	waitKey(0);
+
 	printf("%d, %d\n", height, width);
 	gpuViolaJones();
 	//cpuViolaJones(image, face_cascade_path);
