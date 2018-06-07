@@ -3,7 +3,7 @@
 #define INFO_PATH "./data/info.txt"
 #define CLASS_PATH "./data/class.txt"
 #define LABEL_PATH "./data/labels.txt"
-#define IMAGE_PATH "./data/images/"    // images should go in data folder!
+#define IMAGE_PATH "./data/images/"    
 
 // Converts a macro to a string
 #define STR1(x)  #x
