@@ -34,7 +34,11 @@ int main(int argc, char** argv )
 	else {
 		fprintf(stderr, "Stop\n");
 	}
-
+	
+	// Load test images
+	int *numImgs = new int;
+	Image *imgs = loadData(LABELS, IMAGE_PATH, numImgs);
+	
 	printf("%d, %d\n", height, width);
 	gpuViolaJones();
 	//cpuViolaJones(image, face_cascade_path);
