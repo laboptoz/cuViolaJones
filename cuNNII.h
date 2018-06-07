@@ -1,6 +1,6 @@
 #include <cuda_runtime.h>
 #include "cuda_error_check.h"
-#define TEST 1
+#define TEST 0
 
 __device__ void rowSum(float * input, unsigned int width);
 __inline__ __device__ unsigned int smallPow2(unsigned int width);
@@ -151,11 +151,13 @@ __global__ void downsampleAndRow(T * input, float * float_img, float * output, u
 	extern __shared__ float smem[];
 
 	//Assign input values to shared memory, scale with nearest neighbor
-	smem[idx] = (float) input[idx_scaled + row_scaled*width];
+	float temp = (float) input[idx_scaled + row_scaled*width];
 	if (variance) {
-		smem[idx] = smem[idx] * smem[idx];
+		smem[idx] = temp*temp;
+	}else{
+		smem[idx] = temp;
 	}
-	float_img[idx + blockIdx.y*width_scaled] = smem[idx];
+	float_img[idx + blockIdx.y*width_scaled] = temp;
 
 	//Copy smem to second half of shared memory
 	smem[width_scaled + idx] = smem[idx];
