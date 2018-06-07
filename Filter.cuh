@@ -9,8 +9,8 @@ class Rectangle {
 		unsigned int width;
 		int weight;
 
-		__device__ Rectangle() {}
-		__device__ Rectangle(unsigned int x, unsigned int y, unsigned int height, unsigned int width, int weight) {
+		__host__ __device__ Rectangle() {}
+		__host__ __device__ Rectangle(unsigned int x, unsigned int y, unsigned int height, unsigned int width, int weight) {
 			this->x = x;
 			this->y = y;
 			this->height = height;
@@ -18,8 +18,8 @@ class Rectangle {
 			this->weight = weight;
 		}
 
-		template <class T>
-		__device__ T getSummedArea(T * arr, unsigned int arr_width) {
+		template <typename T>
+		__host__ __device__ T getSummedArea(T * arr, unsigned int arr_width) {
 			return *(arr + (x + width - 1) + (y + height - 1)*arr_width) +
 				*(arr + x + y*arr_width) -
 				*(arr + x + width - 1 + y*arr_width) -
@@ -35,8 +35,8 @@ class Filter {
 		int alpha1, alpha2;
 		unsigned char num_rect;
 
-		__device__ Filter() {}
-		__device__ Filter(	unsigned int x1,
+		__host__ __device__ Filter() {}
+		__host__ __device__ Filter(	unsigned int x1,
 				unsigned int y1,
 				unsigned int width1,
 				unsigned int height1,
@@ -57,7 +57,7 @@ class Filter {
 			this->alpha2 = alpha2;
 		}
 
-		__device__ Filter(	unsigned int x1,
+		__host__ __device__ Filter(	unsigned int x1,
 				unsigned int y1,
 				unsigned int width1,
 				unsigned int height1,
@@ -84,8 +84,8 @@ class Filter {
 			this->alpha2 = alpha2;
 		}
 
-		template <class T>
-		__device__ T getValue(T * arr, unsigned int arr_width) {
+		template <typename T>
+		__host__ __device__ T getValue(T * arr, unsigned int arr_width) {
 			T area = 0;
 			for (int i = 0; i < num_rect; i++) {
 				area += rect[i].weight*rect[i].getSummedArea(arr, arr_width);

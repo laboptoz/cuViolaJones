@@ -1,9 +1,149 @@
 #include <cuda_runtime.h>
+#include "cuda_error_check.h"
+#define TEST 1
 
 __device__ void rowSum(float * input, unsigned int width);
 __inline__ __device__ unsigned int smallPow2(unsigned int width);
+template <class T> __global__ void downsampleAndRow(T * input, float * float_img, float * output, unsigned int width, float scale);
+__global__ void colSum(float * in_arr, float * out_arr, unsigned int height, unsigned int width);
 
-__global__ void downsampleAndRow(unsigned char * input, float * output, unsigned int width, float scale) {
+
+float ** generateImagePyramid(unsigned char * original, unsigned int ** sizes_ptr, unsigned int min_size, unsigned int width, unsigned int height, float scale) {
+	printf("Generating image pyramid on GPU\n");
+	//CUDA MALLOC AND COPY THE ORIGINAL IMAGE
+	unsigned char * orig_img_gpu;
+	CHECK(cudaMalloc(&orig_img_gpu, sizeof(unsigned char)*width*height));
+	CHECK(cudaMemcpy(orig_img_gpu, original, sizeof(unsigned char)*width*height, cudaMemcpyHostToDevice));
+
+	float * float_img_gpu;
+	CHECK(cudaMalloc(&float_img_gpu, sizeof(unsigned char)*width*height));
+
+	//DETERMINE PYRAMID DEPTH
+	unsigned int scaled_width = width;
+	unsigned int scaled_height = height;
+	unsigned int depth = 0;
+	unsigned int sum_size = 0;
+
+	if (min_size <= 3) {
+		min_size = 4;
+	}
+	while (scaled_width >= min_size && scaled_height >= min_size) {
+		depth++;
+		sum_size += scaled_width*scaled_height;
+		scaled_width = round(scaled_width / scale);
+		scaled_height = round(scaled_height / scale);
+	}
+	printf("Image pyramid depth is: %u\n", depth);
+	
+	//CUDA MALLOC THE IMAGES
+	float * integralImagePyramid_gpu;
+	float * imagePyramid_gpu;
+	CHECK(cudaMalloc(&imagePyramid_gpu, sum_size * sizeof(float)));
+	CHECK(cudaMalloc(&integralImagePyramid_gpu, sum_size * sizeof(float)));
+
+	float ** integralimages_gpu = new float *[depth];
+
+	//Assign pyramid sizes to argument 'sizes'
+	sum_size = 0;
+	scaled_width = width;
+	scaled_height = height;
+	*sizes_ptr = (unsigned int *) malloc(2*depth*sizeof(unsigned int));
+	unsigned int * sizes = *sizes_ptr;
+	for (int i = 0; i < depth; i++) {
+		integralimages_gpu[i] = imagePyramid_gpu + sum_size;
+		sum_size += scaled_width*scaled_height;
+		sizes[i] = scaled_width;
+		sizes[i + 1] = scaled_height;
+		scaled_width = round(scaled_width / scale);
+		scaled_height = round(scaled_height / scale);
+	}
+	
+
+		//CHECK(cudaMalloc(&img_gpu, sizeof(unsigned char)*height*width));
+		//CHECK(cudaMalloc(&ii_gpu, sizeof(float)  * scaled_height * scaled_width));
+
+	//GENERATE SIZE 1 INTEGRAL IMAGE
+	scaled_width = width;
+	scaled_height = height;
+	dim3 unit_rowblock(scaled_width);
+	dim3 unit_rowgrid(1, scaled_height);  //DOES NOT SUPPORT LARGE IMAGES RIGHT NOW
+	
+	downsampleAndRow <unsigned char> <<< unit_rowgrid, unit_rowblock, 2 * scaled_width * sizeof(float) >>> (orig_img_gpu, float_img_gpu, integralimages_gpu[0], scaled_width, 1);
+	CHECK(cudaDeviceSynchronize());
+
+	dim3 unit_colblock(scaled_height);
+	dim3 unit_colgrid(1, scaled_width);  //DOES NOT SUPPORT LARGE IMAGES RIGHT NOW
+	colSum <<<unit_colgrid, unit_colblock, 2 * scaled_height * sizeof(float) >> > (integralimages_gpu[0], integralimages_gpu[0], scaled_height, scaled_width);
+	CHECK(cudaDeviceSynchronize());
+	cudaFree(orig_img_gpu);
+
+
+	//GENERATE REMAINING INTEGRAL IMAGES
+#if TEST
+		float * ii_cpu = new float[sizes[0] * sizes[1]];
+		printf("\nPyramid level: 0\n");
+		CHECK(cudaMemcpy(ii_cpu, integralimages_gpu[0], sizeof(float) * scaled_width * scaled_height, cudaMemcpyDeviceToHost));
+		for (int ik = 0; ik < scaled_height; ik++) {
+			for (int j = 0; j < scaled_width; j++) {
+				printf("%f\t", ii_cpu[ik*scaled_width + j]);
+			}
+			printf("\n");
+		}
+		printf("\n");
+#endif
+
+	for (int i = 1; i < depth; i++) {
+#if TEST
+		printf("Pyramid level: %u\n", i);
+#endif
+		scaled_width = round(scaled_width / scale);
+		scaled_height = round(scaled_height / scale);
+		dim3 rowblock = dim3(scaled_width);
+		dim3 rowgrid = dim3(1, scaled_height);
+
+		downsampleAndRow <float> <<< rowgrid, rowblock, 2 * scaled_width * sizeof(float) >> > (float_img_gpu, float_img_gpu, integralimages_gpu[i], scaled_width, 1);
+		CHECK(cudaDeviceSynchronize());
+
+		dim3 colblock = dim3(scaled_height);
+		dim3 colgrid = dim3(1, scaled_width);
+		colSum << <colgrid, colblock, 2 * scaled_height * sizeof(float) >> > (integralimages_gpu[i], integralimages_gpu[i], scaled_height, scaled_width);
+		CHECK(cudaDeviceSynchronize());
+
+#if TEST
+		CHECK(cudaMemcpy(ii_cpu, integralimages_gpu[i], sizeof(float) * scaled_width * scaled_height, cudaMemcpyDeviceToHost));
+		for (int ik = 0; ik < scaled_height; ik++) {
+			for (int j = 0; j < scaled_width; j++) {
+				printf("%f\t", ii_cpu[ik*scaled_width + j]);
+			}
+			printf("\n");
+		}
+		printf("\n");
+#endif
+	}
+	cudaFree(float_img_gpu);
+	
+
+
+	
+
+#if TEST
+	printf("Finished testing\n");
+#endif
+
+
+	/*scaled_width = width;
+	scaled_height = height;
+	for (int i = 1; i < depth; i++) {
+		dim3 rowblock = dim3(scaled_width);
+		dim3 colblock
+	}*/
+	
+	//Delete the original image on the GPU
+	return integralimages_gpu;
+}
+
+template <class T>
+__global__ void downsampleAndRow(T * input, float * float_img, float * output, unsigned int width, float scale) {
 	unsigned int idx = threadIdx.x;
 	unsigned int row = blockIdx.y;
 
@@ -19,6 +159,7 @@ __global__ void downsampleAndRow(unsigned char * input, float * output, unsigned
 
 	//Assign input values to shared memory, scale with nearest neighbor
 	smem[idx] = (float) input[idx_scaled + row_scaled*width];
+	float_img[idx + blockIdx.y*width_scaled] = (float)input[idx_scaled + row_scaled*width];
 
 	//Copy smem to second half of shared memory
 	smem[width_scaled + idx] = smem[idx];
@@ -105,7 +246,7 @@ __device__ void rowSum(float * input, unsigned int width) {
 	
 }
 
-__global__ void colSum(float * in_arr, unsigned int height, unsigned int width) {
+__global__ void colSum(float * in_arr, float * out_arr, unsigned int height, unsigned int width) {
 	//The shared memory
 	extern __shared__ float input[];
 	unsigned int idx = threadIdx.x;
@@ -174,7 +315,7 @@ __global__ void colSum(float * in_arr, unsigned int height, unsigned int width) 
 	}
 
 	//Move shared memory to input array
-	in_arr[idx*width + blockIdx.y] = input[height + idx];
+	out_arr[idx*width + blockIdx.y] = input[height + idx];
 }
 
 //Find the next smallest 2^N

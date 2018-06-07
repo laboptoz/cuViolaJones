@@ -4,6 +4,8 @@
 #include "paths.hpp"
 #include "gpuViolaJones.cuh"
 
+
+
 using namespace cv;
 
 

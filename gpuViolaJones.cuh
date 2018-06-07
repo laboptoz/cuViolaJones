@@ -2,20 +2,33 @@
 //#include "cuIntegralImage.cuh"
 #include "cuNNII.h"
 #include "Filter.cuh"
+#include "cuda_error_check.h"
+#define TEST 1
 
-#define CHECK(ans) { err_check((ans), __FILE__, __LINE__); }
-inline void err_check(cudaError_t code, const char *file, int line, bool abort = true)
-{
-	if (code != cudaSuccess)
-	{
-		fprintf(stderr, "Error: %s %s %d\n", cudaGetErrorString(code), file, line);
-		if (abort) exit(code);
+//TESTING FUNCTION
+__global__ void testfunc(float * input, unsigned int width);
+//void cuNNII_example(int height, int width, float scale);
+
+void gpuViolaJones() {
+	unsigned char * input = new unsigned char[8*8];
+	for (int i = 0; i < 8 * 8; i++) {
+		input[i] = i + 1;
 	}
+	unsigned int * pyramidSizes = nullptr;
+	float ** gpuPyramid = generateImagePyramid(input, &pyramidSizes, 2, 8, 8, 1.2);
+	printf("Testing\n");
+	testfunc <<<1,1>>>(gpuPyramid[0], pyramidSizes[0]);
+
 }
 
-__global__ void test(float * input, unsigned int width);
 
-void cuNNII_example(int height, int width, float scale) {
+__global__ void testfunc(float * input, unsigned int width) {
+	Filter f = Filter(0, 0, 2, 2, -1, 0, 2, 2, 2, 1, 2, 0, 3);
+	float num =  f.getValue(input, width);
+	printf("\n\n%f\n\n", num);
+}
+
+/*void cuNNII_example(int height, int width, float scale) {
 	unsigned char * input = new unsigned char[height*width];
 	for (int i = 0; i < height*width; i++) {
 		input[i] = i + 1;
@@ -57,14 +70,4 @@ void cuNNII_example(int height, int width, float scale) {
 	cudaFree(ii_gpu);
 	cudaFree(img_gpu);
 	delete[] input;
-}
-
-void gpuViolaJones() {
-	cuNNII_example(8, 8, 1.2);
-}
-
-__global__ void test(float * input, unsigned int width) {
-	Filter f = Filter(0, 0, 2, 2, -1, 0, 2, 2, 2, 1, 2, 0, 3);
-	float num =  f.getValue(input, width);
-	printf("\n\n%f\n\n", num);
-}
+}*/
