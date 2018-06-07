@@ -64,13 +64,13 @@ class Filter {
 		}
 
 		template <typename T>
-		__host__ __device__ T getValue(T * arr, unsigned int arr_width) {
+		__host__ __device__ T getValue(T * arr, float norm_factor, unsigned int arr_width) {
 			T area = 0;
 			#pragma unroll
 			for (int i = 0; i < 3; i++) {
 				area += rect[i].weight*rect[i].getSummedArea(arr, arr_width);
 			}
-			return (area >= threshold)*alpha2 + (area < threshold)*alpha1;
+			return (area >= norm_factor*threshold)*alpha2 + (area < norm_factor*threshold)*alpha1;
 		}
 };
 
@@ -87,10 +87,10 @@ class Stage {
 		}
 
 		template <typename T>
-		__device__ bool getValue(T * arr, unsigned int arr_width) {
+		__device__ bool getValue(T * arr, float norm_factor, unsigned int arr_width) {
 			T activations = 0;
 			for (int i = 0; i < num_filt; i++) {
-				activations += filters[i].getValue(arr, arr_width);
+				activations += filters[i].getValue(arr, norm_factor, arr_width);
 			}
 			return (activations >= 0.4*threshold);
 		}

@@ -41,8 +41,17 @@ int main(int argc, char** argv )
 	imshow("", imgs[1699].image);
 	waitKey(0);
 
-	printf("%d, %d\n", height, width);
-	gpuViolaJones();
+	//TEST CODE
+	unsigned int width1 = 8;
+	unsigned int height1 = 8;
+	unsigned char * input = new unsigned char[width1 * height1];
+	for (int i = 0; i < width1 * height1; i++) {
+		input[i] = i + 1;
+	}
+	unsigned int min_size = 2;
+	float scale = 1.2;
+	//END TEST CODE
+	gpuViolaJones(input, width1, height1, min_size, scale);
 	//cpuViolaJones(image, face_cascade_path);
     waitKey(0);
 
