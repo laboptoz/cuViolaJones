@@ -29,13 +29,12 @@ DEBUG -Xptxas -v -g -G
 add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
     COMMAND ${CMAKE_COMMAND} -E copy_directory
         "${CMAKE_CURRENT_SOURCE_DIR}/${OpenCV_DIR}/bin/$<CONFIG>/"
-        "${CMAKE_CURRENT_BINARY_DIR}/$<CONFIG>"
-	COMMAND ${CMAKE_COMMAND} -E copy
-		"${CMAKE_CURRENT_SOURCE_DIR}/opencv/sources/data/haarcascades/haarcascade_frontalface_default.xml"
-		"${CMAKE_CURRENT_BINARY_DIR}/data/haarcascade_frontalface_default.xml"
-	COMMAND ${CMAKE_COMMAND} -E copy
-		"${CMAKE_CURRENT_SOURCE_DIR}/faces.jpg"
-		"${CMAKE_CURRENT_BINARY_DIR}/data/faces.jpg"
+        "$<TARGET_FILE_DIR:${PROJECT_NAME}>"
+		
+    COMMAND ${CMAKE_COMMAND} -E copy_directory
+        "${CMAKE_CURRENT_SOURCE_DIR}/data/"
+        "${CMAKE_CURRENT_BINARY_DIR}/data/"
+		
 	)
 		
 target_link_libraries( 
