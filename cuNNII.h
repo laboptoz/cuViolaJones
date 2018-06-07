@@ -8,7 +8,7 @@ template <class T> __global__ void downsampleAndRow(T * input, float * float_img
 __global__ void colSum(float * in_arr, float * out_arr, unsigned int height, unsigned int width);
 
 
-float ** generateImagePyramid(unsigned char * original, unsigned int ** sizes_ptr, unsigned int min_size, unsigned int width, unsigned int height, float scale) {
+float ** generateImagePyramid(unsigned char * original, unsigned int ** sizes_ptr, unsigned int * depth, unsigned int min_size, unsigned int width, unsigned int height, float scale) {
 	printf("Generating image pyramid on GPU\n");
 	//CUDA MALLOC AND COPY THE ORIGINAL IMAGE
 	unsigned char * orig_img_gpu;
@@ -21,19 +21,19 @@ float ** generateImagePyramid(unsigned char * original, unsigned int ** sizes_pt
 	//DETERMINE PYRAMID DEPTH
 	unsigned int scaled_width = width;
 	unsigned int scaled_height = height;
-	unsigned int depth = 0;
+	*depth = 0;
 	unsigned int sum_size = 0;
 
 	if (min_size <= 3) {
 		min_size = 4;
 	}
 	while (scaled_width >= min_size && scaled_height >= min_size) {
-		depth++;
+		(*depth)++;
 		sum_size += scaled_width*scaled_height;
 		scaled_width = round(scaled_width / scale);
 		scaled_height = round(scaled_height / scale);
 	}
-	printf("Image pyramid depth is: %u\n", depth);
+	printf("Image pyramid depth is: %u\n", *depth);
 	
 	//CUDA MALLOC THE IMAGES
 	float * integralImagePyramid_gpu;
@@ -41,15 +41,15 @@ float ** generateImagePyramid(unsigned char * original, unsigned int ** sizes_pt
 	CHECK(cudaMalloc(&imagePyramid_gpu, sum_size * sizeof(float)));
 	CHECK(cudaMalloc(&integralImagePyramid_gpu, sum_size * sizeof(float)));
 
-	float ** integralimages_gpu = new float *[depth];
+	float ** integralimages_gpu = new float *[*depth];
 
 	//Assign pyramid sizes to argument 'sizes'
 	sum_size = 0;
 	scaled_width = width;
 	scaled_height = height;
-	*sizes_ptr = (unsigned int *) malloc(2*depth*sizeof(unsigned int));
+	*sizes_ptr = (unsigned int *) malloc(2*(*depth)*sizeof(unsigned int));
 	unsigned int * sizes = *sizes_ptr;
-	for (int i = 0; i < depth; i++) {
+	for (int i = 0; i < *depth; i++) {
 		integralimages_gpu[i] = imagePyramid_gpu + sum_size;
 		sum_size += scaled_width*scaled_height;
 		sizes[i] = scaled_width;
@@ -92,7 +92,7 @@ float ** generateImagePyramid(unsigned char * original, unsigned int ** sizes_pt
 		printf("\n");
 #endif
 
-	for (int i = 1; i < depth; i++) {
+	for (int i = 1; i < *depth; i++) {
 #if TEST
 		printf("Pyramid level: %u\n", i);
 #endif
@@ -130,13 +130,6 @@ float ** generateImagePyramid(unsigned char * original, unsigned int ** sizes_pt
 	printf("Finished testing\n");
 #endif
 
-
-	/*scaled_width = width;
-	scaled_height = height;
-	for (int i = 1; i < depth; i++) {
-		dim3 rowblock = dim3(scaled_width);
-		dim3 colblock
-	}*/
 	
 	//Delete the original image on the GPU
 	return integralimages_gpu;
