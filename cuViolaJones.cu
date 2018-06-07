@@ -20,6 +20,7 @@ int main(int argc, char** argv )
 	
 	Mat gray_face;
 	cvtColor(image, gray_face, CV_BGR2GRAY);
+	//imshow("gray", gray_face);
 	unsigned char * face;
 	unsigned int height = 0;
 	unsigned int width = 0;

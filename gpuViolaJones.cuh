@@ -1,6 +1,7 @@
 #include <cuda_runtime.h>
 //#include "cuIntegralImage.cuh"
 #include "cuNNII.h"
+#include "Filter.cuh"
 
 #define CHECK(ans) { err_check((ans), __FILE__, __LINE__); }
 inline void err_check(cudaError_t code, const char *file, int line, bool abort = true)
@@ -11,6 +12,8 @@ inline void err_check(cudaError_t code, const char *file, int line, bool abort =
 		if (abort) exit(code);
 	}
 }
+
+__global__ void test(float * input, unsigned int width);
 
 void cuNNII_example(int height, int width, float scale) {
 	unsigned char * input = new unsigned char[height*width];
@@ -47,6 +50,9 @@ void cuNNII_example(int height, int width, float scale) {
 		}
 		printf("\n");
 	}
+
+	test << <1, 1 >> > (ii_gpu, scaled_width);
+
 	free(ii_cpu);
 	cudaFree(ii_gpu);
 	cudaFree(img_gpu);
@@ -54,9 +60,11 @@ void cuNNII_example(int height, int width, float scale) {
 }
 
 void gpuViolaJones() {
-	cuNNII_example(3, 5, 1.2);
+	cuNNII_example(8, 8, 1.2);
 }
 
-__global__ void cuViolaJones(unsigned char * img, unsigned int height, unsigned int width) {
-
+__global__ void test(float * input, unsigned int width) {
+	Filter f = Filter(0, 0, 2, 2, -1, 0, 2, 2, 2, 1, 2, 0, 3);
+	float num =  f.getValue(input, width);
+	printf("\n\n%f\n\n", num);
 }
