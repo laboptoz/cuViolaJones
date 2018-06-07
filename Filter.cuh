@@ -90,6 +90,6 @@ class Filter {
 			for (int i = 0; i < num_rect; i++) {
 				area += rect[i].weight*rect[i].getSummedArea(arr, arr_width);
 			}
-			return (area >= threshold) ? alpha2 : alpha1;
+			return (area >= threshold)*alpha2 + (area < threshold)*alpha1;
 		}
 };
