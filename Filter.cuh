@@ -76,9 +76,11 @@ class Filter {
 		__host__ __device__ T getValue(T * arr, float norm_factor, unsigned int arr_width) {
 			if (threadIdx.x + blockIdx.y == 0)
 				printf("test\n");
-			T area = weight1*getSummedArea(arr, arr_width, x1, y1, width1, height1)
-				+ weight2*getSummedArea(arr, arr_width, x2, y2, width2, height2)
-				+ weight3*getSummedArea(arr, arr_width, x3, y3, width3, height3);
+			T area = weight1*getSummedArea<T>(arr, arr_width, x1, y1, width1, height1) 
+					+ weight2*getSummedArea<T>(arr, arr_width, x2, y2, width2, height2);
+			if (weight3 != 0) {
+				area += weight3*getSummedArea<T>(arr, arr_width, x3, y3, width3, height3);
+			}
 			if (threadIdx.x + blockIdx.y == 0)
 				printf("test2\n");
 			//Return alpha2 if filter passes, alpha1 if it does not
@@ -106,7 +108,8 @@ class Stage {
 
 			//Get the activation from each filter
 			for (int i = 0; i < num_filters; i++) {
-				activations += filters[i].getValue(arr, norm_factor, arr_width);
+				printf("%d\n", i);
+				activations += filters[i].getValue<T>(arr, norm_factor, arr_width);
 			}
 			return (activations >= 0.4*threshold);
 		}
