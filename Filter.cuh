@@ -104,7 +104,6 @@ class Stage {
 
 			//Get the activation from each filter
 			for (int i = 0; i < num_filters; i++) {
-				printf("%d\n", i);
 				activations += filters[i].getValue<T>(arr, norm_factor, arr_width);
 			}
 			return (activations >= 0.4*threshold);
