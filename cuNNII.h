@@ -7,7 +7,7 @@
 __device__ void rowSum(float * input, unsigned int width);
 __inline__ __device__ unsigned int smallPow2(unsigned int width);
 template <class T> __global__ void downsampleAndRow(T * input, float * float_img, float * output, unsigned int width, float scale);
-__global__ void colSum(float * in_arr, float * out_arr, unsigned int height, unsigned int width);
+__global__ void colSum(float * arr, unsigned int height, unsigned int width);
 
 template<bool variance>
 float ** generateImagePyramid(unsigned char * original, unsigned int ** sizes_ptr, unsigned int * depth, unsigned int min_size, unsigned int width, unsigned int height, float scale) {
@@ -18,7 +18,7 @@ float ** generateImagePyramid(unsigned char * original, unsigned int ** sizes_pt
 	CHECK(cudaMemcpy(orig_img_gpu, original, sizeof(unsigned char)*width*height, cudaMemcpyHostToDevice));
 
 	float * float_img_gpu;
-	CHECK(cudaMalloc(&float_img_gpu, sizeof(unsigned char)*width*height));
+	CHECK(cudaMalloc(&float_img_gpu, sizeof(float)*width*height));
 
 	//DETERMINE PYRAMID DEPTH
 	unsigned int scaled_width = width;
@@ -31,17 +31,14 @@ float ** generateImagePyramid(unsigned char * original, unsigned int ** sizes_pt
 	}
 	while (scaled_width >= min_size && scaled_height >= min_size) {
 		(*depth)++;
-		sum_size += scaled_width*scaled_height;
+		sum_size += (scaled_width+1)*(scaled_height+1);
 		scaled_width = round(scaled_width / scale);
 		scaled_height = round(scaled_height / scale);
 	}
-	printf("Image pyramid depth is: %u\n", *depth);
 	
 	//CUDA MALLOC THE IMAGES
-	float * integralImagePyramid_gpu;
 	float * imagePyramid_gpu;
 	CHECK(cudaMalloc(&imagePyramid_gpu, sum_size * sizeof(float)));
-	CHECK(cudaMalloc(&integralImagePyramid_gpu, sum_size * sizeof(float)));
 
 	float ** integralimages_gpu = new float *[*depth];
 
@@ -53,105 +50,110 @@ float ** generateImagePyramid(unsigned char * original, unsigned int ** sizes_pt
 	unsigned int * sizes = *sizes_ptr;
 	for (int i = 0; i < *depth; i++) {
 		integralimages_gpu[i] = imagePyramid_gpu + sum_size;
-		sum_size += scaled_width*scaled_height;
-		sizes[2*i] = scaled_width;
-		sizes[2*i + 1] = scaled_height;
+		sum_size += (scaled_width+1)*(scaled_height+1);
+		sizes[2*i] = scaled_width+1;
+		sizes[2*i + 1] = scaled_height+1;
 		scaled_width = round(scaled_width / scale);
 		scaled_height = round(scaled_height / scale);
 	}
 	
-
-		//CHECK(cudaMalloc(&img_gpu, sizeof(unsigned char)*height*width));
-		//CHECK(cudaMalloc(&ii_gpu, sizeof(float)  * scaled_height * scaled_width));
-
+	
 	//GENERATE SIZE 1 INTEGRAL IMAGE
 	scaled_width = width;
 	scaled_height = height;
-	dim3 unit_rowblock(scaled_width);
-	dim3 unit_rowgrid(1, scaled_height);  //DOES NOT SUPPORT LARGE IMAGES RIGHT NOW
 	
-	downsampleAndRow <unsigned char, variance> <<< unit_rowgrid, unit_rowblock, 2 * scaled_width * sizeof(float) >>> (orig_img_gpu, float_img_gpu, integralimages_gpu[0], scaled_width, 1);
+	downsampleAndRow <unsigned char, variance> <<< scaled_height, scaled_width, (scaled_width+1) * sizeof(float) >>> (orig_img_gpu, float_img_gpu, integralimages_gpu[0], scaled_width, 1);
 	CHECK(cudaDeviceSynchronize());
 
-	dim3 unit_colblock(scaled_height);
+#if TEST
+	float * ii_cpu = (float *)malloc(sizeof(float)*(scaled_width+1)*(scaled_height+1));
+	//CHECK(cudaMemcpy(ii_cpu, float_img_gpu, sizeof(float)*scaled_width*scaled_height, cudaMemcpyDeviceToHost));
+	/*for (int i = 0; i < scaled_height; i++) {
+		for (int j = 0; j < scaled_width; j++) {
+			printf("%1.0f\t", ii_cpu[i*scaled_width + j]);
+		}
+		printf("\n");
+	}
+	printf("\n");*/
+	CHECK(cudaMemcpy(ii_cpu, integralimages_gpu[0], sizeof(float)*(scaled_width + 1)*(scaled_height + 1), cudaMemcpyDeviceToHost));
+	/*(for (int i = 0; i < scaled_height+1; i++) {
+		for (int j = 0; j < scaled_width+1; j++) {
+			printf("%1.0f\t", ii_cpu[i*(scaled_width+1) + j]);
+		}
+		printf("\n");
+	}*/
+
+	FILE * ii_file = fopen("rowsum.txt", "w");
+	for (int i = 0; i < scaled_height + 1; i++) {
+		for (int j = 0; j < scaled_width + 1; j++) {
+			fprintf(ii_file, "%1.0f", ii_cpu[i*(scaled_width + 1) + j]);
+			if (j != scaled_width) {
+				fprintf(ii_file, ",");
+			}
+		}
+		fprintf(ii_file, "\n");
+	}
+	fclose(ii_file);
+
+
+	printf("Finished testing\n");
+
+#endif
+
+	colSum << <scaled_width+1, scaled_height, (scaled_height)*sizeof(float)>> > (integralimages_gpu[0], scaled_height, scaled_width+1);
+	CHECK(cudaMemcpy(ii_cpu, integralimages_gpu[0], sizeof(float)*(scaled_width + 1)*(scaled_height + 1), cudaMemcpyDeviceToHost));
+	/*(for (int i = 0; i < scaled_height+1; i++) {
+	for (int j = 0; j < scaled_width+1; j++) {
+	printf("%1.0f\t", ii_cpu[i*(scaled_width+1) + j]);
+	}
+	printf("\n");
+	}*/
+
+	FILE * ii2_file = fopen("ii.txt", "w");
+	for (int i = 0; i < scaled_height + 1; i++) {
+		for (int j = 0; j < scaled_width + 1; j++) {
+			fprintf(ii2_file, "%1.0f", ii_cpu[i*(scaled_width + 1) + j]);
+			if (j != scaled_width) {
+				fprintf(ii2_file, ",");
+			}
+		}
+		fprintf(ii2_file, "\n");
+	}
+	fclose(ii2_file);
+
+
+	printf("Finished testing\n");
+	printf("Finished col sum");
+	//ANYTHING BELOW THIS PROBABLY DOESNT WORK
+	/*dim3 unit_colblock(scaled_height);
 	dim3 unit_colgrid(1, scaled_width);  //DOES NOT SUPPORT LARGE IMAGES RIGHT NOW
-	colSum <<<unit_colgrid, unit_colblock, 2 * scaled_height * sizeof(float) >> > (integralimages_gpu[0], integralimages_gpu[0], scaled_height, scaled_width);
+	colSum <<<unit_colgrid, unit_colblock, scaled_height * sizeof(float) >> > (integralimages_gpu[0], integralimages_gpu[0], scaled_height, scaled_width);
 	CHECK(cudaDeviceSynchronize());
 	cudaFree(orig_img_gpu);
 
-	std::ofstream myfile2("bird.txt");
-	if (myfile2.is_open()) {
-		for (int i = 0; i < scaled_height*scaled_width; i++) {
-			myfile2 << (unsigned int) original[i] << ",";
-		}
-		myfile2.close();
-		printf("finished writing file\n");
-	}
-	else {
-		printf("Can't open file\n");
-	}
-
 	//GENERATE REMAINING INTEGRAL IMAGES
-#if TEST
-		float * ii_cpu = new float[sizes[0] * sizes[1]];
-		printf("\nPyramid level: 0\n");
-		CHECK(cudaMemcpy(ii_cpu, integralimages_gpu[0], sizeof(float) * scaled_width * scaled_height, cudaMemcpyDeviceToHost));
-		for (int ik = 0; ik < scaled_height; ik++) {
-			for (int j = 0; j < scaled_width; j++) {
-				printf("%f\t", ii_cpu[ik*scaled_width + j]);
-			}
-			printf("\n");
-		}
-		printf("\n");
-		std::ofstream myfile("ii.txt");
-		if (myfile.is_open()) {
-			for (int i = 0; i < scaled_height*scaled_width; i++) {
-				myfile << ii_cpu[i] << ",";
-			}
-			myfile.close();
-			printf("finished writing file\n");
-		}
-		else {
-			printf("Can't open file\n");
-		}
-#endif
 
 	for (int i = 1; i < *depth; i++) {
-#if TEST
-		printf("Pyramid level: %u\n", i);
-#endif
 		scaled_width = round(scaled_width / scale);
 		scaled_height = round(scaled_height / scale);
 		dim3 rowblock = dim3(scaled_width);
 		dim3 rowgrid = dim3(1, scaled_height);
 
-		downsampleAndRow <float, variance> <<< rowgrid, rowblock, 2 * scaled_width * sizeof(float) >> > (float_img_gpu, float_img_gpu, integralimages_gpu[i], scaled_width, 1);
+		downsampleAndRow <float, variance> <<< rowgrid, rowblock, scaled_width * sizeof(float) >> > (float_img_gpu, float_img_gpu, integralimages_gpu[i], scaled_width, 1);
 		CHECK(cudaDeviceSynchronize());
 
 		dim3 colblock = dim3(scaled_height);
 		dim3 colgrid = dim3(1, scaled_width);
-		colSum << <colgrid, colblock, 2 * scaled_height * sizeof(float) >> > (integralimages_gpu[i], integralimages_gpu[i], scaled_height, scaled_width);
+		colSum << <colgrid, colblock, scaled_height * sizeof(float) >> > (integralimages_gpu[i], integralimages_gpu[i], scaled_height, scaled_width);
 		CHECK(cudaDeviceSynchronize());
 
-#if TEST
-		CHECK(cudaMemcpy(ii_cpu, integralimages_gpu[i], sizeof(float) * scaled_width * scaled_height, cudaMemcpyDeviceToHost));
-		/*for (int ik = 0; ik < scaled_height; ik++) {
-			for (int j = 0; j < scaled_width; j++) {
-				printf("%f\t", ii_cpu[ik*scaled_width + j]);
-			}
-			printf("\n");
-		}
-		printf("\n");*/
-
-#endif
-	}
+	}*/
 	cudaFree(float_img_gpu);
 
 #if TEST
-	printf("Finished testing\n");
+	free(ii_cpu);
 #endif
-
-	
+		
 	//Delete the original image on the GPU
 	return integralimages_gpu;
 }
@@ -159,14 +161,14 @@ float ** generateImagePyramid(unsigned char * original, unsigned int ** sizes_pt
 template <class T, bool variance>
 __global__ void downsampleAndRow(T * input, float * float_img, float * output, unsigned int width, float scale) {
 	unsigned int idx = threadIdx.x;
-	unsigned int row = blockIdx.y;
+	unsigned int row = blockIdx.x;
 
 	//Determine scaled measurements
-	unsigned int row_scaled = (unsigned int)(round(scale*blockIdx.y));
+	unsigned int row_scaled = (unsigned int)(round(scale*blockIdx.x));
 	unsigned int width_scaled = round(width / scale);
 
 	//blockIdx.x should be 1 for now
-	unsigned int idx_scaled = (unsigned int)(round(scale*idx) + blockIdx.x*1024);
+	unsigned int idx_scaled = (unsigned int)(round(scale*idx));
 
 	//SMEM is 2 x width (dynamically allocated during the kernel call)
 	extern __shared__ float smem[];
@@ -176,95 +178,179 @@ __global__ void downsampleAndRow(T * input, float * float_img, float * output, u
 	if (variance) {
 		smem[idx] = temp*temp;
 	}else{
-		smem[idx] = temp;
+		smem[idx] = (float)input[idx_scaled + row_scaled*width];
 	}
-	float_img[idx + blockIdx.y*width_scaled] = temp;
-
-	//Copy smem to second half of shared memory
-	smem[width_scaled + idx] = smem[idx];
-
+	float_img[idx + blockIdx.x*width_scaled] = temp;
+	
 	//Determine the row cumulative sum for the scaled matrix
 	rowSum(smem, width_scaled);
 
 	//Assign the values to global memory
-	output[idx+blockIdx.y*width_scaled] = smem[width_scaled + idx];
+	output[idx+blockIdx.x*(width_scaled+1)] = smem[idx];
+	if (threadIdx.x == 0) {
+		output[width_scaled + blockIdx.x*(width_scaled + 1)] = smem[width_scaled];
+	}
 }
 
 __device__ void rowSum(float * input, unsigned int width) {
-	unsigned int idx = threadIdx.x;
-
-	//How much of the width is processed
 	unsigned int width_offset = 0;
-
-	//The last value of the previous width segment
-	unsigned int remainder = 0;
-
-	//Loops over largest possible segments of 2^N
-	while (width_offset < width) {
-
-		//Offset is the offset between added samples
-		unsigned int offset = 1;
-
-		//The largest available power of 2
-		unsigned int pw2 = smallPow2(width-width_offset);
-
-		//The previous remainder value
-		unsigned int working_rem = remainder;
-
-		//If pw2 is not 1
-		if (pw2 != 1) {
-
-			//Loop through binary addition tree
-			for (int i = pw2 / 2; i > 0; i /= 2) {
-				__syncthreads();
-				if (idx < i) {
-					input[width + offset * (2 * idx + 2) - 1 + width_offset] += input[width + offset * (2 * idx + 1) - 1 + width_offset];
-				}
-
-				//Increase the offset between sample additions
-				offset *= 2;
+	unsigned int pow2 = 0;
+	__shared__ float totalRemain;
+	if (threadIdx.x == 0) {
+		totalRemain = 0;
+	}
+	//unsigned int totalRemain = 0;
+	while (width-width_offset > 0){
+		__syncthreads();
+		unsigned int workingRemain = totalRemain;
+		unsigned int dist = 1;
+		pow2 = smallPow2(width - width_offset);
+		
+		//DOWN TREE
+		for (int i = pow2 / 2; i > 0; i /= 2) {
+			__syncthreads();
+			if (threadIdx.x < i) {
+				input[width_offset + dist*(2 * threadIdx.x + 2) - 1] += input[width_offset + dist*(2 * threadIdx.x + 1) - 1];
 			}
+			dist *= 2;
+		}
 
-			//Set the remainder to be the last value
-			remainder += input[width + pw2 + width_offset - 1];
+		//SET LAST VALUE AND REMAINDER
+		if (threadIdx.x == 0) {
+			totalRemain += input[width_offset + pow2 - 1];
+			input[width_offset + pow2 - 1] = 0;
+		}
 
-			//Set last value in segment to zero
-			if (idx == 0) {
-				input[width + pw2 + width_offset - 1] = 0;
-			}
-
-			//Reverse the binary tree
-			for (int i = 1; i < pw2; i *= 2) {
-				offset /= 2;
-				__syncthreads();
-				if (idx < i) {
-
-					//Swap and add
-					float swap = input[width + offset*(2 * idx + 1) - 1 + width_offset];
-					input[width + offset*(2 * idx + 1) - 1 + width_offset] = input[width + offset*(2 * idx + 2) - 1 + width_offset];
-					input[width + offset*(2 * idx + 2) - 1 + width_offset] += swap;
-
-				}
-			}
-
-			//Add the original values and the working remainder
-			if (idx < pw2) {
-				input[width + idx + width_offset] += input[idx + width_offset] + working_rem;
-			}
-		} else {
-			//Set to the original values and the working remainder
-			if (idx < pw2) {
-				input[width + idx + width_offset] = input[idx + width_offset] + working_rem;
+		
+		//UP TREE
+		for (int i = 1; i < pow2; i *= 2) {
+			dist /= 2;
+			__syncthreads();
+			if (threadIdx.x < i) {
+				float swap = input[width_offset + dist*(2 * threadIdx.x + 1) - 1];
+				input[width_offset + dist*(2 * threadIdx.x + 1) - 1] = input[width_offset + dist*(2 * threadIdx.x + 2) - 1];
+				input[width_offset + dist*(2 * threadIdx.x + 2) - 1] += swap;
 			}
 		}
-		__syncthreads();
 
-		//Adjust the width offset
-		width_offset += pw2;
+		__syncthreads();
+		//ADD REMAINDER FROM PREVIOUS POWER OF 2	
+		if (threadIdx.x < pow2) {
+			input[width_offset + threadIdx.x] += workingRemain;
+		}
+		
+		width_offset += pow2;
 	}
-	
+
+	//SET LAST VALUE TO REMAINDER
+	if (threadIdx.x == 0) {
+		input[width] = totalRemain;
+	}
 }
 
+__global__ void colSum(float * arr, unsigned int height, unsigned int width) {
+	extern __shared__ float input[];
+	input[threadIdx.x] = arr[threadIdx.x*width + blockIdx.x];
+	unsigned int height_offset = 0;
+	unsigned int pow2 = 0;
+	__shared__ float totalRemain;
+	if (threadIdx.x == 0) {
+		totalRemain = 0;
+	}
+	//unsigned int totalRemain = 0;
+	while (height - height_offset > 0) {
+		__syncthreads();
+		unsigned int workingRemain = totalRemain;
+		unsigned int dist = 1;
+		pow2 = smallPow2(height - height_offset);
+
+		//DOWN TREE
+		for (int i = pow2 / 2; i > 0; i /= 2) {
+			__syncthreads();
+			if (threadIdx.x < i) {
+				input[height_offset + dist*(2 * threadIdx.x + 2) - 1] += input[height_offset + dist*(2 * threadIdx.x + 1) - 1];
+			}
+			dist *= 2;
+		}
+
+		//SET LAST VALUE AND REMAINDER
+		if (threadIdx.x == 0) {
+			totalRemain += input[height_offset + pow2 - 1];
+			input[height_offset + pow2 - 1] = 0;
+		}
+
+
+		//UP TREE
+		for (int i = 1; i < pow2; i *= 2) {
+			dist /= 2;
+			__syncthreads();
+			if (threadIdx.x < i) {
+				float swap = input[height_offset + dist*(2 * threadIdx.x + 1) - 1];
+				input[height_offset + dist*(2 * threadIdx.x + 1) - 1] = input[height_offset + dist*(2 * threadIdx.x + 2) - 1];
+				input[height_offset + dist*(2 * threadIdx.x + 2) - 1] += swap;
+			}
+		}
+
+		__syncthreads();
+		//ADD REMAINDER FROM PREVIOUS POWER OF 2	
+		if (threadIdx.x < pow2) {
+			input[height_offset + threadIdx.x] += workingRemain;
+		}
+
+		height_offset += pow2;
+	}
+
+	arr[threadIdx.x*width + blockIdx.x] = input[threadIdx.x];
+	//SET LAST VALUE TO REMAINDER
+	if (threadIdx.x == 0) {
+		arr[height*width + blockIdx.x] = totalRemain;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 __global__ void colSum(float * in_arr, float * out_arr, unsigned int height, unsigned int width) {
 	//The shared memory
 	extern __shared__ float input[];
@@ -335,7 +421,7 @@ __global__ void colSum(float * in_arr, float * out_arr, unsigned int height, uns
 
 	//Move shared memory to input array
 	out_arr[idx*width + blockIdx.y] = input[height + idx];
-}
+}*/
 
 //Find the next smallest 2^N
 __inline__ __device__ unsigned int smallPow2(unsigned int width) {
