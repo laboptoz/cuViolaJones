@@ -1,6 +1,8 @@
 #include <cuda_runtime.h>
 #include "cuda_error_check.h"
-#define TEST 0
+#include <iostream>
+#include <fstream>
+#define TEST 1
 
 __device__ void rowSum(float * input, unsigned int width);
 __inline__ __device__ unsigned int smallPow2(unsigned int width);
@@ -77,6 +79,17 @@ float ** generateImagePyramid(unsigned char * original, unsigned int ** sizes_pt
 	CHECK(cudaDeviceSynchronize());
 	cudaFree(orig_img_gpu);
 
+	std::ofstream myfile2("bird.txt");
+	if (myfile2.is_open()) {
+		for (int i = 0; i < scaled_height*scaled_width; i++) {
+			myfile2 << (unsigned int) original[i] << ",";
+		}
+		myfile2.close();
+		printf("finished writing file\n");
+	}
+	else {
+		printf("Can't open file\n");
+	}
 
 	//GENERATE REMAINING INTEGRAL IMAGES
 #if TEST
@@ -90,6 +103,17 @@ float ** generateImagePyramid(unsigned char * original, unsigned int ** sizes_pt
 			printf("\n");
 		}
 		printf("\n");
+		std::ofstream myfile("ii.txt");
+		if (myfile.is_open()) {
+			for (int i = 0; i < scaled_height*scaled_width; i++) {
+				myfile << ii_cpu[i] << ",";
+			}
+			myfile.close();
+			printf("finished writing file\n");
+		}
+		else {
+			printf("Can't open file\n");
+		}
 #endif
 
 	for (int i = 1; i < *depth; i++) {
@@ -111,20 +135,17 @@ float ** generateImagePyramid(unsigned char * original, unsigned int ** sizes_pt
 
 #if TEST
 		CHECK(cudaMemcpy(ii_cpu, integralimages_gpu[i], sizeof(float) * scaled_width * scaled_height, cudaMemcpyDeviceToHost));
-		for (int ik = 0; ik < scaled_height; ik++) {
+		/*for (int ik = 0; ik < scaled_height; ik++) {
 			for (int j = 0; j < scaled_width; j++) {
 				printf("%f\t", ii_cpu[ik*scaled_width + j]);
 			}
 			printf("\n");
 		}
-		printf("\n");
+		printf("\n");*/
+
 #endif
 	}
 	cudaFree(float_img_gpu);
-	
-
-
-	
 
 #if TEST
 	printf("Finished testing\n");
