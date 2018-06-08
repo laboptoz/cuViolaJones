@@ -38,8 +38,8 @@ int main(int argc, char** argv )
 	// Load test images
 	int *numImgs = new int;
 	Image *imgs = loadData(LABEL_PATH, IMAGE_PATH, numImgs);
-	imshow("", imgs[1699].image);
-	waitKey(0);
+	//testIOU();
+	//testCpuViolaJones(imgs, *numImgs, face_cascade_path);
 
 	//TEST CODE
 	unsigned int width1 = 8;
