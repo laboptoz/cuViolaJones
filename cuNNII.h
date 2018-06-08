@@ -52,8 +52,8 @@ float ** generateImagePyramid(unsigned char * original, unsigned int ** sizes_pt
 	for (int i = 0; i < *depth; i++) {
 		integralimages_gpu[i] = imagePyramid_gpu + sum_size;
 		sum_size += scaled_width*scaled_height;
-		sizes[i] = scaled_width;
-		sizes[i + 1] = scaled_height;
+		sizes[2*i] = scaled_width;
+		sizes[2*i + 1] = scaled_height;
 		scaled_width = round(scaled_width / scale);
 		scaled_height = round(scaled_height / scale);
 	}
