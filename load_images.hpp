@@ -1,18 +1,23 @@
+#pragma once
 #include <opencv2/opencv.hpp>
+#include <opencv2/core/types.hpp>
 #include <stdio.h>
 #include <string.h>
 #include <iostream> 
 #include <fstream>
+
+#define THRESHOLD .6
 
 using namespace std;
 using namespace cv;
 
 struct Image {
 	Mat image;
-	int x;
+	int x;	
 	int y;
 	int w;
 	int h;
+	string im_name;
 };
 
 /* 
@@ -48,6 +53,7 @@ Image * loadData(string textFile, string imagePath, int *numImgs) {
 		istringstream iss(line);
 		vector<string> results(istream_iterator<string>{iss}, istream_iterator<string>()); // splits line with space delimiter
 		imgs[idx].image = imread(imagePath + results[0], 1); // read and store image
+		imgs[idx].im_name = results[0];						 // Store image name
 		imgs[idx].x = stoi(results[1]);                      // stoi() converts string to integer
 		imgs[idx].y = stoi(results[2]);
 		imgs[idx].w = stoi(results[3]);
@@ -56,4 +62,43 @@ Image * loadData(string textFile, string imagePath, int *numImgs) {
 	}
 
 	return imgs;
+}
+
+
+/*
+*	Calculates the intersection over union of two bboxes
+*	Returns if face detected or not
+*	TODO: Fix arguments to correct data type
+*/
+int IOU(Rect pred, Rect gt) {
+	
+	float iou = 0.0;
+
+	// calc intersection
+	Rect r1 = pred & gt;
+	float intersection = r1.width * r1.height;
+
+	if (intersection > 0.0) { 
+		// calc overlap
+		float overlap = (pred.width*pred.height) + (gt.width*gt.height) - intersection;
+		iou = intersection / overlap;
+	}
+
+	cout << "IOU: " << iou << endl;
+
+	if(iou > THRESHOLD)
+		return 1;
+	else
+		return 0;
+}
+
+void testIOU() {
+	Rect pred = Rect(143,230,110,110);
+	Rect gt = Rect(153,246,90,101);
+
+	int detected = IOU(pred, gt);
+	if(detected)
+		printf("Face detected! :D\n");
+	else
+		printf("Cannot find face! D:\n");
 }
