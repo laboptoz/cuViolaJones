@@ -230,8 +230,8 @@ void detect_faces(unsigned int img_width, unsigned int img_height, std::vector<M
 	int wd_height = 24, wd_width = 24;
 	float scale_factor = 1;
 	int minNeighbors = 1;
-
-	Stage * stages_gpu = loadParametersToGPU();
+	unsigned int * num_stages = new unsigned int;
+	Stage * stages_gpu = loadParametersToGPU(num_stages);
 
 	int counter = 0;
 

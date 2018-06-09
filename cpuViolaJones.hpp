@@ -87,6 +87,9 @@ float ** testCpuViolaJones(Image * imgs, int numImgs, String face_cascade_path) 
 	}
 	printf("Final CPU accuracy = %d/%d = %f\n", *tp, numImgs, (float)*tp/numImgs);
 	printf("Final CPU false positives = %d/%d = %f\n", *fp, numImgs, (float)*fp / numImgs);
+
+	float ** placeholder;
+	return placeholder;
 }
 
 float ** cpuIntegralImage(unsigned char * original,

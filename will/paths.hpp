@@ -1,6 +1,0 @@
-#define FACE_PATH "C:/Users/yuc143/Downloads/class_labs/Src/cuViolaJones/faces.jpg"
-#define FACE_PATH_2 "C:/Users/yuc143/Downloads/class_labs/Src/cuViolaJones/1927.jpg"
-#define CASCADE_PATH "C:/Users/yuc143/Downloads/class_labs/Src/cuViolaJones/opencv/sources/data/haarcascades/haarcascade_frontalface_default.xml"
-#define INFO_PATH "C:/Users/yuc143/Downloads/class_labs/Src/cuViolaJones/info.txt"
-#define CLASS_PATH "C:/Users/yuc143/Downloads/class_labs/Src/cuViolaJones/class.txt"
-#define CROP_OUT "C:/Users/yuc143/Downloads/class_labs/Src/cuViolaJones/crop_out.jpg"

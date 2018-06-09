@@ -21,7 +21,9 @@ source_group("Headers" FILES ${HEADERS})
 
 cuda_add_executable( ${PROJECT_NAME} 
 ${HEADERS}
-cuViolaJones.cu
+cuViolaJones_will.cu
+image.c
+rectangles.cpp
 OPTIONS --cudart=shared  -lineinfo -arch sm_52 -use_fast_math
 DEBUG -Xptxas -v -g -G 
 )

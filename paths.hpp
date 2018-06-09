@@ -6,6 +6,8 @@
 #define IMAGE_PATH "./data/images/"    
 #define FP_LABEL_PATH "./data/fp_labels.txt"
 #define FP_IMAGE_PATH "./data/fp_images/"  
+#define FACE_PATH_2 "./data/1927.jpg"
+#define CROP_OUT "./data/crop_out.jpg"
 
 // Converts a macro to a string
 #define STR1(x)  #x
