@@ -6,34 +6,26 @@
 #include "load_images.hpp"
 
 using namespace std;
+using namespace cv;
 
 
 int main(int argc, char** argv )
 {
-    cv::Mat image;
-    image = cv::imread(FACE_PATH, 1 );
-	cv::String face_cascade_path = CASCADE_PATH;
+    Mat image;
+    image = imread(FACE_PATH, 1 );
+	String face_cascade_path = CASCADE_PATH;
     if ( !image.data )
     {
         printf("No image data \n");
         return -1;
     }
 	
-	cv::Mat gray_face;
-	cv::cvtColor(image, gray_face, CV_BGR2GRAY);
+	Mat gray_face;
+	cvtColor(image, gray_face, CV_BGR2GRAY);
+	//imshow("gray", gray_face);
+	unsigned char * face;
 	unsigned int height = 0;
 	unsigned int width = 0;
-	height = gray_face.rows;
-	width = gray_face.cols;
-	unsigned int large = max(height, width);
-	if (height > 1024 || width > 1024) {
-		float large_scale = 1024.0 / large;
-		cv::resize(gray_face, gray_face, Size(), large_scale, large_scale);
-		height = gray_face.rows;
-		width = gray_face.cols;
-	}
-	imshow("gray", gray_face);
-	unsigned char * face;
 	if (gray_face.isContinuous()) {
 		face = gray_face.data;
 		height = gray_face.rows;
@@ -44,24 +36,22 @@ int main(int argc, char** argv )
 	}
 	
 	// Load test images
-	printf("Loading image set\n");
 	int *numImgs = new int;
+	Image *imgs = loadData(LABEL_PATH, IMAGE_PATH, numImgs);
+	//testIOU();
+	//testCpuViolaJones(imgs, *numImgs, face_cascade_path);
 
 	//TEST CODE
-	unsigned int width1 = 100;
-	unsigned int height1 = 100;
+	unsigned int width1 = 8;
+	unsigned int height1 = 8;
 	unsigned char * input = new unsigned char[width1 * height1];
 	for (int i = 0; i < width1 * height1; i++) {
 		input[i] = i + 1;
 	}
-	unsigned int min_size = 24;
+	unsigned int min_size = 2;
 	float scale = 1.2;
 	//END TEST CODE
-	unsigned char * result = gpuViolaJones(face, width, height, 24, 1.2);
-
-	Mat result_img = Mat(height, width, CV_8U, result);
-	imshow("test", result_img);
-
+	gpuViolaJones(input, width1, height1, min_size, scale);
 	//cpuViolaJones(image, face_cascade_path);
     waitKey(0);
 

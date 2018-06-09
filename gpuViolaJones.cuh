@@ -30,7 +30,7 @@ unsigned char * gpuViolaJones(unsigned char * img, unsigned int width, unsigned 
 	CHECK(cudaMalloc(&activationMask_gpu, sizeof(unsigned char)*iiPyramidSizes[0] * iiPyramidSizes[1]));
 
 	//Loop through depth levels
-	for (unsigned int i = 0; i < 1/*iiPyramidDepth*/; i++) {
+	for (unsigned int i = 0; i < 1; i++) {
 		printf("Depth: %u, Width: %u, Height: %u, Window Size: %u\n", i, iiPyramidSizes[i * 2], iiPyramidSizes[2 * i + 1], win_size);
 		unsigned int threads = max(iiPyramidSizes[i * 2]-win_size, 1024);
 		dim3 block = dim3(threads);
