@@ -193,3 +193,74 @@ void testCpuII() {
 								 scale);
 }
 
+
+void cpuWebcam(String face_cascade_path) {
+
+	cout << "Starting webcam..." << endl << endl;
+
+	// capture from web camera init
+	VideoCapture cap(0);
+	cout << "Camera found!" << endl;
+
+	if (!cap.open(0)) {
+		cout << "Webcam not open" << endl;
+		return;
+	}
+	for (;;) {
+		cout << "Starting loop" << endl;
+		Mat frame;
+		cap >> frame;
+		if (frame.empty()) {
+			cout << "Frame is empty" << endl;
+			break; // end of video stream
+		}
+		cout << "Displaying image" << endl;
+		imshow("this is you, smile! :)", frame);
+		if (waitKey(10) == 27) {
+			break; // stop capturing by pressing ESC 
+		}
+	}
+
+	
+	Mat img;
+
+	// Initialize the inbuilt Harr Cascade frontal face detection
+	// Below mention the path of where your haarcascade_frontalface_alt2.xml file is located
+	CascadeClassifier face_cascade;
+	if (!face_cascade.load(face_cascade_path)) {
+		printf("Error loading face cascade");
+	}
+
+	for (;;) {
+
+		// Image from camera to Mat
+		cap >> img;
+
+		// obtain input image from source
+		cap.retrieve(img);
+
+		// Just resize input image if you want
+		resize(img, img, Size(1000, 640));
+
+		// Container of faces
+		vector<Rect> faces;
+
+		// Detect faces
+		face_cascade.detectMultiScale(img, faces, 1.1, 2, 0 | CV_HAAR_SCALE_IMAGE, Size(140, 140));
+
+		//Show the results
+		// Draw circles on the detected faces
+		for (int i = 0; i < faces.size(); i++) {
+			Point center(faces[i].x + faces[i].width*0.5, faces[i].y + faces[i].height*0.5);
+			ellipse(img, center, Size(faces[i].width*0.5, faces[i].height*0.5), 0, 0, 360, Scalar(255, 0, 255), 4, 8, 0);
+		}
+
+		// To draw rectangles around detected faces
+		for (unsigned i = 0; i<faces.size(); i++)
+			rectangle(img,faces[i], Scalar(255, 0, 0), 2, 1);
+
+		imshow("CPU", img);
+		int key2 = waitKey(20);
+
+	}
+}
