@@ -18,6 +18,8 @@
 #include <iostream>
 #include <fstream>
 
+#define GPUII 1
+
 
 /* compute integral images */
 void integralImages_cpp(MyImage *src, MyIntImage *sum, MyIntImage *sqsum);
@@ -68,10 +70,9 @@ __device__ unsigned int int_sqrt_cpp(unsigned int value)
 }
 
 
-__device__ bool operation(int* sum, int* sqsum, unsigned int idx, 
+__device__ bool operation(unsigned int* sum, unsigned int* sqsum, unsigned int idx, 
 	unsigned int img_width, unsigned int wd_width, unsigned int wd_height,
-	Stage * stages_gpu
-) {
+	Stage * stages_gpu) {
 	// idx: top left corner index of the window
 
 	/*
@@ -111,7 +112,7 @@ __device__ bool operation(int* sum, int* sqsum, unsigned int idx,
 		//printf("stage %d: ", i);
 
 		//printf("sums %d %d %d %d, norm factor %f, running filter, idx %d \n", *(sum + idx0), sum[idx1], sum[idx2], sum[idx3], norm_factor, idx);
-		pass = stages_gpu[i].getValue<int>(sum + idx0, norm_factor, img_width);
+		pass = stages_gpu[i].getValue<unsigned int>(sum + idx0, norm_factor, img_width);
 
 		//break;
 
@@ -129,7 +130,7 @@ __device__ bool operation(int* sum, int* sqsum, unsigned int idx,
 //}
 
 __global__ void slide_window(
-	int* sum1, int* sqsum1,
+	unsigned int* sum1, unsigned int* sqsum1,
 	bool *d_activation,
 	unsigned int wd_width, unsigned int wd_height, 
 	unsigned int img_width, unsigned int img_height,
@@ -222,6 +223,20 @@ void detect_faces(unsigned int img_width, unsigned int img_height, std::vector<M
 	/* malloc for sqsum1: unsigned char */
 	createSumImage(img->width, img->height, sqsum1);
 
+	//------------------------------------
+	//------    CREATE II ON GPU  --------
+	//------------------------------------
+	
+#if GPUII == 1
+	unsigned int * ii_sizes = nullptr;
+	unsigned int ii_depth = 0;
+	unsigned int ** ii_gpu = generateImagePyramid<false>(img1->data, &ii_sizes, &ii_depth, 24, img1->width, img1->height, 1.2);
+
+	unsigned int * sqii_sizes = nullptr;
+	unsigned int sqii_depth = 0;
+	unsigned int ** sqii_gpu = generateImagePyramid<true>(img1->data, &ii_sizes, &ii_depth, 24, img1->width, img1->height, 1.2);
+#endif
+
 	/*
 	* TODO:
 	* assume we have array of width and height of downscaled images - down_widths, down_heights
@@ -235,8 +250,11 @@ void detect_faces(unsigned int img_width, unsigned int img_height, std::vector<M
 
 	int counter = 0;
 
-	for (int i = 0; ; i++) {
-
+#if GPUII == 1
+	for (int i = 0; i < ii_depth; i++) {
+#elif GPUII == 0
+	for (int i = 0;;i++){
+#endif
 		/* size of the image scaled up */
 		MySize winSize = { myRound_cpp(wd_width*scale_factor), myRound_cpp(wd_height*scale_factor) };
 		/* size of the image scaled down (from bigger to smaller) */
@@ -244,14 +262,22 @@ void detect_faces(unsigned int img_width, unsigned int img_height, std::vector<M
 		/* difference between sizes of the scaled image and the original detection window */
 		MySize sz1 = { sz.width - wd_width, sz.height - wd_height };
 		/* if the actual scaled image is smaller than the original detection window, break */
+
+		//if (sz1.width < 0 || sz1.height < 0)
+		//	break;
+
+#if GPUII == 0
+
 		if (sz1.width < 0 || sz1.height < 0)
 			break;
+
 		setImage(sz.width, sz.height, img1);
 		setSumImage(sz.width, sz.height, sum1);
 		setSumImage(sz.width, sz.height, sqsum1);
 		nearestNeighbor_cpp(img, img1);
 		integralImages_cpp(img1, sum1, sqsum1);
-		
+#endif
+
 		//std::ofstream myfile;
 		//myfile.open("integral_sum_sqsum_cu.txt");
 		//if (myfile.is_open()) {
@@ -267,16 +293,23 @@ void detect_faces(unsigned int img_width, unsigned int img_height, std::vector<M
 		//}
 		//else std::cout << "Unable to open file";
 
-		int* d_sum1;
-		int* d_sqsum1;
+#if GPUII == 1
+		unsigned int * d_sum1 = ii_gpu[i];
+		unsigned int * d_sqsum1 = sqii_gpu[i];
+		unsigned int down_h = ii_sizes[2 * i + 1];//sz.height;
+		unsigned int down_w = ii_sizes[2 * i];// sz.width;
+#elif GPUII == 0
+		unsigned int* d_sum1;
+		unsigned int* d_sqsum1;
 		CHECK(cudaMalloc((void**)&d_sum1, sum1->width * sum1->height * sizeof(int)));
 		CHECK(cudaMalloc((void**)&d_sqsum1, sqsum1->width * sqsum1->height * sizeof(int)));
 		CHECK(cudaMemcpy(d_sum1, sum1->data, sum1->width * sum1->height * sizeof(int), cudaMemcpyHostToDevice));
 		CHECK(cudaMemcpy(d_sqsum1, sqsum1->data, sqsum1->width * sqsum1->height * sizeof(int), cudaMemcpyHostToDevice));
 
-
 		unsigned int down_h = sz.height;
 		unsigned int down_w = sz.width;
+#endif
+
 		unsigned int num_wd_col = down_h - wd_height + 1;  // number of windows on a column
 		unsigned int num_wd_row = down_w - wd_width + 1;  // number of windows on a row
 		printf("sum dim: %d * %d, activation dim: %d * %d\n", down_h, down_w, num_wd_col, num_wd_row);

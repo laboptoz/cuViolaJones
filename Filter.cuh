@@ -115,13 +115,13 @@ public:
 
 	//Returns true if the stage passes the threshold, false otherwise
 	template <typename T>
-	__device__ bool getValue(int * arr, float norm_factor, unsigned int arr_width) {
+	__device__ bool getValue(T * arr, int norm_factor, unsigned int arr_width) {
 		int activations = 0;
 
 		//Get the activation from each filter
 		for (int i = 0; i < num_filters; i++) {
 			//printf("filter %d ", i);
-			activations += filters[i].getValue<int>(arr, norm_factor, arr_width);
+			activations += filters[i].getValue<T>(arr, norm_factor, arr_width);
 			//printf(" %d ", activations);
 			//break;
 

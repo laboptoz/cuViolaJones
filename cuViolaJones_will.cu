@@ -48,6 +48,7 @@ void run_vj_gpu(Mat gray_face) {
 	//readTextClassifier();
 
 	//printf("-- detecting faces --\r\n");
+
 	std::vector<MyRect> result;
 	detect_faces(image->width, image->height, result, image);
 
