@@ -193,7 +193,7 @@ void testCpuII() {
 								 scale);
 }
 
-
+/*
 void cpuWebcam(String face_cascade_path) {
 
 	cout << "Starting webcam..." << endl << endl;
@@ -264,3 +264,4 @@ void cpuWebcam(String face_cascade_path) {
 
 	}
 }
+*/
