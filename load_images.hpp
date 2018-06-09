@@ -125,7 +125,7 @@ Image * loadFPData(string textFile, string imagePath, int *numImgs, bool fp) {
 *	Returns if face detected or not
 *	TODO: Fix arguments to correct data type
 */
-int IOU(Rect pred, Rect gt) {
+void IOU(Rect pred, Rect gt, int *tp, int *fp) {
 	
 	float iou = 0.0;
 
@@ -138,21 +138,28 @@ int IOU(Rect pred, Rect gt) {
 		float overlap = (pred.width*pred.height) + (gt.width*gt.height) - intersection;
 		iou = intersection / overlap;
 	}
+	else {
+		// false positive (detected but wrong face)
+		*fp = *fp + 1;
+		return;
+	}
 
 	cout << "IOU: " << iou << endl;
 
-	if(iou > THRESHOLD)
-		return 1;
-	else
-		return 0;
+	if (iou > THRESHOLD)
+		*tp = *tp + 1;
 }
 
 void testIOU() {
 	Rect pred = Rect(143,230,110,110);
 	Rect gt = Rect(153,246,90,101);
+	int *tp = new int; // true positive
+	*tp = 0;
+	int *fp = new int; // false positive
+	*fp = 0;
 
-	int detected = IOU(pred, gt);
-	if(detected)
+	IOU(pred, gt, tp, fp);
+	if(*tp)
 		printf("Face detected! :D\n");
 	else
 		printf("Cannot find face! D:\n");
