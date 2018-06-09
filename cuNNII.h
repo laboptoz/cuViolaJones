@@ -35,7 +35,7 @@ float ** generateImagePyramid(unsigned char * original, unsigned int ** sizes_pt
 		scaled_width = round(scaled_width / scale);
 		scaled_height = round(scaled_height / scale);
 	}
-	
+	printf("Pyramid depth is: %u\n", *depth);
 	//CUDA MALLOC THE IMAGES
 	float * imagePyramid_gpu;
 	CHECK(cudaMalloc(&imagePyramid_gpu, sum_size * sizeof(float)));
@@ -66,22 +66,10 @@ float ** generateImagePyramid(unsigned char * original, unsigned int ** sizes_pt
 	CHECK(cudaDeviceSynchronize());
 
 #if TEST
+	//TESTING CODE
 	float * ii_cpu = (float *)malloc(sizeof(float)*(scaled_width+1)*(scaled_height+1));
-	//CHECK(cudaMemcpy(ii_cpu, float_img_gpu, sizeof(float)*scaled_width*scaled_height, cudaMemcpyDeviceToHost));
-	/*for (int i = 0; i < scaled_height; i++) {
-		for (int j = 0; j < scaled_width; j++) {
-			printf("%1.0f\t", ii_cpu[i*scaled_width + j]);
-		}
-		printf("\n");
-	}
-	printf("\n");*/
+
 	CHECK(cudaMemcpy(ii_cpu, integralimages_gpu[0], sizeof(float)*(scaled_width + 1)*(scaled_height + 1), cudaMemcpyDeviceToHost));
-	/*(for (int i = 0; i < scaled_height+1; i++) {
-		for (int j = 0; j < scaled_width+1; j++) {
-			printf("%1.0f\t", ii_cpu[i*(scaled_width+1) + j]);
-		}
-		printf("\n");
-	}*/
 
 	FILE * ii_file = fopen("rowsum.txt", "w");
 	for (int i = 0; i < scaled_height + 1; i++) {
@@ -94,21 +82,13 @@ float ** generateImagePyramid(unsigned char * original, unsigned int ** sizes_pt
 		fprintf(ii_file, "\n");
 	}
 	fclose(ii_file);
-
-
-	printf("Finished testing\n");
-
+	//END TESTING CODE
 #endif
 
 	colSum << <scaled_width+1, scaled_height, (scaled_height)*sizeof(float)>> > (integralimages_gpu[0], scaled_height, scaled_width+1);
+	CHECK(cudaDeviceSynchronize());
+#if TEST
 	CHECK(cudaMemcpy(ii_cpu, integralimages_gpu[0], sizeof(float)*(scaled_width + 1)*(scaled_height + 1), cudaMemcpyDeviceToHost));
-	/*(for (int i = 0; i < scaled_height+1; i++) {
-	for (int j = 0; j < scaled_width+1; j++) {
-	printf("%1.0f\t", ii_cpu[i*(scaled_width+1) + j]);
-	}
-	printf("\n");
-	}*/
-
 	FILE * ii2_file = fopen("ii.txt", "w");
 	for (int i = 0; i < scaled_height + 1; i++) {
 		for (int j = 0; j < scaled_width + 1; j++) {
@@ -120,39 +100,23 @@ float ** generateImagePyramid(unsigned char * original, unsigned int ** sizes_pt
 		fprintf(ii2_file, "\n");
 	}
 	fclose(ii2_file);
-
-
-	printf("Finished testing\n");
-	printf("Finished col sum");
-	//ANYTHING BELOW THIS PROBABLY DOESNT WORK
-	/*dim3 unit_colblock(scaled_height);
-	dim3 unit_colgrid(1, scaled_width);  //DOES NOT SUPPORT LARGE IMAGES RIGHT NOW
-	colSum <<<unit_colgrid, unit_colblock, scaled_height * sizeof(float) >> > (integralimages_gpu[0], integralimages_gpu[0], scaled_height, scaled_width);
-	CHECK(cudaDeviceSynchronize());
-	cudaFree(orig_img_gpu);
-
-	//GENERATE REMAINING INTEGRAL IMAGES
+#endif
 
 	for (int i = 1; i < *depth; i++) {
 		scaled_width = round(scaled_width / scale);
 		scaled_height = round(scaled_height / scale);
-		dim3 rowblock = dim3(scaled_width);
-		dim3 rowgrid = dim3(1, scaled_height);
 
-		downsampleAndRow <float, variance> <<< rowgrid, rowblock, scaled_width * sizeof(float) >> > (float_img_gpu, float_img_gpu, integralimages_gpu[i], scaled_width, 1);
+		downsampleAndRow < float , variance > << < scaled_height, scaled_width, (scaled_width + 1) * sizeof(float) >> > (float_img_gpu, float_img_gpu, integralimages_gpu[i], scaled_width, 1);
 		CHECK(cudaDeviceSynchronize());
 
-		dim3 colblock = dim3(scaled_height);
-		dim3 colgrid = dim3(1, scaled_width);
-		colSum << <colgrid, colblock, scaled_height * sizeof(float) >> > (integralimages_gpu[i], integralimages_gpu[i], scaled_height, scaled_width);
+		colSum << <scaled_width + 1, scaled_height, (scaled_height) * sizeof(float) >> > (integralimages_gpu[i], scaled_height, scaled_width + 1);
 		CHECK(cudaDeviceSynchronize());
-
-	}*/
-	cudaFree(float_img_gpu);
+	}
 
 #if TEST
 	free(ii_cpu);
 #endif
+	cudaFree(float_img_gpu);
 		
 	//Delete the original image on the GPU
 	return integralimages_gpu;
@@ -306,122 +270,6 @@ __global__ void colSum(float * arr, unsigned int height, unsigned int width) {
 		arr[height*width + blockIdx.x] = totalRemain;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-__global__ void colSum(float * in_arr, float * out_arr, unsigned int height, unsigned int width) {
-	//The shared memory
-	extern __shared__ float input[];
-	unsigned int idx = threadIdx.x;
-
-	//Copy data into shared memory
-	input[idx] = (float)in_arr[idx*width + blockIdx.y];
-	input[height + idx] = input[idx];
-
-	unsigned int height_offset = 0;
-	unsigned int remainder = 0;
-
-	//Loop through 2^N sized segments of the columns
-	while (height_offset < height) {
-		unsigned int offset = 1;
-
-		//Find next smallest 2^N
-		unsigned int pw2 = smallPow2(height - height_offset);
-		unsigned int working_rem = remainder;
-
-		//If pw2 is 1, don't go through this whole process
-		if (pw2 != 1) {
-
-			//Loop through the binary tree
-			for (int i = pw2 / 2; i > 0; i /= 2) {
-				__syncthreads();
-				if (idx < i) {
-					input[height + offset * (2 * idx + 2) - 1 + height_offset] += input[height + offset * (2 * idx + 1) - 1 + height_offset];
-				}
-				offset *= 2;
-			}
-
-			//Add the highest value as the remainder
-			remainder += input[height + pw2 + height_offset - 1];
-
-			//Set highest value to zero
-			if (idx == 0) {
-				input[height + pw2 + height_offset - 1] = 0;
-			}
-
-			//Reverse through the binary tree
-			for (int i = 1; i < pw2; i *= 2) {
-				offset /= 2;
-				__syncthreads();
-				if (idx < i) {
-
-					//Swap and add
-					float swap = input[height + offset*(2 * idx + 1) - 1 + height_offset];
-					input[height + offset*(2 * idx + 1) - 1 + height_offset] = input[height + offset*(2 * idx + 2) - 1 + height_offset];
-					input[height + offset*(2 * idx + 2) - 1 + height_offset] += swap;
-				}
-			}
-
-			//Add original values and remainder
-			if (idx < pw2) {
-				input[height + idx + height_offset] += input[idx + height_offset] + working_rem;
-			}
-		}
-		else {
-			//Set to original values and remainder
-			if (idx < pw2) {
-				input[height + idx + height_offset] = input[idx + height_offset] + working_rem;
-			}
-		}
-		__syncthreads();
-		height_offset += pw2;
-	}
-
-	//Move shared memory to input array
-	out_arr[idx*width + blockIdx.y] = input[height + idx];
-}*/
 
 //Find the next smallest 2^N
 __inline__ __device__ unsigned int smallPow2(unsigned int width) {
