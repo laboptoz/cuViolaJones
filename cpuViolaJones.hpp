@@ -2,6 +2,7 @@
 #include <opencv2/opencv.hpp>
 #include <opencv2/core/types.hpp>
 #include "load_images.hpp"
+#include "paths.hpp"
 
 using namespace cv;
 using namespace std;
@@ -33,7 +34,7 @@ void cpuViolaJones(Mat face, String cascade_path) {
 	imshow("CPU Result", face);
 }
 
-void cpuVJ(Image img, String cascade_path, int *tp, int *fp) {
+void cpuVJ(Image img, String cascade_path, int *tp, int *fp, bool display) {
 	
 	// Ground truth bbox
 	Rect gt = Rect(img.x, img.y, img.w, img.h);
@@ -56,6 +57,7 @@ void cpuVJ(Image img, String cascade_path, int *tp, int *fp) {
 
 	// No faces detected
 	if (faces.size() == 0) {
+		cout << "None detected :(" << endl << endl;
 		*tp = *tp + 1;
 		return;
 	}
@@ -64,32 +66,37 @@ void cpuVJ(Image img, String cascade_path, int *tp, int *fp) {
 	Rect face = faces.front();
 	IOU(face, gt, tp, fp);
 
-	//Draw predicted faces
-	rectangle(img.image, face, Scalar(255, 0, 0), 2); // BLUE
-	printf("Predicted bbox (Blue): %d, %d, %d, %d\n", face.x, face.y, face.width, face.height);
+	if (display) {
+		//Draw predicted faces
+		rectangle(img.image, face, Scalar(255, 0, 0), 2); // BLUE
+		printf("Predicted bbox (Blue): %d, %d, %d, %d\n", face.x, face.y, face.width, face.height);
 
-	// Draw gt face
-	rectangle(img.image, gt, Scalar(0, 0, 255), 2);  // RED
-	printf("GT bbox (Red): %d, %d, %d, %d\n\n", img.x, img.y, img.w, img.h);
+		// Draw gt face
+		rectangle(img.image, gt, Scalar(0, 0, 255), 2);  // RED
+		printf("GT bbox (Red): %d, %d, %d, %d\n\n", img.x, img.y, img.w, img.h);
 
-	//Show image
-	imshow("CPU Result", img.image);
-	waitKey(1);
-
+		//Show image
+		imshow("CPU Result", img.image);
+		waitKey(1);
+	}
 }
 
-float ** testCpuViolaJones(Image * imgs, int numImgs, String face_cascade_path) {
-	numImgs = 100;
+void testCpuViolaJones(Image * imgs, int numImgs, bool display) {
+
+	// Limit images
+	//numImgs = 100;
+
 	int *tp = new int, *fp = new int; // true positive and false positive
 	*tp = *fp = 0;
+
+	clock_t start = clock();
 	for (int i = 0; i < numImgs; i++) {
-		cpuVJ(imgs[i], face_cascade_path, tp, fp);
+		cpuVJ(imgs[i], CASCADE_PATH, tp, fp, display);
 	}
+
 	printf("Final CPU accuracy = %d/%d = %f\n", *tp, numImgs, (float)*tp/numImgs);
 	printf("Final CPU false positives = %d/%d = %f\n", *fp, numImgs, (float)*fp / numImgs);
-
-	float ** placeholder;
-	return placeholder;
+	printf("Time elapsed: %.8lfs\n\n", (clock() - start) / (double)CLOCKS_PER_SEC);
 }
 
 float ** cpuIntegralImage(unsigned char * original,

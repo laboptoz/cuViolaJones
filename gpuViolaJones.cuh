@@ -1,11 +1,17 @@
+#pragma once
+#include <stdio.h>
 #include <cuda_runtime.h>
 #include "cuNNII.h"
 #include "Filter.cuh"
+#include "haar.cuh"
+#include "image.h"
 #include "cuda_error_check.h"
 #include "parameter_loader.h"
-#include "Point.h"
 
-__global__ void cascadeClassifier(Stage *, unsigned int, unsigned char *, float *, float *, unsigned int, unsigned int, unsigned int, unsigned int);
+using namespace std;
+using namespace cv;
+
+__global__ void cascadeClassifier(Stage *, unsigned int, unsigned char *, unsigned int *, unsigned int *, unsigned int, unsigned int, unsigned int, unsigned int);
 
 unsigned char * gpuViolaJones(unsigned char * img, unsigned int width, unsigned int height, unsigned int win_size, float scale) {
 	
@@ -18,12 +24,12 @@ unsigned char * gpuViolaJones(unsigned char * img, unsigned int width, unsigned 
 	//GENERATE THE INTEGRAL IMAGE PYRAMID
 	unsigned int * iiPyramidSizes = nullptr;
 	unsigned int iiPyramidDepth = 0;
-	float ** iiPyramid_gpu = generateImagePyramid<false>(img, &iiPyramidSizes, &iiPyramidDepth, win_size, width, height, scale);
+	unsigned int ** iiPyramid_gpu = generateImagePyramid<false>(img, &iiPyramidSizes, &iiPyramidDepth, win_size, width, height, scale);
 
 	//GENERATE THE SQUARED INTEGRAL IMAGE PYRAMID
 	unsigned int * viiPyramidSizes = nullptr;
 	unsigned int viiPyramidDepth = 0;
-	float ** viiPyramid_gpu = generateImagePyramid<true>(img, &viiPyramidSizes, &viiPyramidDepth, win_size, width, height, scale);
+	unsigned int ** viiPyramid_gpu = generateImagePyramid<true>(img, &viiPyramidSizes, &viiPyramidDepth, win_size, width, height, scale);
 	
 	unsigned char * activationMask = (unsigned char *)malloc(sizeof(unsigned char)*iiPyramidSizes[0] * iiPyramidSizes[1]);
 	unsigned char * activationMask_gpu;
@@ -45,7 +51,7 @@ unsigned char * gpuViolaJones(unsigned char * img, unsigned int width, unsigned 
 
 	return activationMask;
 }
-__global__ void cascadeClassifier(Stage * stages, unsigned int num_stages, unsigned char * activationMask, float * iiPyramid, float * viiPyramid, unsigned int depth, unsigned int window_size, unsigned int width, unsigned int height) {
+__global__ void cascadeClassifier(Stage * stages, unsigned int num_stages, unsigned char * activationMask, unsigned int * iiPyramid, unsigned int * viiPyramid, unsigned int depth, unsigned int window_size, unsigned int width, unsigned int height) {
 	unsigned int offset = threadIdx.x + blockIdx.x*blockDim.x + blockIdx.y*width;
 	float mean = 0;
 	float norm_factor = 0;
@@ -62,7 +68,70 @@ __global__ void cascadeClassifier(Stage * stages, unsigned int num_stages, unsig
 	norm_factor = norm_factor - mean*mean;
 	norm_factor = (norm_factor > 0) * sqrtf(norm_factor) + (norm_factor <= 0);
 	for (int i = 0; i < num_stages; i++) {
-		pass += 1*stages[i].getValue<float>(iiPyramid + offset, norm_factor, width);
+		pass += 1*stages[i].getValue<unsigned int>(iiPyramid + offset, norm_factor, width);
 	}
 	activationMask[blockIdx.y*width + threadIdx.x] = (unsigned char) (255*((1.0*pass)/num_stages));
+}
+
+void testGpuViolaJones(Image *faces, int numImgs, bool display) {
+
+	// Limit number of images 
+	numImgs = 1000;
+
+	/* detection parameters */
+	float scaleFactor = 1.2;
+	int minNeighbours = 1;
+
+	int *tp = new int, *fp = new int; // true positive and false positive
+	*tp = *fp = 0;
+
+	clock_t start = clock();
+	for (int n = 0; n < numImgs; n++) {
+		cout << "Image " << faces[n].im_name << endl;
+		// Ground truth bbox
+		Rect gt = Rect(faces[n].x, faces[n].y, faces[n].w, faces[n].h);
+
+		// Convert to grayscale
+		Mat gray_face;
+		cvtColor(faces[n].image, gray_face, CV_BGR2GRAY);
+
+		MyImage imageObj;
+		MyImage *image = &imageObj;
+		image->data = gray_face.data;
+		image->width = gray_face.cols;
+		image->height = gray_face.rows;
+		image->maxgrey = 255;
+		image->flag = 1;
+
+		std::vector<MyRect> result;
+		detect_faces(image->width, image->height, result, image);
+
+		// No faces detected
+		if (result.size() == 0) {
+			cout << "None detected :(" << endl << endl;
+			*tp = *tp + 1;
+			continue;
+		}
+
+		//cout << "Detected " << result.size() << " images" << endl;
+
+		// Calc IOU with first face
+		Rect pred = Rect(result[0].x, result[0].y, result[0].width, result[0].height);
+		IOU(pred, gt, tp, fp);
+
+		if (display) {
+			// Draw predicted faces
+			rectangle(faces[n].image, pred, Scalar(255, 0, 0), 2); // GREEN
+
+			// Draw gt face
+			rectangle(faces[n].image, gt, Scalar(0, 0, 255), 2);  // RED
+
+			imshow("GPU Result", faces[n].image);
+			waitKey(1);
+		}
+	}
+
+	printf("Final GPU accuracy = %d/%d = %f\n", *tp, numImgs, (float)*tp / numImgs);
+	printf("Final GPU false positives = %d/%d = %f\n\n", *fp, numImgs, (float)*fp / numImgs);
+	printf("Time elapsed: %.8lfs\n\n", (clock() - start) / (double)CLOCKS_PER_SEC);
 }

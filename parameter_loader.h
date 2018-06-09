@@ -12,7 +12,7 @@ Stage * loadParametersToGPU(unsigned int * numStages) {
 	//READ IN THE NUMBER OF STAGES
 	unsigned int num_stages;
 	fscanf(stage_info_file, "%u\n", &num_stages);
-	printf("There are %u stages.\n", num_stages);
+	//printf("There are %u stages.\n", num_stages);
 	
 	//Allocate GPU Stage space
 	Stage * stages_gpu;

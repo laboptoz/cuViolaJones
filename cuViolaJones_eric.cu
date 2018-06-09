@@ -1,59 +1,76 @@
+#pragma once
 #include <stdio.h>
 #include <opencv2/opencv.hpp>
 #include "cpuViolaJones.hpp"
 #include "paths.hpp"
 #include "gpuViolaJones.cuh"
 #include "load_images.hpp"
+#include "haar.cuh"
+#include <stdlib.h>
+#include "image.h"
+
+#define SINGLE_IMG 0
+#define DISPLAY 0
 
 using namespace std;
 using namespace cv;
 
+void run_vj_gpu(Mat gray_face);
 
 int main(int argc, char** argv )
-{
-    Mat image;
-    image = imread(FACE_PATH, 1 );
-	String face_cascade_path = CASCADE_PATH;
-    if ( !image.data )
-    {
-        printf("No image data \n");
-        return -1;
-    }
-	
-	Mat gray_face;
-	cvtColor(image, gray_face, CV_BGR2GRAY);
-	//imshow("gray", gray_face);
-	unsigned char * face;
-	unsigned int height = 0;
-	unsigned int width = 0;
-	if (gray_face.isContinuous()) {
-		face = gray_face.data;
-		height = gray_face.rows;
-		width = gray_face.cols;
+{	
+	if (SINGLE_IMG) {
+		Mat image;
+		image = imread(TEST_IMG, 1);
+		if (!image.data)
+		{
+			printf("No image data \n");
+			return -1;
+		}
+
+		Mat gray_face;
+		cvtColor(image, gray_face, CV_BGR2GRAY);
+		run_vj_gpu(gray_face);
 	}
 	else {
-		fprintf(stderr, "Stop\n");
+		// Load test images
+		int *numImgs = new int;
+		Image *imgs = loadData(LABEL_PATH, IMAGE_PATH, numImgs);
+		testCpuViolaJones(imgs, *numImgs, DISPLAY);
+		char c; printf("Press ENTER to continue...\n"); cin.get(c);
+		testGpuViolaJones(imgs, *numImgs, DISPLAY);
 	}
-	
-	// Load test images
-	int *numImgs = new int;
-	Image *imgs = loadData(LABEL_PATH, IMAGE_PATH, numImgs);
-	//testIOU();
-	//testCpuViolaJones(imgs, *numImgs, face_cascade_path);
-
-	//TEST CODE
-	unsigned int width1 = 8;
-	unsigned int height1 = 8;
-	unsigned char * input = new unsigned char[width1 * height1];
-	for (int i = 0; i < width1 * height1; i++) {
-		input[i] = i + 1;
-	}
-	unsigned int min_size = 2;
-	float scale = 1.2;
-	//END TEST CODE
-	gpuViolaJones(input, width1, height1, min_size, scale);
-	//cpuViolaJones(image, face_cascade_path);
-    waitKey(0);
 
     return 0;
+}
+
+
+void run_vj_gpu(Mat gray_face) {
+
+	int mode = 1;
+	int i;
+
+	/* detection parameters */
+	float scaleFactor = 1.2;
+	int minNeighbours = 1;
+
+	MyImage imageObj;
+	MyImage *image = &imageObj;
+	image->data = gray_face.data;
+	image->width = gray_face.cols;
+	image->height = gray_face.rows;
+	image->maxgrey = 255;
+	image->flag = 1;
+
+	std::vector<MyRect> result;
+	detect_faces(image->width, image->height, result, image);
+	cout << "Size: " << result.size() << endl;
+	for (i = 0; i < result.size(); i++) {
+		MyRect r = result[i];
+		drawRectangle(image, r);
+	}
+
+	imshow("CPU Result", gray_face);
+	waitKey(0);
+
 }

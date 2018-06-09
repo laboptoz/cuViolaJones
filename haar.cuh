@@ -1,3 +1,4 @@
+#pragma once
 #include <cuda_runtime.h>
 //#include "cuIntegralImage.cuh"
 //#include "cuNNII.h"
@@ -18,7 +19,7 @@
 #include <iostream>
 #include <fstream>
 
-#define GPUII 1
+#define GPUII 0
 
 
 /* compute integral images */
@@ -312,7 +313,7 @@ void detect_faces(unsigned int img_width, unsigned int img_height, std::vector<M
 
 		unsigned int num_wd_col = down_h - wd_height + 1;  // number of windows on a column
 		unsigned int num_wd_row = down_w - wd_width + 1;  // number of windows on a row
-		printf("sum dim: %d * %d, activation dim: %d * %d\n", down_h, down_w, num_wd_col, num_wd_row);
+		//printf("sum dim: %d * %d, activation dim: %d * %d\n", down_h, down_w, num_wd_col, num_wd_row);
 
 		// create activation map
 		unsigned int act_size = num_wd_col * num_wd_row * sizeof(bool);
@@ -325,7 +326,7 @@ void detect_faces(unsigned int img_width, unsigned int img_height, std::vector<M
 		dim3 gridDim((num_wd_row + blockDim.x - 1) / blockDim.x, down_h - wd_height + 1);
 		//dim3 blockDim(1);
 		//dim3 gridDim(1);
-		printf("grid dim: %d %d\n", gridDim.x, gridDim.y);
+		//printf("grid dim: %d %d\n", gridDim.x, gridDim.y);
 
 		//unsigned int params_size = (2913 * 18 + 25) * sizeof(int);
 		//int *h_params = (int *)malloc(params_size);
@@ -364,7 +365,7 @@ void detect_faces(unsigned int img_width, unsigned int img_height, std::vector<M
 		// increment scale factor
 		scale_factor *= 1.2;		
 	}
-	printf("num detected: %d, ", counter);
+	//printf("num detected: %d, ", counter);
 
 	// sort, clean and organize the labeled windows
 	if (minNeighbors != 0) {
