@@ -79,11 +79,9 @@ void cpuVJ(Image img, String cascade_path, int *tp, int *fp) {
 }
 
 float ** testCpuViolaJones(Image * imgs, int numImgs, String face_cascade_path) {
-	//numImgs = 100;
-	int *tp = new int; // true positive
-	*tp = 0;
-	int *fp = new int; // false positive
-	*fp = 0;
+	numImgs = 100;
+	int *tp = new int, *fp = new int; // true positive and false positive
+	*tp = *fp = 0;
 	for (int i = 0; i < numImgs; i++) {
 		cpuVJ(imgs[i], face_cascade_path, tp, fp);
 	}
