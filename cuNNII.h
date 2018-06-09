@@ -2,6 +2,7 @@
 #include "cuda_error_check.h"
 #include <iostream>
 #include <fstream>
+#include <opencv2/opencv.hpp>
 #define TEST 1
 
 __device__ void rowSum(float * input, unsigned int width);
@@ -68,14 +69,11 @@ float ** generateImagePyramid(unsigned char * original, unsigned int ** sizes_pt
 #if TEST
 	//TESTING CODE
 	float * ii_cpu = (float *)malloc(sizeof(float)*(scaled_width+1)*(scaled_height+1));
-
-	CHECK(cudaMemcpy(ii_cpu, integralimages_gpu[0], sizeof(float)*(scaled_width + 1)*(scaled_height + 1), cudaMemcpyDeviceToHost));
-
-	FILE * ii_file = fopen("rowsum.txt", "w");
-	for (int i = 0; i < scaled_height + 1; i++) {
-		for (int j = 0; j < scaled_width + 1; j++) {
-			fprintf(ii_file, "%1.0f", ii_cpu[i*(scaled_width + 1) + j]);
-			if (j != scaled_width) {
+	FILE * ii_file = fopen("orig.txt", "w");
+	for (int i = 0; i < height; i++) {
+		for (int j = 0; j < width; j++) {
+			fprintf(ii_file, "%u", original[i*(width) + j]);
+			if (j != width-1) {
 				fprintf(ii_file, ",");
 			}
 		}
@@ -111,6 +109,23 @@ float ** generateImagePyramid(unsigned char * original, unsigned int ** sizes_pt
 
 		colSum << <scaled_width + 1, scaled_height, (scaled_height) * sizeof(float) >> > (integralimages_gpu[i], scaled_height, scaled_width + 1);
 		CHECK(cudaDeviceSynchronize());
+
+#if TEST
+		char filename[] = "ii_.txt";
+		filename[2] = '0' + i;
+		CHECK(cudaMemcpy(ii_cpu, integralimages_gpu[i], sizeof(float)*(scaled_width + 1)*(scaled_height + 1), cudaMemcpyDeviceToHost));
+		FILE * ii2_file = fopen(filename, "w");
+		for (int i = 0; i < scaled_height + 1; i++) {
+			for (int j = 0; j < scaled_width + 1; j++) {
+				fprintf(ii2_file, "%1.0f", ii_cpu[i*(scaled_width + 1) + j]);
+				if (j != scaled_width) {
+					fprintf(ii2_file, ",");
+				}
+			}
+			fprintf(ii2_file, "\n");
+		}
+		fclose(ii2_file);
+#endif
 	}
 
 #if TEST
