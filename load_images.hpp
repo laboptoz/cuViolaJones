@@ -6,7 +6,7 @@
 #include <iostream> 
 #include <fstream>
 
-#define THRESHOLD .6
+#define THRESHOLD .5
 
 using namespace std;
 using namespace cv;
@@ -28,6 +28,8 @@ struct Image {
 */
 Image * loadData(string textFile, string imagePath, int *numImgs) {
 	
+	cout << "Loading images..." << endl << endl;
+
 	ifstream labels(textFile);
 
 	// new lines will be skipped unless we stop it from happening:    
@@ -39,7 +41,7 @@ Image * loadData(string textFile, string imagePath, int *numImgs) {
 		istream_iterator<char>(),
 		'\n');
 
-	cout << "Number of images: " << line_count << "\n" << endl;
+	//cout << "Number of images: " << line_count << "\n" << endl;
 
 	// Store total number of images
 	*numImgs = line_count; 
@@ -64,7 +66,7 @@ Image * loadData(string textFile, string imagePath, int *numImgs) {
 		imgs[idx].h = stoi(results[4]);
 		idx++;
 	}
-
+	cout << "Loaded " << line_count << " images. \n" << endl;
 	return imgs;
 }
 

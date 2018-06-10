@@ -75,9 +75,6 @@ __global__ void cascadeClassifier(Stage * stages, unsigned int num_stages, unsig
 
 void testGpuViolaJones(Image *faces, int numImgs, bool display) {
 
-	// Limit number of images 
-	numImgs = 1000;
-
 	/* detection parameters */
 	float scaleFactor = 1.2;
 	int minNeighbours = 1;
@@ -107,14 +104,14 @@ void testGpuViolaJones(Image *faces, int numImgs, bool display) {
 		// No faces detected
 		if (result.size() == 0) {
 			cout << "None detected :(" << endl << endl;
-			*tp = *tp + 1;
 			continue;
 		}
 
 		//cout << "Detected " << result.size() << " images" << endl;
 
 		// Calc IOU with first face
-		Rect pred = Rect(result[0].x, result[0].y, result[0].width, result[0].height);
+		MyRect last = result.back();
+		Rect pred = Rect(last.x, last.y, last.width, last.height);
 		IOU(pred, gt, tp, fp);
 
 		if (display) {
@@ -129,7 +126,7 @@ void testGpuViolaJones(Image *faces, int numImgs, bool display) {
 		}
 	}
 
-	printf("Final GPU accuracy = %d/%d = %f\n", *tp, numImgs, (float)*tp / numImgs);
-	printf("Final GPU false positives = %d/%d = %f\n", *fp, numImgs, (float)*fp / numImgs);
+	printf("Final GPU accuracy: %d/%d = %f\n", *tp, numImgs, (float)*tp / numImgs);
+	printf("Final GPU false positives: %d/%d = %f\n", *fp, numImgs, (float)*fp / numImgs);
 	printf("Time elapsed: %.8lfs\n\n", (clock() - start) / (double)CLOCKS_PER_SEC);
 }

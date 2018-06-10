@@ -58,12 +58,11 @@ void cpuVJ(Image img, String cascade_path, int *tp, int *fp, bool display) {
 	// No faces detected
 	if (faces.size() == 0) {
 		cout << "None detected :(" << endl << endl;
-		*tp = *tp + 1;
 		return;
 	}
 
 	// Calc IOU with first face
-	Rect face = faces.front();
+	Rect face = faces.back();
 	IOU(face, gt, tp, fp);
 
 	if (display) {
@@ -94,8 +93,8 @@ void testCpuViolaJones(Image * imgs, int numImgs, bool display) {
 		cpuVJ(imgs[i], CASCADE_PATH, tp, fp, display);
 	}
 
-	printf("Final CPU accuracy = %d/%d = %f\n", *tp, numImgs, (float)*tp/numImgs);
-	printf("Final CPU false positives = %d/%d = %f\n", *fp, numImgs, (float)*fp / numImgs);
+	printf("Final CPU accuracy: %d/%d = %f\n", *tp, numImgs, (float)*tp/numImgs);
+	printf("Final CPU false positives: %d/%d = %f\n", *fp, numImgs, (float)*fp / numImgs);
 	printf("Time elapsed: %.8lfs\n\n", (clock() - start) / (double)CLOCKS_PER_SEC);
 }
 
