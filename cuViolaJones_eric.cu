@@ -20,7 +20,7 @@ void run_vj_gpu(Mat gray_face);
 int main(int argc, char** argv )
 {	
 	if (SINGLE_IMG) {
-		Mat image imread(FACE_PATH_2, 1);
+		Mat image = imread(FACE_PATH_2, 1);
 		if (!image.data) {
 			printf("No image data \n");
 			return -1;
