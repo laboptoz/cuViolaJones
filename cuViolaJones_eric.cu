@@ -9,8 +9,8 @@
 #include <stdlib.h>
 #include "image.h"
 
-#define SINGLE_IMG 0
-#define DISPLAY 0
+#define SINGLE_IMG 0	// Detect only one image?
+#define DISPLAY 0       // Display images?
 
 using namespace std;
 using namespace cv;
@@ -20,10 +20,8 @@ void run_vj_gpu(Mat gray_face);
 int main(int argc, char** argv )
 {	
 	if (SINGLE_IMG) {
-		Mat image;
-		image = imread(FACE_PATH_2, 1);
-		if (!image.data)
-		{
+		Mat image imread(FACE_PATH_2, 1);
+		if (!image.data) {
 			printf("No image data \n");
 			return -1;
 		}
@@ -47,9 +45,6 @@ int main(int argc, char** argv )
 
 void run_vj_gpu(Mat gray_face) {
 
-	int mode = 1;
-	int i;
-
 	/* detection parameters */
 	float scaleFactor = 1.2;
 	int minNeighbours = 1;
@@ -65,7 +60,7 @@ void run_vj_gpu(Mat gray_face) {
 	std::vector<MyRect> result;
 	detect_faces(image->width, image->height, result, image);
 	cout << "Size: " << result.size() << endl;
-	for (i = 0; i < result.size(); i++) {
+	for (int i = 0; i < result.size(); i++) {
 		MyRect r = result[i];
 		drawRectangle(image, r);
 	}
