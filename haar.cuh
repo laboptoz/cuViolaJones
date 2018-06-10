@@ -240,7 +240,7 @@ void detect_faces(unsigned int img_width, unsigned int img_height, std::vector<M
 	* assume we have array of width and height of downscaled images - down_widths, down_heights
 	* number of levels - num_levels
 	*/
-	int wd_height = 26, wd_width = 26;
+	int wd_height = WIN_SIZE, wd_width = WIN_SIZE;
 	//scale_factor = 1;
 	//minNeighbors = 1;
 	unsigned int * num_stages = new unsigned int;

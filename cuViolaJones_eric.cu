@@ -44,10 +44,6 @@ int main(int argc, char** argv )
 
 void run_vj_gpu(Mat gray_face) {
 
-	/* detection parameters */
-	float scaleFactor = 1.2;
-	int minNeighbors = 1;
-
 	MyImage imageObj;
 	MyImage *image = &imageObj;
 	image->data = gray_face.data;
@@ -57,7 +53,7 @@ void run_vj_gpu(Mat gray_face) {
 	image->flag = 1;
 
 	std::vector<MyRect> result;
-	detect_faces(image->width, image->height, result, image, scaleFactor, minNeighbors);
+	detect_faces(image->width, image->height, result, image, SCALING, MIN_NEIGH);
 	cout << "Size: " << result.size() << endl;
 	for (int i = 0; i < result.size(); i++) {
 		MyRect r = result[i];

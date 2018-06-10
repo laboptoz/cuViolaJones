@@ -55,7 +55,7 @@ void cpuVJ(Image img, String cascade_path, int *tp, int *fp, bool display) {
 
 	//Detect faces
 	vector<Rect> faces;
-	face_cascade.detectMultiScale(gray_face, faces, 1.2, 1, 0 | CV_HAAR_SCALE_IMAGE, Size(26, 26));
+	face_cascade.detectMultiScale(gray_face, faces, SCALING, MIN_NEIGH, 0 | CV_HAAR_SCALE_IMAGE, Size(WIN_SIZE, WIN_SIZE));
 
 	// No faces detected
 	if (faces.size() == 0) {
@@ -85,6 +85,7 @@ void cpuVJ(Image img, String cascade_path, int *tp, int *fp, bool display) {
 
 void testCpuViolaJones(Image * imgs, int numImgs, bool display) {
 
+	cout << "Using CPU..." << endl << endl;
 	// Limit images
 	//numImgs = 100;
 

@@ -75,9 +75,7 @@ __global__ void cascadeClassifier(Stage * stages, unsigned int num_stages, unsig
 
 void testGpuViolaJones(Image *faces, int numImgs, bool display) {
 
-	/* detection parameters */
-	float scaleFactor = 1.2;
-	int minNeighbors = 1;
+	cout << "Using GPU..." << endl << endl;
 
 	// True positive and false positive variables
 	int *tp = new int, *fp = new int; 
@@ -100,7 +98,7 @@ void testGpuViolaJones(Image *faces, int numImgs, bool display) {
 		image->flag = 1;
 
 		std::vector<MyRect> result;
-		detect_faces(image->width, image->height, result, image, scaleFactor, minNeighbors);
+		detect_faces(image->width, image->height, result, image, SCALING, MIN_NEIGH);
 
 		// No faces detected
 		if (result.size() == 0) {
