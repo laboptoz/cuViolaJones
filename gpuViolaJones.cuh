@@ -77,7 +77,7 @@ void testGpuViolaJones(Image *faces, int numImgs, bool display) {
 
 	/* detection parameters */
 	float scaleFactor = 1.2;
-	int minNeighbours = 1;
+	int minNeighbors = 1;
 
 	// True positive and false positive variables
 	int *tp = new int, *fp = new int; 
@@ -85,7 +85,8 @@ void testGpuViolaJones(Image *faces, int numImgs, bool display) {
 
 	clock_t start = clock();
 	for (int n = 0; n < numImgs; n++) {
-		cout << "Image " << faces[n].im_name << endl;
+		if (PRINT)
+			cout << "Image " << faces[n].im_name << endl;
 
 		// Ground truth bbox
 		Rect gt = Rect(faces[n].x, faces[n].y, faces[n].w, faces[n].h);
@@ -99,11 +100,12 @@ void testGpuViolaJones(Image *faces, int numImgs, bool display) {
 		image->flag = 1;
 
 		std::vector<MyRect> result;
-		detect_faces(image->width, image->height, result, image);
+		detect_faces(image->width, image->height, result, image, scaleFactor, minNeighbors);
 
 		// No faces detected
 		if (result.size() == 0) {
-			cout << "None detected :(" << endl << endl;
+			if (PRINT)
+				cout << "None detected :(" << endl << endl;
 			continue;
 		}
 

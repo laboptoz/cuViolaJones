@@ -5,6 +5,7 @@
 #include <string.h>
 #include <iostream> 
 #include <fstream>
+#include "macros.hpp"
 
 #define THRESHOLD .5
 
@@ -91,12 +92,14 @@ void IOU(Rect pred, Rect gt, int *tp, int *fp) {
 	}
 	else {
 		// false positive (detected but wrong face)
-		cout << "False positive" << endl << endl;
+		if (PRINT)
+			cout << "False positive" << endl << endl;
 		*fp = *fp + 1;
 		return;
 	}
 
-	cout << "IOU: " << iou << endl << endl;;
+	if (PRINT)
+		cout << "IOU: " << iou << endl << endl;;
 
 	if (iou > THRESHOLD)
 		*tp = *tp + 1;

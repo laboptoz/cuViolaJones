@@ -3,6 +3,7 @@
 #include <opencv2/core/types.hpp>
 #include "load_images.hpp"
 #include "paths.hpp"
+#include "macros.hpp"
 
 using namespace cv;
 using namespace std;
@@ -38,7 +39,8 @@ void cpuVJ(Image img, String cascade_path, int *tp, int *fp, bool display) {
 	
 	// Ground truth bbox
 	Rect gt = Rect(img.x, img.y, img.w, img.h);
-	cout << "Image " << img.im_name << endl;
+	if (PRINT)
+		cout << "Image " << img.im_name << endl;
 
 	//Load the cascade classifier
 	CascadeClassifier face_cascade;
@@ -53,11 +55,12 @@ void cpuVJ(Image img, String cascade_path, int *tp, int *fp, bool display) {
 
 	//Detect faces
 	vector<Rect> faces;
-	face_cascade.detectMultiScale(gray_face, faces, 1.1, 3, 0 | CV_HAAR_SCALE_IMAGE, Size(30, 30));
+	face_cascade.detectMultiScale(gray_face, faces, 1.2, 1, 0 | CV_HAAR_SCALE_IMAGE, Size(26, 26));
 
 	// No faces detected
 	if (faces.size() == 0) {
-		cout << "None detected :(" << endl << endl;
+		if (PRINT)
+			cout << "None detected :(" << endl << endl;
 		return;
 	}
 

@@ -19,9 +19,6 @@
 #include <iostream>
 #include <fstream>
 
-#define GPUII 0
-
-
 /* compute integral images */
 void integralImages_cpp(MyImage *src, MyIntImage *sum, MyIntImage *sqsum);
 
@@ -196,7 +193,7 @@ __global__ void slide_window(
 }
 
 void detect_faces(unsigned int img_width, unsigned int img_height, std::vector<MyRect> &allCandidates, 
-	MyImage* _img) {
+	MyImage* _img, float scale_factor, int minNeighbors) {
 	/* group overlaping windows */
 	const float GROUP_EPS = 0.4f;
 
@@ -243,9 +240,9 @@ void detect_faces(unsigned int img_width, unsigned int img_height, std::vector<M
 	* assume we have array of width and height of downscaled images - down_widths, down_heights
 	* number of levels - num_levels
 	*/
-	int wd_height = 24, wd_width = 24;
-	float scale_factor = 1;
-	int minNeighbors = 1;
+	int wd_height = 26, wd_width = 26;
+	//scale_factor = 1;
+	//minNeighbors = 1;
 	unsigned int * num_stages = new unsigned int;
 	Stage * stages_gpu = loadParametersToGPU(num_stages);
 

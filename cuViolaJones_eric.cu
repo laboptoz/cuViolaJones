@@ -8,9 +8,8 @@
 #include "haar.cuh"
 #include <stdlib.h>
 #include "image.h"
+#include "macros.hpp"
 
-#define SINGLE_IMG 0	// Detect only one image?
-#define DISPLAY 0       // Display images?
 
 using namespace std;
 using namespace cv;
@@ -20,7 +19,7 @@ void run_vj_gpu(Mat gray_face);
 int main(int argc, char** argv )
 {	
 	if (SINGLE_IMG) {
-		Mat image = imread(FACE_PATH_2, 1);
+		Mat image = imread(FACE_PATH, 1);
 		if (!image.data) {
 			printf("No image data \n");
 			return -1;
@@ -47,7 +46,7 @@ void run_vj_gpu(Mat gray_face) {
 
 	/* detection parameters */
 	float scaleFactor = 1.2;
-	int minNeighbours = 1;
+	int minNeighbors = 1;
 
 	MyImage imageObj;
 	MyImage *image = &imageObj;
@@ -58,7 +57,7 @@ void run_vj_gpu(Mat gray_face) {
 	image->flag = 1;
 
 	std::vector<MyRect> result;
-	detect_faces(image->width, image->height, result, image);
+	detect_faces(image->width, image->height, result, image, scaleFactor, minNeighbors);
 	cout << "Size: " << result.size() << endl;
 	for (int i = 0; i < result.size(); i++) {
 		MyRect r = result[i];
