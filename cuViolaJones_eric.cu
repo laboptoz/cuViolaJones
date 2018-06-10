@@ -21,7 +21,7 @@ int main(int argc, char** argv )
 {	
 	if (SINGLE_IMG) {
 		Mat image;
-		image = imread(TEST_IMG, 1);
+		image = imread(FACE_PATH_2, 1);
 		if (!image.data)
 		{
 			printf("No image data \n");

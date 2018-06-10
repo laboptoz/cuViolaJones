@@ -82,24 +82,22 @@ void testGpuViolaJones(Image *faces, int numImgs, bool display) {
 	float scaleFactor = 1.2;
 	int minNeighbours = 1;
 
-	int *tp = new int, *fp = new int; // true positive and false positive
+	// True positive and false positive variables
+	int *tp = new int, *fp = new int; 
 	*tp = *fp = 0;
 
 	clock_t start = clock();
 	for (int n = 0; n < numImgs; n++) {
 		cout << "Image " << faces[n].im_name << endl;
+
 		// Ground truth bbox
 		Rect gt = Rect(faces[n].x, faces[n].y, faces[n].w, faces[n].h);
 
-		// Convert to grayscale
-		Mat gray_face;
-		cvtColor(faces[n].image, gray_face, CV_BGR2GRAY);
-
 		MyImage imageObj;
 		MyImage *image = &imageObj;
-		image->data = gray_face.data;
-		image->width = gray_face.cols;
-		image->height = gray_face.rows;
+		image->data = faces[n].grayscale.data;
+		image->width = faces[n].grayscale.cols;
+		image->height = faces[n].grayscale.rows;
 		image->maxgrey = 255;
 		image->flag = 1;
 
@@ -132,6 +130,6 @@ void testGpuViolaJones(Image *faces, int numImgs, bool display) {
 	}
 
 	printf("Final GPU accuracy = %d/%d = %f\n", *tp, numImgs, (float)*tp / numImgs);
-	printf("Final GPU false positives = %d/%d = %f\n\n", *fp, numImgs, (float)*fp / numImgs);
+	printf("Final GPU false positives = %d/%d = %f\n", *fp, numImgs, (float)*fp / numImgs);
 	printf("Time elapsed: %.8lfs\n\n", (clock() - start) / (double)CLOCKS_PER_SEC);
 }

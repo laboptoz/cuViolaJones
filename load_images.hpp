@@ -13,6 +13,7 @@ using namespace cv;
 
 struct Image {
 	Mat image;
+	Mat grayscale;
 	int x;	
 	int y;
 	int w;
@@ -53,9 +54,11 @@ Image * loadData(string textFile, string imagePath, int *numImgs) {
 	while (getline(labels, line)) {
 		istringstream iss(line);
 		vector<string> results(istream_iterator<string>{iss}, istream_iterator<string>()); // splits line with space delimiter
-		imgs[idx].image = imread(imagePath + results[0], 1); // read and store image
+		Mat face = imread(imagePath + results[0], 1);		 // read and store image
+		imgs[idx].image = face;
+		cvtColor(face, imgs[idx].grayscale, CV_BGR2GRAY);	 // Convert to grayscale
 		imgs[idx].im_name = results[0];						 // Store image name
-		imgs[idx].x = stoi(results[1]);                      // stoi() converts string to integer
+		imgs[idx].x = stoi(results[1]);						 // stoi() converts string to integer
 		imgs[idx].y = stoi(results[2]);
 		imgs[idx].w = stoi(results[3]);
 		imgs[idx].h = stoi(results[4]);
