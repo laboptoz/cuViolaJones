@@ -1,4 +1,4 @@
-#define MODE 1			// 0: Single image detection, 1: Run metric test, 2: Webcam mode
+#define MODE 2			// 0: Single image detection, 1: Run metric test, 2: Webcam mode
 #define DISPLAY 0       // Display images?
 #define CPUTEST 1
 #define GPUTEST 1
@@ -8,6 +8,7 @@
 
 
 #define PRINT 0			// Output details?
+#define REPORT_GMEM 1
 
 // Parameters for both CPU and GPU
 #define SCALING 1.2

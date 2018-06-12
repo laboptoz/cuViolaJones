@@ -4,7 +4,6 @@
 //#include "cuNNII.h"
 
 #include "haar.h"
-#include "image.h"
 #include <stdio.h>
 //#include "stdio-wrapper.h"
 #include "paths.hpp"
@@ -20,10 +19,10 @@
 #include <fstream>
 
 /* compute integral images */
-void integralImages_cpp(MyImage *src, MyIntImage *sum, MyIntImage *sqsum);
+void integralImages_cpp(ImageUnion *src, ImageUnion *sum, ImageUnion *sqsum);
 
 /* compute scaled image */
-void nearestNeighbor_cpp(MyImage *src, MyImage *dst);
+void nearestNeighbor_cpp(ImageUnion *src, ImageUnion *dst);
 
 /* rounding function */
 inline  int  myRound_cpp(float value)
@@ -70,20 +69,8 @@ __device__ unsigned int int_sqrt_cpp(unsigned int value)
 
 __device__ bool operation(unsigned int* sum, unsigned int* sqsum, unsigned int idx, 
 	unsigned int img_width, unsigned int wd_width, unsigned int wd_height,
-	Stage * stages_gpu) {
-	// idx: top left corner index of the window
-
-	/*
-	* todo: 
-	* assume we have an array of number of filters per stage - filter_counts
-	* filter class - filter
-	* array of pointers to filters - filters
-	* sum integral image [0] pointer - sum_int
-	* stage threshold - 
-	*
-	* update filter function to take argument of variance normalization factor
-	*/ 
-
+	Stage * stages_gpu) 
+{
 	// normalize image; 0 top left, 1 top right, 2 bottom left, 3 bottom right
 	unsigned int idx0 = idx;
 	unsigned int idx1 = idx + wd_width - 1;
@@ -127,12 +114,6 @@ __device__ bool operation(unsigned int* sum, unsigned int* sqsum, unsigned int i
 	return true;
 }
 
-//__device__ int test_sum(int* d_image, int topLeft_idx, int img_width, float norm_factor) {
-//	float val0 = d_image[topLeft_idx];
-//	float val1 = d_image[topLeft_idx + 1];
-//	return (int)(val0 + val1);
-//}
-
 __global__ void slide_window(
 	unsigned int* sum1, unsigned int* sqsum1,
 	bool *d_activation,
@@ -141,50 +122,10 @@ __global__ void slide_window(
 	Stage * stages_gpu
 
 ) {
-	//unsigned int param_idx = 0;
-	//for (int i = 0; i < 25; i++) {
-	//	unsigned int num_filters = stages_gpu[i].num_filters;
-	//	for (int j = 0; j < num_filters; j++) {
-	//		Filter f = stages_gpu[i].filters[j];
-
-	//		params[param_idx] = f.x1;
-	//		params[param_idx + 1] = f.y1;
-	//		params[param_idx + 2] = f.width1;
-	//		params[param_idx + 3] = f.height1;
-	//		params[param_idx + 4] = f.weight1;
-
-	//		params[param_idx + 5] = f.x2;
-	//		params[param_idx + 6] = f.y2;
-	//		params[param_idx + 7] = f.width2;
-	//		params[param_idx + 8] = f.height2;
-	//		params[param_idx + 9] = f.weight2;
-
-	//		params[param_idx + 10] = f.x3;
-	//		params[param_idx + 11] = f.y3;
-	//		params[param_idx + 12] = f.width3;
-	//		params[param_idx + 13] = f.height3;
-	//		params[param_idx + 14] = f.weight3;
-
-
-	//		params[param_idx + 15] = f.threshold;
-	//		params[param_idx + 16] = f.alpha1;
-	//		params[param_idx + 17] = f.alpha2;
-
-	//		param_idx += 18;
-
-	//	}
-	//	params[param_idx] = stages_gpu[i].threshold;
-
-	//	param_idx += 1;
-	//}
-
-
 	//printf("in slide window, ");
 	// get four corners
 	unsigned int topLeft_idx = blockIdx.y * img_width + blockIdx.x * blockDim.x + threadIdx.x;
 	//printf("r %d c %d, ", blockIdx.y, blockIdx.x * blockDim.x + threadIdx.x);
-	
-	//int result = test_sum(d_image, topLeft_idx, img_width, 1);
 	
 	// to differentiate if goes outside of image
 	if ((topLeft_idx + wd_width - 1) / img_width == blockIdx.y) {
@@ -198,34 +139,33 @@ __global__ void slide_window(
 	//printf("\n");
 }
 
-void detect_faces(unsigned int img_width, unsigned int img_height, std::vector<MyRect> &allCandidates, 
-	MyImage* _img, float scale_factor, int minNeighbors) {
+void detect_faces(unsigned int img_width, unsigned int img_height, std::vector<Rectangle> &allCandidates,
+	ImageUnion* _img, float scale_factor, int minNeighbors, unsigned int* num_stages, Stage* stages_gpu) {
 	/* group overlaping windows */
 	const float GROUP_EPS = 0.4f;
 
 	/* pointer to input image */
-	MyImage *img = _img;
-	/***********************************
-	* create structs for images
-	* see haar.h for details
-	* img1: normal image (unsigned char)
-	* sum1: integral image (int)
-	* sqsum1: square integral image (int)
-	**********************************/
-	MyImage image1Obj;
-	MyIntImage sum1Obj;
-	MyIntImage sqsum1Obj;
+	ImageUnion *img = _img;
+
 	/* pointers for the created structs */
-	MyImage *img1 = &image1Obj;
-	MyIntImage *sum1 = &sum1Obj;
-	MyIntImage *sqsum1 = &sqsum1Obj;
+	ImageUnion *img1 = new ImageUnion();
+	ImageUnion *sum1 = new ImageUnion();
+	ImageUnion *sqsum1 = new ImageUnion();
 
 	/* malloc for img1: unsigned char */
-	createImage(img->width, img->height, img1);
+	img1->width = img->width;
+	img1->height = img->height;
+	img1->dataChar = (unsigned char *)malloc(sizeof(unsigned char)*(img->height*img->width));
+
 	/* malloc for sum1: unsigned char */
-	createSumImage(img->width, img->height, sum1);
+	sum1->width = img->width;
+	sum1->height = img->height;
+	sum1->dataInt = (int*)malloc(sizeof(int)*(img->height*img->width));
+
 	/* malloc for sqsum1: unsigned char */
-	createSumImage(img->width, img->height, sqsum1);
+	sqsum1->width = img->width;
+	sqsum1->height = img->height;
+	sqsum1->dataInt = (int*)malloc(sizeof(int)*(img->height*img->width));
 
 	//------------------------------------
 	//------    CREATE II ON GPU  --------
@@ -256,9 +196,6 @@ void detect_faces(unsigned int img_width, unsigned int img_height, std::vector<M
 	int wd_height = WIN_SIZE, wd_width = WIN_SIZE;
 	//scale_factor = 1;
 	//minNeighbors = 1;
-	unsigned int * num_stages = new unsigned int;
-	Stage * stages_gpu = loadParametersToGPU(num_stages);
-
 	int counter = 0;
 
 #if GPUII == 1
@@ -267,11 +204,11 @@ void detect_faces(unsigned int img_width, unsigned int img_height, std::vector<M
 	for (int i = 0;;i++){
 #endif
 		/* size of the image scaled up */
-		MySize winSize = { myRound_cpp(wd_width*scale_factor), myRound_cpp(wd_height*scale_factor) };
+		ImageDim winSize = { myRound_cpp(wd_width*scale_factor), myRound_cpp(wd_height*scale_factor) };
 		/* size of the image scaled down (from bigger to smaller) */
-		MySize sz = { (img->width / scale_factor), (img->height / scale_factor) };
+		ImageDim sz = { (img->width / scale_factor), (img->height / scale_factor) };
 		/* difference between sizes of the scaled image and the original detection window */
-		MySize sz1 = { sz.width - wd_width, sz.height - wd_height };
+		ImageDim sz1 = { sz.width - wd_width, sz.height - wd_height };
 		/* if the actual scaled image is smaller than the original detection window, break */
 
 		//if (sz1.width < 0 || sz1.height < 0)
@@ -282,9 +219,15 @@ void detect_faces(unsigned int img_width, unsigned int img_height, std::vector<M
 		if (sz1.width < 0 || sz1.height < 0)
 			break;
 
-		setImage(sz.width, sz.height, img1);
-		setSumImage(sz.width, sz.height, sum1);
-		setSumImage(sz.width, sz.height, sqsum1);
+		// set image dim
+		img1->width = sz.width;
+		img1->height = sz.height;
+
+		// integral image dims
+		sum1->width = sz.width;
+		sum1->height = sz.height;
+		sqsum1->width = sz.width;
+		sqsum1->height = sz.height;
 		nearestNeighbor_cpp(img, img1);
 		integralImages_cpp(img1, sum1, sqsum1);
 #endif
@@ -338,8 +281,8 @@ void detect_faces(unsigned int img_width, unsigned int img_height, std::vector<M
 		unsigned int* d_sqsum1;
 		CHECK(cudaMalloc((void**)&d_sum1, sum1->width * sum1->height * sizeof(int)));
 		CHECK(cudaMalloc((void**)&d_sqsum1, sqsum1->width * sqsum1->height * sizeof(int)));
-		CHECK(cudaMemcpy(d_sum1, sum1->data, sum1->width * sum1->height * sizeof(int), cudaMemcpyHostToDevice));
-		CHECK(cudaMemcpy(d_sqsum1, sqsum1->data, sqsum1->width * sqsum1->height * sizeof(int), cudaMemcpyHostToDevice));
+		CHECK(cudaMemcpy(d_sum1, sum1->dataInt, sum1->width * sum1->height * sizeof(int), cudaMemcpyHostToDevice));
+		CHECK(cudaMemcpy(d_sqsum1, sqsum1->dataInt, sqsum1->width * sqsum1->height * sizeof(int), cudaMemcpyHostToDevice));
 
 		unsigned int down_h = sz.height;
 		unsigned int down_w = sz.width;
@@ -358,48 +301,35 @@ void detect_faces(unsigned int img_width, unsigned int img_height, std::vector<M
 		// run sliding window kernel
 		dim3 blockDim(1024);
 		dim3 gridDim((num_wd_row + blockDim.x - 1) / blockDim.x, down_h - wd_height + 1);
-		//dim3 blockDim(1);
-		//dim3 gridDim(1);
-		//printf("grid dim: %d %d\n", gridDim.x, gridDim.y);
-
-		//unsigned int params_size = (2913 * 18 + 25) * sizeof(int);
-		//int *h_params = (int *)malloc(params_size);
-		//int *d_params;
-		//CHECK(cudaMalloc((void**)&d_params, params_size));
-
 		slide_window << <gridDim, blockDim >> > (d_sum1, d_sqsum1, d_activation, wd_width, wd_height, down_w, down_h, stages_gpu);
 		CHECK(cudaDeviceSynchronize());
-
-		//// copy params back
-		//CHECK(cudaMemcpy(h_params, d_params, params_size, cudaMemcpyDeviceToHost));
-		//myfile.open("params.txt");
-		//if (myfile.is_open()) {
-		//	for (int count = 0; count < 2913 * 18 + 25; count++) {
-		//		//printf("%d ", sum1->data[count]);
-		//		myfile << h_params[count] << "\n";
-		//	}
-		//	myfile.close();
-		//}
-		//else std::cout << "Unable to open file";
 
 		// copy activation map back
 		CHECK(cudaMemcpy(h_activation, d_activation, act_size, cudaMemcpyDeviceToHost));
 
 		// add activations to vector
-		
 		for (unsigned int j = 0; j < num_wd_col * num_wd_row; j++) {
 			if (h_activation[j]) {
 				unsigned int y = j / num_wd_row;
 				unsigned int x = j % num_wd_row;
-				MyRect r = { myRound_cpp(x * scale_factor), myRound_cpp(y * scale_factor), wd_width * scale_factor, wd_height * scale_factor };
+				Rectangle r = { myRound_cpp(x * scale_factor), myRound_cpp(y * scale_factor), wd_width * scale_factor, wd_height * scale_factor };
 				allCandidates.push_back(r);
 				counter++;
 			}
 		}
 		// increment scale factor
-		scale_factor *= 1.2;		
+		scale_factor *= 1.2;
+
+		// free cuda var
+		CHECK(cudaFree((void*)d_sum1));
+		CHECK(cudaFree((void*)d_sqsum1));
+		CHECK(cudaFree((void*)d_activation));
+		free(h_activation);
 	}
-	//printf("num detected: %d, ", counter);
+	// free image/integral image/squared integral image
+	free(img1->dataChar);
+	free(sum1->dataInt);
+	free(sqsum1->dataInt);
 
 	// sort, clean and organize the labeled windows
 	if (minNeighbors != 0) {
@@ -417,15 +347,15 @@ void detect_faces(unsigned int img_width, unsigned int img_height, std::vector<M
 * More info:
 * http://en.wikipedia.org/wiki/Summed_area_table
 ****************************************************/
-void integralImages_cpp(MyImage *src, MyIntImage *sum, MyIntImage *sqsum)
+void integralImages_cpp(ImageUnion *src, ImageUnion *sum, ImageUnion *sqsum)
 {
 	int x, y, s, sq, t, tq;
 	unsigned char it;
 	int height = src->height;
 	int width = src->width;
-	unsigned char *data = src->data;
-	int * sumData = sum->data;
-	int * sqsumData = sqsum->data;
+	unsigned char *data = src->dataChar;
+	int * sumData = sum->dataInt;
+	int * sqsumData = sqsum->dataInt;
 	for (y = 0; y < height; y++)
 	{
 		s = 0;
@@ -455,7 +385,7 @@ void integralImages_cpp(MyImage *src, MyIntImage *sum, MyIntImage *sqsum)
 * This function downsample an image using nearest neighbor
 * It is used to build the image pyramid
 **********************************************************/
-void nearestNeighbor_cpp(MyImage *src, MyImage *dst)
+void nearestNeighbor_cpp(ImageUnion *src, ImageUnion *dst)
 {
 
 	int y;
@@ -471,8 +401,8 @@ void nearestNeighbor_cpp(MyImage *src, MyImage *dst)
 
 	int rat = 0;
 
-	unsigned char* src_data = src->data;
-	unsigned char* dst_data = dst->data;
+	unsigned char* src_data = src->dataChar;
+	unsigned char* dst_data = dst->dataChar;
 
 
 	int x_ratio = (int)((w1 << 16) / w2) + 1;

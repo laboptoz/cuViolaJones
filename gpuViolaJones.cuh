@@ -4,7 +4,6 @@
 //#include "cuNNII.h"
 #include "Filter.cuh"
 #include "haar.cuh"
-#include "image.h"
 #include "cuda_error_check.h"
 #include "parameter_loader.h"
 #include <sstream>
@@ -24,6 +23,9 @@ void testGpuViolaJones(Image *faces, int numImgs, bool display) {
 	*tp = *fp = 0;
 
 	clock_t start = clock();
+	unsigned int * num_stages = new unsigned int;
+	Stage * stages_gpu = loadParametersToGPU(num_stages);
+
 	for (int n = 0; n < numImgs; n++) {
 		if (PRINT)
 			cout << "Image " << faces[n].im_name << endl;
@@ -31,15 +33,13 @@ void testGpuViolaJones(Image *faces, int numImgs, bool display) {
 		// Ground truth bbox
 		Rect gt = Rect(faces[n].x, faces[n].y, faces[n].w, faces[n].h);
 
-		MyImage imageObj;
-		MyImage *image = &imageObj;
-		image->data = faces[n].grayscale.data;
+		ImageUnion *image = new ImageUnion();
+		image->dataChar = faces[n].grayscale.data;
 		image->width = faces[n].grayscale.cols;
 		image->height = faces[n].grayscale.rows;
-		image->maxgrey = 255;
 
-		std::vector<MyRect> result;
-		detect_faces(image->width, image->height, result, image, SCALING, MIN_NEIGH);
+		std::vector<Rectangle> result;
+		detect_faces(image->width, image->height, result, image, SCALING, MIN_NEIGH, num_stages, stages_gpu);
 
 		// No faces detected
 		if (result.size() == 0) {
@@ -51,7 +51,7 @@ void testGpuViolaJones(Image *faces, int numImgs, bool display) {
 		//cout << "Detected " << result.size() << " images" << endl;
 
 		// Calc IOU with first face
-		MyRect last = result.back();
+		Rectangle last = result.back();
 		Rect pred = Rect(last.x, last.y, last.width, last.height);
 		IOU(pred, gt, tp, fp);
 
@@ -83,15 +83,15 @@ void gpuSingleDetection(Mat face) {
 	Mat gray_face;
 	cvtColor(face, gray_face, CV_BGR2GRAY);
 
-	MyImage imageObj;
-	MyImage *image = &imageObj;
-	image->data = gray_face.data;
+	ImageUnion *image = new ImageUnion();
+	image->dataChar = gray_face.data;
 	image->width = gray_face.cols;
 	image->height = gray_face.rows;
-	image->maxgrey = 255;
 
-	std::vector<MyRect> result;
-	detect_faces(image->width, image->height, result, image, SCALING, MIN_NEIGH);
+	std::vector<Rectangle> result;
+	unsigned int * num_stages = new unsigned int;
+	Stage * stages_gpu = loadParametersToGPU(num_stages);
+	detect_faces(image->width, image->height, result, image, SCALING, MIN_NEIGH, num_stages, stages_gpu);
 
 	if (result.size() > 0) {
 		for (int i = 0; i < result.size(); i++) {
@@ -124,8 +124,9 @@ void gpuWebcam() {
 	}
 
 	Mat img;
-	MyImage imageObj;
-	MyImage *image = &imageObj;
+	ImageUnion *image = new ImageUnion();
+	unsigned int * num_stages = new unsigned int;
+	Stage * stages_gpu = loadParametersToGPU(num_stages);
 	for (;;) {
 
 		// Image from camera to Mat
@@ -135,13 +136,12 @@ void gpuWebcam() {
 		Mat gray_face;
 		cvtColor(img, gray_face, CV_BGR2GRAY);
 		
-		image->data = gray_face.data;
+		image->dataChar = gray_face.data;
 		image->width = gray_face.cols;
 		image->height = gray_face.rows;
-		image->maxgrey = 255;
 
-		std::vector<MyRect> result;
-		detect_faces(image->width, image->height, result, image, SCALING, MIN_NEIGH);
+		std::vector<Rectangle> result;
+		detect_faces(image->width, image->height, result, image, SCALING, MIN_NEIGH, num_stages, stages_gpu);
 
 		if (result.size() > 0) {
 			for (int i = 0; i < result.size(); i++) {
@@ -183,8 +183,9 @@ void webcamGeneral() {
 	face_cascade.load(CASCADE_PATH);
 
 	Mat img;
-	MyImage imageObj;
-	MyImage *image = &imageObj;
+	ImageUnion *image = new ImageUnion();
+	unsigned int * num_stages = new unsigned int;
+	Stage * stages_gpu = loadParametersToGPU(num_stages);
 	for (;;) {
 
 		// Image from camera to Mat
@@ -194,13 +195,12 @@ void webcamGeneral() {
 		Mat gray_face;
 		cvtColor(img, gray_face, CV_BGR2GRAY);
 
-		image->data = gray_face.data;
+		image->dataChar = gray_face.data;
 		image->width = gray_face.cols;
 		image->height = gray_face.rows;
-		image->maxgrey = 255;
 
-		std::vector<MyRect> result;
-		detect_faces(image->width, image->height, result, image, SCALING, MIN_NEIGH);
+		std::vector<Rectangle> result;
+		detect_faces(image->width, image->height, result, image, SCALING, MIN_NEIGH, num_stages, stages_gpu);
 
 		if (result.size() > 0) {
 			for (int i = 0; i < result.size(); i++) {
@@ -257,8 +257,9 @@ void webcamTest() {
 	face_cascade.load(CASCADE_PATH);
 
 	Mat img;
-	MyImage imageObj;
-	MyImage *image = &imageObj;
+	ImageUnion *image = new ImageUnion();
+	unsigned int * num_stages = new unsigned int;
+	Stage * stages_gpu = loadParametersToGPU(num_stages);
 	for (;;) {
 
 		// Image from camera to Mat
@@ -268,16 +269,21 @@ void webcamTest() {
 		Mat gray_face;
 		cvtColor(img, gray_face, CV_BGR2GRAY);
 
-		image->data = gray_face.data;
+		image->dataChar = gray_face.data;
 		image->width = gray_face.cols;
 		image->height = gray_face.rows;
-		image->maxgrey = 255;
 
-		std::vector<MyRect> result;
-		detect_faces(image->width, image->height, result, image, SCALING, MIN_NEIGH);
+		std::vector<Rectangle> result;
+		detect_faces(image->width, image->height, result, image, SCALING, MIN_NEIGH, num_stages, stages_gpu);
+
+#if REPORT_GMEM
+		size_t remainMem, totalMem;
+		cudaMemGetInfo(&remainMem, &totalMem);
+		printf("GPU Remaining Mem: %d\n", (remainMem / (1024 * 1024)));
+#endif
 
 		if (result.size() > 0) {
-			MyRect last = result.back();
+			Rectangle last = result.back();
 			Rect pred = Rect(last.x, last.y, last.width, last.height);
 			rectangle(img, pred, Scalar(0, 0, 255), 2); // RED
 		}

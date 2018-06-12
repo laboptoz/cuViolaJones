@@ -1,6 +1,6 @@
 #include "haar.h"
 
-int partition(std::vector<MyRect>& _vec, std::vector<int>& labels, float eps);
+int partition(std::vector<Rectangle>& _vec, std::vector<int>& labels, float eps);
 
 int myMax(int a, int b)
 {
@@ -31,7 +31,7 @@ int myAbs(int n)
     return -n;
 }
 
-int predicate(float eps, MyRect& r1, MyRect& r2)
+int predicate(float eps, Rectangle& r1, Rectangle& r2)
 {
   float delta = eps*(myMin(r1.width, r2.width) + myMin(r1.height, r2.height))*0.5;
   return myAbs(r1.x - r2.x) <= delta &&
@@ -40,7 +40,7 @@ int predicate(float eps, MyRect& r1, MyRect& r2)
     myAbs(r1.y + r1.height - r2.y - r2.height) <= delta;
 }
 
-void groupRectangles(std::vector<MyRect>& rectList, int groupThreshold, float eps)
+void groupRectangles(std::vector<Rectangle>& rectList, int groupThreshold, float eps)
 {
   if( groupThreshold <= 0 || rectList.empty() )
     return;
@@ -50,7 +50,7 @@ void groupRectangles(std::vector<MyRect>& rectList, int groupThreshold, float ep
 
   int nclasses = partition(rectList, labels, eps);
 
-  std::vector<MyRect> rrects(nclasses);
+  std::vector<Rectangle> rrects(nclasses);
   std::vector<int> rweights(nclasses);
 
   int i, j, nlabels = (int)labels.size();
@@ -67,7 +67,7 @@ void groupRectangles(std::vector<MyRect>& rectList, int groupThreshold, float ep
     }
   for( i = 0; i < nclasses; i++ )
     {
-      MyRect r = rrects[i];
+      Rectangle r = rrects[i];
       float s = 1.f/rweights[i];
       rrects[i].x = myRound(r.x*s);
       rrects[i].y = myRound(r.y*s);
@@ -80,7 +80,7 @@ void groupRectangles(std::vector<MyRect>& rectList, int groupThreshold, float ep
 
   for( i = 0; i < nclasses; i++ )
     {
-      MyRect r1 = rrects[i];
+	  Rectangle r1 = rrects[i];
       int n1 = rweights[i];
       if( n1 <= groupThreshold )
 	continue;
@@ -95,7 +95,7 @@ void groupRectangles(std::vector<MyRect>& rectList, int groupThreshold, float ep
 	   ********************************/
 	  if( j == i || n2 <= groupThreshold )
 	    continue;
-	  MyRect r2 = rrects[j];
+	  Rectangle r2 = rrects[j];
 
 	  int dx = myRound( r2.width * eps );
 	  int dy = myRound( r2.height * eps );
@@ -118,11 +118,11 @@ void groupRectangles(std::vector<MyRect>& rectList, int groupThreshold, float ep
 }
 
 
-int partition(std::vector<MyRect>& _vec, std::vector<int>& labels, float eps)
+int partition(std::vector<Rectangle>& _vec, std::vector<int>& labels, float eps)
 {
   int i, j, N = (int)_vec.size();
 
-  MyRect* vec = &_vec[0];
+  Rectangle* vec = &_vec[0];
 
   const int PARENT=0;
   const int RANK=1;
@@ -209,26 +209,26 @@ int partition(std::vector<MyRect>& _vec, std::vector<int>& labels, float eps)
 
 
 /* draw white bounding boxes around detected faces */
-void drawRectangle(MyImage* image, MyRect r)
+void drawRectangle(ImageUnion* image, Rectangle r)
 {
 	int i;
 	int col = image->width;
 
 	for (i = 0; i < r.width; i++)
 	{
-      image->data[col*r.y + r.x + i] = 255;
+      image->dataChar[col*r.y + r.x + i] = 255;
 	}
 	for (i = 0; i < r.height; i++)
 	{
-		image->data[col*(r.y+i) + r.x + r.width] = 255;
+		image->dataChar[col*(r.y+i) + r.x + r.width] = 255;
 	}
 	for (i = 0; i < r.width; i++)
 	{
-		image->data[col*(r.y + r.height) + r.x + r.width - i] = 255;
+		image->dataChar[col*(r.y + r.height) + r.x + r.width - i] = 255;
 	}
 	for (i = 0; i < r.height; i++)
 	{
-		image->data[col*(r.y + r.height - i) + r.x] = 255;
+		image->dataChar[col*(r.y + r.height - i) + r.x] = 255;
 	}
 
 }

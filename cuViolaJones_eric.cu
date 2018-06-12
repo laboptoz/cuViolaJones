@@ -7,7 +7,6 @@
 #include "load_images.hpp"
 #include "haar.cuh"
 #include <stdlib.h>
-#include "image.h"
 #include "macros.hpp"
 
 
