@@ -18,29 +18,30 @@ using namespace cv;
 int main(int argc, char** argv )
 {	
 	switch(MODE) {
+		// Detects a single image
 		case 0: {
-			Mat image = imread(FACE_PATH, 1);
+			Mat image = imread(SWIM, 1);
 			if (!image.data) {
 				printf("No image data \n");
 				return -1;
 			}
-
-			Mat gray_face;
-			cvtColor(image, gray_face, CV_BGR2GRAY);
-			gpuSingleDetection(gray_face);
+			gpuSingleDetection(image);
 			break;
 		}
 
+		// Run metric test for CPU and GPU
 		case 1: {
 			// Load test images
 			int *numImgs = new int;
 			Image *imgs = loadData(LABEL_PATH, IMAGE_PATH, numImgs);
 			testCpuViolaJones(imgs, *numImgs, DISPLAY);
 			char c; printf("Press ENTER to continue...\n"); cin.get(c);
+			imgs = loadData(LABEL_PATH, IMAGE_PATH, numImgs);
 			testGpuViolaJones(imgs, *numImgs, DISPLAY);
 			break;
 		}
 
+		// Webcam mode
 		case 2: {
 			webcamTest();
 			break;
