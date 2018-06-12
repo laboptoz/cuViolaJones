@@ -20,7 +20,7 @@ int main(int argc, char** argv )
 	switch(MODE) {
 		// Detects a single image
 		case 0: {
-			Mat image = imread(SWIM, 1);
+			Mat image = imread(FACES, 1);
 			if (!image.data) {
 				printf("No image data \n");
 				return -1;
@@ -33,11 +33,16 @@ int main(int argc, char** argv )
 		case 1: {
 			// Load test images
 			int *numImgs = new int;
-			Image *imgs = loadData(LABEL_PATH, IMAGE_PATH, numImgs);
-			testCpuViolaJones(imgs, *numImgs, DISPLAY);
-			char c; printf("Press ENTER to continue...\n"); cin.get(c);
-			imgs = loadData(LABEL_PATH, IMAGE_PATH, numImgs);
-			testGpuViolaJones(imgs, *numImgs, DISPLAY);
+			Image *imgs;
+			if (CPUTEST) {
+				imgs = loadData(LABEL_PATH, IMAGE_PATH, numImgs);
+				testCpuViolaJones(imgs, *numImgs, DISPLAY);
+				char c; printf("Press ENTER to continue...\n"); cin.get(c);
+			}
+			if (GPUTEST) {
+				imgs = loadData(LABEL_PATH, IMAGE_PATH, numImgs);
+				testGpuViolaJones(imgs, *numImgs, DISPLAY);
+			}
 			break;
 		}
 

@@ -11,7 +11,7 @@
 
 #include <cuda.h>
 
-#include "cuNNII.h"
+#include "cuNNII_v2.cuh"
 #include "Filter.cuh"
 //#include "cuda_error_check.h"
 #include "parameter_loader.h"
@@ -114,8 +114,14 @@ __device__ bool operation(unsigned int* sum, unsigned int* sqsum, unsigned int i
 
 		//break;
 
+		unsigned int mask = __ballot(pass == false);
+		unsigned int falseCount = __popc(mask);
+		if (falseCount > 18)
+			pass = false;
+
 		if (!pass)
 			return false;
+
 	}
 	//printf("result.. ");
 	return true;
@@ -224,15 +230,22 @@ void detect_faces(unsigned int img_width, unsigned int img_height, std::vector<M
 	//------------------------------------
 	//------    CREATE II ON GPU  --------
 	//------------------------------------
-	
-#if GPUII == 1
-	unsigned int * ii_sizes = nullptr;
-	unsigned int ii_depth = 0;
-	unsigned int ** ii_gpu = generateImagePyramid<false>(img1->data, &ii_sizes, &ii_depth, 24, img1->width, img1->height, 1.2);
 
-	unsigned int * sqii_sizes = nullptr;
-	unsigned int sqii_depth = 0;
-	unsigned int ** sqii_gpu = generateImagePyramid<true>(img1->data, &ii_sizes, &ii_depth, 24, img1->width, img1->height, 1.2);
+	using pyr_type = unsigned int;
+#if GPUII == 1
+
+	unsigned int * sizes = nullptr;
+	unsigned int * depth = new unsigned int;
+	unsigned int * pyramidSize = new unsigned int;
+
+	pyr_type ** impyr = generateImagePyramid_new<pyr_type>(img->data, &sizes, pyramidSize, depth, WIN_SIZE, img1->width, img1->height, SCALING, SCALING, false);
+
+	unsigned int * v_sizes = nullptr;
+	unsigned int * v_depth = new unsigned int;
+	unsigned int * v_pyramidSize = new unsigned int;
+
+	pyr_type ** v_impyr = generateImagePyramid_new<pyr_type>(img->data, &sizes, pyramidSize, depth, WIN_SIZE, img1->width, img1->height, SCALING, SCALING, true);
+
 #endif
 
 	/*
@@ -249,7 +262,7 @@ void detect_faces(unsigned int img_width, unsigned int img_height, std::vector<M
 	int counter = 0;
 
 #if GPUII == 1
-	for (int i = 0; i < ii_depth; i++) {
+	for (int i = 0; i < *depth; i++) {
 #elif GPUII == 0
 	for (int i = 0;;i++){
 #endif
@@ -276,26 +289,50 @@ void detect_faces(unsigned int img_width, unsigned int img_height, std::vector<M
 		integralImages_cpp(img1, sum1, sqsum1);
 #endif
 
-		//std::ofstream myfile;
-		//myfile.open("integral_sum_sqsum_cu.txt");
-		//if (myfile.is_open()) {
-		//	for (int count = 0; count < sum1->width * sum1->height; count++) {
-		//		//printf("%d ", sum1->data[count]);
-		//		myfile << sum1->data[count] << " ";
-		//	}
-		//	myfile << "\nSQSUM\n";
-		//	for (int count = 0; count < sum1->width * sum1->height; count++) {
-		//		myfile << sqsum1->data[count] << " ";
-		//	}
-		//	myfile.close();
-		//}
-		//else std::cout << "Unable to open file";
+#if TEST == 1
+		char cpu_fname[] = "__cpu_img.csv";
+		cpu_fname[0] = 'a' + i;
+		FILE * cpu_img = fopen(cpu_fname, "w");
+		for (int j = 0; j < sz.height; j++) {
+			for (int k = 0; k < sz.width; k++) {
+				fprintf(cpu_img, "%u", img1->data[j*sz.width + k]);
+				if (k != sz.width - 1) {
+					fprintf(cpu_img, ",");
+				}
+			}
+			if (j != sz.height - 1)
+				fprintf(cpu_img, "\n");
+		}
+		fclose(cpu_img);
+
+		char gpu_fname[] = "__gpu_img.csv";
+		gpu_fname[0] = 'a' + i;
+		FILE * gpu_img = fopen(gpu_fname, "w");
+
+		unsigned int curr_width = sizes[2 * i];
+		unsigned int curr_height = sizes[2 * i + 1];
+		pyr_type * curr_gpu_img = (pyr_type *)malloc(sizeof(pyr_type)*curr_width*curr_height);
+		CHECK(cudaMemcpy(curr_gpu_img, impyr[i], sizeof(pyr_type)*curr_width*curr_height, cudaMemcpyDeviceToHost));
+		printf("Printing level %u, size (%u, %u)\n", i, curr_width, curr_height);
+		for (int j = 0; j < curr_height; j++) {
+			for (int k = 0; k < curr_width; k++) {
+				fprintf(gpu_img, "%u", curr_gpu_img[j*curr_width + k]);
+				if (k != curr_width - 1) {
+					fprintf(gpu_img, ",");
+				}
+			}
+			if (j != curr_height - 1)
+				fprintf(gpu_img, "\n");
+		}
+		free(curr_gpu_img);
+		fclose(gpu_img);
+#endif
 
 #if GPUII == 1
-		unsigned int * d_sum1 = ii_gpu[i];
-		unsigned int * d_sqsum1 = sqii_gpu[i];
-		unsigned int down_h = ii_sizes[2 * i + 1];//sz.height;
-		unsigned int down_w = ii_sizes[2 * i];// sz.width;
+		unsigned int * d_sum1 = impyr[i];
+		unsigned int * d_sqsum1 = v_impyr[i];
+		unsigned int down_h = sizes[2 * i + 1];//sz.height;
+		unsigned int down_w = sizes[2 * i];// sz.width;
 #elif GPUII == 0
 		unsigned int* d_sum1;
 		unsigned int* d_sqsum1;
