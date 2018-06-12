@@ -7,6 +7,7 @@
 #include "load_images.hpp"
 #include "haar.cuh"
 #include <stdlib.h>
+#include "image.h"
 #include "macros.hpp"
 
 
@@ -56,6 +57,9 @@ int main(int argc, char** argv )
 			//============================================
 			if (CPUTEST) {
 				imgs = loadData(LABEL_PATH, IMAGE_PATH, numImgs);
+				if (NUMIMGS != 0) {
+					*numImgs = NUMIMGS;
+				}
 				testCpuViolaJones(imgs, *numImgs, DISPLAY);
 				char c; printf("Press ENTER to continue...\n"); cin.get(c);
 			}
@@ -65,6 +69,9 @@ int main(int argc, char** argv )
 			//============================================
 			if (GPUTEST) {
 				imgs = loadData(LABEL_PATH, IMAGE_PATH, numImgs);
+				if (NUMIMGS != 0) {
+					*numImgs = NUMIMGS;
+				}
 				testGpuViolaJones(imgs, *numImgs, DISPLAY);
 			}
 			break;

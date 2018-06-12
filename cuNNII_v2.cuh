@@ -122,14 +122,14 @@ template<typename T>
 __global__ void downsampleRowSum(unsigned char * img, T * pyramid, unsigned int * gpu_sizes, unsigned int depth, unsigned int width, unsigned int height, float scale, float init_scale, bool variance) {
 
 	__shared__ T shareMem[1025];
+	if (threadIdx.x == 0) {
+		memset(shareMem, 0, sizeof(T) * 1025);
+	}
 
-	unsigned int idx = threadIdx.x + blockIdx.x*blockDim.x + width*(threadIdx.y + blockIdx.y*blockDim.y);
-
-	unsigned int x_rat;
-	unsigned int y_rat;
-
+	__syncthreads();
 	float curr_scale = init_scale;
 
+	__syncthreads();
 	unsigned int offset = 0;
 
 	for (int i = 0; i < depth; i++) {
@@ -140,8 +140,11 @@ __global__ void downsampleRowSum(unsigned char * img, T * pyramid, unsigned int 
 		if (threadIdx.x + blockIdx.x*blockDim.x < curr_width
 			&& threadIdx.y + blockIdx.y*blockDim.y < curr_height) {
 
+			__syncthreads();
 			unsigned int row = (unsigned int) blockIdx.y * curr_scale;
 			unsigned int col = (unsigned int) threadIdx.x * curr_scale;
+
+			__syncthreads();
 			T temp = (T)img[col + width*row];
 
 			__syncthreads();
@@ -161,19 +164,23 @@ __global__ void downsampleRowSum(unsigned char * img, T * pyramid, unsigned int 
 			pyramid[offset + threadIdx.x + curr_width*blockIdx.y] = shareMem[threadIdx.x+1];
 
 		}
+		__syncthreads();
 		offset += curr_width*curr_height;
 		curr_scale *= scale;
 	}
+	__syncthreads();
 }
 
 template<typename T>
 __device__ void rowSum(T * input, unsigned int width) {
 	unsigned int width_offset = 0;
 	unsigned int pow2 = 0;
+	__syncthreads();
 	__shared__ T totalRemain;
 	if (threadIdx.x == 0) {
 		totalRemain = 0;
 	}
+	__syncthreads();
 	//unsigned int totalRemain = 0;
 	while (width - width_offset > 0) {
 		__syncthreads();
@@ -181,6 +188,7 @@ __device__ void rowSum(T * input, unsigned int width) {
 		unsigned int dist = 1;
 		pow2 = findPrev2N(width - width_offset);
 
+		__syncthreads();
 		//DOWN TREE
 		for (int i = pow2 / 2; i > 0; i /= 2) {
 			__syncthreads();
@@ -191,6 +199,7 @@ __device__ void rowSum(T * input, unsigned int width) {
 		}
 
 		//SET LAST VALUE AND REMAINDER
+		__syncthreads();
 		if (threadIdx.x == 0) {
 			totalRemain += input[width_offset + pow2 - 1];
 			input[width_offset + pow2 - 1] = 0;
@@ -198,6 +207,7 @@ __device__ void rowSum(T * input, unsigned int width) {
 
 
 		//UP TREE
+		__syncthreads();
 		for (int i = 1; i < pow2; i *= 2) {
 			dist /= 2;
 			__syncthreads();
@@ -214,10 +224,12 @@ __device__ void rowSum(T * input, unsigned int width) {
 			input[width_offset + threadIdx.x] += workingRemain;
 		}
 
+		__syncthreads();
 		width_offset += pow2;
 	}
 
 	//SET LAST VALUE TO REMAINDER
+	__syncthreads();
 	if (threadIdx.x == 0) {
 		input[width] = totalRemain;
 	}
@@ -226,20 +238,30 @@ __device__ void rowSum(T * input, unsigned int width) {
 template<typename T>
 __global__ void colSum(T * pyramid, unsigned int * sizes, unsigned int depth) {
 	__shared__ T shareCol[1025];
+	__syncthreads();
+	if (threadIdx.x == 0) {
+		memset(shareCol, 0, sizeof(T) * 1025);
+	}
+
+	__syncthreads();
 	unsigned int offset = 0;
 
+	__syncthreads();
 	for (int m = 0; m < depth; m++) {
 		unsigned int curr_width = (unsigned int)__ldg(&sizes[2 * m]);
 		unsigned int curr_height = (unsigned int)__ldg(&sizes[2 * m + 1]);
 
+		__syncthreads();
 		if (threadIdx.x + blockIdx.x*blockDim.x < curr_height
 			&& threadIdx.y + blockIdx.y*blockDim.y < curr_width) {
 
 			__syncthreads();
 			shareCol[threadIdx.x] = pyramid[offset + threadIdx.x*curr_width + blockIdx.y];
 
+			__syncthreads();
 			unsigned int height_offset = 0;
 			unsigned int pow2 = 0;
+			__syncthreads();
 			__shared__ T totalRemain;
 			if (threadIdx.x == 0) {
 				totalRemain = 0;
@@ -261,6 +283,7 @@ __global__ void colSum(T * pyramid, unsigned int * sizes, unsigned int depth) {
 					dist *= 2;
 				}
 
+				__syncthreads();
 				//SET LAST VALUE AND REMAINDER
 				if (threadIdx.x == 0) {
 					totalRemain += shareCol[height_offset + pow2 - 1];
@@ -285,6 +308,7 @@ __global__ void colSum(T * pyramid, unsigned int * sizes, unsigned int depth) {
 					shareCol[height_offset + threadIdx.x] += workingRemain;
 				}
 
+				__syncthreads();
 				height_offset += pow2;
 			}
 
@@ -300,12 +324,14 @@ __global__ void colSum(T * pyramid, unsigned int * sizes, unsigned int depth) {
 			__syncthreads();
 			pyramid[offset + threadIdx.x*curr_width + blockIdx.y] = shareCol[threadIdx.x + 1];
 			offset += curr_width*curr_height;
+
+			__syncthreads();
 		}
 	}
 }
 
 //Find the next smallest 2^N
-__inline__ __device__ unsigned int findPrev2N(unsigned int width) {
+__device__ unsigned int findPrev2N(unsigned int width) {
 	width = width | (width >> 1);
 	width = width | (width >> 2);
 	width = width | (width >> 4);
