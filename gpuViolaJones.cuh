@@ -184,7 +184,7 @@ void gpuWebcam() {
 void webcam() {
 
 	cout << "Starting webcam..." << endl << endl;
-	cout << "GPU is RED. CPU is BLUE" << endl << endl;
+	cout << "GPU is red. CPU is blue." << endl << endl;
 
 	// capture from web camera init
 	VideoCapture cap(0);
