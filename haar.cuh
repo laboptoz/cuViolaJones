@@ -5,7 +5,6 @@
 
 #include "haar.h"
 #include <stdio.h>
-//#include "stdio-wrapper.h"
 #include "paths.hpp"
 
 #include <cuda.h>
@@ -127,6 +126,8 @@ __global__ void slide_window(
 	unsigned int topLeft_idx = blockIdx.y * img_width + blockIdx.x * blockDim.x + threadIdx.x;
 	//printf("r %d c %d, ", blockIdx.y, blockIdx.x * blockDim.x + threadIdx.x);
 	
+	//int result = test_sum(d_image, topLeft_idx, img_width, 1);
+	
 	// to differentiate if goes outside of image
 	if ((topLeft_idx + wd_width - 1) / img_width == blockIdx.y) {
 		bool result = operation(sum1, sqsum1, topLeft_idx, img_width, wd_width, wd_height, stages_gpu);
@@ -139,8 +140,9 @@ __global__ void slide_window(
 	//printf("\n");
 }
 
-void detect_faces(unsigned int img_width, unsigned int img_height, std::vector<Rectangle> &allCandidates,
-	ImageUnion* _img, float scale_factor, int minNeighbors, unsigned int* num_stages, Stage* stages_gpu) {
+void detect_faces(unsigned int img_width, unsigned int img_height, std::vector<Rectangle> &allCandidates, 
+	ImageUnion* _img, float scale_factor, int minNeighbors, unsigned int * num_stages, Stage * stages_gpu) {
+
 	/* group overlaping windows */
 	const float GROUP_EPS = 0.4f;
 
@@ -178,24 +180,20 @@ void detect_faces(unsigned int img_width, unsigned int img_height, std::vector<R
 	unsigned int * depth = new unsigned int;
 	unsigned int * pyramidSize = new unsigned int;
 
-	pyr_type ** impyr = generateImagePyramid_new<pyr_type>(img->data, &sizes, pyramidSize, depth, WIN_SIZE, img1->width, img1->height, SCALING, SCALING, false);
+	pyr_type ** impyr = generateImagePyramid_new<pyr_type>(img->dataChar, &sizes, pyramidSize, depth, WIN_SIZE, img1->width, img1->height, SCALING, SCALING, false);
 
 	unsigned int * v_sizes = nullptr;
 	unsigned int * v_depth = new unsigned int;
 	unsigned int * v_pyramidSize = new unsigned int;
 
-	pyr_type ** v_impyr = generateImagePyramid_new<pyr_type>(img->data, &sizes, pyramidSize, depth, WIN_SIZE, img1->width, img1->height, SCALING, SCALING, true);
+	pyr_type ** v_impyr = generateImagePyramid_new<pyr_type>(img->dataChar, &sizes, pyramidSize, depth, WIN_SIZE, img1->width, img1->height, SCALING, SCALING, true);
 
 #endif
 
-	/*
-	* TODO:
-	* assume we have array of width and height of downscaled images - down_widths, down_heights
-	* number of levels - num_levels
-	*/
 	int wd_height = WIN_SIZE, wd_width = WIN_SIZE;
 	//scale_factor = 1;
 	//minNeighbors = 1;
+
 	int counter = 0;
 
 #if GPUII == 1
@@ -214,7 +212,6 @@ void detect_faces(unsigned int img_width, unsigned int img_height, std::vector<R
 		//if (sz1.width < 0 || sz1.height < 0)
 		//	break;
 
-#if GPUII == 0
 
 		if (sz1.width < 0 || sz1.height < 0)
 			break;
@@ -230,7 +227,7 @@ void detect_faces(unsigned int img_width, unsigned int img_height, std::vector<R
 		sqsum1->height = sz.height;
 		nearestNeighbor_cpp(img, img1);
 		integralImages_cpp(img1, sum1, sqsum1);
-#endif
+
 
 #if TEST == 1
 		char cpu_fname[] = "__cpu_img.csv";
@@ -238,7 +235,7 @@ void detect_faces(unsigned int img_width, unsigned int img_height, std::vector<R
 		FILE * cpu_img = fopen(cpu_fname, "w");
 		for (int j = 0; j < sz.height; j++) {
 			for (int k = 0; k < sz.width; k++) {
-				fprintf(cpu_img, "%u", img1->data[j*sz.width + k]);
+				fprintf(cpu_img, "%u", img1->dataChar[j*sz.width + k]);
 				if (k != sz.width - 1) {
 					fprintf(cpu_img, ",");
 				}
@@ -308,6 +305,7 @@ void detect_faces(unsigned int img_width, unsigned int img_height, std::vector<R
 		CHECK(cudaMemcpy(h_activation, d_activation, act_size, cudaMemcpyDeviceToHost));
 
 		// add activations to vector
+		
 		for (unsigned int j = 0; j < num_wd_col * num_wd_row; j++) {
 			if (h_activation[j]) {
 				unsigned int y = j / num_wd_row;
@@ -321,21 +319,29 @@ void detect_faces(unsigned int img_width, unsigned int img_height, std::vector<R
 		scale_factor *= 1.2;
 
 		// free cuda var
+#if GPUII == 0
 		CHECK(cudaFree((void*)d_sum1));
 		CHECK(cudaFree((void*)d_sqsum1));
+#endif
 		CHECK(cudaFree((void*)d_activation));
 		free(h_activation);
 	}
-	// free image/integral image/squared integral image
-	free(img1->dataChar);
-	free(sum1->dataInt);
-	free(sqsum1->dataInt);
 
 	// sort, clean and organize the labeled windows
 	if (minNeighbors != 0) {
 		groupRectangles(allCandidates, minNeighbors, GROUP_EPS);
 	}
-	
+
+	// free image/integral image/squared integral image
+	free(img1->dataChar);
+	free(sum1->dataInt);
+	free(sqsum1->dataInt);
+
+	// free GPUII intrinsic elements
+#if GPUII == 1
+	CHECK(cudaFree(impyr[0]));
+	CHECK(cudaFree(v_impyr[0]));
+#endif
 }
 
 

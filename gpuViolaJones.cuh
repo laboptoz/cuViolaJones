@@ -23,9 +23,6 @@ void testGpuViolaJones(Image *faces, int numImgs, bool display) {
 	*tp = *fp = 0;
 
 	clock_t start = clock();
-	unsigned int * num_stages = new unsigned int;
-	Stage * stages_gpu = loadParametersToGPU(num_stages);
-
 	for (int n = 0; n < numImgs; n++) {
 		if (PRINT)
 			cout << "Image " << faces[n].im_name << endl;
@@ -37,6 +34,9 @@ void testGpuViolaJones(Image *faces, int numImgs, bool display) {
 		image->dataChar = faces[n].grayscale.data;
 		image->width = faces[n].grayscale.cols;
 		image->height = faces[n].grayscale.rows;
+
+		unsigned int * num_stages = new unsigned int;
+		Stage * stages_gpu = loadParametersToGPU(num_stages);
 
 		std::vector<Rectangle> result;
 		detect_faces(image->width, image->height, result, image, SCALING, MIN_NEIGH, num_stages, stages_gpu);
@@ -88,9 +88,10 @@ void gpuSingleDetection(Mat face) {
 	image->width = gray_face.cols;
 	image->height = gray_face.rows;
 
-	std::vector<Rectangle> result;
 	unsigned int * num_stages = new unsigned int;
 	Stage * stages_gpu = loadParametersToGPU(num_stages);
+
+	std::vector<Rectangle> result;
 	detect_faces(image->width, image->height, result, image, SCALING, MIN_NEIGH, num_stages, stages_gpu);
 
 	if (result.size() > 0) {
@@ -276,12 +277,6 @@ void webcamTest() {
 		std::vector<Rectangle> result;
 		detect_faces(image->width, image->height, result, image, SCALING, MIN_NEIGH, num_stages, stages_gpu);
 
-#if REPORT_GMEM
-		size_t remainMem, totalMem;
-		cudaMemGetInfo(&remainMem, &totalMem);
-		printf("GPU Remaining Mem: %d\n", (remainMem / (1024 * 1024)));
-#endif
-
 		if (result.size() > 0) {
 			Rectangle last = result.back();
 			Rect pred = Rect(last.x, last.y, last.width, last.height);
@@ -300,6 +295,13 @@ void webcamTest() {
 			Rect face = faces.back();
 			rectangle(img, face, Scalar(255, 0, 0), 2); // BLUE
 		}
+
+		// detect memory usage
+#if REPORT_GMEM == 1
+		size_t remainMem, totalMem;
+		cudaMemGetInfo(&remainMem, &totalMem);
+		printf("\rGPU Remaining Mem: %d", (remainMem / (1024 * 1024)));
+#endif
 
 		imshow("CPU and GPU", img);
 		char c = waitKey(10);

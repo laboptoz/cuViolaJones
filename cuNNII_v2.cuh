@@ -75,14 +75,11 @@ template <typename T> T ** generateImagePyramid_new(unsigned char * original, un
 
 	//Declare pointers to each level of pyramid
 	T ** imgPyramid2D = new T *[*depth];
-	T ** imgPyramid2D_gpu;
 	//Assign pointers to each pyramid depth
 	imgPyramid2D[0] = imgPyramid1D_gpu;
 	for (int i = 1; i < *depth; i++) {
 		imgPyramid2D[i] = imgPyramid2D[i-1] + (*sizes)[2 * (i - 1)] * (*sizes)[2 * (i - 1) + 1];
 	}
-	CHECK(cudaMalloc((void **)&imgPyramid2D_gpu, sizeof(T *)*(*depth)));
-	CHECK(cudaMemcpy(imgPyramid2D_gpu, imgPyramid2D, sizeof(T *)*(*depth), cudaMemcpyHostToDevice));
 
 #if TEST == 1
 	printf("Finished setting double pointers\n");
@@ -114,6 +111,8 @@ template <typename T> T ** generateImagePyramid_new(unsigned char * original, un
 #endif
 	colSum<T> << <grid, block>> >(imgPyramid1D_gpu, gpu_sizes, *depth);
 	CHECK(cudaDeviceSynchronize());
+
+	cudaFree(img_gpu);
 
 	return imgPyramid2D;
 }
@@ -324,10 +323,10 @@ __global__ void colSum(T * pyramid, unsigned int * sizes, unsigned int depth) {
 			__syncthreads();
 			pyramid[offset + threadIdx.x*curr_width + blockIdx.y] = shareCol[threadIdx.x + 1];
 			offset += curr_width*curr_height;
-
-			__syncthreads();
 		}
 	}
+	__syncthreads();
+	free(sizes);
 }
 
 //Find the next smallest 2^N
