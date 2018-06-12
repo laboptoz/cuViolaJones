@@ -16,7 +16,7 @@ set(CMAKE_IMPORT_FILE_VERSION 1)
 set(_targetsDefined)
 set(_targetsNotDefined)
 set(_expectedTargets)
-foreach(_expectedTarget opencv_core opencv_imgproc opencv_objdetect opencv_imgcodecs opencv_highgui)
+foreach(_expectedTarget opencv_core opencv_imgproc opencv_objdetect opencv_video opencv_imgcodecs opencv_videoio opencv_highgui)
   list(APPEND _expectedTargets ${_expectedTarget})
   if(NOT TARGET ${_expectedTarget})
     list(APPEND _targetsNotDefined ${_expectedTarget})
@@ -58,6 +58,13 @@ set_target_properties(opencv_objdetect PROPERTIES
   INTERFACE_LINK_LIBRARIES "opencv_core;opencv_imgproc"
 )
 
+# Create imported target opencv_video
+add_library(opencv_video SHARED IMPORTED)
+
+set_target_properties(opencv_video PROPERTIES
+  INTERFACE_LINK_LIBRARIES "opencv_core;opencv_imgproc"
+)
+
 # Create imported target opencv_imgcodecs
 add_library(opencv_imgcodecs SHARED IMPORTED)
 
@@ -65,11 +72,18 @@ set_target_properties(opencv_imgcodecs PROPERTIES
   INTERFACE_LINK_LIBRARIES "opencv_core;opencv_imgproc"
 )
 
+# Create imported target opencv_videoio
+add_library(opencv_videoio SHARED IMPORTED)
+
+set_target_properties(opencv_videoio PROPERTIES
+  INTERFACE_LINK_LIBRARIES "opencv_core;opencv_imgproc;opencv_imgcodecs"
+)
+
 # Create imported target opencv_highgui
 add_library(opencv_highgui SHARED IMPORTED)
 
 set_target_properties(opencv_highgui PROPERTIES
-  INTERFACE_LINK_LIBRARIES "opencv_core;opencv_imgproc;opencv_imgcodecs"
+  INTERFACE_LINK_LIBRARIES "opencv_core;opencv_imgproc;opencv_imgcodecs;opencv_videoio"
 )
 
 # Import target "opencv_core" for configuration "Debug"
@@ -93,11 +107,25 @@ set_target_properties(opencv_objdetect PROPERTIES
   IMPORTED_LOCATION_DEBUG "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/bin/Debug/opencv_objdetect341d.dll"
   )
 
+# Import target "opencv_video" for configuration "Debug"
+set_property(TARGET opencv_video APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(opencv_video PROPERTIES
+  IMPORTED_IMPLIB_DEBUG "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/lib/Debug/opencv_video341d.lib"
+  IMPORTED_LOCATION_DEBUG "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/bin/Debug/opencv_video341d.dll"
+  )
+
 # Import target "opencv_imgcodecs" for configuration "Debug"
 set_property(TARGET opencv_imgcodecs APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(opencv_imgcodecs PROPERTIES
   IMPORTED_IMPLIB_DEBUG "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/lib/Debug/opencv_imgcodecs341d.lib"
   IMPORTED_LOCATION_DEBUG "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/bin/Debug/opencv_imgcodecs341d.dll"
+  )
+
+# Import target "opencv_videoio" for configuration "Debug"
+set_property(TARGET opencv_videoio APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(opencv_videoio PROPERTIES
+  IMPORTED_IMPLIB_DEBUG "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/lib/Debug/opencv_videoio341d.lib"
+  IMPORTED_LOCATION_DEBUG "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/bin/Debug/opencv_videoio341d.dll"
   )
 
 # Import target "opencv_highgui" for configuration "Debug"
@@ -128,11 +156,25 @@ set_target_properties(opencv_objdetect PROPERTIES
   IMPORTED_LOCATION_RELEASE "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/bin/Release/opencv_objdetect341.dll"
   )
 
+# Import target "opencv_video" for configuration "Release"
+set_property(TARGET opencv_video APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+set_target_properties(opencv_video PROPERTIES
+  IMPORTED_IMPLIB_RELEASE "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/lib/Release/opencv_video341.lib"
+  IMPORTED_LOCATION_RELEASE "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/bin/Release/opencv_video341.dll"
+  )
+
 # Import target "opencv_imgcodecs" for configuration "Release"
 set_property(TARGET opencv_imgcodecs APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(opencv_imgcodecs PROPERTIES
   IMPORTED_IMPLIB_RELEASE "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/lib/Release/opencv_imgcodecs341.lib"
   IMPORTED_LOCATION_RELEASE "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/bin/Release/opencv_imgcodecs341.dll"
+  )
+
+# Import target "opencv_videoio" for configuration "Release"
+set_property(TARGET opencv_videoio APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+set_target_properties(opencv_videoio PROPERTIES
+  IMPORTED_IMPLIB_RELEASE "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/lib/Release/opencv_videoio341.lib"
+  IMPORTED_LOCATION_RELEASE "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build/bin/Release/opencv_videoio341.dll"
   )
 
 # Import target "opencv_highgui" for configuration "Release"

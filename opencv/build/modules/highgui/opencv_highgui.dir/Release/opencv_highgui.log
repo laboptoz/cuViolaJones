@@ -1,9 +1,9 @@
-﻿  Building Custom Rule C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/highgui/CMakeLists.txt
-  CMake does not need to re-run because C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/modules/highgui/CMakeFiles/generate.stamp is up-to-date.
+﻿  Building Custom Rule C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/highgui/CMakeLists.txt
+  CMake does not need to re-run because C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/modules/highgui/CMakeFiles/generate.stamp is up-to-date.
   opencv_highgui_pch.cpp
   window.cpp
   roiSelector.cpp
   window_w32.cpp
-     Creating library C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/Release/opencv_highgui341.lib and object C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/Release/opencv_highgui341.exp
-  opencv_highgui.vcxproj -> C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\bin\Release\opencv_highgui341.dll
-  opencv_highgui.vcxproj -> C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/bin/Release/opencv_highgui341.pdb (Full PDB)
+     Creating library C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/lib/Release/opencv_highgui341.lib and object C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/lib/Release/opencv_highgui341.exp
+  opencv_highgui.vcxproj -> C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\bin\Release\opencv_highgui341.dll
+  opencv_highgui.vcxproj -> C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/bin/Release/opencv_highgui341.pdb (Full PDB)

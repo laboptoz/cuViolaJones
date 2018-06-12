@@ -1,5 +1,5 @@
-﻿  Building Custom Rule C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/3rdparty/libjpeg/CMakeLists.txt
-  CMake does not need to re-run because C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/3rdparty/libjpeg/CMakeFiles/generate.stamp is up-to-date.
+﻿  Building Custom Rule C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/3rdparty/libjpeg/CMakeLists.txt
+  CMake does not need to re-run because C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/3rdparty/libjpeg/CMakeFiles/generate.stamp is up-to-date.
   jaricom.c
   jcapimin.c
   jcapistd.c
@@ -46,4 +46,4 @@
   jquant1.c
   jquant2.c
   jutils.c
-  libjpeg.vcxproj -> C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\3rdparty\lib\Debug\libjpegd.lib
+  libjpeg.vcxproj -> C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\3rdparty\lib\Debug\libjpegd.lib

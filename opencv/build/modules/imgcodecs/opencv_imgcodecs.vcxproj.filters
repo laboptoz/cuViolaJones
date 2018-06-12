@@ -1,164 +1,164 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\loadsave.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\loadsave.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\utils.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\utils.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\grfmt_base.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\grfmt_base.cpp">
       <Filter>Src\grfmts</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\grfmt_bmp.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\grfmt_bmp.cpp">
       <Filter>Src\grfmts</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\grfmt_exr.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\grfmt_exr.cpp">
       <Filter>Src\grfmts</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\grfmt_gdal.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\grfmt_gdal.cpp">
       <Filter>Src\grfmts</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\grfmt_gdcm.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\grfmt_gdcm.cpp">
       <Filter>Src\grfmts</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\grfmt_hdr.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\grfmt_hdr.cpp">
       <Filter>Src\grfmts</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\grfmt_jpeg.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\grfmt_jpeg.cpp">
       <Filter>Src\grfmts</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\grfmt_jpeg2000.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\grfmt_jpeg2000.cpp">
       <Filter>Src\grfmts</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\grfmt_pam.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\grfmt_pam.cpp">
       <Filter>Src\grfmts</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\grfmt_png.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\grfmt_png.cpp">
       <Filter>Src\grfmts</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\grfmt_pxm.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\grfmt_pxm.cpp">
       <Filter>Src\grfmts</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\grfmt_sunras.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\grfmt_sunras.cpp">
       <Filter>Src\grfmts</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\grfmt_tiff.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\grfmt_tiff.cpp">
       <Filter>Src\grfmts</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\grfmt_webp.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\grfmt_webp.cpp">
       <Filter>Src\grfmts</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\bitstrm.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\bitstrm.cpp">
       <Filter>Src\grfmts</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\rgbe.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\rgbe.cpp">
       <Filter>Src\grfmts</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\exif.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\exif.cpp">
       <Filter>Src\grfmts</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\imgcodecs\opencv_imgcodecs_pch.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\modules\imgcodecs\opencv_imgcodecs_pch.cpp">
       <Filter>Src</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\include\opencv2\imgcodecs.hpp">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\include\opencv2\imgcodecs.hpp">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\include\opencv2\imgcodecs\imgcodecs.hpp">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\include\opencv2\imgcodecs\imgcodecs.hpp">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\include\opencv2\imgcodecs\imgcodecs_c.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\include\opencv2\imgcodecs\imgcodecs_c.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\include\opencv2\imgcodecs\ios.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\include\opencv2\imgcodecs\ios.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\precomp.hpp">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\precomp.hpp">
       <Filter>Src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\utils.hpp">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\utils.hpp">
       <Filter>Src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\grfmt_base.hpp">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\grfmt_base.hpp">
       <Filter>Src\grfmts</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\grfmt_bmp.hpp">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\grfmt_bmp.hpp">
       <Filter>Src\grfmts</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\grfmt_exr.hpp">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\grfmt_exr.hpp">
       <Filter>Src\grfmts</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\grfmt_gdal.hpp">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\grfmt_gdal.hpp">
       <Filter>Src\grfmts</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\grfmt_gdcm.hpp">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\grfmt_gdcm.hpp">
       <Filter>Src\grfmts</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\grfmt_hdr.hpp">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\grfmt_hdr.hpp">
       <Filter>Src\grfmts</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\grfmt_jpeg.hpp">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\grfmt_jpeg.hpp">
       <Filter>Src\grfmts</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\grfmt_jpeg2000.hpp">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\grfmt_jpeg2000.hpp">
       <Filter>Src\grfmts</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\grfmt_pam.hpp">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\grfmt_pam.hpp">
       <Filter>Src\grfmts</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\grfmt_png.hpp">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\grfmt_png.hpp">
       <Filter>Src\grfmts</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\grfmt_pxm.hpp">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\grfmt_pxm.hpp">
       <Filter>Src\grfmts</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\grfmt_sunras.hpp">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\grfmt_sunras.hpp">
       <Filter>Src\grfmts</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\grfmt_tiff.hpp">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\grfmt_tiff.hpp">
       <Filter>Src\grfmts</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\grfmt_webp.hpp">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\grfmt_webp.hpp">
       <Filter>Src\grfmts</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\grfmts.hpp">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\grfmts.hpp">
       <Filter>Src\grfmts</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\bitstrm.hpp">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\bitstrm.hpp">
       <Filter>Src\grfmts</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\rgbe.hpp">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\rgbe.hpp">
       <Filter>Src\grfmts</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\exif.hpp">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\src\exif.hpp">
       <Filter>Src\grfmts</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\cvconfig.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\cvconfig.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\opencv2\opencv_modules.hpp">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\opencv2\opencv_modules.hpp">
       <Filter>Include</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\imgcodecs\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\imgcodecs\vs_version.rc">
+    <ResourceCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\modules\imgcodecs\vs_version.rc">
       <Filter>Src</Filter>
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
+    <Filter Include="Src\grfmts">
+      <UniqueIdentifier>{B3DB74BD-6F3F-3329-B69E-A5A7BAC3C5D5}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Src">
-      <UniqueIdentifier>{8474B372-3300-39FE-83CA-0B828557C0DD}</UniqueIdentifier>
+      <UniqueIdentifier>{83786B39-0B6E-3770-9534-6389D6DF4DBD}</UniqueIdentifier>
     </Filter>
     <Filter Include="Include">
-      <UniqueIdentifier>{489BC83F-A8FE-3D95-B934-AC39094343B2}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Src\grfmts">
-      <UniqueIdentifier>{723675AB-B0CB-3271-A024-313EF3369083}</UniqueIdentifier>
+      <UniqueIdentifier>{9DE85FB8-6068-315C-96E7-E2A571E37885}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

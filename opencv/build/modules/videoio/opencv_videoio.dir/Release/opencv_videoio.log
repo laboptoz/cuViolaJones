@@ -1,0 +1,15 @@
+﻿  Building Custom Rule C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/videoio/CMakeLists.txt
+  CMake does not need to re-run because C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/modules/videoio/CMakeFiles/generate.stamp is up-to-date.
+  opencv_videoio_pch.cpp
+  cap.cpp
+  cap_images.cpp
+  cap_mjpeg_encoder.cpp
+  cap_mjpeg_decoder.cpp
+  container_avi.cpp
+  cap_cmu.cpp
+  cap_dshow.cpp
+  cap_vfw.cpp
+  cap_ffmpeg.cpp
+     Creating library C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/lib/Release/opencv_videoio341.lib and object C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/lib/Release/opencv_videoio341.exp
+  opencv_videoio.vcxproj -> C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\bin\Release\opencv_videoio341.dll
+  opencv_videoio.vcxproj -> C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/bin/Release/opencv_videoio341.pdb (Full PDB)

@@ -1,7 +1,7 @@
-﻿  Building Custom Rule C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/CMakeLists.txt
-  CMake does not need to re-run because C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/modules/core/CMakeFiles/generate.stamp is up-to-date.
+﻿  Building Custom Rule C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/CMakeLists.txt
+  CMake does not need to re-run because C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/modules/core/CMakeFiles/generate.stamp is up-to-date.
   Processing OpenCL kernels (core)
-  -- C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/modules/core/opencl_kernels_core.hpp contains the same content
+  -- C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/modules/core/opencl_kernels_core.hpp contains the same content
   opencv_core_pch.cpp
   algorithm.cpp
   arithm.cpp
@@ -81,6 +81,6 @@
   va_intel.cpp
   opencl_kernels_core.cpp
   alloc.cpp
-     Creating library C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/Release/opencv_core341.lib and object C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/Release/opencv_core341.exp
-  opencv_core.vcxproj -> C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\bin\Release\opencv_core341.dll
-  opencv_core.vcxproj -> C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/bin/Release/opencv_core341.pdb (Full PDB)
+     Creating library C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/lib/Release/opencv_core341.lib and object C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/lib/Release/opencv_core341.exp
+  opencv_core.vcxproj -> C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\bin\Release\opencv_core341.dll
+  opencv_core.vcxproj -> C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/bin/Release/opencv_core341.pdb (Full PDB)

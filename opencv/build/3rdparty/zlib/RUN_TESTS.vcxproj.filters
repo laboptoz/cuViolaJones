@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\6a1ea4452890a3fefa5aae43f9292b6e\RUN_TESTS_force.rule">
+    <CustomBuild Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\9b68c98745d8ff5dad3b79b5c558fe16\RUN_TESTS_force.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{CAA8640E-56BC-3C4A-B60F-F52D60F4D343}</UniqueIdentifier>
+      <UniqueIdentifier>{295AD507-CBFD-3A93-8681-4E2B0AB92701}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

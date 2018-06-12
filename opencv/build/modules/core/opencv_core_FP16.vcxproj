@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{3367A20B-24AF-31F0-8DC8-C9B27D967FD4}</ProjectGuid>
+    <ProjectGuid>{20FA5588-AC60-3EE0-8BB2-B5BD99EA12EF}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
     <ProjectName>opencv_core_FP16</ProjectName>
@@ -48,7 +48,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build;C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\core\include;C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\core\src;C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\core;C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\zlib;C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\3rdparty\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build;C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\core\include;C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\core\src;C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\modules\core;C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\zlib;C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\3rdparty\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -72,10 +72,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_AVX=1;_VARIADIC_MAX=10;__OPENCV_BUILD=1;_USE_MATH_DEFINES;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build;C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\core\include;C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\core\src;C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\core;C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\zlib;C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\3rdparty\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build;C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\core\include;C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\core\src;C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\modules\core;C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\zlib;C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\3rdparty\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build;C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\core\include;C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\core\src;C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\core;C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\zlib;C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\3rdparty\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build;C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\core\include;C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\core\src;C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\modules\core;C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\zlib;C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\3rdparty\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -88,7 +88,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build;C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\core\include;C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\core\src;C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\core;C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\zlib;C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\3rdparty\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build;C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\core\include;C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\core\src;C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\modules\core;C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\zlib;C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\3rdparty\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
       <AssemblerListingLocation>Release/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
@@ -111,10 +111,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_AVX=1;_VARIADIC_MAX=10;__OPENCV_BUILD=1;_USE_MATH_DEFINES;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build;C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\core\include;C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\core\src;C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\core;C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\zlib;C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\3rdparty\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build;C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\core\include;C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\core\src;C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\modules\core;C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\zlib;C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\3rdparty\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build;C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\core\include;C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\core\src;C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\core;C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\zlib;C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\3rdparty\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build;C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\core\include;C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\core\src;C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\modules\core;C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\zlib;C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\3rdparty\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -126,10 +126,10 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\core\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/CMakeLists.txt</Message>
+    <CustomBuild Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\core\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources -BC:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build --check-stamp-file C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/modules/core/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" "-HC:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources" "-BC:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build" --check-stamp-file "C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/modules/core/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -137,12 +137,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/CMakeLists.txt;C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\core\CMakeLists.txt;C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\cmake\templates\vs_version.rc.in;C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\core\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\core\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/CMakeLists.txt;C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\core\CMakeLists.txt;C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\cmake\templates\vs_version.rc.in;C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\core\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\modules\core\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources -BC:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build --check-stamp-file C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/modules/core/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" "-HC:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources" "-BC:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build" --check-stamp-file "C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/modules/core/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -150,20 +150,20 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/CMakeLists.txt;C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\core\CMakeLists.txt;C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\cmake\templates\vs_version.rc.in;C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\core\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\core\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/CMakeLists.txt;C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\core\CMakeLists.txt;C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\cmake\templates\vs_version.rc.in;C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\core\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\modules\core\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\modules\core\src\convert.fp16.cpp" >
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\core\src\convert.fp16.cpp" >
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CV_CPU_DISPATCH_MODE=FP16;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CV_CPU_DISPATCH_MODE=FP16;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\ZERO_CHECK.vcxproj">
-      <Project>{663334D7-9D02-3793-8626-E8858EF60ADC}</Project>
+    <ProjectReference Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\ZERO_CHECK.vcxproj">
+      <Project>{99D7B0D5-C497-31A9-9DF4-D5ED66063EDE}</Project>
       <Name>ZERO_CHECK</Name>
     </ProjectReference>
   </ItemGroup>

@@ -65,20 +65,20 @@
 /* #undef HAVE_DC1394_2 */
 
 /* DirectX */
-/* #undef HAVE_DIRECTX */
-/* #undef HAVE_DIRECTX_NV12 */
-/* #undef HAVE_D3D11 */
-/* #undef HAVE_D3D10 */
-/* #undef HAVE_D3D9 */
+#define HAVE_DIRECTX
+#define HAVE_DIRECTX_NV12
+#define HAVE_D3D11
+#define HAVE_D3D10
+#define HAVE_D3D9
 
 /* DirectShow Video Capture library */
-/* #undef HAVE_DSHOW */
+#define HAVE_DSHOW
 
 /* Eigen Matrix & Linear Algebra Library */
 /* #undef HAVE_EIGEN */
 
 /* FFMpeg video library */
-/* #undef HAVE_FFMPEG */
+#define HAVE_FFMPEG
 
 /* Geospatial Data Abstraction Library */
 /* #undef HAVE_GDAL */
@@ -110,7 +110,7 @@
 /* #undef HAVE_IPP_A */
 
 /* JPEG-2000 codec */
-/* #undef HAVE_JASPER */
+#define HAVE_JASPER
 
 /* IJG JPEG codec */
 #define HAVE_JPEG

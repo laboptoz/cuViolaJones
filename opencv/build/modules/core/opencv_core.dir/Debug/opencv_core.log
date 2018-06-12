@@ -1,6 +1,7 @@
-﻿  Building Custom Rule C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/CMakeLists.txt
-  CMake does not need to re-run because C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/modules/core/CMakeFiles/generate.stamp is up-to-date.
+﻿  Building Custom Rule C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/CMakeLists.txt
+  CMake does not need to re-run because C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/modules/core/CMakeFiles/generate.stamp is up-to-date.
   Processing OpenCL kernels (core)
+  -- C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/modules/core/opencl_kernels_core.hpp contains the same content
   opencv_core_pch.cpp
   algorithm.cpp
   arithm.cpp
@@ -50,8 +51,8 @@
   opencl_clamdblas.cpp
   opencl_clamdfft.cpp
   opencl_core.cpp
-  opengl.cpp
   out.cpp
+  opengl.cpp
   ovx.cpp
   parallel.cpp
   parallel_impl.cpp
@@ -80,6 +81,7 @@
   va_intel.cpp
   opencl_kernels_core.cpp
   alloc.cpp
-     Creating library C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/Debug/opencv_core341d.lib and object C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/Debug/opencv_core341d.exp
-  opencv_core.vcxproj -> C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\bin\Debug\opencv_core341d.dll
-  opencv_core.vcxproj -> C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/bin/Debug/opencv_core341d.pdb (Full PDB)
+  LINK : C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\bin\Debug\opencv_core341d.dll not found or not built by the last incremental link; performing full link
+     Creating library C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/lib/Debug/opencv_core341d.lib and object C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/lib/Debug/opencv_core341d.exp
+  opencv_core.vcxproj -> C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\bin\Debug\opencv_core341d.dll
+  opencv_core.vcxproj -> C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/bin/Debug/opencv_core341d.pdb (Full PDB)

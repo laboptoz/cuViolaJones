@@ -1,5 +1,6 @@
-﻿  Building Custom Rule C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/CMakeLists.txt
-  CMake does not need to re-run because C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/modules/imgproc/CMakeFiles/generate.stamp is up-to-date.
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (opencv_imgproc_SSE4_1.dir\Debug\) contains files shared from another project (opencv_imgproc_SSE4_1.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Building Custom Rule C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/CMakeLists.txt
+  CMake does not need to re-run because C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/modules/imgproc/CMakeFiles/generate.stamp is up-to-date.
   imgwarp.sse4_1.cpp
   resize.sse4_1.cpp
-  opencv_imgproc_SSE4_1.vcxproj -> C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\imgproc\opencv_imgproc_SSE4_1.dir\Debug\opencv_imgproc_SSE4_1.lib
+  opencv_imgproc_SSE4_1.vcxproj -> C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\modules\imgproc\opencv_imgproc_SSE4_1.dir\Debug\opencv_imgproc_SSE4_1.lib

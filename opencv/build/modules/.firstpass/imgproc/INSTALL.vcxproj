@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{25E634B4-C3A6-3063-B049-65132D7E0CEE}</ProjectGuid>
+    <ProjectGuid>{226CC181-90CF-3C8F-B710-7AD1A554BADC}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
     <ProjectName>INSTALL</ProjectName>
@@ -42,7 +42,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -64,7 +64,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -85,7 +85,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\6f29ca25eecbea3203f536996edc3fda\INSTALL_force.rule">
+    <CustomBuild Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\c752c9c295db6714a2311a89919962ca\INSTALL_force.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"> </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
 cd .
@@ -96,8 +96,8 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/6f29ca25eecbea3203f536996edc3fda/INSTALL_force.rule;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\.firstpass\imgproc\CMakeFiles\INSTALL_force</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/c752c9c295db6714a2311a89919962ca/INSTALL_force.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\modules\.firstpass\imgproc\CMakeFiles\INSTALL_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"> </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
@@ -109,18 +109,18 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/6f29ca25eecbea3203f536996edc3fda/INSTALL_force.rule;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\modules\.firstpass\imgproc\CMakeFiles\INSTALL_force</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/c752c9c295db6714a2311a89919962ca/INSTALL_force.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\modules\.firstpass\imgproc\CMakeFiles\INSTALL_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\ZERO_CHECK.vcxproj">
-      <Project>{663334D7-9D02-3793-8626-E8858EF60ADC}</Project>
+    <ProjectReference Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\ZERO_CHECK.vcxproj">
+      <Project>{99D7B0D5-C497-31A9-9DF4-D5ED66063EDE}</Project>
       <Name>ZERO_CHECK</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\3rdparty\zlib\ALL_BUILD.vcxproj">
-      <Project>{73BFBFD0-40CE-395B-A20D-E7D575B1BC8D}</Project>
+    <ProjectReference Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\3rdparty\zlib\ALL_BUILD.vcxproj">
+      <Project>{C05B2DD6-93BC-3CA9-976D-334DD4C0276E}</Project>
       <Name>ALL_BUILD</Name>
     </ProjectReference>
   </ItemGroup>

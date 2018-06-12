@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{1FC9F25D-699B-3F81-8510-2C19D4854BAC}</ProjectGuid>
+    <ProjectGuid>{18FE9B70-DD07-3CC2-8960-6959B1FC83E8}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
     <ProjectName>PACKAGE</ProjectName>
@@ -42,7 +42,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\libjpeg;C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\libjpeg;C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -52,7 +52,7 @@
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-cd C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build
+cd "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build"
 if %errorlevel% neq 0 goto :cmEnd
 C:
 if %errorlevel% neq 0 goto :cmEnd
@@ -68,7 +68,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\libjpeg;C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\libjpeg;C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -78,7 +78,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message></Message>
       <Command>setlocal
-cd C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build
+cd "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build"
 if %errorlevel% neq 0 goto :cmEnd
 C:
 if %errorlevel% neq 0 goto :cmEnd
@@ -93,7 +93,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\7e7bbfe1cf04c5ae88f75672bf3aa740\PACKAGE_force.rule">
+    <CustomBuild Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\6def3319d49dadd86ff2f6d0a0c1da0b\PACKAGE_force.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"> </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
 cd .
@@ -104,8 +104,8 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/7e7bbfe1cf04c5ae88f75672bf3aa740/PACKAGE_force.rule;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\3rdparty\libjpeg\CMakeFiles\PACKAGE_force</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/6def3319d49dadd86ff2f6d0a0c1da0b/PACKAGE_force.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\3rdparty\libjpeg\CMakeFiles\PACKAGE_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"> </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
@@ -117,18 +117,18 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/7e7bbfe1cf04c5ae88f75672bf3aa740/PACKAGE_force.rule;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\3rdparty\libjpeg\CMakeFiles\PACKAGE_force</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/6def3319d49dadd86ff2f6d0a0c1da0b/PACKAGE_force.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\3rdparty\libjpeg\CMakeFiles\PACKAGE_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\ZERO_CHECK.vcxproj">
-      <Project>{663334D7-9D02-3793-8626-E8858EF60ADC}</Project>
+    <ProjectReference Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\ZERO_CHECK.vcxproj">
+      <Project>{99D7B0D5-C497-31A9-9DF4-D5ED66063EDE}</Project>
       <Name>ZERO_CHECK</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\3rdparty\libjpeg\ALL_BUILD.vcxproj">
-      <Project>{73BFBFD0-40CE-395B-A20D-E7D575B1BC8D}</Project>
+    <ProjectReference Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\3rdparty\libjpeg\ALL_BUILD.vcxproj">
+      <Project>{C05B2DD6-93BC-3CA9-976D-334DD4C0276E}</Project>
       <Name>ALL_BUILD</Name>
     </ProjectReference>
   </ItemGroup>

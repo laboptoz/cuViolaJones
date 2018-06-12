@@ -1,5 +1,5 @@
-﻿  Building Custom Rule C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/3rdparty/openexr/CMakeLists.txt
-  CMake does not need to re-run because C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/3rdparty/openexr/CMakeFiles/generate.stamp is up-to-date.
+﻿  Building Custom Rule C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/3rdparty/openexr/CMakeLists.txt
+  CMake does not need to re-run because C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/3rdparty/openexr/CMakeFiles/generate.stamp is up-to-date.
   half.cpp
   IexBaseExc.cpp
   IexThrowErrnoExc.cpp
@@ -75,4 +75,4 @@
   ImfVersion.cpp
   ImfWav.cpp
   ImfZipCompressor.cpp
-  IlmImf.vcxproj -> C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\3rdparty\lib\Debug\IlmImfd.lib
+  IlmImf.vcxproj -> C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\3rdparty\lib\Debug\IlmImfd.lib

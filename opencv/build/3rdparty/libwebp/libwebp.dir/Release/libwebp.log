@@ -1,5 +1,5 @@
-﻿  Building Custom Rule C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/3rdparty/libwebp/CMakeLists.txt
-  CMake does not need to re-run because C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/3rdparty/libwebp/CMakeFiles/generate.stamp is up-to-date.
+﻿  Building Custom Rule C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/3rdparty/libwebp/CMakeLists.txt
+  CMake does not need to re-run because C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/3rdparty/libwebp/CMakeFiles/generate.stamp is up-to-date.
   alpha_dec.c
   buffer_dec.c
   frame_dec.c
@@ -116,4 +116,4 @@
   rescaler_utils.c
   thread_utils.c
   utils.c
-  libwebp.vcxproj -> C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\3rdparty\lib\Release\libwebp.lib
+  libwebp.vcxproj -> C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\3rdparty\lib\Release\libwebp.lib

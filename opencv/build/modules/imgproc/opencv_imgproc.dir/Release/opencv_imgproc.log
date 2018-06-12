@@ -1,7 +1,7 @@
-﻿  Building Custom Rule C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/CMakeLists.txt
-  CMake does not need to re-run because C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/modules/imgproc/CMakeFiles/generate.stamp is up-to-date.
+﻿  Building Custom Rule C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/CMakeLists.txt
+  CMake does not need to re-run because C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/modules/imgproc/CMakeFiles/generate.stamp is up-to-date.
   Processing OpenCL kernels (imgproc)
-  -- C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/modules/imgproc/opencl_kernels_imgproc.hpp contains the same content
+  -- C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/modules/imgproc/opencl_kernels_imgproc.hpp contains the same content
   opencv_imgproc_pch.cpp
   accum.cpp
   accum.dispatch.cpp
@@ -57,6 +57,6 @@
   undistort.cpp
   utils.cpp
   opencl_kernels_imgproc.cpp
-     Creating library C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/Release/opencv_imgproc341.lib and object C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/Release/opencv_imgproc341.exp
-  opencv_imgproc.vcxproj -> C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\bin\Release\opencv_imgproc341.dll
-  opencv_imgproc.vcxproj -> C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/bin/Release/opencv_imgproc341.pdb (Full PDB)
+     Creating library C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/lib/Release/opencv_imgproc341.lib and object C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/lib/Release/opencv_imgproc341.exp
+  opencv_imgproc.vcxproj -> C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\bin\Release\opencv_imgproc341.dll
+  opencv_imgproc.vcxproj -> C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/bin/Release/opencv_imgproc341.pdb (Full PDB)

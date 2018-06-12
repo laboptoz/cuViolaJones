@@ -16,7 +16,7 @@ set(CMAKE_IMPORT_FILE_VERSION 1)
 set(_targetsDefined)
 set(_targetsNotDefined)
 set(_expectedTargets)
-foreach(_expectedTarget opencv_core opencv_imgproc opencv_objdetect opencv_imgcodecs opencv_highgui)
+foreach(_expectedTarget opencv_core opencv_imgproc opencv_objdetect opencv_video opencv_imgcodecs opencv_videoio opencv_highgui)
   list(APPEND _expectedTargets ${_expectedTarget})
   if(NOT TARGET ${_expectedTarget})
     list(APPEND _targetsNotDefined ${_expectedTarget})
@@ -67,6 +67,13 @@ set_target_properties(opencv_objdetect PROPERTIES
   INTERFACE_LINK_LIBRARIES "opencv_core;opencv_imgproc"
 )
 
+# Create imported target opencv_video
+add_library(opencv_video SHARED IMPORTED)
+
+set_target_properties(opencv_video PROPERTIES
+  INTERFACE_LINK_LIBRARIES "opencv_core;opencv_imgproc"
+)
+
 # Create imported target opencv_imgcodecs
 add_library(opencv_imgcodecs SHARED IMPORTED)
 
@@ -74,11 +81,18 @@ set_target_properties(opencv_imgcodecs PROPERTIES
   INTERFACE_LINK_LIBRARIES "opencv_core;opencv_imgproc"
 )
 
+# Create imported target opencv_videoio
+add_library(opencv_videoio SHARED IMPORTED)
+
+set_target_properties(opencv_videoio PROPERTIES
+  INTERFACE_LINK_LIBRARIES "opencv_core;opencv_imgproc;opencv_imgcodecs"
+)
+
 # Create imported target opencv_highgui
 add_library(opencv_highgui SHARED IMPORTED)
 
 set_target_properties(opencv_highgui PROPERTIES
-  INTERFACE_LINK_LIBRARIES "opencv_core;opencv_imgproc;opencv_imgcodecs"
+  INTERFACE_LINK_LIBRARIES "opencv_core;opencv_imgproc;opencv_imgcodecs;opencv_videoio"
 )
 
 if(CMAKE_VERSION VERSION_LESS 2.8.12)

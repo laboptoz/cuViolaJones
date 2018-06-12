@@ -7,6 +7,7 @@
 subdirs("3rdparty/zlib")
 subdirs("3rdparty/libjpeg")
 subdirs("3rdparty/libwebp")
+subdirs("3rdparty/libjasper")
 subdirs("3rdparty/libpng")
 subdirs("3rdparty/openexr")
 subdirs("3rdparty/protobuf")

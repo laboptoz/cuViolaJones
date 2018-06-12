@@ -1,7 +1,7 @@
 The system is: Windows - 6.1.7601 - AMD64
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler:  
-Build flags: /DWIN32;/D_WINDOWS;/W3;/GR;/EHsc
+Build flags: 
 Id flags:  
 
 The output was:
@@ -9,8 +9,8 @@ The output was:
 Microsoft (R) Build Engine version 14.0.25123.0
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 6/4/2018 11:00:56 PM.
-Project "C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\3.10.2\CompilerIdCXX\CompilerIdCXX.vcxproj" on node 1 (default targets).
+Build started 6/11/2018 7:50:48 PM.
+Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\3.10.2\CompilerIdCXX\CompilerIdCXX.vcxproj" on node 1 (default targets).
 PrepareForBuild:
   Creating directory "Debug\".
   Creating directory "Debug\CompilerIdCXX.tlog\".
@@ -21,7 +21,7 @@ ClCompile:
   CMakeCXXCompilerId.cpp
 Link:
   C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X64 Debug\CMakeCXXCompilerId.obj
-  CompilerIdCXX.vcxproj -> C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\3.10.2\CompilerIdCXX\.\CompilerIdCXX.exe
+  CompilerIdCXX.vcxproj -> C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\3.10.2\CompilerIdCXX\.\CompilerIdCXX.exe
 PostBuildEvent:
   for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
   :VCEnd
@@ -29,24 +29,24 @@ PostBuildEvent:
 FinalizeBuildStatus:
   Deleting file "Debug\CompilerIdCXX.tlog\unsuccessfulbuild".
   Touching "Debug\CompilerIdCXX.tlog\CompilerIdCXX.lastbuildstate".
-Done Building Project "C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\3.10.2\CompilerIdCXX\CompilerIdCXX.vcxproj" (default targets).
+Done Building Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\3.10.2\CompilerIdCXX\CompilerIdCXX.vcxproj" (default targets).
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:00.48
+Time Elapsed 00:00:00.47
 
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
 
-The CXX compiler identification is MSVC, found in "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/3.10.2/CompilerIdCXX/CompilerIdCXX.exe"
+The CXX compiler identification is MSVC, found in "C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/3.10.2/CompilerIdCXX/CompilerIdCXX.exe"
 
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
 Compiler:  
-Build flags: /DWIN32;/D_WINDOWS;/W3
+Build flags: 
 Id flags:  
 
 The output was:
@@ -54,8 +54,8 @@ The output was:
 Microsoft (R) Build Engine version 14.0.25123.0
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 6/4/2018 11:00:57 PM.
-Project "C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\3.10.2\CompilerIdC\CompilerIdC.vcxproj" on node 1 (default targets).
+Build started 6/11/2018 7:50:48 PM.
+Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\3.10.2\CompilerIdC\CompilerIdC.vcxproj" on node 1 (default targets).
 PrepareForBuild:
   Creating directory "Debug\".
   Creating directory "Debug\CompilerIdC.tlog\".
@@ -66,7 +66,7 @@ ClCompile:
   CMakeCCompilerId.c
 Link:
   C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X64 Debug\CMakeCCompilerId.obj
-  CompilerIdC.vcxproj -> C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\3.10.2\CompilerIdC\.\CompilerIdC.exe
+  CompilerIdC.vcxproj -> C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\3.10.2\CompilerIdC\.\CompilerIdC.exe
 PostBuildEvent:
   for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
   :VCEnd
@@ -74,138 +74,138 @@ PostBuildEvent:
 FinalizeBuildStatus:
   Deleting file "Debug\CompilerIdC.tlog\unsuccessfulbuild".
   Touching "Debug\CompilerIdC.tlog\CompilerIdC.lastbuildstate".
-Done Building Project "C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\3.10.2\CompilerIdC\CompilerIdC.vcxproj" (default targets).
+Done Building Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\3.10.2\CompilerIdC\CompilerIdC.vcxproj" (default targets).
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:00.46
+Time Elapsed 00:00:00.45
 
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
 
-The C compiler identification is MSVC, found in "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/3.10.2/CompilerIdC/CompilerIdC.exe"
+The C compiler identification is MSVC, found in "C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/3.10.2/CompilerIdC/CompilerIdC.exe"
 
 Determining if the CXX compiler works passed with the following output:
-Change Dir: C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_b1188.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_3c4b0.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
 Microsoft (R) Build Engine version 14.0.25123.0
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 6/4/2018 11:00:57 PM.
-Project "C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_b1188.vcxproj" on node 1 (default targets).
+Build started 6/11/2018 7:50:49 PM.
+Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_3c4b0.vcxproj" on node 1 (default targets).
 PrepareForBuild:
-  Creating directory "cmTC_b1188.dir\Debug\".
-  Creating directory "C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\".
-  Creating directory "cmTC_b1188.dir\Debug\cmTC_b1188.tlog\".
+  Creating directory "cmTC_3c4b0.dir\Debug\".
+  Creating directory "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_3c4b0.dir\Debug\cmTC_3c4b0.tlog\".
 InitializeBuildStatus:
-  Creating "cmTC_b1188.dir\Debug\cmTC_b1188.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+  Creating "cmTC_3c4b0.dir\Debug\cmTC_3c4b0.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_b1188.dir\Debug\\" /Fd"cmTC_b1188.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_3c4b0.dir\Debug\\" /Fd"cmTC_3c4b0.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx"
   Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23918 for x64
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_b1188.dir\Debug\\" /Fd"cmTC_b1188.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_3c4b0.dir\Debug\\" /Fd"cmTC_3c4b0.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx"
   
   testCXXCompiler.cxx
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_b1188.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_b1188.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_b1188.lib" /MACHINE:X64  /machine:x64 cmTC_b1188.dir\Debug\testCXXCompiler.obj
-  cmTC_b1188.vcxproj -> C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_b1188.exe
-  cmTC_b1188.vcxproj -> C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_b1188.pdb (Full PDB)
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_3c4b0.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_3c4b0.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_3c4b0.lib" /MACHINE:X64  /machine:x64 cmTC_3c4b0.dir\Debug\testCXXCompiler.obj
+  cmTC_3c4b0.vcxproj -> C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_3c4b0.exe
+  cmTC_3c4b0.vcxproj -> C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_3c4b0.pdb (Full PDB)
 FinalizeBuildStatus:
-  Deleting file "cmTC_b1188.dir\Debug\cmTC_b1188.tlog\unsuccessfulbuild".
-  Touching "cmTC_b1188.dir\Debug\cmTC_b1188.tlog\cmTC_b1188.lastbuildstate".
-Done Building Project "C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_b1188.vcxproj" (default targets).
+  Deleting file "cmTC_3c4b0.dir\Debug\cmTC_3c4b0.tlog\unsuccessfulbuild".
+  Touching "cmTC_3c4b0.dir\Debug\cmTC_3c4b0.tlog\cmTC_3c4b0.lastbuildstate".
+Done Building Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_3c4b0.vcxproj" (default targets).
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:00.54
+Time Elapsed 00:00:00.51
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_682a4.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_d7c6e.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
 Microsoft (R) Build Engine version 14.0.25123.0
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 6/4/2018 11:00:58 PM.
-Project "C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_682a4.vcxproj" on node 1 (default targets).
+Build started 6/11/2018 7:50:50 PM.
+Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_d7c6e.vcxproj" on node 1 (default targets).
 PrepareForBuild:
-  Creating directory "cmTC_682a4.dir\Debug\".
-  Creating directory "C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\".
-  Creating directory "cmTC_682a4.dir\Debug\cmTC_682a4.tlog\".
+  Creating directory "cmTC_d7c6e.dir\Debug\".
+  Creating directory "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_d7c6e.dir\Debug\cmTC_d7c6e.tlog\".
 InitializeBuildStatus:
-  Creating "cmTC_682a4.dir\Debug\cmTC_682a4.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+  Creating "cmTC_d7c6e.dir\Debug\cmTC_d7c6e.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_682a4.dir\Debug\\" /Fd"cmTC_682a4.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue "C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCXXCompilerABI.cpp"
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_d7c6e.dir\Debug\\" /Fd"cmTC_d7c6e.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue "C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCXXCompilerABI.cpp"
   Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23918 for x64
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_682a4.dir\Debug\\" /Fd"cmTC_682a4.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue "C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCXXCompilerABI.cpp"
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_d7c6e.dir\Debug\\" /Fd"cmTC_d7c6e.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue "C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCXXCompilerABI.cpp"
   
   CMakeCXXCompilerABI.cpp
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_682a4.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_682a4.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_682a4.lib" /MACHINE:X64  /machine:x64 cmTC_682a4.dir\Debug\CMakeCXXCompilerABI.obj
-  cmTC_682a4.vcxproj -> C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_682a4.exe
-  cmTC_682a4.vcxproj -> C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_682a4.pdb (Full PDB)
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_d7c6e.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_d7c6e.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_d7c6e.lib" /MACHINE:X64  /machine:x64 cmTC_d7c6e.dir\Debug\CMakeCXXCompilerABI.obj
+  cmTC_d7c6e.vcxproj -> C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_d7c6e.exe
+  cmTC_d7c6e.vcxproj -> C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_d7c6e.pdb (Full PDB)
 FinalizeBuildStatus:
-  Deleting file "cmTC_682a4.dir\Debug\cmTC_682a4.tlog\unsuccessfulbuild".
-  Touching "cmTC_682a4.dir\Debug\cmTC_682a4.tlog\cmTC_682a4.lastbuildstate".
-Done Building Project "C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_682a4.vcxproj" (default targets).
+  Deleting file "cmTC_d7c6e.dir\Debug\cmTC_d7c6e.tlog\unsuccessfulbuild".
+  Touching "cmTC_d7c6e.dir\Debug\cmTC_d7c6e.tlog\cmTC_d7c6e.lastbuildstate".
+Done Building Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_d7c6e.vcxproj" (default targets).
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:00.56
+Time Elapsed 00:00:00.51
 
 
 
 
 Detecting CXX [] compiler features compiled with the following output:
-Change Dir: C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_4c2f7.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_b9af0.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
 Microsoft (R) Build Engine version 14.0.25123.0
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 6/4/2018 11:00:59 PM.
-Project "C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_4c2f7.vcxproj" on node 1 (default targets).
+Build started 6/11/2018 7:50:50 PM.
+Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_b9af0.vcxproj" on node 1 (default targets).
 PrepareForBuild:
-  Creating directory "cmTC_4c2f7.dir\Debug\".
-  Creating directory "C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\".
-  Creating directory "cmTC_4c2f7.dir\Debug\cmTC_4c2f7.tlog\".
+  Creating directory "cmTC_b9af0.dir\Debug\".
+  Creating directory "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_b9af0.dir\Debug\cmTC_b9af0.tlog\".
 InitializeBuildStatus:
-  Creating "cmTC_4c2f7.dir\Debug\cmTC_4c2f7.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+  Creating "cmTC_b9af0.dir\Debug\cmTC_b9af0.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_4c2f7.dir\Debug\\" /Fd"cmTC_4c2f7.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\feature_tests.cxx
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_b9af0.dir\Debug\\" /Fd"cmTC_b9af0.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\feature_tests.cxx"
   Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23918 for x64
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_4c2f7.dir\Debug\\" /Fd"cmTC_4c2f7.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\feature_tests.cxx
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_b9af0.dir\Debug\\" /Fd"cmTC_b9af0.dir\Debug\vc140.pdb" /Gd /TP /errorReport:queue "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\feature_tests.cxx"
   
   feature_tests.cxx
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_4c2f7.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_4c2f7.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_4c2f7.lib" /MACHINE:X64  /machine:x64 cmTC_4c2f7.dir\Debug\feature_tests.obj
-  cmTC_4c2f7.vcxproj -> C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_4c2f7.exe
-  cmTC_4c2f7.vcxproj -> C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_4c2f7.pdb (Full PDB)
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_b9af0.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_b9af0.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_b9af0.lib" /MACHINE:X64  /machine:x64 cmTC_b9af0.dir\Debug\feature_tests.obj
+  cmTC_b9af0.vcxproj -> C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_b9af0.exe
+  cmTC_b9af0.vcxproj -> C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_b9af0.pdb (Full PDB)
 FinalizeBuildStatus:
-  Deleting file "cmTC_4c2f7.dir\Debug\cmTC_4c2f7.tlog\unsuccessfulbuild".
-  Touching "cmTC_4c2f7.dir\Debug\cmTC_4c2f7.tlog\cmTC_4c2f7.lastbuildstate".
-Done Building Project "C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_4c2f7.vcxproj" (default targets).
+  Deleting file "cmTC_b9af0.dir\Debug\cmTC_b9af0.tlog\unsuccessfulbuild".
+  Touching "cmTC_b9af0.dir\Debug\cmTC_b9af0.tlog\cmTC_b9af0.lastbuildstate".
+Done Building Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_b9af0.vcxproj" (default targets).
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:00.55
+Time Elapsed 00:00:00.52
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -264,80 +264,1585 @@ Time Elapsed 00:00:00.55
     Feature record: CXX_FEATURE:1cxx_variadic_macros
     Feature record: CXX_FEATURE:1cxx_variadic_templates
 Determining if the C compiler works passed with the following output:
-Change Dir: C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_4c4ad.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_f03da.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
 Microsoft (R) Build Engine version 14.0.25123.0
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 6/4/2018 11:01:00 PM.
-Project "C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_4c4ad.vcxproj" on node 1 (default targets).
+Build started 6/11/2018 7:50:51 PM.
+Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_f03da.vcxproj" on node 1 (default targets).
 PrepareForBuild:
-  Creating directory "cmTC_4c4ad.dir\Debug\".
-  Creating directory "C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\".
-  Creating directory "cmTC_4c4ad.dir\Debug\cmTC_4c4ad.tlog\".
+  Creating directory "cmTC_f03da.dir\Debug\".
+  Creating directory "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_f03da.dir\Debug\cmTC_f03da.tlog\".
 InitializeBuildStatus:
-  Creating "cmTC_4c4ad.dir\Debug\cmTC_4c4ad.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+  Creating "cmTC_f03da.dir\Debug\cmTC_f03da.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_4c4ad.dir\Debug\\" /Fd"cmTC_4c4ad.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\testCCompiler.c
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f03da.dir\Debug\\" /Fd"cmTC_f03da.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\testCCompiler.c"
   Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23918 for x64
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_4c4ad.dir\Debug\\" /Fd"cmTC_4c4ad.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\testCCompiler.c
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f03da.dir\Debug\\" /Fd"cmTC_f03da.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\testCCompiler.c"
   
   testCCompiler.c
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_4c4ad.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_4c4ad.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_4c4ad.lib" /MACHINE:X64  /machine:x64 cmTC_4c4ad.dir\Debug\testCCompiler.obj
-  cmTC_4c4ad.vcxproj -> C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_4c4ad.exe
-  cmTC_4c4ad.vcxproj -> C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_4c4ad.pdb (Full PDB)
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_f03da.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_f03da.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_f03da.lib" /MACHINE:X64  /machine:x64 cmTC_f03da.dir\Debug\testCCompiler.obj
+  cmTC_f03da.vcxproj -> C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_f03da.exe
+  cmTC_f03da.vcxproj -> C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_f03da.pdb (Full PDB)
 FinalizeBuildStatus:
-  Deleting file "cmTC_4c4ad.dir\Debug\cmTC_4c4ad.tlog\unsuccessfulbuild".
-  Touching "cmTC_4c4ad.dir\Debug\cmTC_4c4ad.tlog\cmTC_4c4ad.lastbuildstate".
-Done Building Project "C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_4c4ad.vcxproj" (default targets).
+  Deleting file "cmTC_f03da.dir\Debug\cmTC_f03da.tlog\unsuccessfulbuild".
+  Touching "cmTC_f03da.dir\Debug\cmTC_f03da.tlog\cmTC_f03da.lastbuildstate".
+Done Building Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_f03da.vcxproj" (default targets).
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:00.51
+Time Elapsed 00:00:00.50
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_3ec2d.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_28baa.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
 Microsoft (R) Build Engine version 14.0.25123.0
 Copyright (C) Microsoft Corporation. All rights reserved.
 
-Build started 6/4/2018 11:01:00 PM.
-Project "C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_3ec2d.vcxproj" on node 1 (default targets).
+Build started 6/11/2018 7:50:52 PM.
+Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_28baa.vcxproj" on node 1 (default targets).
 PrepareForBuild:
-  Creating directory "cmTC_3ec2d.dir\Debug\".
-  Creating directory "C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\".
-  Creating directory "cmTC_3ec2d.dir\Debug\cmTC_3ec2d.tlog\".
+  Creating directory "cmTC_28baa.dir\Debug\".
+  Creating directory "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_28baa.dir\Debug\cmTC_28baa.tlog\".
 InitializeBuildStatus:
-  Creating "cmTC_3ec2d.dir\Debug\cmTC_3ec2d.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+  Creating "cmTC_28baa.dir\Debug\cmTC_28baa.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
 ClCompile:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3ec2d.dir\Debug\\" /Fd"cmTC_3ec2d.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCCompilerABI.c"
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_28baa.dir\Debug\\" /Fd"cmTC_28baa.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCCompilerABI.c"
   Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23918 for x64
   Copyright (C) Microsoft Corporation.  All rights reserved.
   
-  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3ec2d.dir\Debug\\" /Fd"cmTC_3ec2d.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCCompilerABI.c"
+  cl /c /Zi /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_28baa.dir\Debug\\" /Fd"cmTC_28baa.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.10\Modules\CMakeCCompilerABI.c"
   
   CMakeCCompilerABI.c
 Link:
-  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_3ec2d.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_3ec2d.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_3ec2d.lib" /MACHINE:X64  /machine:x64 cmTC_3ec2d.dir\Debug\CMakeCCompilerABI.obj
-  cmTC_3ec2d.vcxproj -> C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_3ec2d.exe
-  cmTC_3ec2d.vcxproj -> C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_3ec2d.pdb (Full PDB)
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_28baa.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_28baa.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_28baa.lib" /MACHINE:X64  /machine:x64 cmTC_28baa.dir\Debug\CMakeCCompilerABI.obj
+  cmTC_28baa.vcxproj -> C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_28baa.exe
+  cmTC_28baa.vcxproj -> C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_28baa.pdb (Full PDB)
 FinalizeBuildStatus:
-  Deleting file "cmTC_3ec2d.dir\Debug\cmTC_3ec2d.tlog\unsuccessfulbuild".
-  Touching "cmTC_3ec2d.dir\Debug\cmTC_3ec2d.tlog\cmTC_3ec2d.lastbuildstate".
-Done Building Project "C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_3ec2d.vcxproj" (default targets).
+  Deleting file "cmTC_28baa.dir\Debug\cmTC_28baa.tlog\unsuccessfulbuild".
+  Touching "cmTC_28baa.dir\Debug\cmTC_28baa.tlog\cmTC_28baa.lastbuildstate".
+Done Building Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_28baa.vcxproj" (default targets).
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
 
 Time Elapsed 00:00:00.51
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_5573c.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.25123.0
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 6/11/2018 7:51:03 PM.
+Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_5573c.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_5573c.dir\Debug\".
+  Creating directory "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_5573c.dir\Debug\cmTC_5573c.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_5573c.dir\Debug\cmTC_5573c.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_5573c.dir\Debug\\" /Fd"cmTC_5573c.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23918 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_5573c.dir\Debug\\" /Fd"cmTC_5573c.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  
+  CheckIncludeFile.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_5573c.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_5573c.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_5573c.lib" /MACHINE:X64  /machine:x64 cmTC_5573c.dir\Debug\CheckIncludeFile.obj
+  cmTC_5573c.vcxproj -> C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_5573c.exe
+  cmTC_5573c.vcxproj -> C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_5573c.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_5573c.dir\Debug\cmTC_5573c.tlog\unsuccessfulbuild".
+  Touching "cmTC_5573c.dir\Debug\cmTC_5573c.tlog\cmTC_5573c.lastbuildstate".
+Done Building Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_5573c.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.51
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_12eb3.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.25123.0
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 6/11/2018 7:51:04 PM.
+Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_12eb3.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_12eb3.dir\Debug\".
+  Creating directory "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_12eb3.dir\Debug\cmTC_12eb3.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_12eb3.dir\Debug\cmTC_12eb3.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_12eb3.dir\Debug\\" /Fd"cmTC_12eb3.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23918 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_12eb3.dir\Debug\\" /Fd"cmTC_12eb3.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  
+  CheckIncludeFile.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_12eb3.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_12eb3.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_12eb3.lib" /MACHINE:X64  /machine:x64 cmTC_12eb3.dir\Debug\CheckIncludeFile.obj
+  cmTC_12eb3.vcxproj -> C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_12eb3.exe
+  cmTC_12eb3.vcxproj -> C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_12eb3.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_12eb3.dir\Debug\cmTC_12eb3.tlog\unsuccessfulbuild".
+  Touching "cmTC_12eb3.dir\Debug\cmTC_12eb3.tlog\cmTC_12eb3.lastbuildstate".
+Done Building Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_12eb3.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.50
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_a4c26.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.25123.0
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 6/11/2018 7:51:04 PM.
+Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_a4c26.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_a4c26.dir\Debug\".
+  Creating directory "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_a4c26.dir\Debug\cmTC_a4c26.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_a4c26.dir\Debug\cmTC_a4c26.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a4c26.dir\Debug\\" /Fd"cmTC_a4c26.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23918 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a4c26.dir\Debug\\" /Fd"cmTC_a4c26.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  
+  CheckIncludeFile.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_a4c26.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_a4c26.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_a4c26.lib" /MACHINE:X64  /machine:x64 cmTC_a4c26.dir\Debug\CheckIncludeFile.obj
+  cmTC_a4c26.vcxproj -> C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_a4c26.exe
+  cmTC_a4c26.vcxproj -> C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_a4c26.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_a4c26.dir\Debug\cmTC_a4c26.tlog\unsuccessfulbuild".
+  Touching "cmTC_a4c26.dir\Debug\cmTC_a4c26.tlog\cmTC_a4c26.lastbuildstate".
+Done Building Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_a4c26.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.51
+
+
+Determining size of unsigned short passed with the following output:
+Change Dir: C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_ed4aa.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.25123.0
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 6/11/2018 7:51:05 PM.
+Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_ed4aa.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_ed4aa.dir\Debug\".
+  Creating directory "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_ed4aa.dir\Debug\cmTC_ed4aa.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_ed4aa.dir\Debug\cmTC_ed4aa.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ed4aa.dir\Debug\\" /Fd"cmTC_ed4aa.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CheckTypeSize\CMAKE_SIZEOF_UNSIGNED_SHORT.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23918 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ed4aa.dir\Debug\\" /Fd"cmTC_ed4aa.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CheckTypeSize\CMAKE_SIZEOF_UNSIGNED_SHORT.c"
+  
+  CMAKE_SIZEOF_UNSIGNED_SHORT.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_ed4aa.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_ed4aa.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_ed4aa.lib" /MACHINE:X64  /machine:x64 cmTC_ed4aa.dir\Debug\CMAKE_SIZEOF_UNSIGNED_SHORT.obj
+  cmTC_ed4aa.vcxproj -> C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_ed4aa.exe
+  cmTC_ed4aa.vcxproj -> C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_ed4aa.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_ed4aa.dir\Debug\cmTC_ed4aa.tlog\unsuccessfulbuild".
+  Touching "cmTC_ed4aa.dir\Debug\cmTC_ed4aa.tlog\cmTC_ed4aa.lastbuildstate".
+Done Building Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_ed4aa.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.52
+
+
+Determining if the system is big endian passed with the following output:
+Change Dir: C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_20b4a.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.25123.0
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 6/11/2018 7:51:06 PM.
+Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_20b4a.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_20b4a.dir\Debug\".
+  Creating directory "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_20b4a.dir\Debug\cmTC_20b4a.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_20b4a.dir\Debug\cmTC_20b4a.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_20b4a.dir\Debug\\" /Fd"cmTC_20b4a.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\TestEndianess.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23918 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_20b4a.dir\Debug\\" /Fd"cmTC_20b4a.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\TestEndianess.c"
+  
+  TestEndianess.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_20b4a.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_20b4a.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_20b4a.lib" /MACHINE:X64  /machine:x64 cmTC_20b4a.dir\Debug\TestEndianess.obj
+  cmTC_20b4a.vcxproj -> C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_20b4a.exe
+  cmTC_20b4a.vcxproj -> C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_20b4a.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_20b4a.dir\Debug\cmTC_20b4a.tlog\unsuccessfulbuild".
+  Touching "cmTC_20b4a.dir\Debug\cmTC_20b4a.tlog\cmTC_20b4a.lastbuildstate".
+Done Building Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_20b4a.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.51
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the include file assert.h exists passed with the following output:
+Change Dir: C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_19a9d.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.25123.0
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 6/11/2018 7:51:07 PM.
+Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_19a9d.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_19a9d.dir\Debug\".
+  Creating directory "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_19a9d.dir\Debug\cmTC_19a9d.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_19a9d.dir\Debug\cmTC_19a9d.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_19a9d.dir\Debug\\" /Fd"cmTC_19a9d.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23918 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_19a9d.dir\Debug\\" /Fd"cmTC_19a9d.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  
+  CheckIncludeFile.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_19a9d.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_19a9d.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_19a9d.lib" /MACHINE:X64  /machine:x64 cmTC_19a9d.dir\Debug\CheckIncludeFile.obj
+  cmTC_19a9d.vcxproj -> C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_19a9d.exe
+  cmTC_19a9d.vcxproj -> C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_19a9d.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_19a9d.dir\Debug\cmTC_19a9d.tlog\unsuccessfulbuild".
+  Touching "cmTC_19a9d.dir\Debug\cmTC_19a9d.tlog\cmTC_19a9d.lastbuildstate".
+Done Building Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_19a9d.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.51
+
+
+Determining if the include file fcntl.h exists passed with the following output:
+Change Dir: C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_de451.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.25123.0
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 6/11/2018 7:51:08 PM.
+Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_de451.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_de451.dir\Debug\".
+  Creating directory "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_de451.dir\Debug\cmTC_de451.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_de451.dir\Debug\cmTC_de451.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_de451.dir\Debug\\" /Fd"cmTC_de451.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23918 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_de451.dir\Debug\\" /Fd"cmTC_de451.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  
+  CheckIncludeFile.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_de451.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_de451.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_de451.lib" /MACHINE:X64  /machine:x64 cmTC_de451.dir\Debug\CheckIncludeFile.obj
+  cmTC_de451.vcxproj -> C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_de451.exe
+  cmTC_de451.vcxproj -> C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_de451.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_de451.dir\Debug\cmTC_de451.tlog\unsuccessfulbuild".
+  Touching "cmTC_de451.dir\Debug\cmTC_de451.tlog\cmTC_de451.lastbuildstate".
+Done Building Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_de451.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.51
+
+
+Determining if the include file inttypes.h exists passed with the following output:
+Change Dir: C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_580de.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.25123.0
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 6/11/2018 7:51:09 PM.
+Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_580de.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_580de.dir\Debug\".
+  Creating directory "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_580de.dir\Debug\cmTC_580de.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_580de.dir\Debug\cmTC_580de.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_580de.dir\Debug\\" /Fd"cmTC_580de.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23918 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_580de.dir\Debug\\" /Fd"cmTC_580de.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  
+  CheckIncludeFile.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_580de.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_580de.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_580de.lib" /MACHINE:X64  /machine:x64 cmTC_580de.dir\Debug\CheckIncludeFile.obj
+  cmTC_580de.vcxproj -> C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_580de.exe
+  cmTC_580de.vcxproj -> C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_580de.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_580de.dir\Debug\cmTC_580de.tlog\unsuccessfulbuild".
+  Touching "cmTC_580de.dir\Debug\cmTC_580de.tlog\cmTC_580de.lastbuildstate".
+Done Building Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_580de.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.51
+
+
+Determining if the include file io.h exists passed with the following output:
+Change Dir: C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_f9859.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.25123.0
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 6/11/2018 7:51:09 PM.
+Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_f9859.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_f9859.dir\Debug\".
+  Creating directory "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_f9859.dir\Debug\cmTC_f9859.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_f9859.dir\Debug\cmTC_f9859.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f9859.dir\Debug\\" /Fd"cmTC_f9859.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23918 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f9859.dir\Debug\\" /Fd"cmTC_f9859.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  
+  CheckIncludeFile.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_f9859.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_f9859.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_f9859.lib" /MACHINE:X64  /machine:x64 cmTC_f9859.dir\Debug\CheckIncludeFile.obj
+  cmTC_f9859.vcxproj -> C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_f9859.exe
+  cmTC_f9859.vcxproj -> C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_f9859.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_f9859.dir\Debug\cmTC_f9859.tlog\unsuccessfulbuild".
+  Touching "cmTC_f9859.dir\Debug\cmTC_f9859.tlog\cmTC_f9859.lastbuildstate".
+Done Building Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_f9859.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.51
+
+
+Determining if the include file limits.h exists passed with the following output:
+Change Dir: C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_9e083.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.25123.0
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 6/11/2018 7:51:10 PM.
+Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_9e083.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_9e083.dir\Debug\".
+  Creating directory "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_9e083.dir\Debug\cmTC_9e083.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_9e083.dir\Debug\cmTC_9e083.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_9e083.dir\Debug\\" /Fd"cmTC_9e083.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23918 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_9e083.dir\Debug\\" /Fd"cmTC_9e083.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  
+  CheckIncludeFile.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_9e083.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_9e083.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_9e083.lib" /MACHINE:X64  /machine:x64 cmTC_9e083.dir\Debug\CheckIncludeFile.obj
+  cmTC_9e083.vcxproj -> C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_9e083.exe
+  cmTC_9e083.vcxproj -> C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_9e083.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_9e083.dir\Debug\cmTC_9e083.tlog\unsuccessfulbuild".
+  Touching "cmTC_9e083.dir\Debug\cmTC_9e083.tlog\cmTC_9e083.lastbuildstate".
+Done Building Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_9e083.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.51
+
+
+Determining if the include file malloc.h exists passed with the following output:
+Change Dir: C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_235d8.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.25123.0
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 6/11/2018 7:51:10 PM.
+Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_235d8.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_235d8.dir\Debug\".
+  Creating directory "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_235d8.dir\Debug\cmTC_235d8.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_235d8.dir\Debug\cmTC_235d8.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_235d8.dir\Debug\\" /Fd"cmTC_235d8.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23918 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_235d8.dir\Debug\\" /Fd"cmTC_235d8.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  
+  CheckIncludeFile.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_235d8.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_235d8.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_235d8.lib" /MACHINE:X64  /machine:x64 cmTC_235d8.dir\Debug\CheckIncludeFile.obj
+  cmTC_235d8.vcxproj -> C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_235d8.exe
+  cmTC_235d8.vcxproj -> C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_235d8.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_235d8.dir\Debug\cmTC_235d8.tlog\unsuccessfulbuild".
+  Touching "cmTC_235d8.dir\Debug\cmTC_235d8.tlog\cmTC_235d8.lastbuildstate".
+Done Building Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_235d8.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.51
+
+
+Determining if the include file memory.h exists passed with the following output:
+Change Dir: C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_0e41c.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.25123.0
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 6/11/2018 7:51:11 PM.
+Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_0e41c.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_0e41c.dir\Debug\".
+  Creating directory "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_0e41c.dir\Debug\cmTC_0e41c.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_0e41c.dir\Debug\cmTC_0e41c.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_0e41c.dir\Debug\\" /Fd"cmTC_0e41c.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23918 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_0e41c.dir\Debug\\" /Fd"cmTC_0e41c.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  
+  CheckIncludeFile.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_0e41c.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_0e41c.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_0e41c.lib" /MACHINE:X64  /machine:x64 cmTC_0e41c.dir\Debug\CheckIncludeFile.obj
+  cmTC_0e41c.vcxproj -> C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_0e41c.exe
+  cmTC_0e41c.vcxproj -> C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_0e41c.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_0e41c.dir\Debug\cmTC_0e41c.tlog\unsuccessfulbuild".
+  Touching "cmTC_0e41c.dir\Debug\cmTC_0e41c.tlog\cmTC_0e41c.lastbuildstate".
+Done Building Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_0e41c.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.52
+
+
+Determining if the include file search.h exists passed with the following output:
+Change Dir: C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_aadb5.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.25123.0
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 6/11/2018 7:51:12 PM.
+Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_aadb5.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_aadb5.dir\Debug\".
+  Creating directory "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_aadb5.dir\Debug\cmTC_aadb5.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_aadb5.dir\Debug\cmTC_aadb5.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_aadb5.dir\Debug\\" /Fd"cmTC_aadb5.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23918 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_aadb5.dir\Debug\\" /Fd"cmTC_aadb5.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  
+  CheckIncludeFile.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_aadb5.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_aadb5.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_aadb5.lib" /MACHINE:X64  /machine:x64 cmTC_aadb5.dir\Debug\CheckIncludeFile.obj
+  cmTC_aadb5.vcxproj -> C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_aadb5.exe
+  cmTC_aadb5.vcxproj -> C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_aadb5.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_aadb5.dir\Debug\cmTC_aadb5.tlog\unsuccessfulbuild".
+  Touching "cmTC_aadb5.dir\Debug\cmTC_aadb5.tlog\cmTC_aadb5.lastbuildstate".
+Done Building Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_aadb5.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.51
+
+
+Determining if the include file string.h exists passed with the following output:
+Change Dir: C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_70ee0.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.25123.0
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 6/11/2018 7:51:12 PM.
+Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_70ee0.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_70ee0.dir\Debug\".
+  Creating directory "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_70ee0.dir\Debug\cmTC_70ee0.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_70ee0.dir\Debug\cmTC_70ee0.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_70ee0.dir\Debug\\" /Fd"cmTC_70ee0.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23918 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_70ee0.dir\Debug\\" /Fd"cmTC_70ee0.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  
+  CheckIncludeFile.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_70ee0.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_70ee0.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_70ee0.lib" /MACHINE:X64  /machine:x64 cmTC_70ee0.dir\Debug\CheckIncludeFile.obj
+  cmTC_70ee0.vcxproj -> C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_70ee0.exe
+  cmTC_70ee0.vcxproj -> C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_70ee0.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_70ee0.dir\Debug\cmTC_70ee0.tlog\unsuccessfulbuild".
+  Touching "cmTC_70ee0.dir\Debug\cmTC_70ee0.tlog\cmTC_70ee0.lastbuildstate".
+Done Building Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_70ee0.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.52
+
+
+Performing C SOURCE FILE Test C_HAS_inline succeeded with the following output:
+Change Dir: C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_dacd2.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.25123.0
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 6/11/2018 7:51:13 PM.
+Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_dacd2.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_dacd2.dir\Debug\".
+  Creating directory "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_dacd2.dir\Debug\cmTC_dacd2.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_dacd2.dir\Debug\cmTC_dacd2.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D C_HAS_inline /D inline=inline /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_dacd2.dir\Debug\\" /Fd"cmTC_dacd2.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\src.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23918 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D C_HAS_inline /D inline=inline /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_dacd2.dir\Debug\\" /Fd"cmTC_dacd2.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\src.c"
+  
+  src.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_dacd2.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_dacd2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_dacd2.lib" /MACHINE:X64  /machine:x64 cmTC_dacd2.dir\Debug\src.obj
+  cmTC_dacd2.vcxproj -> C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_dacd2.exe
+  cmTC_dacd2.vcxproj -> C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_dacd2.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_dacd2.dir\Debug\cmTC_dacd2.tlog\unsuccessfulbuild".
+  Touching "cmTC_dacd2.dir\Debug\cmTC_dacd2.tlog\cmTC_dacd2.lastbuildstate".
+Done Building Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_dacd2.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.50
+
+Source file was:
+
+        typedef int foo_t;
+        static inline foo_t static_foo() {return 0;}
+        foo_t foo(){return 0;}
+        int main(int argc, char *argv[]) {return 0;}
+Determining size of signed short passed with the following output:
+Change Dir: C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_9ba83.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.25123.0
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 6/11/2018 7:51:14 PM.
+Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_9ba83.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_9ba83.dir\Debug\".
+  Creating directory "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_9ba83.dir\Debug\cmTC_9ba83.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_9ba83.dir\Debug\cmTC_9ba83.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_9ba83.dir\Debug\\" /Fd"cmTC_9ba83.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CheckTypeSize\SIZEOF_SIGNED_SHORT.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23918 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_9ba83.dir\Debug\\" /Fd"cmTC_9ba83.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CheckTypeSize\SIZEOF_SIGNED_SHORT.c"
+  
+  SIZEOF_SIGNED_SHORT.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_9ba83.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_9ba83.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_9ba83.lib" /MACHINE:X64  /machine:x64 cmTC_9ba83.dir\Debug\SIZEOF_SIGNED_SHORT.obj
+  cmTC_9ba83.vcxproj -> C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_9ba83.exe
+  cmTC_9ba83.vcxproj -> C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_9ba83.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_9ba83.dir\Debug\cmTC_9ba83.tlog\unsuccessfulbuild".
+  Touching "cmTC_9ba83.dir\Debug\cmTC_9ba83.tlog\cmTC_9ba83.lastbuildstate".
+Done Building Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_9ba83.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.52
+
+
+Determining size of unsigned short passed with the following output:
+Change Dir: C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_d439a.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.25123.0
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 6/11/2018 7:51:14 PM.
+Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_d439a.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_d439a.dir\Debug\".
+  Creating directory "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_d439a.dir\Debug\cmTC_d439a.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_d439a.dir\Debug\cmTC_d439a.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d439a.dir\Debug\\" /Fd"cmTC_d439a.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CheckTypeSize\SIZEOF_UNSIGNED_SHORT.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23918 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d439a.dir\Debug\\" /Fd"cmTC_d439a.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CheckTypeSize\SIZEOF_UNSIGNED_SHORT.c"
+  
+  SIZEOF_UNSIGNED_SHORT.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_d439a.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_d439a.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_d439a.lib" /MACHINE:X64  /machine:x64 cmTC_d439a.dir\Debug\SIZEOF_UNSIGNED_SHORT.obj
+  cmTC_d439a.vcxproj -> C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_d439a.exe
+  cmTC_d439a.vcxproj -> C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_d439a.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_d439a.dir\Debug\cmTC_d439a.tlog\unsuccessfulbuild".
+  Touching "cmTC_d439a.dir\Debug\cmTC_d439a.tlog\cmTC_d439a.lastbuildstate".
+Done Building Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_d439a.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.51
+
+
+Determining size of signed int passed with the following output:
+Change Dir: C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_04835.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.25123.0
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 6/11/2018 7:51:15 PM.
+Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_04835.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_04835.dir\Debug\".
+  Creating directory "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_04835.dir\Debug\cmTC_04835.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_04835.dir\Debug\cmTC_04835.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_04835.dir\Debug\\" /Fd"cmTC_04835.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CheckTypeSize\SIZEOF_SIGNED_INT.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23918 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_04835.dir\Debug\\" /Fd"cmTC_04835.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CheckTypeSize\SIZEOF_SIGNED_INT.c"
+  
+  SIZEOF_SIGNED_INT.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_04835.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_04835.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_04835.lib" /MACHINE:X64  /machine:x64 cmTC_04835.dir\Debug\SIZEOF_SIGNED_INT.obj
+  cmTC_04835.vcxproj -> C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_04835.exe
+  cmTC_04835.vcxproj -> C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_04835.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_04835.dir\Debug\cmTC_04835.tlog\unsuccessfulbuild".
+  Touching "cmTC_04835.dir\Debug\cmTC_04835.tlog\cmTC_04835.lastbuildstate".
+Done Building Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_04835.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.51
+
+
+Determining size of unsigned int passed with the following output:
+Change Dir: C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_675b1.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.25123.0
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 6/11/2018 7:51:16 PM.
+Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_675b1.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_675b1.dir\Debug\".
+  Creating directory "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_675b1.dir\Debug\cmTC_675b1.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_675b1.dir\Debug\cmTC_675b1.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_675b1.dir\Debug\\" /Fd"cmTC_675b1.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CheckTypeSize\SIZEOF_UNSIGNED_INT.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23918 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_675b1.dir\Debug\\" /Fd"cmTC_675b1.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CheckTypeSize\SIZEOF_UNSIGNED_INT.c"
+  
+  SIZEOF_UNSIGNED_INT.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_675b1.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_675b1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_675b1.lib" /MACHINE:X64  /machine:x64 cmTC_675b1.dir\Debug\SIZEOF_UNSIGNED_INT.obj
+  cmTC_675b1.vcxproj -> C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_675b1.exe
+  cmTC_675b1.vcxproj -> C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_675b1.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_675b1.dir\Debug\cmTC_675b1.tlog\unsuccessfulbuild".
+  Touching "cmTC_675b1.dir\Debug\cmTC_675b1.tlog\cmTC_675b1.lastbuildstate".
+Done Building Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_675b1.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.51
+
+
+Determining size of signed long passed with the following output:
+Change Dir: C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_baf72.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.25123.0
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 6/11/2018 7:51:16 PM.
+Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_baf72.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_baf72.dir\Debug\".
+  Creating directory "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_baf72.dir\Debug\cmTC_baf72.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_baf72.dir\Debug\cmTC_baf72.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_baf72.dir\Debug\\" /Fd"cmTC_baf72.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CheckTypeSize\SIZEOF_SIGNED_LONG.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23918 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_baf72.dir\Debug\\" /Fd"cmTC_baf72.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CheckTypeSize\SIZEOF_SIGNED_LONG.c"
+  
+  SIZEOF_SIGNED_LONG.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_baf72.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_baf72.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_baf72.lib" /MACHINE:X64  /machine:x64 cmTC_baf72.dir\Debug\SIZEOF_SIGNED_LONG.obj
+  cmTC_baf72.vcxproj -> C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_baf72.exe
+  cmTC_baf72.vcxproj -> C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_baf72.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_baf72.dir\Debug\cmTC_baf72.tlog\unsuccessfulbuild".
+  Touching "cmTC_baf72.dir\Debug\cmTC_baf72.tlog\cmTC_baf72.lastbuildstate".
+Done Building Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_baf72.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.51
+
+
+Determining size of unsigned long passed with the following output:
+Change Dir: C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_5c685.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.25123.0
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 6/11/2018 7:51:17 PM.
+Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_5c685.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_5c685.dir\Debug\".
+  Creating directory "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_5c685.dir\Debug\cmTC_5c685.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_5c685.dir\Debug\cmTC_5c685.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_5c685.dir\Debug\\" /Fd"cmTC_5c685.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CheckTypeSize\SIZEOF_UNSIGNED_LONG.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23918 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_5c685.dir\Debug\\" /Fd"cmTC_5c685.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CheckTypeSize\SIZEOF_UNSIGNED_LONG.c"
+  
+  SIZEOF_UNSIGNED_LONG.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_5c685.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_5c685.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_5c685.lib" /MACHINE:X64  /machine:x64 cmTC_5c685.dir\Debug\SIZEOF_UNSIGNED_LONG.obj
+  cmTC_5c685.vcxproj -> C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_5c685.exe
+  cmTC_5c685.vcxproj -> C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_5c685.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_5c685.dir\Debug\cmTC_5c685.tlog\unsuccessfulbuild".
+  Touching "cmTC_5c685.dir\Debug\cmTC_5c685.tlog\cmTC_5c685.lastbuildstate".
+Done Building Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_5c685.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.52
+
+
+Determining size of signed long long passed with the following output:
+Change Dir: C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_71263.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.25123.0
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 6/11/2018 7:51:17 PM.
+Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_71263.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_71263.dir\Debug\".
+  Creating directory "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_71263.dir\Debug\cmTC_71263.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_71263.dir\Debug\cmTC_71263.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_71263.dir\Debug\\" /Fd"cmTC_71263.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CheckTypeSize\SIZEOF_SIGNED_LONG_LONG.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23918 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_71263.dir\Debug\\" /Fd"cmTC_71263.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CheckTypeSize\SIZEOF_SIGNED_LONG_LONG.c"
+  
+  SIZEOF_SIGNED_LONG_LONG.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_71263.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_71263.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_71263.lib" /MACHINE:X64  /machine:x64 cmTC_71263.dir\Debug\SIZEOF_SIGNED_LONG_LONG.obj
+  cmTC_71263.vcxproj -> C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_71263.exe
+  cmTC_71263.vcxproj -> C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_71263.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_71263.dir\Debug\cmTC_71263.tlog\unsuccessfulbuild".
+  Touching "cmTC_71263.dir\Debug\cmTC_71263.tlog\cmTC_71263.lastbuildstate".
+Done Building Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_71263.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.51
+
+
+Determining size of unsigned long long passed with the following output:
+Change Dir: C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_2970b.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.25123.0
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 6/11/2018 7:51:18 PM.
+Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_2970b.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_2970b.dir\Debug\".
+  Creating directory "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_2970b.dir\Debug\cmTC_2970b.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_2970b.dir\Debug\cmTC_2970b.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_2970b.dir\Debug\\" /Fd"cmTC_2970b.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CheckTypeSize\SIZEOF_UNSIGNED_LONG_LONG.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23918 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_2970b.dir\Debug\\" /Fd"cmTC_2970b.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CheckTypeSize\SIZEOF_UNSIGNED_LONG_LONG.c"
+  
+  SIZEOF_UNSIGNED_LONG_LONG.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_2970b.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_2970b.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_2970b.lib" /MACHINE:X64  /machine:x64 cmTC_2970b.dir\Debug\SIZEOF_UNSIGNED_LONG_LONG.obj
+  cmTC_2970b.vcxproj -> C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_2970b.exe
+  cmTC_2970b.vcxproj -> C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_2970b.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_2970b.dir\Debug\cmTC_2970b.tlog\unsuccessfulbuild".
+  Touching "cmTC_2970b.dir\Debug\cmTC_2970b.tlog\cmTC_2970b.lastbuildstate".
+Done Building Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_2970b.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.51
+
+
+Determining size of unsigned char * passed with the following output:
+Change Dir: C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_21c6c.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.25123.0
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 6/11/2018 7:51:19 PM.
+Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_21c6c.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_21c6c.dir\Debug\".
+  Creating directory "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_21c6c.dir\Debug\cmTC_21c6c.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_21c6c.dir\Debug\cmTC_21c6c.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_21c6c.dir\Debug\\" /Fd"cmTC_21c6c.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CheckTypeSize\SIZEOF_UNSIGNED_CHAR_P.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23918 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_21c6c.dir\Debug\\" /Fd"cmTC_21c6c.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CheckTypeSize\SIZEOF_UNSIGNED_CHAR_P.c"
+  
+  SIZEOF_UNSIGNED_CHAR_P.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_21c6c.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_21c6c.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_21c6c.lib" /MACHINE:X64  /machine:x64 cmTC_21c6c.dir\Debug\SIZEOF_UNSIGNED_CHAR_P.obj
+  cmTC_21c6c.vcxproj -> C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_21c6c.exe
+  cmTC_21c6c.vcxproj -> C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_21c6c.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_21c6c.dir\Debug\cmTC_21c6c.tlog\unsuccessfulbuild".
+  Touching "cmTC_21c6c.dir\Debug\cmTC_21c6c.tlog\cmTC_21c6c.lastbuildstate".
+Done Building Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_21c6c.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.52
+
+
+Determining size of size_t passed with the following output:
+Change Dir: C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_62c65.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.25123.0
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 6/11/2018 7:51:19 PM.
+Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_62c65.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_62c65.dir\Debug\".
+  Creating directory "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_62c65.dir\Debug\cmTC_62c65.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_62c65.dir\Debug\cmTC_62c65.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_62c65.dir\Debug\\" /Fd"cmTC_62c65.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CheckTypeSize\SIZEOF_SIZE_T.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23918 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_62c65.dir\Debug\\" /Fd"cmTC_62c65.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CheckTypeSize\SIZEOF_SIZE_T.c"
+  
+  SIZEOF_SIZE_T.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_62c65.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_62c65.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_62c65.lib" /MACHINE:X64  /machine:x64 cmTC_62c65.dir\Debug\SIZEOF_SIZE_T.obj
+  cmTC_62c65.vcxproj -> C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_62c65.exe
+  cmTC_62c65.vcxproj -> C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_62c65.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_62c65.dir\Debug\cmTC_62c65.tlog\unsuccessfulbuild".
+  Touching "cmTC_62c65.dir\Debug\cmTC_62c65.tlog\cmTC_62c65.lastbuildstate".
+Done Building Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_62c65.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.51
+
+
+Determining size of ptrdiff_t passed with the following output:
+Change Dir: C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_044be.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.25123.0
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 6/11/2018 7:51:20 PM.
+Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_044be.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_044be.dir\Debug\".
+  Creating directory "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_044be.dir\Debug\cmTC_044be.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_044be.dir\Debug\cmTC_044be.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_044be.dir\Debug\\" /Fd"cmTC_044be.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CheckTypeSize\SIZEOF_PTRDIFF_T.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23918 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_044be.dir\Debug\\" /Fd"cmTC_044be.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CheckTypeSize\SIZEOF_PTRDIFF_T.c"
+  
+  SIZEOF_PTRDIFF_T.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_044be.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_044be.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_044be.lib" /MACHINE:X64  /machine:x64 cmTC_044be.dir\Debug\SIZEOF_PTRDIFF_T.obj
+  cmTC_044be.vcxproj -> C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_044be.exe
+  cmTC_044be.vcxproj -> C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_044be.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_044be.dir\Debug\cmTC_044be.tlog\unsuccessfulbuild".
+  Touching "cmTC_044be.dir\Debug\cmTC_044be.tlog\cmTC_044be.lastbuildstate".
+Done Building Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_044be.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.51
+
+
+Determining if the function memmove exists passed with the following output:
+Change Dir: C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_bf220.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.25123.0
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 6/11/2018 7:51:21 PM.
+Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_bf220.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_bf220.dir\Debug\".
+  Creating directory "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_bf220.dir\Debug\cmTC_bf220.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_bf220.dir\Debug\cmTC_bf220.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D CHECK_FUNCTION_EXISTS=memmove /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_bf220.dir\Debug\\" /Fd"cmTC_bf220.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Program Files\CMake\share\cmake-3.10\Modules\CheckFunctionExists.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23918 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D CHECK_FUNCTION_EXISTS=memmove /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_bf220.dir\Debug\\" /Fd"cmTC_bf220.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Program Files\CMake\share\cmake-3.10\Modules\CheckFunctionExists.c"
+  
+  CheckFunctionExists.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_bf220.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_bf220.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_bf220.lib" /MACHINE:X64  /machine:x64 cmTC_bf220.dir\Debug\CheckFunctionExists.obj
+  cmTC_bf220.vcxproj -> C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_bf220.exe
+  cmTC_bf220.vcxproj -> C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_bf220.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_bf220.dir\Debug\cmTC_bf220.tlog\unsuccessfulbuild".
+  Touching "cmTC_bf220.dir\Debug\cmTC_bf220.tlog\cmTC_bf220.lastbuildstate".
+Done Building Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_bf220.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.50
+
+
+Determining if the function setmode exists passed with the following output:
+Change Dir: C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_b088c.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.25123.0
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 6/11/2018 7:51:21 PM.
+Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_b088c.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_b088c.dir\Debug\".
+  Creating directory "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_b088c.dir\Debug\cmTC_b088c.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_b088c.dir\Debug\cmTC_b088c.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D CHECK_FUNCTION_EXISTS=setmode /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b088c.dir\Debug\\" /Fd"cmTC_b088c.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Program Files\CMake\share\cmake-3.10\Modules\CheckFunctionExists.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23918 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D CHECK_FUNCTION_EXISTS=setmode /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b088c.dir\Debug\\" /Fd"cmTC_b088c.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Program Files\CMake\share\cmake-3.10\Modules\CheckFunctionExists.c"
+  
+  CheckFunctionExists.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_b088c.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_b088c.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_b088c.lib" /MACHINE:X64  /machine:x64 cmTC_b088c.dir\Debug\CheckFunctionExists.obj
+  cmTC_b088c.vcxproj -> C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_b088c.exe
+  cmTC_b088c.vcxproj -> C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_b088c.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_b088c.dir\Debug\cmTC_b088c.tlog\unsuccessfulbuild".
+  Touching "cmTC_b088c.dir\Debug\cmTC_b088c.tlog\cmTC_b088c.lastbuildstate".
+Done Building Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_b088c.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.51
+
+
+Determining if the function strchr exists passed with the following output:
+Change Dir: C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_acbb6.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.25123.0
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 6/11/2018 7:51:22 PM.
+Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_acbb6.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_acbb6.dir\Debug\".
+  Creating directory "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_acbb6.dir\Debug\cmTC_acbb6.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_acbb6.dir\Debug\cmTC_acbb6.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D CHECK_FUNCTION_EXISTS=strchr /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_acbb6.dir\Debug\\" /Fd"cmTC_acbb6.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Program Files\CMake\share\cmake-3.10\Modules\CheckFunctionExists.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23918 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D CHECK_FUNCTION_EXISTS=strchr /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_acbb6.dir\Debug\\" /Fd"cmTC_acbb6.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Program Files\CMake\share\cmake-3.10\Modules\CheckFunctionExists.c"
+  
+  CheckFunctionExists.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_acbb6.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_acbb6.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_acbb6.lib" /MACHINE:X64  /machine:x64 cmTC_acbb6.dir\Debug\CheckFunctionExists.obj
+  cmTC_acbb6.vcxproj -> C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_acbb6.exe
+  cmTC_acbb6.vcxproj -> C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_acbb6.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_acbb6.dir\Debug\cmTC_acbb6.tlog\unsuccessfulbuild".
+  Touching "cmTC_acbb6.dir\Debug\cmTC_acbb6.tlog\cmTC_acbb6.lastbuildstate".
+Done Building Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_acbb6.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.51
+
+
+Determining if the function strrchr exists passed with the following output:
+Change Dir: C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_50061.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.25123.0
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 6/11/2018 7:51:23 PM.
+Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_50061.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_50061.dir\Debug\".
+  Creating directory "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_50061.dir\Debug\cmTC_50061.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_50061.dir\Debug\cmTC_50061.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D CHECK_FUNCTION_EXISTS=strrchr /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_50061.dir\Debug\\" /Fd"cmTC_50061.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Program Files\CMake\share\cmake-3.10\Modules\CheckFunctionExists.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23918 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D CHECK_FUNCTION_EXISTS=strrchr /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_50061.dir\Debug\\" /Fd"cmTC_50061.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Program Files\CMake\share\cmake-3.10\Modules\CheckFunctionExists.c"
+  
+  CheckFunctionExists.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_50061.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_50061.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_50061.lib" /MACHINE:X64  /machine:x64 cmTC_50061.dir\Debug\CheckFunctionExists.obj
+  cmTC_50061.vcxproj -> C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_50061.exe
+  cmTC_50061.vcxproj -> C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_50061.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_50061.dir\Debug\cmTC_50061.tlog\unsuccessfulbuild".
+  Touching "cmTC_50061.dir\Debug\cmTC_50061.tlog\cmTC_50061.lastbuildstate".
+Done Building Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_50061.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.51
+
+
+Determining if the function strstr exists passed with the following output:
+Change Dir: C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_cf92c.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.25123.0
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 6/11/2018 7:51:24 PM.
+Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_cf92c.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_cf92c.dir\Debug\".
+  Creating directory "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_cf92c.dir\Debug\cmTC_cf92c.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_cf92c.dir\Debug\cmTC_cf92c.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D CHECK_FUNCTION_EXISTS=strstr /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_cf92c.dir\Debug\\" /Fd"cmTC_cf92c.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Program Files\CMake\share\cmake-3.10\Modules\CheckFunctionExists.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23918 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D CHECK_FUNCTION_EXISTS=strstr /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_cf92c.dir\Debug\\" /Fd"cmTC_cf92c.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Program Files\CMake\share\cmake-3.10\Modules\CheckFunctionExists.c"
+  
+  CheckFunctionExists.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_cf92c.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_cf92c.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_cf92c.lib" /MACHINE:X64  /machine:x64 cmTC_cf92c.dir\Debug\CheckFunctionExists.obj
+  cmTC_cf92c.vcxproj -> C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_cf92c.exe
+  cmTC_cf92c.vcxproj -> C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_cf92c.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_cf92c.dir\Debug\cmTC_cf92c.tlog\unsuccessfulbuild".
+  Touching "cmTC_cf92c.dir\Debug\cmTC_cf92c.tlog\cmTC_cf92c.lastbuildstate".
+Done Building Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_cf92c.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.51
+
+
+Determining if the function strtol exists passed with the following output:
+Change Dir: C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_5a33c.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.25123.0
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 6/11/2018 7:51:24 PM.
+Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_5a33c.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_5a33c.dir\Debug\".
+  Creating directory "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_5a33c.dir\Debug\cmTC_5a33c.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_5a33c.dir\Debug\cmTC_5a33c.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D CHECK_FUNCTION_EXISTS=strtol /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_5a33c.dir\Debug\\" /Fd"cmTC_5a33c.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Program Files\CMake\share\cmake-3.10\Modules\CheckFunctionExists.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23918 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D CHECK_FUNCTION_EXISTS=strtol /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_5a33c.dir\Debug\\" /Fd"cmTC_5a33c.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Program Files\CMake\share\cmake-3.10\Modules\CheckFunctionExists.c"
+  
+  CheckFunctionExists.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_5a33c.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_5a33c.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_5a33c.lib" /MACHINE:X64  /machine:x64 cmTC_5a33c.dir\Debug\CheckFunctionExists.obj
+  cmTC_5a33c.vcxproj -> C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_5a33c.exe
+  cmTC_5a33c.vcxproj -> C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_5a33c.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_5a33c.dir\Debug\cmTC_5a33c.tlog\unsuccessfulbuild".
+  Touching "cmTC_5a33c.dir\Debug\cmTC_5a33c.tlog\cmTC_5a33c.lastbuildstate".
+Done Building Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_5a33c.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.51
+
+
+Determining if the function strtol exists passed with the following output:
+Change Dir: C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_22247.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.25123.0
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 6/11/2018 7:51:25 PM.
+Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_22247.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_22247.dir\Debug\".
+  Creating directory "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_22247.dir\Debug\cmTC_22247.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_22247.dir\Debug\cmTC_22247.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D CHECK_FUNCTION_EXISTS=strtol /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_22247.dir\Debug\\" /Fd"cmTC_22247.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Program Files\CMake\share\cmake-3.10\Modules\CheckFunctionExists.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23918 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D CHECK_FUNCTION_EXISTS=strtol /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_22247.dir\Debug\\" /Fd"cmTC_22247.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Program Files\CMake\share\cmake-3.10\Modules\CheckFunctionExists.c"
+  
+  CheckFunctionExists.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_22247.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_22247.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_22247.lib" /MACHINE:X64  /machine:x64 cmTC_22247.dir\Debug\CheckFunctionExists.obj
+  cmTC_22247.vcxproj -> C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_22247.exe
+  cmTC_22247.vcxproj -> C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_22247.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_22247.dir\Debug\cmTC_22247.tlog\unsuccessfulbuild".
+  Touching "cmTC_22247.dir\Debug\cmTC_22247.tlog\cmTC_22247.lastbuildstate".
+Done Building Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_22247.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.51
+
+
+Determining if the function strtoull exists passed with the following output:
+Change Dir: C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_6d66c.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.25123.0
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 6/11/2018 7:51:25 PM.
+Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_6d66c.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_6d66c.dir\Debug\".
+  Creating directory "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_6d66c.dir\Debug\cmTC_6d66c.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_6d66c.dir\Debug\cmTC_6d66c.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D CHECK_FUNCTION_EXISTS=strtoull /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6d66c.dir\Debug\\" /Fd"cmTC_6d66c.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Program Files\CMake\share\cmake-3.10\Modules\CheckFunctionExists.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23918 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D CHECK_FUNCTION_EXISTS=strtoull /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6d66c.dir\Debug\\" /Fd"cmTC_6d66c.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Program Files\CMake\share\cmake-3.10\Modules\CheckFunctionExists.c"
+  
+  CheckFunctionExists.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_6d66c.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_6d66c.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_6d66c.lib" /MACHINE:X64  /machine:x64 cmTC_6d66c.dir\Debug\CheckFunctionExists.obj
+  cmTC_6d66c.vcxproj -> C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_6d66c.exe
+  cmTC_6d66c.vcxproj -> C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_6d66c.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_6d66c.dir\Debug\cmTC_6d66c.tlog\unsuccessfulbuild".
+  Touching "cmTC_6d66c.dir\Debug\cmTC_6d66c.tlog\cmTC_6d66c.lastbuildstate".
+Done Building Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_6d66c.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.51
+
+
+Determining if the function lfind exists passed with the following output:
+Change Dir: C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_b062d.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.25123.0
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 6/11/2018 7:51:26 PM.
+Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_b062d.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_b062d.dir\Debug\".
+  Creating directory "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_b062d.dir\Debug\cmTC_b062d.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_b062d.dir\Debug\cmTC_b062d.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D CHECK_FUNCTION_EXISTS=lfind /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b062d.dir\Debug\\" /Fd"cmTC_b062d.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Program Files\CMake\share\cmake-3.10\Modules\CheckFunctionExists.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23918 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D CHECK_FUNCTION_EXISTS=lfind /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b062d.dir\Debug\\" /Fd"cmTC_b062d.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Program Files\CMake\share\cmake-3.10\Modules\CheckFunctionExists.c"
+  
+  CheckFunctionExists.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_b062d.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_b062d.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_b062d.lib" /MACHINE:X64  /machine:x64 cmTC_b062d.dir\Debug\CheckFunctionExists.obj
+  cmTC_b062d.vcxproj -> C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_b062d.exe
+  cmTC_b062d.vcxproj -> C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_b062d.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_b062d.dir\Debug\cmTC_b062d.tlog\unsuccessfulbuild".
+  Touching "cmTC_b062d.dir\Debug\cmTC_b062d.tlog\cmTC_b062d.lastbuildstate".
+Done Building Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_b062d.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.51
+
+
+Performing C SOURCE FILE Test HAVE_SNPRINTF succeeded with the following output:
+Change Dir: C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_9f8e9.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.25123.0
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 6/11/2018 7:51:27 PM.
+Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_9f8e9.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_9f8e9.dir\Debug\".
+  Creating directory "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_9f8e9.dir\Debug\cmTC_9f8e9.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_9f8e9.dir\Debug\cmTC_9f8e9.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D HAVE_SNPRINTF /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_9f8e9.dir\Debug\\" /Fd"cmTC_9f8e9.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\src.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23918 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D HAVE_SNPRINTF /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_9f8e9.dir\Debug\\" /Fd"cmTC_9f8e9.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\src.c"
+  
+  src.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_9f8e9.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_9f8e9.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_9f8e9.lib" /MACHINE:X64  /machine:x64 cmTC_9f8e9.dir\Debug\src.obj
+  cmTC_9f8e9.vcxproj -> C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_9f8e9.exe
+  cmTC_9f8e9.vcxproj -> C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_9f8e9.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_9f8e9.dir\Debug\cmTC_9f8e9.tlog\unsuccessfulbuild".
+  Touching "cmTC_9f8e9.dir\Debug\cmTC_9f8e9.tlog\cmTC_9f8e9.lastbuildstate".
+Done Building Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_9f8e9.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.52
+
+Source file was:
+
+#include <stdio.h>
+int main(void) {
+  char buf[10];
+  snprintf(buf, 10, "Test %d", 1);
+  return 0;
+}
+Determining if the system is big endian passed with the following output:
+Change Dir: C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_3b03a.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.25123.0
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 6/11/2018 7:51:27 PM.
+Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_3b03a.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_3b03a.dir\Debug\".
+  Creating directory "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_3b03a.dir\Debug\cmTC_3b03a.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_3b03a.dir\Debug\cmTC_3b03a.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3b03a.dir\Debug\\" /Fd"cmTC_3b03a.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\TestEndianess.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23918 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3b03a.dir\Debug\\" /Fd"cmTC_3b03a.dir\Debug\vc140.pdb" /Gd /TC /errorReport:queue  /bigobj "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\TestEndianess.c"
+  
+  TestEndianess.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_3b03a.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_3b03a.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_3b03a.lib" /MACHINE:X64  /machine:x64 cmTC_3b03a.dir\Debug\TestEndianess.obj
+  cmTC_3b03a.vcxproj -> C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_3b03a.exe
+  cmTC_3b03a.vcxproj -> C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_3b03a.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_3b03a.dir\Debug\cmTC_3b03a.tlog\unsuccessfulbuild".
+  Touching "cmTC_3b03a.dir\Debug\cmTC_3b03a.tlog\cmTC_3b03a.lastbuildstate".
+Done Building Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_3b03a.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.51
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
 
 

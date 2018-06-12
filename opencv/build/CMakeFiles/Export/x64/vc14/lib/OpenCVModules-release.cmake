@@ -35,6 +35,16 @@ set_target_properties(opencv_objdetect PROPERTIES
 list(APPEND _IMPORT_CHECK_TARGETS opencv_objdetect )
 list(APPEND _IMPORT_CHECK_FILES_FOR_opencv_objdetect "${_IMPORT_PREFIX}/x64/vc14/lib/opencv_objdetect341.lib" "${_IMPORT_PREFIX}/x64/vc14/bin/opencv_objdetect341.dll" )
 
+# Import target "opencv_video" for configuration "Release"
+set_property(TARGET opencv_video APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+set_target_properties(opencv_video PROPERTIES
+  IMPORTED_IMPLIB_RELEASE "${_IMPORT_PREFIX}/x64/vc14/lib/opencv_video341.lib"
+  IMPORTED_LOCATION_RELEASE "${_IMPORT_PREFIX}/x64/vc14/bin/opencv_video341.dll"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS opencv_video )
+list(APPEND _IMPORT_CHECK_FILES_FOR_opencv_video "${_IMPORT_PREFIX}/x64/vc14/lib/opencv_video341.lib" "${_IMPORT_PREFIX}/x64/vc14/bin/opencv_video341.dll" )
+
 # Import target "opencv_imgcodecs" for configuration "Release"
 set_property(TARGET opencv_imgcodecs APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(opencv_imgcodecs PROPERTIES
@@ -44,6 +54,16 @@ set_target_properties(opencv_imgcodecs PROPERTIES
 
 list(APPEND _IMPORT_CHECK_TARGETS opencv_imgcodecs )
 list(APPEND _IMPORT_CHECK_FILES_FOR_opencv_imgcodecs "${_IMPORT_PREFIX}/x64/vc14/lib/opencv_imgcodecs341.lib" "${_IMPORT_PREFIX}/x64/vc14/bin/opencv_imgcodecs341.dll" )
+
+# Import target "opencv_videoio" for configuration "Release"
+set_property(TARGET opencv_videoio APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+set_target_properties(opencv_videoio PROPERTIES
+  IMPORTED_IMPLIB_RELEASE "${_IMPORT_PREFIX}/x64/vc14/lib/opencv_videoio341.lib"
+  IMPORTED_LOCATION_RELEASE "${_IMPORT_PREFIX}/x64/vc14/bin/opencv_videoio341.dll"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS opencv_videoio )
+list(APPEND _IMPORT_CHECK_FILES_FOR_opencv_videoio "${_IMPORT_PREFIX}/x64/vc14/lib/opencv_videoio341.lib" "${_IMPORT_PREFIX}/x64/vc14/bin/opencv_videoio341.dll" )
 
 # Import target "opencv_highgui" for configuration "Release"
 set_property(TARGET opencv_highgui APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)

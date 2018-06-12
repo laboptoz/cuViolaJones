@@ -1,0 +1,17 @@
+﻿  Building Custom Rule C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/video/CMakeLists.txt
+  CMake does not need to re-run because C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/modules/video/CMakeFiles/generate.stamp is up-to-date.
+  Processing OpenCL kernels (video)
+  opencv_video_pch.cpp
+  bgfg_KNN.cpp
+  bgfg_gaussmix2.cpp
+  camshift.cpp
+  compat_video.cpp
+  ecc.cpp
+  kalman.cpp
+  lkpyramid.cpp
+  optflowgf.cpp
+  tvl1flow.cpp
+  opencl_kernels_video.cpp
+     Creating library C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/lib/Release/opencv_video341.lib and object C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/lib/Release/opencv_video341.exp
+  opencv_video.vcxproj -> C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\bin\Release\opencv_video341.dll
+  opencv_video.vcxproj -> C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/bin/Release/opencv_video341.pdb (Full PDB)

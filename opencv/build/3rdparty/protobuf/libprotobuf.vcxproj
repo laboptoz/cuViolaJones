@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{DD7C5603-2A3A-3FB4-8CCC-377027F52965}</ProjectGuid>
+    <ProjectGuid>{E7583F62-8EB2-3E66-BA55-D28BBCDC26AA}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
     <ProjectName>libprotobuf</ProjectName>
@@ -37,18 +37,18 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\3rdparty\lib\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\3rdparty\lib\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">libprotobuf.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">libprotobufd</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\3rdparty\lib\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\3rdparty\lib\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">libprotobuf.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">libprotobuf</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build;C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build;C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -71,10 +71,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_VARIADIC_MAX=10;_CRT_SECURE_NO_WARNINGS=1;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build;C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build;C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build;C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build;C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -87,7 +87,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build;C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build;C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
       <AssemblerListingLocation>Release/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
@@ -109,10 +109,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;_VARIADIC_MAX=10;_CRT_SECURE_NO_WARNINGS=1;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build;C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build;C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build;C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build;C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -124,10 +124,10 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/3rdparty/protobuf/CMakeLists.txt</Message>
+    <CustomBuild Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/3rdparty/protobuf/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources -BC:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build --check-stamp-file C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/3rdparty/protobuf/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" "-HC:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources" "-BC:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build" --check-stamp-file "C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/3rdparty/protobuf/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -135,12 +135,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/3rdparty/protobuf/CMakeLists.txt;C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.10\Modules\CheckIncludeFiles.cmake;C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\3rdparty\protobuf\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/3rdparty/protobuf/CMakeLists.txt;C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.10\Modules\CheckIncludeFiles.cmake;C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\3rdparty\protobuf\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/3rdparty/protobuf/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/3rdparty/protobuf/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources -BC:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build --check-stamp-file C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/3rdparty/protobuf/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" "-HC:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources" "-BC:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build" --check-stamp-file "C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/3rdparty/protobuf/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -148,91 +148,91 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/3rdparty/protobuf/CMakeLists.txt;C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.10\Modules\CheckIncludeFiles.cmake;C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\3rdparty\protobuf\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/3rdparty/protobuf/CMakeLists.txt;C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.10\Modules\CheckIncludeFiles.cmake;C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\3rdparty\protobuf\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\arena.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\arenastring.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\extension_set.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\generated_message_table_driven_lite.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\generated_message_util.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\io\coded_stream.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\io\zero_copy_stream.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\io\zero_copy_stream_impl_lite.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\message_lite.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\repeated_field.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\stubs\atomicops_internals_x86_msvc.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\stubs\bytestream.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\stubs\common.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\stubs\int128.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\stubs\io_win32.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\stubs\once.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\stubs\status.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\stubs\statusor.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\stubs\stringpiece.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\stubs\stringprintf.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\stubs\structurally_valid.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\stubs\strutil.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\stubs\time.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\wire_format_lite.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\any.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\any.pb.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\api.pb.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\descriptor.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\descriptor.pb.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\descriptor_database.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\duration.pb.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\dynamic_message.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\empty.pb.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\extension_set_heavy.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\field_mask.pb.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\generated_message_reflection.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\generated_message_table_driven.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\io\gzip_stream.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\io\printer.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\io\strtod.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\io\tokenizer.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\io\zero_copy_stream_impl.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\map_field.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\message.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\reflection_ops.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\service.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\source_context.pb.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\struct.pb.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\stubs\mathlimits.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\stubs\substitute.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\text_format.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\timestamp.pb.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\type.pb.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\unknown_field_set.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\util\delimited_message_util.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\util\field_comparator.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\util\field_mask_util.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\util\internal\datapiece.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\util\internal\default_value_objectwriter.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\util\internal\field_mask_utility.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\util\internal\json_escaping.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\util\internal\json_objectwriter.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\util\internal\json_stream_parser.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\util\internal\object_writer.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\util\internal\proto_writer.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\util\internal\protostream_objectsource.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\util\internal\protostream_objectwriter.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\util\internal\type_info.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\util\internal\utility.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\util\json_util.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\util\message_differencer.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\util\time_util.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\util\type_resolver_util.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\wire_format.cc"  />
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\wrappers.pb.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\arena.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\arenastring.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\extension_set.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\generated_message_table_driven_lite.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\generated_message_util.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\io\coded_stream.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\io\zero_copy_stream.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\io\zero_copy_stream_impl_lite.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\message_lite.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\repeated_field.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\stubs\atomicops_internals_x86_msvc.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\stubs\bytestream.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\stubs\common.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\stubs\int128.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\stubs\io_win32.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\stubs\once.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\stubs\status.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\stubs\statusor.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\stubs\stringpiece.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\stubs\stringprintf.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\stubs\structurally_valid.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\stubs\strutil.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\stubs\time.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\wire_format_lite.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\any.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\any.pb.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\api.pb.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\descriptor.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\descriptor.pb.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\descriptor_database.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\duration.pb.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\dynamic_message.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\empty.pb.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\extension_set_heavy.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\field_mask.pb.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\generated_message_reflection.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\generated_message_table_driven.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\io\gzip_stream.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\io\printer.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\io\strtod.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\io\tokenizer.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\io\zero_copy_stream_impl.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\map_field.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\message.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\reflection_ops.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\service.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\source_context.pb.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\struct.pb.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\stubs\mathlimits.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\stubs\substitute.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\text_format.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\timestamp.pb.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\type.pb.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\unknown_field_set.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\util\delimited_message_util.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\util\field_comparator.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\util\field_mask_util.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\util\internal\datapiece.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\util\internal\default_value_objectwriter.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\util\internal\field_mask_utility.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\util\internal\json_escaping.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\util\internal\json_objectwriter.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\util\internal\json_stream_parser.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\util\internal\object_writer.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\util\internal\proto_writer.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\util\internal\protostream_objectsource.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\util\internal\protostream_objectwriter.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\util\internal\type_info.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\util\internal\utility.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\util\json_util.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\util\message_differencer.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\util\time_util.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\util\type_resolver_util.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\wire_format.cc"  />
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\protobuf\src\google\protobuf\wrappers.pb.cc"  />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\ZERO_CHECK.vcxproj">
-      <Project>{663334D7-9D02-3793-8626-E8858EF60ADC}</Project>
+    <ProjectReference Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\ZERO_CHECK.vcxproj">
+      <Project>{99D7B0D5-C497-31A9-9DF4-D5ED66063EDE}</Project>
       <Name>ZERO_CHECK</Name>
     </ProjectReference>
   </ItemGroup>

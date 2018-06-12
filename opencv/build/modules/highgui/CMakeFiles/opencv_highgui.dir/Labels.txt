@@ -3,39 +3,39 @@
  opencv_highgui
  Module
 # Source files and their labels
-C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/highgui/include/opencv2/highgui.hpp
+C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/highgui/include/opencv2/highgui.hpp
  Main
  opencv_highgui
  Module
-C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/highgui/include/opencv2/highgui/highgui.hpp
+C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/highgui/include/opencv2/highgui/highgui.hpp
  Main
  opencv_highgui
  Module
-C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/highgui/include/opencv2/highgui/highgui_c.h
+C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/highgui/include/opencv2/highgui/highgui_c.h
  Main
  opencv_highgui
  Module
-C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/highgui/src/window.cpp
+C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/highgui/src/window.cpp
  Main
  opencv_highgui
  Module
-C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/highgui/src/roiSelector.cpp
+C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/highgui/src/roiSelector.cpp
  Main
  opencv_highgui
  Module
-C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/highgui/src/window_w32.cpp
+C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/highgui/src/window_w32.cpp
  Main
  opencv_highgui
  Module
-C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/highgui/src/precomp.hpp
+C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/highgui/src/precomp.hpp
  Main
  opencv_highgui
  Module
-C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/cvconfig.h
-C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/opencv2/opencv_modules.hpp
-C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/modules/highgui/opencv_highgui_pch.cpp
+C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/cvconfig.h
+C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/opencv2/opencv_modules.hpp
+C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/modules/highgui/opencv_highgui_pch.cpp
  Main
  opencv_highgui
  Module
-C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/modules/highgui/vs_version.rc
-C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/highgui/CMakeLists.txt
+C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/modules/highgui/vs_version.rc
+C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/highgui/CMakeLists.txt

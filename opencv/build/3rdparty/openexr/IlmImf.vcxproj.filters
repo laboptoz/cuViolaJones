@@ -1,600 +1,600 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Half\half.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Half\half.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Iex\IexBaseExc.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Iex\IexBaseExc.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Iex\IexThrowErrnoExc.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Iex\IexThrowErrnoExc.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmThread\IlmThread.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmThread\IlmThread.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmThread\IlmThreadMutex.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmThread\IlmThreadMutex.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmThread\IlmThreadMutexWin32.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmThread\IlmThreadMutexWin32.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmThread\IlmThreadPool.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmThread\IlmThreadPool.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmThread\IlmThreadSemaphore.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmThread\IlmThreadSemaphore.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmThread\IlmThreadSemaphoreWin32.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmThread\IlmThreadSemaphoreWin32.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmThread\IlmThreadWin32.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmThread\IlmThreadWin32.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathColorAlgo.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathColorAlgo.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathFun.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathFun.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathMatrixAlgo.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathMatrixAlgo.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathRandom.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathRandom.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathVec.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathVec.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfAcesFile.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfAcesFile.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfAttribute.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfAttribute.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfB44Compressor.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfB44Compressor.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfBoxAttribute.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfBoxAttribute.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfCRgbaFile.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfCRgbaFile.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfChannelList.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfChannelList.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfChannelListAttribute.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfChannelListAttribute.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfChromaticities.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfChromaticities.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfChromaticitiesAttribute.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfChromaticitiesAttribute.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfCompressionAttribute.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfCompressionAttribute.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfCompressor.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfCompressor.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfConvert.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfConvert.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfDoubleAttribute.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfDoubleAttribute.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfEnvmap.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfEnvmap.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfEnvmapAttribute.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfEnvmapAttribute.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfFloatAttribute.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfFloatAttribute.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfFrameBuffer.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfFrameBuffer.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfFramesPerSecond.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfFramesPerSecond.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfHeader.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfHeader.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfHuf.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfHuf.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfIO.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfIO.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfInputFile.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfInputFile.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfIntAttribute.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfIntAttribute.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfKeyCode.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfKeyCode.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfKeyCodeAttribute.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfKeyCodeAttribute.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfLineOrderAttribute.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfLineOrderAttribute.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfLut.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfLut.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfMatrixAttribute.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfMatrixAttribute.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfMisc.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfMisc.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfMultiView.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfMultiView.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfOpaqueAttribute.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfOpaqueAttribute.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfOutputFile.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfOutputFile.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfPizCompressor.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfPizCompressor.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfPreviewImage.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfPreviewImage.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfPreviewImageAttribute.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfPreviewImageAttribute.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfPxr24Compressor.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfPxr24Compressor.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfRational.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfRational.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfRationalAttribute.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfRationalAttribute.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfRgbaFile.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfRgbaFile.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfRgbaYca.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfRgbaYca.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfRleCompressor.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfRleCompressor.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfScanLineInputFile.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfScanLineInputFile.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfStandardAttributes.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfStandardAttributes.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfStdIO.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfStdIO.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfStringAttribute.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfStringAttribute.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfStringVectorAttribute.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfStringVectorAttribute.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfTestFile.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfTestFile.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfThreading.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfThreading.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfTileDescriptionAttribute.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfTileDescriptionAttribute.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfTileOffsets.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfTileOffsets.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfTiledInputFile.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfTiledInputFile.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfTiledMisc.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfTiledMisc.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfTiledOutputFile.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfTiledOutputFile.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfTiledRgbaFile.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfTiledRgbaFile.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfTimeCode.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfTimeCode.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfTimeCodeAttribute.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfTimeCodeAttribute.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfVecAttribute.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfVecAttribute.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfVersion.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfVersion.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfWav.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfWav.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfZipCompressor.cpp">
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfZipCompressor.cpp">
       <Filter>Src</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Half\eLut.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Half\eLut.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Half\half.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Half\half.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Half\halfFunction.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Half\halfFunction.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Half\halfLimits.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Half\halfLimits.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Half\toFloat.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Half\toFloat.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Iex\Iex.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Iex\Iex.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Iex\IexBaseExc.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Iex\IexBaseExc.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Iex\IexErrnoExc.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Iex\IexErrnoExc.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Iex\IexMacros.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Iex\IexMacros.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Iex\IexMathExc.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Iex\IexMathExc.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Iex\IexThrowErrnoExc.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Iex\IexThrowErrnoExc.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmThread\IlmThread.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmThread\IlmThread.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmThread\IlmThreadMutex.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmThread\IlmThreadMutex.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmThread\IlmThreadPool.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmThread\IlmThreadPool.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmThread\IlmThreadSemaphore.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmThread\IlmThreadSemaphore.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathBox.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathBox.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathBoxAlgo.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathBoxAlgo.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathColor.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathColor.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathColorAlgo.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathColorAlgo.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathEuler.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathEuler.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathExc.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathExc.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathFrame.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathFrame.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathFrustum.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathFrustum.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathFrustumTest.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathFrustumTest.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathFun.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathFun.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathGL.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathGL.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathGLU.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathGLU.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathHalfLimits.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathHalfLimits.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathInt64.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathInt64.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathInterval.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathInterval.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathLimits.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathLimits.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathLine.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathLine.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathLineAlgo.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathLineAlgo.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathMath.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathMath.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathMatrix.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathMatrix.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathMatrixAlgo.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathMatrixAlgo.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathPlane.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathPlane.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathPlatform.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathPlatform.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathQuat.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathQuat.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathRandom.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathRandom.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathRoots.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathRoots.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathShear.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathShear.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathSphere.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathSphere.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathVec.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathVec.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathVecAlgo.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\Imath\ImathVecAlgo.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfAcesFile.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfAcesFile.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfArray.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfArray.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfAttribute.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfAttribute.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfAutoArray.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfAutoArray.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfB44Compressor.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfB44Compressor.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfBoxAttribute.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfBoxAttribute.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfCRgbaFile.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfCRgbaFile.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfChannelList.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfChannelList.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfChannelListAttribute.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfChannelListAttribute.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfCheckedArithmetic.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfCheckedArithmetic.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfChromaticities.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfChromaticities.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfChromaticitiesAttribute.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfChromaticitiesAttribute.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfCompression.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfCompression.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfCompressionAttribute.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfCompressionAttribute.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfCompressor.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfCompressor.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfConvert.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfConvert.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfDoubleAttribute.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfDoubleAttribute.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfEnvmap.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfEnvmap.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfEnvmapAttribute.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfEnvmapAttribute.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfFloatAttribute.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfFloatAttribute.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfFrameBuffer.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfFrameBuffer.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfFramesPerSecond.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfFramesPerSecond.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfHeader.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfHeader.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfHuf.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfHuf.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfIO.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfIO.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfInputFile.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfInputFile.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfInt64.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfInt64.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfIntAttribute.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfIntAttribute.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfKeyCode.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfKeyCode.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfKeyCodeAttribute.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfKeyCodeAttribute.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfLineOrder.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfLineOrder.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfLineOrderAttribute.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfLineOrderAttribute.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfLut.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfLut.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfMatrixAttribute.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfMatrixAttribute.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfMisc.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfMisc.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfMultiView.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfMultiView.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfName.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfName.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfOpaqueAttribute.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfOpaqueAttribute.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfOutputFile.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfOutputFile.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfPixelType.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfPixelType.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfPizCompressor.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfPizCompressor.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfPreviewImage.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfPreviewImage.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfPreviewImageAttribute.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfPreviewImageAttribute.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfPxr24Compressor.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfPxr24Compressor.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfRational.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfRational.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfRationalAttribute.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfRationalAttribute.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfRgba.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfRgba.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfRgbaFile.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfRgbaFile.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfRgbaYca.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfRgbaYca.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfRleCompressor.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfRleCompressor.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfScanLineInputFile.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfScanLineInputFile.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfStandardAttributes.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfStandardAttributes.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfStdIO.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfStdIO.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfStringAttribute.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfStringAttribute.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfStringVectorAttribute.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfStringVectorAttribute.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfTestFile.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfTestFile.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfThreading.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfThreading.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfTileDescription.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfTileDescription.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfTileDescriptionAttribute.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfTileDescriptionAttribute.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfTileOffsets.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfTileOffsets.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfTiledInputFile.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfTiledInputFile.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfTiledMisc.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfTiledMisc.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfTiledOutputFile.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfTiledOutputFile.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfTiledRgbaFile.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfTiledRgbaFile.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfTimeCode.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfTimeCode.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfTimeCodeAttribute.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfTimeCodeAttribute.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfVecAttribute.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfVecAttribute.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfVersion.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfVersion.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfWav.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfWav.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfXdr.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfXdr.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfZipCompressor.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\ImfZipCompressor.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\b44ExpLogTable.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\IlmImf\b44ExpLogTable.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\3rdparty\openexr\IlmBaseConfig.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\3rdparty\openexr\IlmBaseConfig.h">
       <Filter>Include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\3rdparty\openexr\OpenEXRConfig.h">
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\3rdparty\openexr\OpenEXRConfig.h">
       <Filter>Include</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\3rdparty\openexr\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Include">
-      <UniqueIdentifier>{489BC83F-A8FE-3D95-B934-AC39094343B2}</UniqueIdentifier>
+      <UniqueIdentifier>{9DE85FB8-6068-315C-96E7-E2A571E37885}</UniqueIdentifier>
     </Filter>
     <Filter Include="Src">
-      <UniqueIdentifier>{8474B372-3300-39FE-83CA-0B828557C0DD}</UniqueIdentifier>
+      <UniqueIdentifier>{83786B39-0B6E-3770-9534-6389D6DF4DBD}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\videoio\src\cap.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\videoio\src\cap_images.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\videoio\src\cap_mjpeg_encoder.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\videoio\src\cap_mjpeg_decoder.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\videoio\src\container_avi.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\videoio\src\cap_cmu.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\videoio\src\cap_dshow.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\videoio\src\cap_vfw.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\videoio\src\cap_ffmpeg.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\modules\videoio\opencv_videoio_pch.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\videoio\include\opencv2\videoio.hpp">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\videoio\include\opencv2\videoio\container_avi.private.hpp">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\videoio\include\opencv2\videoio\videoio.hpp">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\videoio\include\opencv2\videoio\cap_ios.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\videoio\include\opencv2\videoio\videoio_c.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\videoio\src\precomp.hpp">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\videoio\src\cap_dshow.hpp">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\videoio\src\cap_ffmpeg_impl.hpp">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\cvconfig.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\opencv2\opencv_modules.hpp">
+      <Filter>Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\modules\videoio\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\modules\videoio\vs_version.rc">
+      <Filter>Src</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Src">
+      <UniqueIdentifier>{83786B39-0B6E-3770-9534-6389D6DF4DBD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{9DE85FB8-6068-315C-96E7-E2A571E37885}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

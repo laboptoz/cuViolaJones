@@ -1,5 +1,5 @@
-﻿  Building Custom Rule C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/CMakeLists.txt
-  CMake does not need to re-run because C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/modules/imgcodecs/CMakeFiles/generate.stamp is up-to-date.
+﻿  Building Custom Rule C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/CMakeLists.txt
+  CMake does not need to re-run because C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/modules/imgcodecs/CMakeFiles/generate.stamp is up-to-date.
   opencv_imgcodecs_pch.cpp
   loadsave.cpp
   utils.cpp
@@ -20,6 +20,6 @@
   bitstrm.cpp
   rgbe.cpp
   exif.cpp
-     Creating library C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/Release/opencv_imgcodecs341.lib and object C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib/Release/opencv_imgcodecs341.exp
-  opencv_imgcodecs.vcxproj -> C:\Users\ngodwin\Desktop\class_labs\Src\cuViolaJones\opencv\build\bin\Release\opencv_imgcodecs341.dll
-  opencv_imgcodecs.vcxproj -> C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/bin/Release/opencv_imgcodecs341.pdb (Full PDB)
+     Creating library C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/lib/Release/opencv_imgcodecs341.lib and object C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/lib/Release/opencv_imgcodecs341.exp
+  opencv_imgcodecs.vcxproj -> C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\bin\Release\opencv_imgcodecs341.dll
+  opencv_imgcodecs.vcxproj -> C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/bin/Release/opencv_imgcodecs341.pdb (Full PDB)

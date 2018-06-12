@@ -105,8 +105,8 @@ set(OpenCV_SHARED ON)
 # Enables mangled install paths, that help with side by side installs
 set(OpenCV_USE_MANGLED_PATHS FALSE)
 
-set(OpenCV_LIB_COMPONENTS opencv_core;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_objdetect)
-set(OpenCV_INCLUDE_DIRS "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build" "${CMAKE_CURRENT_SOURCE_DIR}/opencv/sources/include" "${CMAKE_CURRENT_SOURCE_DIR}/opencv/sources/include/opencv" "${CMAKE_CURRENT_SOURCE_DIR}/opencv/sources/modules/core/include" "${CMAKE_CURRENT_SOURCE_DIR}/opencv/sources/modules/imgproc/include" "${CMAKE_CURRENT_SOURCE_DIR}/opencv/sources/modules/objdetect/include" "${CMAKE_CURRENT_SOURCE_DIR}/opencv/sources/modules/imgcodecs/include" "${CMAKE_CURRENT_SOURCE_DIR}/opencv/sources/modules/highgui/include")
+set(OpenCV_LIB_COMPONENTS opencv_core;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_objdetect;opencv_video;opencv_videoio)
+set(OpenCV_INCLUDE_DIRS "${CMAKE_CURRENT_SOURCE_DIR}/opencv/build" "${CMAKE_CURRENT_SOURCE_DIR}/opencv/sources/include" "${CMAKE_CURRENT_SOURCE_DIR}/opencv/sources/include/opencv" "${CMAKE_CURRENT_SOURCE_DIR}/opencv/sources/modules/core/include" "${CMAKE_CURRENT_SOURCE_DIR}/opencv/sources/modules/imgproc/include" "${CMAKE_CURRENT_SOURCE_DIR}/opencv/sources/modules/objdetect/include" "${CMAKE_CURRENT_SOURCE_DIR}/opencv/sources/modules/video/include" "${CMAKE_CURRENT_SOURCE_DIR}/opencv/sources/modules/imgcodecs/include" "${CMAKE_CURRENT_SOURCE_DIR}/opencv/sources/modules/videoio/include" "${CMAKE_CURRENT_SOURCE_DIR}/opencv/sources/modules/highgui/include")
 
 if(NOT TARGET opencv_core)
   include(${CMAKE_CURRENT_LIST_DIR}/OpenCVModules${OpenCV_MODULES_SUFFIX}.cmake)

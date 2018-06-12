@@ -1,4 +1,4 @@
-3P_LIBRARY_OUTPUT_PATH=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/3rdparty/lib
+3P_LIBRARY_OUTPUT_PATH=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/3rdparty/lib
 ANT_EXECUTABLE=ANT_EXECUTABLE-NOTFOUND
 ARGC=3
 ARGN=;TOFILE;CMakeVars.txt
@@ -28,10 +28,10 @@ BUILD_DOCS=OFF
 BUILD_EXAMPLES=OFF
 BUILD_IPP_IW=OFF
 BUILD_ITT=OFF
-BUILD_JASPER=OFF
+BUILD_JASPER=ON
 BUILD_JAVA=OFF
 BUILD_JPEG=ON
-BUILD_LIST=core,objdetect,imgproc,imgcodecs,highgui
+BUILD_LIST=
 BUILD_OPENEXR=ON
 BUILD_PACKAGE=ON
 BUILD_PERF_TESTS=ON
@@ -66,8 +66,8 @@ BUILD_opencv_shape=OFF
 BUILD_opencv_stitching=OFF
 BUILD_opencv_superres=OFF
 BUILD_opencv_ts=OFF
-BUILD_opencv_video=OFF
-BUILD_opencv_videoio=OFF
+BUILD_opencv_video=ON
+BUILD_opencv_videoio=ON
 BUILD_opencv_videostab=OFF
 BUILD_opencv_world=OFF
 CACHED_CPU_BASELINE_FLAGS=    
@@ -81,13 +81,13 @@ CMAKE_AR=
 CMAKE_AUTOMOC_COMPILER_PREDEFINES=ON
 CMAKE_AUTOMOC_MACRO_NAMES=Q_OBJECT;Q_GADGET;Q_NAMESPACE
 CMAKE_BASE_NAME=cl
-CMAKE_BINARY_DIR=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build
+CMAKE_BINARY_DIR=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build
 CMAKE_BUILD_TOOL=C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe
 CMAKE_BUILD_TYPE_INIT=Debug
 CMAKE_C11_COMPILE_FEATURES=
 CMAKE_C90_COMPILE_FEATURES=
 CMAKE_C99_COMPILE_FEATURES=
-CMAKE_CACHEFILE_DIR=c:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build
+CMAKE_CACHEFILE_DIR=c:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build
 CMAKE_CACHE_MAJOR_VERSION=3
 CMAKE_CACHE_MINOR_VERSION=10
 CMAKE_CACHE_PATCH_VERSION=2
@@ -101,10 +101,10 @@ CMAKE_CREATE_CONSOLE_EXE=/subsystem:console
 CMAKE_CREATE_WIN32_EXE=/subsystem:windows
 CMAKE_CROSSCOMPILING=FALSE
 CMAKE_CTEST_COMMAND=C:/Program Files/CMake/bin/ctest.exe
-CMAKE_CURRENT_BINARY_DIR=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build
-CMAKE_CURRENT_LIST_DIR=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources
-CMAKE_CURRENT_LIST_FILE=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/CMakeLists.txt
-CMAKE_CURRENT_SOURCE_DIR=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources
+CMAKE_CURRENT_BINARY_DIR=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build
+CMAKE_CURRENT_LIST_DIR=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources
+CMAKE_CURRENT_LIST_FILE=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/CMakeLists.txt
+CMAKE_CURRENT_SOURCE_DIR=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources
 CMAKE_CXX11_COMPILE_FEATURES=
 CMAKE_CXX11_EXTENSION_COMPILE_OPTION=
 CMAKE_CXX11_STANDARD_COMPILE_OPTION=
@@ -263,7 +263,7 @@ CMAKE_GENERATOR_PLATFORM=
 CMAKE_GENERATOR_RC=rc
 CMAKE_GENERATOR_TOOLSET=
 CMAKE_HAVE_PTHREAD_H=
-CMAKE_HOME_DIRECTORY=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources
+CMAKE_HOME_DIRECTORY=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources
 CMAKE_HOST_SYSTEM=Windows-6.1.7601
 CMAKE_HOST_SYSTEM_NAME=Windows
 CMAKE_HOST_SYSTEM_PROCESSOR=AMD64
@@ -276,8 +276,8 @@ CMAKE_INCLUDE_FLAG_CXX=-I
 CMAKE_INCLUDE_FLAG_C_SEP=
 CMAKE_INCLUDE_FLAG_RC=-I
 CMAKE_INSTALL_DEFAULT_COMPONENT_NAME=Unspecified
-CMAKE_INSTALL_PREFIX=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/install
-CMAKE_INSTALL_RPATH=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/install/x64/vc14/lib
+CMAKE_INSTALL_PREFIX=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/install
+CMAKE_INSTALL_RPATH=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/install/x64/vc14/lib
 CMAKE_INSTALL_RPATH_USE_LINK_PATH=TRUE
 CMAKE_LIBRARY_PATH_FLAG=-LIBPATH:
 CMAKE_LIBRARY_PATH_TERMINATOR=
@@ -304,14 +304,15 @@ CMAKE_MODULE_LINKER_FLAGS_RELEASE=/INCREMENTAL:NO
 CMAKE_MODULE_LINKER_FLAGS_RELEASE_INIT=/INCREMENTAL:NO
 CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO=/debug /INCREMENTAL
 CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO_INIT=/debug /INCREMENTAL
+CMAKE_MODULE_PATH=;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/cmake
 CMAKE_NINJA_CMCLDEPS_RC=1
 CMAKE_NINJA_DEPTYPE_C=msvc
 CMAKE_NINJA_DEPTYPE_CXX=msvc
 CMAKE_NO_BUILD_TYPE=1
-CMAKE_NUMBER_OF_MAKEFILES=44
-CMAKE_PARENT_LIST_FILE=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/CMakeLists.txt
+CMAKE_NUMBER_OF_MAKEFILES=54
+CMAKE_PARENT_LIST_FILE=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/CMakeLists.txt
 CMAKE_PATCH_VERSION=2
-CMAKE_PLATFORM_INFO_DIR=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/3.10.2
+CMAKE_PLATFORM_INFO_DIR=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/3.10.2
 CMAKE_PLATFORM_INFO_INITIALIZED=1
 CMAKE_POSITION_INDEPENDENT_CODE=ON
 CMAKE_PROJECT_NAME=OpenCV
@@ -368,7 +369,7 @@ CMAKE_SIZEOF_UNSIGNED_SHORT=2
 CMAKE_SIZEOF_VOID_P=8
 CMAKE_SKIP_INSTALL_RPATH=OFF
 CMAKE_SKIP_RPATH=OFF
-CMAKE_SOURCE_DIR=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources
+CMAKE_SOURCE_DIR=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources
 CMAKE_STATIC_LIBRARY_PREFIX=
 CMAKE_STATIC_LIBRARY_SUFFIX=.lib
 CMAKE_STATIC_LINKER_FLAGS=/machine:x64 /IGNORE:4221
@@ -386,10 +387,10 @@ CMAKE_SUPPORT_WINDOWS_EXPORT_ALL_SYMBOLS=1
 CMAKE_SYSTEM=Windows-6.1.7601
 CMAKE_SYSTEM_AND_RC_COMPILER_INFO_FILE=C:/Program Files/CMake/share/cmake-3.10/Modules/Platform/Windows-rc.cmake
 CMAKE_SYSTEM_INFO_FILE=Platform/Windows
-CMAKE_SYSTEM_LIBRARY_PATH=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/install/bin;C:/Program Files/CMake/bin;/bin
+CMAKE_SYSTEM_LIBRARY_PATH=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/install/bin;C:/Program Files/CMake/bin;/bin
 CMAKE_SYSTEM_LOADED=1
 CMAKE_SYSTEM_NAME=Windows
-CMAKE_SYSTEM_PREFIX_PATH=C:/Program Files;C:/Program Files (x86);C:/Program Files/CMake;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/install
+CMAKE_SYSTEM_PREFIX_PATH=C:/Program Files;C:/Program Files (x86);C:/Program Files/CMake;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/install
 CMAKE_SYSTEM_PROCESSOR=AMD64
 CMAKE_SYSTEM_SPECIFIC_INFORMATION_LOADED=1
 CMAKE_SYSTEM_SPECIFIC_INITIALIZE_LOADED=1
@@ -424,15 +425,15 @@ CPACK_BINARY_TXZ=
 CPACK_BINARY_TZ=
 CPACK_BINARY_WIX=OFF
 CPACK_BINARY_ZIP=OFF
-CPACK_BUILD_SOURCE_DIRS=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build
+CPACK_BUILD_SOURCE_DIRS=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build
 CPACK_CMAKE_GENERATOR=Visual Studio 14 2015 Win64
 CPACK_COMPONENTS_ALL=dev;libs
-CPACK_COMPONENT_DEV_CONFLICTS=libopencv-dev, libopencv-core-dev, libopencv-highgui-dev, libopencv-imgcodecs-dev, libopencv-imgproc-dev, libopencv-objdetect-dev
+CPACK_COMPONENT_DEV_CONFLICTS=libopencv-dev, libopencv-core-dev, libopencv-highgui-dev, libopencv-imgcodecs-dev, libopencv-imgproc-dev, libopencv-objdetect-dev, libopencv-video-dev, libopencv-videoio-dev
 CPACK_COMPONENT_DEV_DEPENDS=libs
 CPACK_COMPONENT_DEV_DESCRIPTION=Development files for Open Source Computer Vision Library
 CPACK_COMPONENT_DEV_DISPLAY_NAME=Development files
-CPACK_COMPONENT_DEV_PROVIDES=libopencv-dev, libopencv-core-dev, libopencv-highgui-dev, libopencv-imgcodecs-dev, libopencv-imgproc-dev, libopencv-objdetect-dev
-CPACK_COMPONENT_DEV_REPLACES=libopencv-dev, libopencv-core-dev, libopencv-highgui-dev, libopencv-imgcodecs-dev, libopencv-imgproc-dev, libopencv-objdetect-dev
+CPACK_COMPONENT_DEV_PROVIDES=libopencv-dev, libopencv-core-dev, libopencv-highgui-dev, libopencv-imgcodecs-dev, libopencv-imgproc-dev, libopencv-objdetect-dev, libopencv-video-dev, libopencv-videoio-dev
+CPACK_COMPONENT_DEV_REPLACES=libopencv-dev, libopencv-core-dev, libopencv-highgui-dev, libopencv-imgcodecs-dev, libopencv-imgproc-dev, libopencv-objdetect-dev, libopencv-video-dev, libopencv-videoio-dev
 CPACK_COMPONENT_DOCS_CONFLICTS=opencv-doc
 CPACK_COMPONENT_DOCS_DEPENDS=libs
 CPACK_COMPONENT_DOCS_DESCRIPTION=Documentation for Open Source Computer Vision Library
@@ -443,11 +444,11 @@ CPACK_COMPONENT_JAVA_DESCRIPTION=Java bindings for Open Source Computer Vision L
 CPACK_COMPONENT_JAVA_DISPLAY_NAME=Java bindings
 CPACK_COMPONENT_JAVA_PROVIDES=libopencv3.0-java, libopencv3.0-jni
 CPACK_COMPONENT_JAVA_REPLACES=libopencv3.0-java, libopencv3.0-jni
-CPACK_COMPONENT_LIBS_CONFLICTS=opencv-data, libopencv-core3.0, libopencv-highgui3.0, libopencv-imgcodecs3.0, libopencv-imgproc3.0, libopencv-objdetect3.0
+CPACK_COMPONENT_LIBS_CONFLICTS=opencv-data, libopencv-core3.0, libopencv-highgui3.0, libopencv-imgcodecs3.0, libopencv-imgproc3.0, libopencv-objdetect3.0, libopencv-video3.0, libopencv-videoio3.0
 CPACK_COMPONENT_LIBS_DESCRIPTION=Open Computer Vision Library
 CPACK_COMPONENT_LIBS_DISPLAY_NAME=Libraries and data
-CPACK_COMPONENT_LIBS_PROVIDES=opencv-data, libopencv-core3.0, libopencv-highgui3.0, libopencv-imgcodecs3.0, libopencv-imgproc3.0, libopencv-objdetect3.0
-CPACK_COMPONENT_LIBS_REPLACES=opencv-data, libopencv-core3.0, libopencv-highgui3.0, libopencv-imgcodecs3.0, libopencv-imgproc3.0, libopencv-objdetect3.0
+CPACK_COMPONENT_LIBS_PROVIDES=opencv-data, libopencv-core3.0, libopencv-highgui3.0, libopencv-imgcodecs3.0, libopencv-imgproc3.0, libopencv-objdetect3.0, libopencv-video3.0, libopencv-videoio3.0
+CPACK_COMPONENT_LIBS_REPLACES=opencv-data, libopencv-core3.0, libopencv-highgui3.0, libopencv-imgcodecs3.0, libopencv-imgproc3.0, libopencv-objdetect3.0, libopencv-video3.0, libopencv-videoio3.0
 CPACK_COMPONENT_LIBS_REQUIRED=TRUE
 CPACK_COMPONENT_PYTHON_CONFLICTS=python-opencv
 CPACK_COMPONENT_PYTHON_DEPENDS=libs
@@ -479,16 +480,16 @@ CPACK_DEBIAN_PACKAGE_SHLIBDEPS=TRUE
 CPACK_DEB_COMPONENT_INSTALL=TRUE
 CPACK_GENERATOR=7Z;ZIP
 CPACK_IGNORE_FILES=/CVS/;/\\.svn/;/\\.bzr/;/\\.hg/;/\\.git/;\\.swp\$;\\.#;/#
-CPACK_INSTALLED_DIRECTORIES=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources;/
+CPACK_INSTALLED_DIRECTORIES=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources;/
 CPACK_INSTALL_CMAKE_PROJECTS=
-CPACK_INSTALL_PREFIX=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/install
-CPACK_MODULE_PATH=
-CPACK_NSIS_DISPLAY_NAME=OpenCV unknown
+CPACK_INSTALL_PREFIX=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/install
+CPACK_MODULE_PATH=;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/cmake
+CPACK_NSIS_DISPLAY_NAME=OpenCV c8ae6fe-dirty
 CPACK_NSIS_INSTALLER_ICON_CODE=
 CPACK_NSIS_INSTALLER_MUI_ICON_CODE=
 CPACK_NSIS_INSTALL_ROOT=$PROGRAMFILES64
-CPACK_NSIS_PACKAGE_NAME=OpenCV unknown
-CPACK_OUTPUT_CONFIG_FILE=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/CPackConfig.cmake
+CPACK_NSIS_PACKAGE_NAME=OpenCV c8ae6fe-dirty
+CPACK_OUTPUT_CONFIG_FILE=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CPackConfig.cmake
 CPACK_PACKAGE_CONTACT=admin@opencv.org
 CPACK_PACKAGE_DEFAULT_LOCATION=/
 CPACK_PACKAGE_DESCRIPTION=OpenCV (Open Source Computer Vision Library) is an open source computer vision
@@ -498,17 +499,17 @@ machine perception in the commercial products. Being a BSD-licensed product,
 OpenCV makes it easy for businesses to utilize and modify the code.
 CPACK_PACKAGE_DESCRIPTION_FILE=C:/Program Files/CMake/share/cmake-3.10/Templates/CPack.GenericDescription.txt
 CPACK_PACKAGE_DESCRIPTION_SUMMARY=Open Computer Vision Library
-CPACK_PACKAGE_FILE_NAME=OpenCV-unknown-AMD64
-CPACK_PACKAGE_INSTALL_DIRECTORY=OpenCV unknown
-CPACK_PACKAGE_INSTALL_REGISTRY_KEY=OpenCV unknown
+CPACK_PACKAGE_FILE_NAME=OpenCV-c8ae6fe-dirty-AMD64
+CPACK_PACKAGE_INSTALL_DIRECTORY=OpenCV c8ae6fe-dirty
+CPACK_PACKAGE_INSTALL_REGISTRY_KEY=OpenCV c8ae6fe-dirty
 CPACK_PACKAGE_NAME=OpenCV
 CPACK_PACKAGE_RELOCATABLE=true
 CPACK_PACKAGE_VENDOR=OpenCV Foundation
-CPACK_PACKAGE_VERSION=unknown
+CPACK_PACKAGE_VERSION=c8ae6fe-dirty
 CPACK_PACKAGE_VERSION_MAJOR=3
 CPACK_PACKAGE_VERSION_MINOR=4
 CPACK_PACKAGE_VERSION_PATCH=1
-CPACK_RESOURCE_FILE_LICENSE=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/LICENSE
+CPACK_RESOURCE_FILE_LICENSE=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/LICENSE
 CPACK_RESOURCE_FILE_README=C:/Program Files/CMake/share/cmake-3.10/Templates/CPack.GenericDescription.txt
 CPACK_RESOURCE_FILE_WELCOME=C:/Program Files/CMake/share/cmake-3.10/Templates/CPack.GenericWelcome.txt
 CPACK_RPM_COMPONENT_INSTALL=TRUE
@@ -527,9 +528,9 @@ CPACK_SOURCE_7Z=ON
 CPACK_SOURCE_CYGWIN=
 CPACK_SOURCE_GENERATOR=7Z;ZIP
 CPACK_SOURCE_IGNORE_FILES=/CVS/;/\\.svn/;/\\.bzr/;/\\.hg/;/\\.git/;\\.swp\$;\\.#;/#
-CPACK_SOURCE_INSTALLED_DIRECTORIES=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources;/
-CPACK_SOURCE_OUTPUT_CONFIG_FILE=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/CPackSourceConfig.cmake
-CPACK_SOURCE_PACKAGE_FILE_NAME=OpenCV-unknown-AMD64
+CPACK_SOURCE_INSTALLED_DIRECTORIES=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources;/
+CPACK_SOURCE_OUTPUT_CONFIG_FILE=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CPackSourceConfig.cmake
+CPACK_SOURCE_PACKAGE_FILE_NAME=OpenCV-c8ae6fe-dirty-AMD64
 CPACK_SOURCE_RPM=
 CPACK_SOURCE_TBZ2=
 CPACK_SOURCE_TGZ=
@@ -547,23 +548,23 @@ CPU_AVX2_FLAGS_ON=/arch:AVX2
 CPU_AVX2_FORCE=AVX;FMA3;FP16
 CPU_AVX2_IMPLIES=AVX;FMA3;FP16
 CPU_AVX2_SUPPORTED=ON
-CPU_AVX2_TEST_FILE=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/cmake/checks/cpu_avx2.cpp
+CPU_AVX2_TEST_FILE=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/cmake/checks/cpu_avx2.cpp
 CPU_AVX2_USAGE_COUNT=7
 CPU_AVX512_SKX_FLAGS_ON=
 CPU_AVX512_SKX_FORCE=AVX_512F;AVX_512CD;AVX_512BW;AVX_512DQ;AVX_512VL
 CPU_AVX512_SKX_GROUP=AVX_512F;AVX_512CD;AVX_512BW;AVX_512DQ;AVX_512VL
 CPU_AVX512_SKX_IMPLIES=AVX_512F;AVX_512CD;AVX_512BW;AVX_512DQ;AVX_512VL
-CPU_AVX512_SKX_TEST_FILE=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/cmake/checks/cpu_avx512skx.cpp
+CPU_AVX512_SKX_TEST_FILE=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/cmake/checks/cpu_avx512skx.cpp
 CPU_AVX512_SKX_USAGE_COUNT=0
 CPU_AVX_512F_FORCE=
 CPU_AVX_512F_IMPLIES=AVX2
-CPU_AVX_512F_TEST_FILE=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/cmake/checks/cpu_avx512.cpp
+CPU_AVX_512F_TEST_FILE=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/cmake/checks/cpu_avx512.cpp
 CPU_AVX_512F_USAGE_COUNT=0
 CPU_AVX_FLAGS_ON=/arch:AVX
 CPU_AVX_FORCE=SSE4_2
 CPU_AVX_IMPLIES=SSE4_2
 CPU_AVX_SUPPORTED=ON
-CPU_AVX_TEST_FILE=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/cmake/checks/cpu_avx.cpp
+CPU_AVX_TEST_FILE=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/cmake/checks/cpu_avx.cpp
 CPU_AVX_USAGE_COUNT=4
 CPU_BASELINE=SSE3
 CPU_BASELINE_FINAL=SSE;SSE2;SSE3
@@ -597,42 +598,42 @@ CPU_FMA3_USAGE_COUNT=0
 CPU_FP16_FORCE=
 CPU_FP16_IMPLIES=AVX
 CPU_FP16_SUPPORTED=ON
-CPU_FP16_TEST_FILE=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/cmake/checks/cpu_fp16.cpp
+CPU_FP16_TEST_FILE=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/cmake/checks/cpu_fp16.cpp
 CPU_FP16_USAGE_COUNT=1
 CPU_KNOWN_OPTIMIZATIONS=SSE;SSE2;SSE3;SSSE3;SSE4_1;POPCNT;SSE4_2;FP16;FMA3;AVX;AVX2;AVX_512F;AVX512_SKX
 CPU_POPCNT_FORCE=
 CPU_POPCNT_IMPLIES=SSE4_1
 CPU_POPCNT_SUPPORTED=ON
-CPU_POPCNT_TEST_FILE=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/cmake/checks/cpu_popcnt.cpp
+CPU_POPCNT_TEST_FILE=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/cmake/checks/cpu_popcnt.cpp
 CPU_POPCNT_USAGE_COUNT=0
 CPU_SSE2_FORCE=SSE
 CPU_SSE2_IMPLIES=SSE
 CPU_SSE2_SUPPORTED=ON
-CPU_SSE2_TEST_FILE=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/cmake/checks/cpu_sse2.cpp
+CPU_SSE2_TEST_FILE=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/cmake/checks/cpu_sse2.cpp
 CPU_SSE2_USAGE_COUNT=0
 CPU_SSE3_FORCE=SSE2
 CPU_SSE3_IMPLIES=SSE2
 CPU_SSE3_SUPPORTED=ON
-CPU_SSE3_TEST_FILE=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/cmake/checks/cpu_sse3.cpp
+CPU_SSE3_TEST_FILE=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/cmake/checks/cpu_sse3.cpp
 CPU_SSE3_USAGE_COUNT=0
 CPU_SSE4_1_FORCE=SSE3;SSSE3
 CPU_SSE4_1_IMPLIES=SSE3;SSSE3
 CPU_SSE4_1_SUPPORTED=ON
-CPU_SSE4_1_TEST_FILE=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/cmake/checks/cpu_sse41.cpp
+CPU_SSE4_1_TEST_FILE=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/cmake/checks/cpu_sse41.cpp
 CPU_SSE4_1_USAGE_COUNT=3
 CPU_SSE4_2_FORCE=SSE4_1;POPCNT
 CPU_SSE4_2_IMPLIES=SSE4_1;POPCNT
 CPU_SSE4_2_SUPPORTED=ON
-CPU_SSE4_2_TEST_FILE=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/cmake/checks/cpu_sse42.cpp
+CPU_SSE4_2_TEST_FILE=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/cmake/checks/cpu_sse42.cpp
 CPU_SSE4_2_USAGE_COUNT=1
 CPU_SSE_FORCE=
 CPU_SSE_SUPPORTED=ON
-CPU_SSE_TEST_FILE=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/cmake/checks/cpu_sse.cpp
+CPU_SSE_TEST_FILE=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/cmake/checks/cpu_sse.cpp
 CPU_SSE_USAGE_COUNT=0
 CPU_SSSE3_FORCE=SSE3
 CPU_SSSE3_IMPLIES=SSE3
 CPU_SSSE3_SUPPORTED=ON
-CPU_SSSE3_TEST_FILE=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/cmake/checks/cpu_ssse3.cpp
+CPU_SSSE3_TEST_FILE=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/cmake/checks/cpu_ssse3.cpp
 CPU_SSSE3_USAGE_COUNT=0
 CPU_VFPV3_FEATURE_ALIAS=
 CPackComponent_CMake_INCLUDED=1
@@ -656,14 +657,32 @@ ENABLE_PIC=ON
 ENABLE_PRECOMPILED_HEADERS=ON
 ENABLE_PYLINT=OFF
 ENABLE_SOLUTION_FOLDERS=ON
-EXECUTABLE_OUTPUT_PATH=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/bin
+EXECUTABLE_OUTPUT_PATH=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/bin
+FFMPEG_BINARIES_COMMIT=0a0e88972a7ea97708378d0488a65f83e7cc5e69
+FFMPEG_CMAKE_SCRIPT=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/3rdparty/ffmpeg/ffmpeg_version.cmake
+FFMPEG_FILE_HASH_BIN32=b8120c07962d591e2e9071a1bf566fd0
+FFMPEG_FILE_HASH_BIN64=dc9c50e7b05482acc25d6ce0ac61bf1d
+FFMPEG_FILE_HASH_CMAKE=3b90f67f4b429e77d3da36698cef700c
+FFMPEG_libavcodec_FOUND=1
+FFMPEG_libavcodec_VERSION=57.107.100
+FFMPEG_libavformat_FOUND=1
+FFMPEG_libavformat_VERSION=57.83.100
+FFMPEG_libavresample_FOUND=1
+FFMPEG_libavresample_VERSION=3.7.0
+FFMPEG_libavutil_FOUND=1
+FFMPEG_libavutil_VERSION=55.78.100
+FFMPEG_libswscale_FOUND=1
+FFMPEG_libswscale_VERSION=4.8.100
 FIND_PACKAGE_MESSAGE_DETAILS_Matlab=[C:/Matlab/R2017a/bin/mex.bat][C:/Matlab/R2017a/extern/include][C:/Matlab/R2017a][C:/Matlab/R2017a/bin/win64/libmx.dll;C:/Matlab/R2017a/bin/win64/libmex.dll;C:/Matlab/R2017a/bin/win64/libmat.dll][C:/Matlab/R2017a/bin/win64][mexw64][win64][C:/Matlab/R2017a/bin/matlab.exe][v()]
 FIND_PACKAGE_MESSAGE_DETAILS_Threads=[TRUE][v()]
-GIT_EXECUTABLE=GIT_EXECUTABLE-NOTFOUND
-GIT_FOUND=FALSE
+GIT_EXECUTABLE=C:/Users/erho/AppData/Local/Programs/Git/cmd/git.exe
+GIT_FOUND=TRUE
+GIT_RESULT=0
+GIT_VERSION_STRING=2.17.1.windows.2
 GLIB_LIBRARY=GLIB_LIBRARY-NOTFOUND
 GLIB_gstcdda_LIBRARY=GLIB_gstcdda_LIBRARY-NOTFOUND
 GOBJECT_LIBRARY=GOBJECT_LIBRARY-NOTFOUND
+GSTREAMER_DIR=
 GSTREAMER_glib_INCLUDE_DIR=GSTREAMER_glib_INCLUDE_DIR-NOTFOUND
 GSTREAMER_glibconfig_INCLUDE_DIR=GSTREAMER_glibconfig_INCLUDE_DIR-NOTFOUND
 GSTREAMER_gst_INCLUDE_DIR=GSTREAMER_gst_INCLUDE_DIR-NOTFOUND
@@ -681,7 +700,7 @@ GSTREAMER_gstrtsp_LIBRARY=GSTREAMER_gstrtsp_LIBRARY-NOTFOUND
 GSTREAMER_gstsdp_LIBRARY=GSTREAMER_gstsdp_LIBRARY-NOTFOUND
 GSTREAMER_gsttag_LIBRARY=GSTREAMER_gsttag_LIBRARY-NOTFOUND
 GSTREAMER_gstvideo_LIBRARY=GSTREAMER_gstvideo_LIBRARY-NOTFOUND
-Git_FOUND=FALSE
+Git_FOUND=TRUE
 HAVE_ASSERT_H=1
 HAVE_CMAKE_SIZEOF_UNSIGNED_SHORT=TRUE
 HAVE_CONCURRENCY=TRUE
@@ -703,14 +722,27 @@ HAVE_CSTRIPES=0
 HAVE_CXX11=1
 HAVE_CXX_ARCH:AVX=1
 HAVE_CXX_ARCH:AVX2=1
+HAVE_D3D10=ON
+HAVE_D3D11=ON
+HAVE_D3D9=ON
 HAVE_DC1394=0
 HAVE_DC1394_2=0
+HAVE_DIRECTX=ON
+HAVE_DIRECTX_NV12=ON
+HAVE_DSHOW=1
 HAVE_FCNTL_H=1
+HAVE_FFMPEG=TRUE
 HAVE_FSEEKO=
 HAVE_GCD=0
+HAVE_GSTREAMER_APP=0
+HAVE_GSTREAMER_BASE=0
+HAVE_GSTREAMER_PBUTILS=0
+HAVE_GSTREAMER_RIFF=0
+HAVE_GSTREAMER_VIDEO=0
 HAVE_IEEEFP=1
 HAVE_INTTYPES_H=1
 HAVE_IO_H=1
+HAVE_JASPER=YES
 HAVE_JPEG=YES
 HAVE_LFIND=1
 HAVE_LIMITS_H=1
@@ -774,8 +806,8 @@ HAVE_opencv_shape=OFF
 HAVE_opencv_stitching=OFF
 HAVE_opencv_superres=OFF
 HAVE_opencv_ts=OFF
-HAVE_opencv_video=OFF
-HAVE_opencv_videoio=OFF
+HAVE_opencv_video=ON
+HAVE_opencv_videoio=ON
 HAVE_opencv_videostab=OFF
 HAVE_opencv_viz=OFF
 HAVE_opencv_world=OFF
@@ -793,12 +825,21 @@ INSTALL_C_EXAMPLES=OFF
 INSTALL_PYTHON_EXAMPLES=OFF
 INSTALL_TESTS=OFF
 IlmImf_LIB_DEPENDS=general;zlib;
+JASPER_H=#define	JAS_VERSION "1.900.1"
+JASPER_INCLUDE_DIR=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/3rdparty/libjasper
+JASPER_LIBRARIES=libjasper
+JASPER_LIBRARY=libjasper
+JASPER_VERSION_MAJOR=1
+JASPER_VERSION_MINOR=900
+JASPER_VERSION_PATCH=1
+JASPER_VERSION_STRING=1.900.1
+JASPER_VERSION_TWEAK=
 JAVA_AWT_INCLUDE_PATH=JAVA_AWT_INCLUDE_PATH-NOTFOUND
 JAVA_AWT_LIBRARY=JAVA_AWT_LIBRARY-NOTFOUND
 JAVA_INCLUDE_PATH=JAVA_INCLUDE_PATH-NOTFOUND
 JAVA_INCLUDE_PATH2=JAVA_INCLUDE_PATH2-NOTFOUND
 JAVA_JVM_LIBRARY=JAVA_JVM_LIBRARY-NOTFOUND
-JPEG_INCLUDE_DIR=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/3rdparty/libjpeg
+JPEG_INCLUDE_DIR=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/3rdparty/libjpeg
 JPEG_LIBRARIES=libjpeg
 JPEG_LIBRARY=libjpeg
 JPEG_LIB_VERSION=90
@@ -808,7 +849,7 @@ LAPACK_IMPL=Unknown
 LAPACK_INCLUDE_DIR=
 LAPACK_LAPACKE_H=
 LAPACK_LIBRARIES=
-LIBRARY_OUTPUT_PATH=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/lib
+LIBRARY_OUTPUT_PATH=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/lib
 MATLAB_BIN_=C:/Matlab/R2017a/bin/matlab.exe
 MATLAB_INCLUDE_DIRS_=C:/Matlab/R2017a/extern/include
 MATLAB_LIB_MAT_=C:/Matlab/R2017a/bin/win64/libmat.dll
@@ -846,9 +887,9 @@ OCV_DOWNLOAD_IPPICV_HASH_3rdparty_ippicv_ippicv_2017u3_win_intel64_general_20170
 OFF64_T=
 OPENCV_3P_LIB_INSTALL_PATH=x64/vc14/staticlib
 OPENCV_BIN_INSTALL_PATH=x64/vc14/bin
-OPENCV_BUILD_INFO_FILE=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/version_string.tmp
+OPENCV_BUILD_INFO_FILE=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/version_string.tmp
 OPENCV_COMPILER_STR=C:/Program Files (x86)/Microsoft Visual Studio 14.0/VC/bin/x86_amd64/cl.exe  (ver 19.0.23918.0)
-OPENCV_CONFIG_FILE_INCLUDE_DIR=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build
+OPENCV_CONFIG_FILE_INCLUDE_DIR=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build
 OPENCV_CONFIG_INSTALL_PATH=.
 OPENCV_CPU_BASELINE_DEFINITIONS_CONFIGMAKE=
 #define CV_CPU_COMPILE_SSE 1
@@ -1150,11 +1191,11 @@ OPENCV_DEBUG_POSTFIX=d
 OPENCV_DEPENDANT_TARGETS_opencv_core=;opencv_core_SSE4_1;opencv_core_SSE4_2;opencv_core_FP16;opencv_core_AVX;opencv_core_AVX2
 OPENCV_DEPENDANT_TARGETS_opencv_imgproc=;opencv_imgproc_SSE4_1;opencv_imgproc_AVX;opencv_imgproc_AVX2
 OPENCV_DEPENDANT_TARGETS_opencv_objdetect=;opencv_objdetect_AVX
-OPENCV_DEPHELPER=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/dephelper
+OPENCV_DEPHELPER=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/dephelper
 OPENCV_DLLVERSION=341
 OPENCV_DOC_INSTALL_PATH=doc
-OPENCV_DOWNLOAD_LOG=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/CMakeDownloadLog.txt
-OPENCV_DOWNLOAD_PATH=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/.cache
+OPENCV_DOWNLOAD_LOG=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeDownloadLog.txt
+OPENCV_DOWNLOAD_PATH=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/.cache
 OPENCV_DUMP_HOOKS_FLOW=OFF
 OPENCV_ENABLE_NONFREE=OFF
 OPENCV_EXTRA_CXX_FLAGS=    
@@ -1169,24 +1210,26 @@ OPENCV_JNI_INSTALL_PATH=java
 OPENCV_LIBVERSION=3.4.1
 OPENCV_LIB_ARCHIVE_INSTALL_PATH=x64/vc14/lib
 OPENCV_LIB_INSTALL_PATH=x64/vc14/lib
-OPENCV_LICENSE_FILE=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/LICENSE
-OPENCV_MODULES_BUILD=opencv_core;opencv_imgproc;opencv_objdetect;opencv_imgcodecs;opencv_highgui
-OPENCV_MODULES_BUILD_ST=core;highgui;imgcodecs;imgproc;objdetect
-OPENCV_MODULES_CONFIGCMAKE=opencv_core;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_objdetect
+OPENCV_LICENSE_FILE=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/LICENSE
+OPENCV_MODULES_BUILD=opencv_core;opencv_imgproc;opencv_objdetect;opencv_video;opencv_imgcodecs;opencv_videoio;opencv_highgui
+OPENCV_MODULES_BUILD_ST=core;highgui;imgcodecs;imgproc;objdetect;video;videoio
+OPENCV_MODULES_CONFIGCMAKE=opencv_core;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_objdetect;opencv_video;opencv_videoio
 OPENCV_MODULES_DISABLED_AUTO=
 OPENCV_MODULES_DISABLED_AUTO_ST=
 OPENCV_MODULES_DISABLED_FORCE=opencv_java;opencv_python2;opencv_python3;opencv_viz
 OPENCV_MODULES_DISABLED_FORCE_ST=java;python2;python3;viz
-OPENCV_MODULES_DISABLED_USER=opencv_calib3d;opencv_dnn;opencv_features2d;opencv_flann;opencv_java_bindings_generator;opencv_js;opencv_ml;opencv_photo;opencv_python_bindings_generator;opencv_shape;opencv_stitching;opencv_superres;opencv_ts;opencv_video;opencv_videoio;opencv_videostab;opencv_world
-OPENCV_MODULES_DISABLED_USER_ST=calib3d;dnn;features2d;flann;java_bindings_generator;js;ml;photo;python_bindings_generator;shape;stitching;superres;ts;video;videoio;videostab;world
+OPENCV_MODULES_DISABLED_USER=opencv_calib3d;opencv_dnn;opencv_features2d;opencv_flann;opencv_java_bindings_generator;opencv_js;opencv_ml;opencv_photo;opencv_python_bindings_generator;opencv_shape;opencv_stitching;opencv_superres;opencv_ts;opencv_videostab;opencv_world
+OPENCV_MODULES_DISABLED_USER_ST=calib3d;dnn;features2d;flann;java_bindings_generator;js;ml;photo;python_bindings_generator;shape;stitching;superres;ts;videostab;world
 OPENCV_MODULES_EXTRA=java_bindings_generator;python2;python3;python_bindings_generator
 OPENCV_MODULES_MAIN=core;imgproc;imgcodecs;videoio;highgui;video;calib3d;features2d;objdetect;dnn;ml;flann;photo;stitching;java;js;shape;superres;ts;videostab;viz;world
-OPENCV_MODULES_PUBLIC=opencv_core;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_objdetect
+OPENCV_MODULES_PUBLIC=opencv_core;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_objdetect;opencv_video;opencv_videoio
 OPENCV_MODULE_DEFINITIONS_CONFIGMAKE=#define HAVE_OPENCV_CORE
 #define HAVE_OPENCV_HIGHGUI
 #define HAVE_OPENCV_IMGCODECS
 #define HAVE_OPENCV_IMGPROC
 #define HAVE_OPENCV_OBJDETECT
+#define HAVE_OPENCV_VIDEO
+#define HAVE_OPENCV_VIDEOIO
 
 
 OPENCV_MODULE_opencv_calib3d_CLASS=PUBLIC
@@ -1194,35 +1237,35 @@ OPENCV_MODULE_opencv_calib3d_DESCRIPTION=Camera Calibration and 3D Reconstructio
 OPENCV_MODULE_opencv_calib3d_IS_PART_OF_WORLD=ON
 OPENCV_MODULE_opencv_calib3d_LABEL=Main;opencv_calib3d
 OPENCV_MODULE_opencv_calib3d_LINK_DEPS=
-OPENCV_MODULE_opencv_calib3d_LOCATION=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/calib3d
+OPENCV_MODULE_opencv_calib3d_LOCATION=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/calib3d
 OPENCV_MODULE_opencv_calib3d_OPT_DEPS=
 OPENCV_MODULE_opencv_calib3d_PRIVATE_OPT_DEPS=
 OPENCV_MODULE_opencv_calib3d_PRIVATE_REQ_DEPS=
 OPENCV_MODULE_opencv_calib3d_REQ_DEPS=opencv_imgproc;opencv_features2d
 OPENCV_MODULE_opencv_calib3d_WRAPPERS=java;python_bindings_generator;python2;python3
-OPENCV_MODULE_opencv_core_BINARY_DIR=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/modules/core
+OPENCV_MODULE_opencv_core_BINARY_DIR=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/modules/core
 OPENCV_MODULE_opencv_core_CLASS=PUBLIC
 OPENCV_MODULE_opencv_core_DEPS=
 OPENCV_MODULE_opencv_core_DEPS_EXT=
 OPENCV_MODULE_opencv_core_DEPS_TO_LINK=
 OPENCV_MODULE_opencv_core_DESCRIPTION=The Core Functionality
-OPENCV_MODULE_opencv_core_HEADERS=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/opencl/ocl_defs.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/opencl/opencl_info.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/opencl/opencl_svm.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/opencl/runtime/autogenerated/opencl_clamdblas.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/opencl/runtime/autogenerated/opencl_clamdfft.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/opencl/runtime/autogenerated/opencl_core.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/opencl/runtime/autogenerated/opencl_core_wrappers.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/opencl/runtime/autogenerated/opencl_gl.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/opencl/runtime/autogenerated/opencl_gl_wrappers.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/opencl/runtime/opencl_clamdblas.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/opencl/runtime/opencl_clamdfft.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/opencl/runtime/opencl_core.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/opencl/runtime/opencl_core_wrappers.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/opencl/runtime/opencl_gl.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/opencl/runtime/opencl_gl_wrappers.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/opencl/runtime/opencl_svm_20.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/opencl/runtime/opencl_svm_definitions.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/opencl/runtime/opencl_svm_hsa_extension.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda/block.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda/border_interpolate.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda/color.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda/common.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda/datamov_utils.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda/dynamic_smem.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda/emulation.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda/filters.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda/funcattrib.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda/functional.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda/limits.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda/reduce.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda/saturate_cast.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda/scan.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda/simd_functions.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda/transform.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda/type_traits.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda/utility.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda/vec_distance.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda/vec_math.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda/vec_traits.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda/warp.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda/warp_reduce.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda/warp_shuffle.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda/detail/color_detail.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda/detail/reduce.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda/detail/reduce_key_val.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda/detail/transform_detail.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda/detail/type_traits_detail.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda/detail/vec_distance_detail.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/affine.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/base.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/bufferpool.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/core.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda.inl.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda_stream_accessor.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda_types.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cvstd.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cvstd.inl.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/directx.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/eigen.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/fast_math.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/ippasync.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/mat.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/mat.inl.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/matx.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/neon_utils.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/ocl.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/ocl_genbase.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/opengl.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/operations.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/optim.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/ovx.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/persistence.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/private.cuda.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/private.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/ptr.inl.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/saturate.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/softfloat.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/sse_utils.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/traits.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/types.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/utility.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/va_intel.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/version.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/vsx_utils.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/wimage.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/core_c.h;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cv_cpu_dispatch.h;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cv_cpu_helper.h;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cvdef.h;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/types_c.h;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/hal/hal.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/hal/intrin.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/hal/intrin_cpp.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/hal/intrin_neon.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/hal/intrin_sse.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/hal/intrin_vsx.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/hal/interface.h;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/utils/configuration.private.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/utils/filesystem.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/utils/filesystem.private.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/utils/lock.private.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/utils/logger.defines.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/utils/logger.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/utils/trace.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/utils/trace.private.hpp
+OPENCV_MODULE_opencv_core_HEADERS=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/opencl/ocl_defs.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/opencl/opencl_info.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/opencl/opencl_svm.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/opencl/runtime/autogenerated/opencl_clamdblas.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/opencl/runtime/autogenerated/opencl_clamdfft.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/opencl/runtime/autogenerated/opencl_core.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/opencl/runtime/autogenerated/opencl_core_wrappers.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/opencl/runtime/autogenerated/opencl_gl.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/opencl/runtime/autogenerated/opencl_gl_wrappers.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/opencl/runtime/opencl_clamdblas.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/opencl/runtime/opencl_clamdfft.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/opencl/runtime/opencl_core.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/opencl/runtime/opencl_core_wrappers.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/opencl/runtime/opencl_gl.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/opencl/runtime/opencl_gl_wrappers.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/opencl/runtime/opencl_svm_20.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/opencl/runtime/opencl_svm_definitions.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/opencl/runtime/opencl_svm_hsa_extension.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda/block.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda/border_interpolate.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda/color.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda/common.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda/datamov_utils.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda/dynamic_smem.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda/emulation.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda/filters.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda/funcattrib.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda/functional.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda/limits.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda/reduce.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda/saturate_cast.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda/scan.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda/simd_functions.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda/transform.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda/type_traits.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda/utility.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda/vec_distance.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda/vec_math.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda/vec_traits.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda/warp.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda/warp_reduce.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda/warp_shuffle.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda/detail/color_detail.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda/detail/reduce.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda/detail/reduce_key_val.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda/detail/transform_detail.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda/detail/type_traits_detail.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda/detail/vec_distance_detail.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/affine.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/base.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/bufferpool.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/core.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda.inl.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda_stream_accessor.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cuda_types.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cvstd.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cvstd.inl.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/directx.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/eigen.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/fast_math.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/ippasync.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/mat.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/mat.inl.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/matx.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/neon_utils.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/ocl.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/ocl_genbase.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/opengl.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/operations.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/optim.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/ovx.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/persistence.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/private.cuda.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/private.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/ptr.inl.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/saturate.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/softfloat.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/sse_utils.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/traits.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/types.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/utility.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/va_intel.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/version.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/vsx_utils.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/wimage.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/core_c.h;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cv_cpu_dispatch.h;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cv_cpu_helper.h;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/cvdef.h;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/types_c.h;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/hal/hal.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/hal/intrin.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/hal/intrin_cpp.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/hal/intrin_neon.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/hal/intrin_sse.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/hal/intrin_vsx.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/hal/interface.h;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/utils/configuration.private.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/utils/filesystem.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/utils/filesystem.private.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/utils/lock.private.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/utils/logger.defines.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/utils/logger.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/utils/trace.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/utils/trace.private.hpp
 OPENCV_MODULE_opencv_core_IS_PART_OF_WORLD=ON
 OPENCV_MODULE_opencv_core_LABEL=Main;opencv_core
 OPENCV_MODULE_opencv_core_LINK_DEPS=
-OPENCV_MODULE_opencv_core_LOCATION=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core
+OPENCV_MODULE_opencv_core_LOCATION=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core
 OPENCV_MODULE_opencv_core_OPT_DEPS=opencv_cudev
 OPENCV_MODULE_opencv_core_PRIVATE_OPT_DEPS=
 OPENCV_MODULE_opencv_core_PRIVATE_REQ_DEPS=
 OPENCV_MODULE_opencv_core_REQ_DEPS=
-OPENCV_MODULE_opencv_core_SOURCES=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/modules/core/version_string.inc;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/algorithm.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/alloc.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/arithm.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/array.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/batch_distance.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/channels.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/command_line_parser.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/conjugate_gradient.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/convert.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/convert_c.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/convert_scale.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/copy.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/count_non_zero.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/cuda_gpu_mat.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/cuda_host_mem.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/cuda_info.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/cuda_stream.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/datastructs.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/directx.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/downhill_simplex.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/dxt.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/gl_core_3_1.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/glob.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/hal_internal.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/kmeans.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/lapack.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/lda.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/logger.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/lpsolver.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/lut.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/mathfuncs.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/mathfuncs_core.dispatch.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/matmul.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/matrix.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/matrix_c.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/matrix_decomp.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/matrix_expressions.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/matrix_iterator.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/matrix_operations.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/matrix_sparse.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/matrix_wrap.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/mean.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/merge.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/minmax.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/norm.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/ocl.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/runtime/opencl_clamdblas.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/runtime/opencl_clamdfft.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/runtime/opencl_core.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opengl.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/out.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/ovx.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/parallel.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/parallel_impl.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/pca.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/persistence.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/persistence_base64.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/persistence_c.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/persistence_cpp.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/persistence_json.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/persistence_types.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/persistence_xml.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/persistence_yml.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/rand.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/softfloat.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/split.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/stat.dispatch.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/stat_c.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/stl.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/sum.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/system.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/tables.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/trace.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/types.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/umatrix.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/utils/filesystem.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/va_intel.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/arithm.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/convert.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/copymakeborder.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/copyset.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/cvtclr_dx.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/fft.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/flip.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/gemm.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/halfconvert.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/inrange.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/intel_gemm.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/lut.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/meanstddev.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/minmaxloc.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/mixchannels.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/mulspectrums.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/normalize.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/reduce.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/reduce2.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/repeat.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/set_identity.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/split_merge.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/transpose.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/modules/core/opencl_kernels_core.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/modules/core/opencl_kernels_core.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/arithm_core.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/arithm_simd.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/bufferpool.impl.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/convert.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/directx.inc.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/gl_core_3_1.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/hal_internal.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/hal_replacement.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/intel_gpu_gemm.inl.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/mathfuncs_core.simd.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/ocl_deprecated.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/runtime/autogenerated/opencl_clamdblas_impl.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/runtime/autogenerated/opencl_clamdfft_impl.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/runtime/autogenerated/opencl_core_impl.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/runtime/autogenerated/opencl_core_static_impl.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/runtime/autogenerated/opencl_gl_impl.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/runtime/autogenerated/opencl_gl_static_impl.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/runtime/runtime_common.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/parallel_impl.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/persistence.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/precomp.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/stat.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/stat.simd.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/umatrix.hpp;$<TARGET_OBJECTS:opencv_core_SSE4_1>;$<TARGET_OBJECTS:opencv_core_SSE4_2>;$<TARGET_OBJECTS:opencv_core_FP16>;$<TARGET_OBJECTS:opencv_core_AVX>;$<TARGET_OBJECTS:opencv_core_AVX2>
+OPENCV_MODULE_opencv_core_SOURCES=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/modules/core/version_string.inc;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/algorithm.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/alloc.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/arithm.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/array.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/batch_distance.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/channels.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/command_line_parser.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/conjugate_gradient.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/convert.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/convert_c.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/convert_scale.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/copy.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/count_non_zero.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/cuda_gpu_mat.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/cuda_host_mem.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/cuda_info.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/cuda_stream.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/datastructs.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/directx.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/downhill_simplex.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/dxt.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/gl_core_3_1.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/glob.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/hal_internal.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/kmeans.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/lapack.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/lda.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/logger.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/lpsolver.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/lut.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/mathfuncs.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/mathfuncs_core.dispatch.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/matmul.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/matrix.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/matrix_c.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/matrix_decomp.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/matrix_expressions.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/matrix_iterator.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/matrix_operations.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/matrix_sparse.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/matrix_wrap.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/mean.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/merge.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/minmax.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/norm.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/ocl.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/runtime/opencl_clamdblas.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/runtime/opencl_clamdfft.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/runtime/opencl_core.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opengl.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/out.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/ovx.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/parallel.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/parallel_impl.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/pca.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/persistence.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/persistence_base64.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/persistence_c.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/persistence_cpp.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/persistence_json.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/persistence_types.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/persistence_xml.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/persistence_yml.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/rand.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/softfloat.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/split.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/stat.dispatch.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/stat_c.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/stl.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/sum.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/system.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/tables.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/trace.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/types.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/umatrix.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/utils/filesystem.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/va_intel.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/arithm.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/convert.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/copymakeborder.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/copyset.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/cvtclr_dx.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/fft.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/flip.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/gemm.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/halfconvert.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/inrange.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/intel_gemm.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/lut.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/meanstddev.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/minmaxloc.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/mixchannels.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/mulspectrums.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/normalize.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/reduce.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/reduce2.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/repeat.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/set_identity.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/split_merge.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/transpose.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/modules/core/opencl_kernels_core.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/modules/core/opencl_kernels_core.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/arithm_core.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/arithm_simd.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/bufferpool.impl.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/convert.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/directx.inc.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/gl_core_3_1.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/hal_internal.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/hal_replacement.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/intel_gpu_gemm.inl.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/mathfuncs_core.simd.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/ocl_deprecated.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/runtime/autogenerated/opencl_clamdblas_impl.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/runtime/autogenerated/opencl_clamdfft_impl.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/runtime/autogenerated/opencl_core_impl.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/runtime/autogenerated/opencl_core_static_impl.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/runtime/autogenerated/opencl_gl_impl.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/runtime/autogenerated/opencl_gl_static_impl.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/opencl/runtime/runtime_common.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/parallel_impl.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/persistence.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/precomp.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/stat.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/stat.simd.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/src/umatrix.hpp;$<TARGET_OBJECTS:opencv_core_SSE4_1>;$<TARGET_OBJECTS:opencv_core_SSE4_2>;$<TARGET_OBJECTS:opencv_core_FP16>;$<TARGET_OBJECTS:opencv_core_AVX>;$<TARGET_OBJECTS:opencv_core_AVX2>
 OPENCV_MODULE_opencv_core_WRAPPERS=java;js;python_bindings_generator;python2;python3
 OPENCV_MODULE_opencv_dnn_CLASS=PUBLIC
 OPENCV_MODULE_opencv_dnn_DESCRIPTION=Deep neural network module. It allows to load models from different frameworks and to make forward pass
 OPENCV_MODULE_opencv_dnn_IS_PART_OF_WORLD=ON
 OPENCV_MODULE_opencv_dnn_LABEL=Main;opencv_dnn
 OPENCV_MODULE_opencv_dnn_LINK_DEPS=
-OPENCV_MODULE_opencv_dnn_LOCATION=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/dnn
+OPENCV_MODULE_opencv_dnn_LOCATION=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/dnn
 OPENCV_MODULE_opencv_dnn_OPT_DEPS=
 OPENCV_MODULE_opencv_dnn_PRIVATE_OPT_DEPS=
 OPENCV_MODULE_opencv_dnn_PRIVATE_REQ_DEPS=
@@ -1233,7 +1276,7 @@ OPENCV_MODULE_opencv_features2d_DESCRIPTION=2D Features Framework
 OPENCV_MODULE_opencv_features2d_IS_PART_OF_WORLD=ON
 OPENCV_MODULE_opencv_features2d_LABEL=Main;opencv_features2d
 OPENCV_MODULE_opencv_features2d_LINK_DEPS=
-OPENCV_MODULE_opencv_features2d_LOCATION=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/features2d
+OPENCV_MODULE_opencv_features2d_LOCATION=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/features2d
 OPENCV_MODULE_opencv_features2d_OPT_DEPS=opencv_flann;opencv_highgui
 OPENCV_MODULE_opencv_features2d_PRIVATE_OPT_DEPS=
 OPENCV_MODULE_opencv_features2d_PRIVATE_REQ_DEPS=
@@ -1244,64 +1287,64 @@ OPENCV_MODULE_opencv_flann_DESCRIPTION=Clustering and Search in Multi-Dimensiona
 OPENCV_MODULE_opencv_flann_IS_PART_OF_WORLD=ON
 OPENCV_MODULE_opencv_flann_LABEL=Main;opencv_flann
 OPENCV_MODULE_opencv_flann_LINK_DEPS=
-OPENCV_MODULE_opencv_flann_LOCATION=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/flann
+OPENCV_MODULE_opencv_flann_LOCATION=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/flann
 OPENCV_MODULE_opencv_flann_OPT_DEPS=
 OPENCV_MODULE_opencv_flann_PRIVATE_OPT_DEPS=
 OPENCV_MODULE_opencv_flann_PRIVATE_REQ_DEPS=
 OPENCV_MODULE_opencv_flann_REQ_DEPS=opencv_core
 OPENCV_MODULE_opencv_flann_WRAPPERS=python_bindings_generator;python2;python3
-OPENCV_MODULE_opencv_highgui_BINARY_DIR=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/modules/highgui
+OPENCV_MODULE_opencv_highgui_BINARY_DIR=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/modules/highgui
 OPENCV_MODULE_opencv_highgui_CLASS=PUBLIC
-OPENCV_MODULE_opencv_highgui_DEPS=opencv_core;opencv_imgproc;opencv_imgcodecs
+OPENCV_MODULE_opencv_highgui_DEPS=opencv_core;opencv_imgproc;opencv_imgcodecs;opencv_videoio
 OPENCV_MODULE_opencv_highgui_DEPS_EXT=
-OPENCV_MODULE_opencv_highgui_DEPS_TO_LINK=opencv_core;opencv_imgproc;opencv_imgcodecs
+OPENCV_MODULE_opencv_highgui_DEPS_TO_LINK=opencv_core;opencv_imgproc;opencv_imgcodecs;opencv_videoio
 OPENCV_MODULE_opencv_highgui_DESCRIPTION=High-level GUI
-OPENCV_MODULE_opencv_highgui_HEADERS=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/highgui/include/opencv2/highgui.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/highgui/include/opencv2/highgui/highgui.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/highgui/include/opencv2/highgui/highgui_c.h
+OPENCV_MODULE_opencv_highgui_HEADERS=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/highgui/include/opencv2/highgui.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/highgui/include/opencv2/highgui/highgui.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/highgui/include/opencv2/highgui/highgui_c.h
 OPENCV_MODULE_opencv_highgui_IS_PART_OF_WORLD=ON
 OPENCV_MODULE_opencv_highgui_LABEL=Main;opencv_highgui
 OPENCV_MODULE_opencv_highgui_LINK_DEPS=;comctl32;gdi32;ole32;setupapi;ws2_32
-OPENCV_MODULE_opencv_highgui_LOCATION=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/highgui
+OPENCV_MODULE_opencv_highgui_LOCATION=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/highgui
 OPENCV_MODULE_opencv_highgui_OPT_DEPS=opencv_videoio
 OPENCV_MODULE_opencv_highgui_PRIVATE_OPT_DEPS=
 OPENCV_MODULE_opencv_highgui_PRIVATE_REQ_DEPS=
 OPENCV_MODULE_opencv_highgui_REQ_DEPS=opencv_imgproc;opencv_imgcodecs
-OPENCV_MODULE_opencv_highgui_SOURCES=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/highgui/src/window.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/highgui/src/roiSelector.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/highgui/src/window_w32.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/highgui/src/precomp.hpp
+OPENCV_MODULE_opencv_highgui_SOURCES=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/highgui/src/window.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/highgui/src/roiSelector.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/highgui/src/window_w32.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/highgui/src/precomp.hpp
 OPENCV_MODULE_opencv_highgui_WRAPPERS=java;python_bindings_generator;python2;python3
-OPENCV_MODULE_opencv_imgcodecs_BINARY_DIR=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/modules/imgcodecs
+OPENCV_MODULE_opencv_imgcodecs_BINARY_DIR=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/modules/imgcodecs
 OPENCV_MODULE_opencv_imgcodecs_CLASS=PUBLIC
 OPENCV_MODULE_opencv_imgcodecs_DEPS=opencv_core;opencv_imgproc
 OPENCV_MODULE_opencv_imgcodecs_DEPS_EXT=
 OPENCV_MODULE_opencv_imgcodecs_DEPS_TO_LINK=opencv_core;opencv_imgproc
 OPENCV_MODULE_opencv_imgcodecs_DESCRIPTION=Image I/O
-OPENCV_MODULE_opencv_imgcodecs_HEADERS=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/include/opencv2/imgcodecs.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/include/opencv2/imgcodecs/imgcodecs.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/include/opencv2/imgcodecs/imgcodecs_c.h;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/include/opencv2/imgcodecs/ios.h
+OPENCV_MODULE_opencv_imgcodecs_HEADERS=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/include/opencv2/imgcodecs.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/include/opencv2/imgcodecs/imgcodecs.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/include/opencv2/imgcodecs/imgcodecs_c.h;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/include/opencv2/imgcodecs/ios.h
 OPENCV_MODULE_opencv_imgcodecs_IS_PART_OF_WORLD=ON
 OPENCV_MODULE_opencv_imgcodecs_LABEL=Main;opencv_imgcodecs
-OPENCV_MODULE_opencv_imgcodecs_LINK_DEPS=;zlib;libjpeg;libwebp;libpng;IlmImf
-OPENCV_MODULE_opencv_imgcodecs_LOCATION=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs
+OPENCV_MODULE_opencv_imgcodecs_LINK_DEPS=;zlib;libjpeg;libwebp;libpng;libjasper;IlmImf
+OPENCV_MODULE_opencv_imgcodecs_LOCATION=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs
 OPENCV_MODULE_opencv_imgcodecs_OPT_DEPS=
 OPENCV_MODULE_opencv_imgcodecs_PRIVATE_OPT_DEPS=
 OPENCV_MODULE_opencv_imgcodecs_PRIVATE_REQ_DEPS=
 OPENCV_MODULE_opencv_imgcodecs_REQ_DEPS=opencv_imgproc
-OPENCV_MODULE_opencv_imgcodecs_SOURCES=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/loadsave.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/utils.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/precomp.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/utils.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/grfmt_base.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/grfmt_bmp.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/grfmt_exr.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/grfmt_gdal.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/grfmt_gdcm.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/grfmt_hdr.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/grfmt_jpeg.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/grfmt_jpeg2000.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/grfmt_pam.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/grfmt_png.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/grfmt_pxm.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/grfmt_sunras.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/grfmt_tiff.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/grfmt_webp.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/bitstrm.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/rgbe.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/exif.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/grfmt_base.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/grfmt_bmp.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/grfmt_exr.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/grfmt_gdal.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/grfmt_gdcm.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/grfmt_hdr.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/grfmt_jpeg.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/grfmt_jpeg2000.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/grfmt_pam.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/grfmt_png.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/grfmt_pxm.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/grfmt_sunras.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/grfmt_tiff.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/grfmt_webp.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/grfmts.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/bitstrm.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/rgbe.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/exif.hpp
+OPENCV_MODULE_opencv_imgcodecs_SOURCES=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/loadsave.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/utils.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/precomp.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/utils.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/grfmt_base.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/grfmt_bmp.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/grfmt_exr.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/grfmt_gdal.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/grfmt_gdcm.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/grfmt_hdr.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/grfmt_jpeg.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/grfmt_jpeg2000.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/grfmt_pam.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/grfmt_png.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/grfmt_pxm.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/grfmt_sunras.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/grfmt_tiff.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/grfmt_webp.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/bitstrm.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/rgbe.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/exif.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/grfmt_base.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/grfmt_bmp.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/grfmt_exr.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/grfmt_gdal.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/grfmt_gdcm.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/grfmt_hdr.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/grfmt_jpeg.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/grfmt_jpeg2000.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/grfmt_pam.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/grfmt_png.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/grfmt_pxm.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/grfmt_sunras.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/grfmt_tiff.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/grfmt_webp.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/grfmts.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/bitstrm.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/rgbe.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs/src/exif.hpp
 OPENCV_MODULE_opencv_imgcodecs_WRAPPERS=java;python_bindings_generator;python2;python3
-OPENCV_MODULE_opencv_imgproc_BINARY_DIR=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/modules/imgproc
+OPENCV_MODULE_opencv_imgproc_BINARY_DIR=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/modules/imgproc
 OPENCV_MODULE_opencv_imgproc_CLASS=PUBLIC
 OPENCV_MODULE_opencv_imgproc_DEPS=opencv_core
 OPENCV_MODULE_opencv_imgproc_DEPS_EXT=
 OPENCV_MODULE_opencv_imgproc_DEPS_TO_LINK=opencv_core
 OPENCV_MODULE_opencv_imgproc_DESCRIPTION=Image Processing
-OPENCV_MODULE_opencv_imgproc_HEADERS=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/include/opencv2/imgproc.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/include/opencv2/imgproc/imgproc.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/include/opencv2/imgproc/imgproc_c.h;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/include/opencv2/imgproc/types_c.h;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/include/opencv2/imgproc/hal/hal.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/include/opencv2/imgproc/hal/interface.h;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/include/opencv2/imgproc/detail/distortion_model.hpp
+OPENCV_MODULE_opencv_imgproc_HEADERS=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/include/opencv2/imgproc.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/include/opencv2/imgproc/imgproc.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/include/opencv2/imgproc/imgproc_c.h;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/include/opencv2/imgproc/types_c.h;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/include/opencv2/imgproc/hal/hal.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/include/opencv2/imgproc/hal/interface.h;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/include/opencv2/imgproc/detail/distortion_model.hpp
 OPENCV_MODULE_opencv_imgproc_IS_PART_OF_WORLD=ON
 OPENCV_MODULE_opencv_imgproc_LABEL=Main;opencv_imgproc
 OPENCV_MODULE_opencv_imgproc_LINK_DEPS=
-OPENCV_MODULE_opencv_imgproc_LOCATION=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc
+OPENCV_MODULE_opencv_imgproc_LOCATION=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc
 OPENCV_MODULE_opencv_imgproc_OPT_DEPS=
 OPENCV_MODULE_opencv_imgproc_PRIVATE_OPT_DEPS=
 OPENCV_MODULE_opencv_imgproc_PRIVATE_REQ_DEPS=
 OPENCV_MODULE_opencv_imgproc_REQ_DEPS=opencv_core
-OPENCV_MODULE_opencv_imgproc_SOURCES=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/accum.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/accum.dispatch.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/approx.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/blend.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/canny.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/clahe.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/color.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/colormap.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/connectedcomponents.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/contours.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/convhull.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/corner.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/cornersubpix.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/demosaicing.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/deriv.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/distransform.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/drawing.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/emd.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/featureselect.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/filter.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/floodfill.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/gabor.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/generalized_hough.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/geometry.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/grabcut.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/hershey_fonts.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/histogram.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/hough.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/imgwarp.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/intersection.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/linefit.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/lsd.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/main.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/matchcontours.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/min_enclosing_triangle.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/moments.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/morph.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/phasecorr.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/pyramids.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/resize.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/rotcalipers.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/samplers.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/segmentation.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/shapedescr.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/smooth.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/spatialgradient.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/subdivision2d.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/sumpixels.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/tables.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/templmatch.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/thresh.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/undistort.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/utils.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/accumulate.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/bilateral.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/blend_linear.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/boxFilter.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/boxFilter3x3.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/calc_back_project.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/canny.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/clahe.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/corner.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/covardata.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/cvtcolor.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/filter2D.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/filter2DSmall.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/filterSepCol.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/filterSepRow.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/filterSep_singlePass.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/filterSmall.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/gaussianBlur3x3.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/gaussianBlur5x5.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/gftt.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/histogram.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/hough_lines.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/integral_sum.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/laplacian3.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/laplacian5.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/linearPolar.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/logPolar.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/match_template.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/medianFilter.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/moments.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/morph.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/morph3x3.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/precornerdetect.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/pyr_down.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/pyr_up.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/pyramid_up.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/remap.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/resize.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/sepFilter3x3.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/threshold.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/warp_affine.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/warp_perspective.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/warp_transform.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/modules/imgproc/opencl_kernels_imgproc.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/modules/imgproc/opencl_kernels_imgproc.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/accum.simd.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/corner.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/filter.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/filterengine.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/fixedpoint.inl.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/gcgraph.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/hal_replacement.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/imgwarp.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/precomp.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/resize.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/undistort.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/_geom.h;$<TARGET_OBJECTS:opencv_imgproc_SSE4_1>;$<TARGET_OBJECTS:opencv_imgproc_AVX>;$<TARGET_OBJECTS:opencv_imgproc_AVX2>
+OPENCV_MODULE_opencv_imgproc_SOURCES=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/accum.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/accum.dispatch.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/approx.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/blend.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/canny.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/clahe.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/color.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/colormap.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/connectedcomponents.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/contours.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/convhull.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/corner.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/cornersubpix.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/demosaicing.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/deriv.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/distransform.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/drawing.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/emd.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/featureselect.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/filter.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/floodfill.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/gabor.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/generalized_hough.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/geometry.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/grabcut.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/hershey_fonts.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/histogram.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/hough.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/imgwarp.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/intersection.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/linefit.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/lsd.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/main.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/matchcontours.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/min_enclosing_triangle.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/moments.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/morph.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/phasecorr.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/pyramids.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/resize.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/rotcalipers.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/samplers.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/segmentation.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/shapedescr.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/smooth.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/spatialgradient.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/subdivision2d.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/sumpixels.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/tables.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/templmatch.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/thresh.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/undistort.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/utils.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/accumulate.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/bilateral.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/blend_linear.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/boxFilter.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/boxFilter3x3.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/calc_back_project.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/canny.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/clahe.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/corner.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/covardata.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/cvtcolor.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/filter2D.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/filter2DSmall.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/filterSepCol.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/filterSepRow.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/filterSep_singlePass.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/filterSmall.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/gaussianBlur3x3.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/gaussianBlur5x5.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/gftt.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/histogram.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/hough_lines.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/integral_sum.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/laplacian3.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/laplacian5.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/linearPolar.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/logPolar.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/match_template.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/medianFilter.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/moments.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/morph.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/morph3x3.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/precornerdetect.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/pyr_down.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/pyr_up.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/pyramid_up.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/remap.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/resize.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/sepFilter3x3.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/threshold.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/warp_affine.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/warp_perspective.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/opencl/warp_transform.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/modules/imgproc/opencl_kernels_imgproc.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/modules/imgproc/opencl_kernels_imgproc.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/accum.simd.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/corner.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/filter.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/filterengine.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/fixedpoint.inl.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/gcgraph.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/hal_replacement.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/imgwarp.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/precomp.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/resize.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/undistort.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc/src/_geom.h;$<TARGET_OBJECTS:opencv_imgproc_SSE4_1>;$<TARGET_OBJECTS:opencv_imgproc_AVX>;$<TARGET_OBJECTS:opencv_imgproc_AVX2>
 OPENCV_MODULE_opencv_imgproc_WRAPPERS=java;js;python_bindings_generator;python2;python3
-OPENCV_MODULE_opencv_java_LOCATION=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/java
+OPENCV_MODULE_opencv_java_LOCATION=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/java
 OPENCV_MODULE_opencv_java_OPT_DEPS=opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_video;opencv_videoio
 OPENCV_MODULE_opencv_java_PRIVATE_OPT_DEPS=
 OPENCV_MODULE_opencv_java_PRIVATE_REQ_DEPS=
@@ -1312,7 +1355,7 @@ OPENCV_MODULE_opencv_java_bindings_generator_DESCRIPTION=The java_bindings_gener
 OPENCV_MODULE_opencv_java_bindings_generator_IS_PART_OF_WORLD=OFF
 OPENCV_MODULE_opencv_java_bindings_generator_LABEL=Main;opencv_java_bindings_generator
 OPENCV_MODULE_opencv_java_bindings_generator_LINK_DEPS=
-OPENCV_MODULE_opencv_java_bindings_generator_LOCATION=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/java/generator
+OPENCV_MODULE_opencv_java_bindings_generator_LOCATION=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/java/generator
 OPENCV_MODULE_opencv_java_bindings_generator_OPT_DEPS=
 OPENCV_MODULE_opencv_java_bindings_generator_PRIVATE_OPT_DEPS=
 OPENCV_MODULE_opencv_java_bindings_generator_PRIVATE_REQ_DEPS=
@@ -1323,7 +1366,7 @@ OPENCV_MODULE_opencv_js_DESCRIPTION=The js bindings
 OPENCV_MODULE_opencv_js_IS_PART_OF_WORLD=OFF
 OPENCV_MODULE_opencv_js_LABEL=Main;opencv_js
 OPENCV_MODULE_opencv_js_LINK_DEPS=
-OPENCV_MODULE_opencv_js_LOCATION=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/js
+OPENCV_MODULE_opencv_js_LOCATION=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/js
 OPENCV_MODULE_opencv_js_OPT_DEPS=opencv_core;opencv_dnn;opencv_imgproc;opencv_objdetect;opencv_video
 OPENCV_MODULE_opencv_js_PRIVATE_OPT_DEPS=
 OPENCV_MODULE_opencv_js_PRIVATE_REQ_DEPS=
@@ -1339,47 +1382,47 @@ OPENCV_MODULE_opencv_ml_DESCRIPTION=Machine Learning
 OPENCV_MODULE_opencv_ml_IS_PART_OF_WORLD=ON
 OPENCV_MODULE_opencv_ml_LABEL=Main;opencv_ml
 OPENCV_MODULE_opencv_ml_LINK_DEPS=
-OPENCV_MODULE_opencv_ml_LOCATION=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/ml
+OPENCV_MODULE_opencv_ml_LOCATION=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/ml
 OPENCV_MODULE_opencv_ml_OPT_DEPS=
 OPENCV_MODULE_opencv_ml_PRIVATE_OPT_DEPS=
 OPENCV_MODULE_opencv_ml_PRIVATE_REQ_DEPS=
 OPENCV_MODULE_opencv_ml_REQ_DEPS=opencv_core
 OPENCV_MODULE_opencv_ml_WRAPPERS=java;python_bindings_generator;python2;python3
-OPENCV_MODULE_opencv_objdetect_BINARY_DIR=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/modules/objdetect
+OPENCV_MODULE_opencv_objdetect_BINARY_DIR=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/modules/objdetect
 OPENCV_MODULE_opencv_objdetect_CLASS=PUBLIC
 OPENCV_MODULE_opencv_objdetect_DEPS=opencv_core;opencv_imgproc
 OPENCV_MODULE_opencv_objdetect_DEPS_EXT=
 OPENCV_MODULE_opencv_objdetect_DEPS_TO_LINK=opencv_core;opencv_imgproc
 OPENCV_MODULE_opencv_objdetect_DESCRIPTION=Object Detection
-OPENCV_MODULE_opencv_objdetect_HEADERS=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/objdetect/include/opencv2/objdetect.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/objdetect/include/opencv2/objdetect/detection_based_tracker.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/objdetect/include/opencv2/objdetect/objdetect.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/objdetect/include/opencv2/objdetect/objdetect_c.h
+OPENCV_MODULE_opencv_objdetect_HEADERS=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/objdetect/include/opencv2/objdetect.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/objdetect/include/opencv2/objdetect/detection_based_tracker.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/objdetect/include/opencv2/objdetect/objdetect.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/objdetect/include/opencv2/objdetect/objdetect_c.h
 OPENCV_MODULE_opencv_objdetect_IS_PART_OF_WORLD=ON
 OPENCV_MODULE_opencv_objdetect_LABEL=Main;opencv_objdetect
 OPENCV_MODULE_opencv_objdetect_LINK_DEPS=
-OPENCV_MODULE_opencv_objdetect_LOCATION=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/objdetect
+OPENCV_MODULE_opencv_objdetect_LOCATION=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/objdetect
 OPENCV_MODULE_opencv_objdetect_OPT_DEPS=
 OPENCV_MODULE_opencv_objdetect_PRIVATE_OPT_DEPS=
 OPENCV_MODULE_opencv_objdetect_PRIVATE_REQ_DEPS=
 OPENCV_MODULE_opencv_objdetect_REQ_DEPS=opencv_core;opencv_imgproc
-OPENCV_MODULE_opencv_objdetect_SOURCES=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/objdetect/src/cascadedetect.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/objdetect/src/cascadedetect_convert.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/objdetect/src/detection_based_tracker.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/objdetect/src/haar.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/objdetect/src/hog.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/objdetect/src/main.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/objdetect/src/opencl/cascadedetect.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/objdetect/src/opencl/objdetect_hog.cl;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/modules/objdetect/opencl_kernels_objdetect.cpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/modules/objdetect/opencl_kernels_objdetect.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/objdetect/src/cascadedetect.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/objdetect/src/haar.hpp;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/objdetect/src/precomp.hpp;$<TARGET_OBJECTS:opencv_objdetect_AVX>
+OPENCV_MODULE_opencv_objdetect_SOURCES=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/objdetect/src/cascadedetect.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/objdetect/src/cascadedetect_convert.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/objdetect/src/detection_based_tracker.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/objdetect/src/haar.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/objdetect/src/hog.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/objdetect/src/main.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/objdetect/src/opencl/cascadedetect.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/objdetect/src/opencl/objdetect_hog.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/modules/objdetect/opencl_kernels_objdetect.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/modules/objdetect/opencl_kernels_objdetect.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/objdetect/src/cascadedetect.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/objdetect/src/haar.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/objdetect/src/precomp.hpp;$<TARGET_OBJECTS:opencv_objdetect_AVX>
 OPENCV_MODULE_opencv_objdetect_WRAPPERS=java;js;python_bindings_generator;python2;python3
 OPENCV_MODULE_opencv_photo_CLASS=PUBLIC
 OPENCV_MODULE_opencv_photo_DESCRIPTION=Computational Photography
 OPENCV_MODULE_opencv_photo_IS_PART_OF_WORLD=ON
 OPENCV_MODULE_opencv_photo_LABEL=Main;opencv_photo
 OPENCV_MODULE_opencv_photo_LINK_DEPS=
-OPENCV_MODULE_opencv_photo_LOCATION=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/photo
+OPENCV_MODULE_opencv_photo_LOCATION=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/photo
 OPENCV_MODULE_opencv_photo_OPT_DEPS=opencv_cudaarithm;opencv_cudaimgproc
 OPENCV_MODULE_opencv_photo_PRIVATE_OPT_DEPS=
 OPENCV_MODULE_opencv_photo_PRIVATE_REQ_DEPS=
 OPENCV_MODULE_opencv_photo_REQ_DEPS=opencv_imgproc
 OPENCV_MODULE_opencv_photo_WRAPPERS=java;python_bindings_generator;python2;python3
-OPENCV_MODULE_opencv_python2_LOCATION=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/python/python2
+OPENCV_MODULE_opencv_python2_LOCATION=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/python/python2
 OPENCV_MODULE_opencv_python2_OPT_DEPS=opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_flann;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_shape;opencv_stitching;opencv_superres;opencv_video;opencv_videoio;opencv_videostab
 OPENCV_MODULE_opencv_python2_PRIVATE_OPT_DEPS=
 OPENCV_MODULE_opencv_python2_PRIVATE_REQ_DEPS=
 OPENCV_MODULE_opencv_python2_REQ_DEPS=
 OPENCV_MODULE_opencv_python2_WRAPPERS=
-OPENCV_MODULE_opencv_python3_LOCATION=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/python/python3
+OPENCV_MODULE_opencv_python3_LOCATION=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/python/python3
 OPENCV_MODULE_opencv_python3_OPT_DEPS=opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_flann;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_shape;opencv_stitching;opencv_superres;opencv_video;opencv_videoio;opencv_videostab
 OPENCV_MODULE_opencv_python3_PRIVATE_OPT_DEPS=
 OPENCV_MODULE_opencv_python3_PRIVATE_REQ_DEPS=
@@ -1390,7 +1433,7 @@ OPENCV_MODULE_opencv_python_bindings_generator_DESCRIPTION=The python_bindings_g
 OPENCV_MODULE_opencv_python_bindings_generator_IS_PART_OF_WORLD=OFF
 OPENCV_MODULE_opencv_python_bindings_generator_LABEL=Main;opencv_python_bindings_generator
 OPENCV_MODULE_opencv_python_bindings_generator_LINK_DEPS=
-OPENCV_MODULE_opencv_python_bindings_generator_LOCATION=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/python/bindings
+OPENCV_MODULE_opencv_python_bindings_generator_LOCATION=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/python/bindings
 OPENCV_MODULE_opencv_python_bindings_generator_OPT_DEPS=opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_flann;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_shape;opencv_stitching;opencv_superres;opencv_video;opencv_videoio;opencv_videostab
 OPENCV_MODULE_opencv_python_bindings_generator_PRIVATE_OPT_DEPS=
 OPENCV_MODULE_opencv_python_bindings_generator_PRIVATE_REQ_DEPS=
@@ -1401,7 +1444,7 @@ OPENCV_MODULE_opencv_shape_DESCRIPTION=Shape descriptors and matchers
 OPENCV_MODULE_opencv_shape_IS_PART_OF_WORLD=ON
 OPENCV_MODULE_opencv_shape_LABEL=Main;opencv_shape
 OPENCV_MODULE_opencv_shape_LINK_DEPS=
-OPENCV_MODULE_opencv_shape_LOCATION=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/shape
+OPENCV_MODULE_opencv_shape_LOCATION=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/shape
 OPENCV_MODULE_opencv_shape_OPT_DEPS=
 OPENCV_MODULE_opencv_shape_PRIVATE_OPT_DEPS=
 OPENCV_MODULE_opencv_shape_PRIVATE_REQ_DEPS=
@@ -1412,7 +1455,7 @@ OPENCV_MODULE_opencv_stitching_DESCRIPTION=Images stitching
 OPENCV_MODULE_opencv_stitching_IS_PART_OF_WORLD=ON
 OPENCV_MODULE_opencv_stitching_LABEL=Main;opencv_stitching
 OPENCV_MODULE_opencv_stitching_LINK_DEPS=
-OPENCV_MODULE_opencv_stitching_LOCATION=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/stitching
+OPENCV_MODULE_opencv_stitching_LOCATION=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/stitching
 OPENCV_MODULE_opencv_stitching_OPT_DEPS=opencv_cudaarithm;opencv_cudawarping;opencv_cudafeatures2d;opencv_cudalegacy;opencv_xfeatures2d
 OPENCV_MODULE_opencv_stitching_PRIVATE_OPT_DEPS=
 OPENCV_MODULE_opencv_stitching_PRIVATE_REQ_DEPS=
@@ -1423,7 +1466,7 @@ OPENCV_MODULE_opencv_superres_DESCRIPTION=Super Resolution
 OPENCV_MODULE_opencv_superres_IS_PART_OF_WORLD=ON
 OPENCV_MODULE_opencv_superres_LABEL=Main;opencv_superres
 OPENCV_MODULE_opencv_superres_LINK_DEPS=
-OPENCV_MODULE_opencv_superres_LOCATION=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/superres
+OPENCV_MODULE_opencv_superres_LOCATION=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/superres
 OPENCV_MODULE_opencv_superres_OPT_DEPS=opencv_videoio;opencv_cudaarithm;opencv_cudafilters;opencv_cudawarping;opencv_cudaimgproc;opencv_cudaoptflow;opencv_cudacodec
 OPENCV_MODULE_opencv_superres_PRIVATE_OPT_DEPS=
 OPENCV_MODULE_opencv_superres_PRIVATE_REQ_DEPS=
@@ -1434,58 +1477,70 @@ OPENCV_MODULE_opencv_ts_DESCRIPTION=The ts module
 OPENCV_MODULE_opencv_ts_IS_PART_OF_WORLD=OFF
 OPENCV_MODULE_opencv_ts_LABEL=Main;opencv_ts
 OPENCV_MODULE_opencv_ts_LINK_DEPS=
-OPENCV_MODULE_opencv_ts_LOCATION=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/ts
+OPENCV_MODULE_opencv_ts_LOCATION=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/ts
 OPENCV_MODULE_opencv_ts_OPT_DEPS=
 OPENCV_MODULE_opencv_ts_PRIVATE_OPT_DEPS=
 OPENCV_MODULE_opencv_ts_PRIVATE_REQ_DEPS=
 OPENCV_MODULE_opencv_ts_REQ_DEPS=opencv_core;opencv_imgproc;opencv_imgcodecs;opencv_videoio;opencv_highgui
 OPENCV_MODULE_opencv_ts_WRAPPERS=
+OPENCV_MODULE_opencv_video_BINARY_DIR=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/modules/video
 OPENCV_MODULE_opencv_video_CLASS=PUBLIC
+OPENCV_MODULE_opencv_video_DEPS=opencv_core;opencv_imgproc
+OPENCV_MODULE_opencv_video_DEPS_EXT=
+OPENCV_MODULE_opencv_video_DEPS_TO_LINK=opencv_core;opencv_imgproc
 OPENCV_MODULE_opencv_video_DESCRIPTION=Video Analysis
+OPENCV_MODULE_opencv_video_HEADERS=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/video/include/opencv2/video.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/video/include/opencv2/video/background_segm.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/video/include/opencv2/video/tracking.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/video/include/opencv2/video/video.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/video/include/opencv2/video/tracking_c.h
 OPENCV_MODULE_opencv_video_IS_PART_OF_WORLD=ON
 OPENCV_MODULE_opencv_video_LABEL=Main;opencv_video
 OPENCV_MODULE_opencv_video_LINK_DEPS=
-OPENCV_MODULE_opencv_video_LOCATION=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/video
+OPENCV_MODULE_opencv_video_LOCATION=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/video
 OPENCV_MODULE_opencv_video_OPT_DEPS=
 OPENCV_MODULE_opencv_video_PRIVATE_OPT_DEPS=
 OPENCV_MODULE_opencv_video_PRIVATE_REQ_DEPS=
 OPENCV_MODULE_opencv_video_REQ_DEPS=opencv_imgproc
+OPENCV_MODULE_opencv_video_SOURCES=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/video/src/bgfg_KNN.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/video/src/bgfg_gaussmix2.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/video/src/camshift.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/video/src/compat_video.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/video/src/ecc.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/video/src/kalman.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/video/src/lkpyramid.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/video/src/optflowgf.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/video/src/tvl1flow.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/video/src/opencl/bgfg_knn.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/video/src/opencl/bgfg_mog2.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/video/src/opencl/optical_flow_farneback.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/video/src/opencl/optical_flow_tvl1.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/video/src/opencl/pyrlk.cl;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/modules/video/opencl_kernels_video.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/modules/video/opencl_kernels_video.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/video/src/lkpyramid.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/video/src/precomp.hpp
 OPENCV_MODULE_opencv_video_WRAPPERS=java;js;python_bindings_generator;python2;python3
+OPENCV_MODULE_opencv_videoio_BINARY_DIR=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/modules/videoio
 OPENCV_MODULE_opencv_videoio_CLASS=PUBLIC
+OPENCV_MODULE_opencv_videoio_DEPS=opencv_core;opencv_imgproc;opencv_imgcodecs
+OPENCV_MODULE_opencv_videoio_DEPS_EXT=
+OPENCV_MODULE_opencv_videoio_DEPS_TO_LINK=opencv_core;opencv_imgproc;opencv_imgcodecs
 OPENCV_MODULE_opencv_videoio_DESCRIPTION=Media I/O
+OPENCV_MODULE_opencv_videoio_HEADERS=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/videoio/include/opencv2/videoio.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/videoio/include/opencv2/videoio/container_avi.private.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/videoio/include/opencv2/videoio/videoio.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/videoio/include/opencv2/videoio/cap_ios.h;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/videoio/include/opencv2/videoio/videoio_c.h
 OPENCV_MODULE_opencv_videoio_IS_PART_OF_WORLD=ON
 OPENCV_MODULE_opencv_videoio_LABEL=Main;opencv_videoio
-OPENCV_MODULE_opencv_videoio_LINK_DEPS=
-OPENCV_MODULE_opencv_videoio_LOCATION=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/videoio
+OPENCV_MODULE_opencv_videoio_LINK_DEPS=;vfw32
+OPENCV_MODULE_opencv_videoio_LOCATION=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/videoio
 OPENCV_MODULE_opencv_videoio_OPT_DEPS=
 OPENCV_MODULE_opencv_videoio_PRIVATE_OPT_DEPS=
 OPENCV_MODULE_opencv_videoio_PRIVATE_REQ_DEPS=
 OPENCV_MODULE_opencv_videoio_REQ_DEPS=opencv_imgproc;opencv_imgcodecs
+OPENCV_MODULE_opencv_videoio_SOURCES=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/videoio/src/cap.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/videoio/src/cap_images.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/videoio/src/cap_mjpeg_encoder.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/videoio/src/cap_mjpeg_decoder.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/videoio/src/container_avi.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/videoio/src/cap_cmu.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/videoio/src/cap_dshow.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/videoio/src/cap_vfw.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/videoio/src/cap_ffmpeg.cpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/videoio/src/precomp.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/videoio/src/cap_dshow.hpp;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/videoio/src/cap_ffmpeg_impl.hpp
 OPENCV_MODULE_opencv_videoio_WRAPPERS=java;python_bindings_generator;python2;python3
 OPENCV_MODULE_opencv_videostab_CLASS=PUBLIC
 OPENCV_MODULE_opencv_videostab_DESCRIPTION=Video stabilization
 OPENCV_MODULE_opencv_videostab_IS_PART_OF_WORLD=ON
 OPENCV_MODULE_opencv_videostab_LABEL=Main;opencv_videostab
 OPENCV_MODULE_opencv_videostab_LINK_DEPS=
-OPENCV_MODULE_opencv_videostab_LOCATION=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/videostab
+OPENCV_MODULE_opencv_videostab_LOCATION=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/videostab
 OPENCV_MODULE_opencv_videostab_OPT_DEPS=opencv_cudawarping;opencv_cudaoptflow;opencv_videoio
 OPENCV_MODULE_opencv_videostab_PRIVATE_OPT_DEPS=
 OPENCV_MODULE_opencv_videostab_PRIVATE_REQ_DEPS=
 OPENCV_MODULE_opencv_videostab_REQ_DEPS=opencv_imgproc;opencv_features2d;opencv_video;opencv_photo;opencv_calib3d
 OPENCV_MODULE_opencv_videostab_WRAPPERS=python_bindings_generator;python2;python3
-OPENCV_MODULE_opencv_viz_LOCATION=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/viz
+OPENCV_MODULE_opencv_viz_LOCATION=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/viz
 OPENCV_MODULE_opencv_world_CLASS=PUBLIC
 OPENCV_MODULE_opencv_world_DESCRIPTION=All OpenCV modules
 OPENCV_MODULE_opencv_world_IS_PART_OF_WORLD=OFF
 OPENCV_MODULE_opencv_world_LABEL=Main;opencv_world
 OPENCV_MODULE_opencv_world_LINK_DEPS=
-OPENCV_MODULE_opencv_world_LOCATION=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/world
+OPENCV_MODULE_opencv_world_LOCATION=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/world
 OPENCV_MODULE_opencv_world_OPT_DEPS=opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_flann;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_shape;opencv_stitching;opencv_superres;opencv_video;opencv_videoio;opencv_videostab
 OPENCV_MODULE_opencv_world_PRIVATE_OPT_DEPS=
 OPENCV_MODULE_opencv_world_PRIVATE_REQ_DEPS=
 OPENCV_MODULE_opencv_world_REQ_DEPS=opencv_core
 OPENCV_MODULE_opencv_world_WRAPPERS=
-OPENCV_MOD_LIST=opencv_core;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_objdetect
+OPENCV_MOD_LIST=opencv_core;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_objdetect;opencv_video;opencv_videoio
 OPENCV_OTHER_INSTALL_PATH=etc
 OPENCV_PACKAGE_ARCH_SUFFIX=AMD64
 OPENCV_SAMPLES_BIN_INSTALL_PATH=x64/vc14/samples
@@ -1493,11 +1548,11 @@ OPENCV_SAMPLES_SRC_INSTALL_PATH=samples
 OPENCV_SOVERSION=3.4
 OPENCV_TEST_DATA_INSTALL_PATH=testdata
 OPENCV_TEST_INSTALL_PATH=x64/vc14/bin
-OPENCV_TIMESTAMP=2018-06-05T05:52:52Z
+OPENCV_TIMESTAMP=2018-06-12T02:51:40Z
 OPENCV_TRACE=1
-OPENCV_VCSVERSION=unknown
+OPENCV_VCSVERSION=c8ae6fe-dirty
 OPENCV_VERSION=3.4.1
-OPENCV_VERSION_FILE=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/version.hpp
+OPENCV_VERSION_FILE=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core/include/opencv2/core/version.hpp
 OPENCV_VERSION_MAJOR=3
 OPENCV_VERSION_MINOR=4
 OPENCV_VERSION_PARTS=#define CV_VERSION_MAJOR    3;#define CV_VERSION_MINOR    4;#define CV_VERSION_REVISION 1;#define CV_VERSION_STATUS   ""
@@ -1513,16 +1568,16 @@ OPENCV_VS_VER_PRODUCTVERSION_STR=3.4.1
 OPENCV_WARNINGS_ARE_ERRORS=OFF
 OPENCV_WORLD_MODULES=
 OPENEXR_ILMIMF_LIBRARY=IlmImf
-OPENEXR_INCLUDE_PATHS=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/3rdparty/openexr/Half;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/3rdparty/openexr/Iex;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/3rdparty/openexr/IlmThread;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/3rdparty/openexr/Imath;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/3rdparty/openexr/IlmImf
+OPENEXR_INCLUDE_PATHS=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/3rdparty/openexr/Half;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/3rdparty/openexr/Iex;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/3rdparty/openexr/IlmThread;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/3rdparty/openexr/Imath;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/3rdparty/openexr/IlmImf
 OPENEXR_LIBRARIES=IlmImf
 OPENEXR_VERSION=1.7.1
 OPT=
 OPT2=
 OpenBLAS_INCLUDE_DIR=OpenBLAS_INCLUDE_DIR-NOTFOUND
 OpenBLAS_LIB=OpenBLAS_LIB-NOTFOUND
-OpenCVModules_TARGETS=opencv_core;opencv_imgproc;opencv_objdetect;opencv_imgcodecs;opencv_highgui
+OpenCVModules_TARGETS=opencv_core;opencv_imgproc;opencv_objdetect;opencv_video;opencv_imgcodecs;opencv_videoio;opencv_highgui
 OpenCV_ARCH=x64
-OpenCV_BINARY_DIR=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build
+OpenCV_BINARY_DIR=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build
 OpenCV_HAL=OpenCV_HAL
 OpenCV_HAL_CONSIDERED_CONFIGS=
 OpenCV_HAL_CONSIDERED_VERSIONS=
@@ -1532,12 +1587,12 @@ OpenCV_INCLUDE_DIRS_CONFIGCMAKE="${OpenCV_INSTALL_PATH}/include" "${OpenCV_INSTA
 OpenCV_INSTALL_BINARIES_PREFIX=x64/vc14/
 OpenCV_INSTALL_PATH_RELATIVE_CONFIGCMAKE=
 OpenCV_RUNTIME=vc14
-OpenCV_SOURCE_DIR=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources
+OpenCV_SOURCE_DIR=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources
 OpenCV_STATIC=OFF
 OpenCV_USE_MANGLED_PATHS_CONFIGCMAKE=FALSE
 PCHSupport_FOUND=TRUE
 PNG_DEFINITIONS=
-PNG_INCLUDE_DIR=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/3rdparty/libpng
+PNG_INCLUDE_DIR=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/3rdparty/libpng
 PNG_LIBPNG_VER_MAJOR=1
 PNG_LIBPNG_VER_MINOR=6
 PNG_LIBPNG_VER_RELEASE=34
@@ -1545,9 +1600,9 @@ PNG_LIBRARIES=libpng
 PNG_LIBRARY=libpng
 PNG_VERSION=1.6.34
 PNG_VERSION_LINES=#define PNG_LIBPNG_VER_MAJOR   1;#define PNG_LIBPNG_VER_MINOR   6;#define PNG_LIBPNG_VER_RELEASE 34
-PROJECT_BINARY_DIR=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build
+PROJECT_BINARY_DIR=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build
 PROJECT_NAME=OpenCV
-PROJECT_SOURCE_DIR=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources
+PROJECT_SOURCE_DIR=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources
 PROTOBUF_UPDATE_FILES=OFF
 PYTHON2INTERP_FOUND=
 PYTHON2LIBS_FOUND=
@@ -1597,10 +1652,47 @@ SIZEOF_UNSIGNED_INT=4
 SIZEOF_UNSIGNED_LONG=4
 SIZEOF_UNSIGNED_LONG_LONG=8
 SIZEOF_UNSIGNED_SHORT=2
-STD_OPENCV_DEV=libopencv-dev;libopencv-core-dev;libopencv-highgui-dev;libopencv-imgcodecs-dev;libopencv-imgproc-dev;libopencv-objdetect-dev
-STD_OPENCV_LIBS=opencv-data;libopencv-core3.0;libopencv-highgui3.0;libopencv-imgcodecs3.0;libopencv-imgproc3.0;libopencv-objdetect3.0
-TIFF_LIBRARY_DEBUG=TIFF_LIBRARY_DEBUG-NOTFOUND
-TIFF_LIBRARY_RELEASE=TIFF_LIBRARY_RELEASE-NOTFOUND
+STD_OPENCV_DEV=libopencv-dev;libopencv-core-dev;libopencv-highgui-dev;libopencv-imgcodecs-dev;libopencv-imgproc-dev;libopencv-objdetect-dev;libopencv-video-dev;libopencv-videoio-dev
+STD_OPENCV_LIBS=opencv-data;libopencv-core3.0;libopencv-highgui3.0;libopencv-imgcodecs3.0;libopencv-imgproc3.0;libopencv-objdetect3.0;libopencv-video3.0;libopencv-videoio3.0
+TRY1_DIR=
+TRY2_DIR=
+TRY_OUT=Change Dir: C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/MSBuild/14.0/bin/MSBuild.exe" "cmTC_ad0f4.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=14.0"
+Microsoft (R) Build Engine version 14.0.25123.0
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 6/11/2018 7:53:10 PM.
+Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_ad0f4.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_ad0f4.dir\Debug\".
+  Creating directory "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_ad0f4.dir\Debug\cmTC_ad0f4.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_ad0f4.dir\Debug\cmTC_ad0f4.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D CHECK_NV12 /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHa /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_ad0f4.dir\Debug\\" /Fd"cmTC_ad0f4.dir\Debug\vc140.pdb" /Gd /TP /wd4127 /wd4251 /wd4324 /wd4275 /wd4512 /wd4589 /errorReport:queue  /bigobj "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\cmake\checks\directx.cpp"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.00.23918 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /MP8 /Od /Ob0 /Oi /D WIN32 /D _WINDOWS /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /D CHECK_NV12 /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHa /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_ad0f4.dir\Debug\\" /Fd"cmTC_ad0f4.dir\Debug\vc140.pdb" /Gd /TP /wd4127 /wd4251 /wd4324 /wd4275 /wd4512 /wd4589 /errorReport:queue  /bigobj "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\sources\cmake\checks\directx.cpp"
+  
+  directx.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:QUEUE /OUT:"C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_ad0f4.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_ad0f4.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_ad0f4.lib" /MACHINE:X64  /machine:x64 cmTC_ad0f4.dir\Debug\directx.obj
+  cmTC_ad0f4.vcxproj -> C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\Debug\cmTC_ad0f4.exe
+  cmTC_ad0f4.vcxproj -> C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/Debug/cmTC_ad0f4.pdb (Full PDB)
+FinalizeBuildStatus:
+  Deleting file "cmTC_ad0f4.dir\Debug\cmTC_ad0f4.tlog\unsuccessfulbuild".
+  Touching "cmTC_ad0f4.dir\Debug\cmTC_ad0f4.tlog\cmTC_ad0f4.lastbuildstate".
+Done Building Project "C:\Users\erho\Desktop\ECE 285 GPU Processing\class_labs\Src\cuViolaJones\opencv\build\CMakeFiles\CMakeTmp\cmTC_ad0f4.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.86
+
 USE_IPPICV=FALSE
 USE_IPPIW=FALSE
 USE_WIN32_FILEIO=ON
@@ -1610,7 +1702,7 @@ VTK_CONSIDERED_VERSIONS=
 VTK_DIR=VTK_DIR-NOTFOUND
 VTK_FOUND=0
 WEBP_ENCODER_ABI_VERSION=0x020e
-WEBP_INCLUDE_DIR=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/3rdparty/libwebp/src
+WEBP_INCLUDE_DIR=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/3rdparty/libwebp/src
 WEBP_LIBRARIES=libwebp
 WEBP_LIBRARY=libwebp
 WEBP_VERSION=encoder: 0x020e
@@ -1621,21 +1713,21 @@ WITH_CSTRIPES=OFF
 WITH_CUBLAS=OFF
 WITH_CUDA=OFF
 WITH_CUFFT=OFF
-WITH_DIRECTX=OFF
-WITH_DSHOW=OFF
-WITH_EIGEN=ON
-WITH_FFMPEG=OFF
+WITH_DIRECTX=ON
+WITH_DSHOW=ON
+WITH_EIGEN=OFF
+WITH_FFMPEG=ON
 WITH_GDAL=OFF
 WITH_GDCM=OFF
 WITH_GIGEAPI=OFF
-WITH_GSTREAMER=OFF
+WITH_GSTREAMER=ON
 WITH_GSTREAMER_0_10=OFF
 WITH_HALIDE=OFF
 WITH_INF_ENGINE=OFF
 WITH_INTELPERC=OFF
 WITH_IPP=OFF
 WITH_ITT=OFF
-WITH_JASPER=OFF
+WITH_JASPER=ON
 WITH_JPEG=ON
 WITH_LAPACK=OFF
 WITH_MATLAB=OFF
@@ -1666,7 +1758,7 @@ WITH_XIMEA=OFF
 WORDS_BIGENDIAN=0
 X86_64=1
 ZLIB_H=#define ZLIB_VERSION "1.2.11"
-ZLIB_INCLUDE_DIRS=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/3rdparty/zlib;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/3rdparty/zlib
+ZLIB_INCLUDE_DIRS=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/3rdparty/zlib;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/3rdparty/zlib
 ZLIB_LIBRARIES=zlib
 ZLIB_LIBRARY=zlib
 ZLIB_VERSION_MAJOR=1
@@ -1698,15 +1790,15 @@ SET(CPACK_BINARY_TXZ "")
 SET(CPACK_BINARY_TZ "")
 SET(CPACK_BINARY_WIX "OFF")
 SET(CPACK_BINARY_ZIP "OFF")
-SET(CPACK_BUILD_SOURCE_DIRS "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources;C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build")
+SET(CPACK_BUILD_SOURCE_DIRS "C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources;C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build")
 SET(CPACK_CMAKE_GENERATOR "Visual Studio 14 2015 Win64")
 SET(CPACK_COMPONENTS_ALL "dev;libs")
-SET(CPACK_COMPONENT_DEV_CONFLICTS "libopencv-dev, libopencv-core-dev, libopencv-highgui-dev, libopencv-imgcodecs-dev, libopencv-imgproc-dev, libopencv-objdetect-dev")
+SET(CPACK_COMPONENT_DEV_CONFLICTS "libopencv-dev, libopencv-core-dev, libopencv-highgui-dev, libopencv-imgcodecs-dev, libopencv-imgproc-dev, libopencv-objdetect-dev, libopencv-video-dev, libopencv-videoio-dev")
 SET(CPACK_COMPONENT_DEV_DEPENDS "libs")
 SET(CPACK_COMPONENT_DEV_DESCRIPTION "Development files for Open Source Computer Vision Library")
 SET(CPACK_COMPONENT_DEV_DISPLAY_NAME "Development files")
-SET(CPACK_COMPONENT_DEV_PROVIDES "libopencv-dev, libopencv-core-dev, libopencv-highgui-dev, libopencv-imgcodecs-dev, libopencv-imgproc-dev, libopencv-objdetect-dev")
-SET(CPACK_COMPONENT_DEV_REPLACES "libopencv-dev, libopencv-core-dev, libopencv-highgui-dev, libopencv-imgcodecs-dev, libopencv-imgproc-dev, libopencv-objdetect-dev")
+SET(CPACK_COMPONENT_DEV_PROVIDES "libopencv-dev, libopencv-core-dev, libopencv-highgui-dev, libopencv-imgcodecs-dev, libopencv-imgproc-dev, libopencv-objdetect-dev, libopencv-video-dev, libopencv-videoio-dev")
+SET(CPACK_COMPONENT_DEV_REPLACES "libopencv-dev, libopencv-core-dev, libopencv-highgui-dev, libopencv-imgcodecs-dev, libopencv-imgproc-dev, libopencv-objdetect-dev, libopencv-video-dev, libopencv-videoio-dev")
 SET(CPACK_COMPONENT_DOCS_CONFLICTS "opencv-doc")
 SET(CPACK_COMPONENT_DOCS_DEPENDS "libs")
 SET(CPACK_COMPONENT_DOCS_DESCRIPTION "Documentation for Open Source Computer Vision Library")
@@ -1717,11 +1809,11 @@ SET(CPACK_COMPONENT_JAVA_DESCRIPTION "Java bindings for Open Source Computer Vis
 SET(CPACK_COMPONENT_JAVA_DISPLAY_NAME "Java bindings")
 SET(CPACK_COMPONENT_JAVA_PROVIDES "libopencv3.0-java, libopencv3.0-jni")
 SET(CPACK_COMPONENT_JAVA_REPLACES "libopencv3.0-java, libopencv3.0-jni")
-SET(CPACK_COMPONENT_LIBS_CONFLICTS "opencv-data, libopencv-core3.0, libopencv-highgui3.0, libopencv-imgcodecs3.0, libopencv-imgproc3.0, libopencv-objdetect3.0")
+SET(CPACK_COMPONENT_LIBS_CONFLICTS "opencv-data, libopencv-core3.0, libopencv-highgui3.0, libopencv-imgcodecs3.0, libopencv-imgproc3.0, libopencv-objdetect3.0, libopencv-video3.0, libopencv-videoio3.0")
 SET(CPACK_COMPONENT_LIBS_DESCRIPTION "Open Computer Vision Library")
 SET(CPACK_COMPONENT_LIBS_DISPLAY_NAME "Libraries and data")
-SET(CPACK_COMPONENT_LIBS_PROVIDES "opencv-data, libopencv-core3.0, libopencv-highgui3.0, libopencv-imgcodecs3.0, libopencv-imgproc3.0, libopencv-objdetect3.0")
-SET(CPACK_COMPONENT_LIBS_REPLACES "opencv-data, libopencv-core3.0, libopencv-highgui3.0, libopencv-imgcodecs3.0, libopencv-imgproc3.0, libopencv-objdetect3.0")
+SET(CPACK_COMPONENT_LIBS_PROVIDES "opencv-data, libopencv-core3.0, libopencv-highgui3.0, libopencv-imgcodecs3.0, libopencv-imgproc3.0, libopencv-objdetect3.0, libopencv-video3.0, libopencv-videoio3.0")
+SET(CPACK_COMPONENT_LIBS_REPLACES "opencv-data, libopencv-core3.0, libopencv-highgui3.0, libopencv-imgcodecs3.0, libopencv-imgproc3.0, libopencv-objdetect3.0, libopencv-video3.0, libopencv-videoio3.0")
 SET(CPACK_COMPONENT_LIBS_REQUIRED "TRUE")
 SET(CPACK_COMPONENT_PYTHON_CONFLICTS "python-opencv")
 SET(CPACK_COMPONENT_PYTHON_DEPENDS "libs")
@@ -1753,16 +1845,16 @@ SET(CPACK_DEBIAN_PACKAGE_SHLIBDEPS "TRUE")
 SET(CPACK_DEB_COMPONENT_INSTALL "TRUE")
 SET(CPACK_GENERATOR "7Z;ZIP")
 SET(CPACK_IGNORE_FILES "/CVS/;/\\.svn/;/\\.bzr/;/\\.hg/;/\\.git/;\\.swp\$;\\.#;/#")
-SET(CPACK_INSTALLED_DIRECTORIES "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources;/")
+SET(CPACK_INSTALLED_DIRECTORIES "C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources;/")
 SET(CPACK_INSTALL_CMAKE_PROJECTS "")
-SET(CPACK_INSTALL_PREFIX "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/install")
-SET(CPACK_MODULE_PATH "")
-SET(CPACK_NSIS_DISPLAY_NAME "OpenCV unknown")
+SET(CPACK_INSTALL_PREFIX "C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/install")
+SET(CPACK_MODULE_PATH ";C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/cmake")
+SET(CPACK_NSIS_DISPLAY_NAME "OpenCV c8ae6fe-dirty")
 SET(CPACK_NSIS_INSTALLER_ICON_CODE "")
 SET(CPACK_NSIS_INSTALLER_MUI_ICON_CODE "")
 SET(CPACK_NSIS_INSTALL_ROOT "$PROGRAMFILES64")
-SET(CPACK_NSIS_PACKAGE_NAME "OpenCV unknown")
-SET(CPACK_OUTPUT_CONFIG_FILE "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/CPackConfig.cmake")
+SET(CPACK_NSIS_PACKAGE_NAME "OpenCV c8ae6fe-dirty")
+SET(CPACK_OUTPUT_CONFIG_FILE "C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CPackConfig.cmake")
 SET(CPACK_PACKAGE_CONTACT "admin@opencv.org")
 SET(CPACK_PACKAGE_DEFAULT_LOCATION "/")
 SET(CPACK_PACKAGE_DESCRIPTION "OpenCV (Open Source Computer Vision Library) is an open source computer vision
@@ -1772,17 +1864,17 @@ machine perception in the commercial products. Being a BSD-licensed product,
 OpenCV makes it easy for businesses to utilize and modify the code.")
 SET(CPACK_PACKAGE_DESCRIPTION_FILE "C:/Program Files/CMake/share/cmake-3.10/Templates/CPack.GenericDescription.txt")
 SET(CPACK_PACKAGE_DESCRIPTION_SUMMARY "Open Computer Vision Library")
-SET(CPACK_PACKAGE_FILE_NAME "OpenCV-unknown-AMD64")
-SET(CPACK_PACKAGE_INSTALL_DIRECTORY "OpenCV unknown")
-SET(CPACK_PACKAGE_INSTALL_REGISTRY_KEY "OpenCV unknown")
+SET(CPACK_PACKAGE_FILE_NAME "OpenCV-c8ae6fe-dirty-AMD64")
+SET(CPACK_PACKAGE_INSTALL_DIRECTORY "OpenCV c8ae6fe-dirty")
+SET(CPACK_PACKAGE_INSTALL_REGISTRY_KEY "OpenCV c8ae6fe-dirty")
 SET(CPACK_PACKAGE_NAME "OpenCV")
 SET(CPACK_PACKAGE_RELOCATABLE "true")
 SET(CPACK_PACKAGE_VENDOR "OpenCV Foundation")
-SET(CPACK_PACKAGE_VERSION "unknown")
+SET(CPACK_PACKAGE_VERSION "c8ae6fe-dirty")
 SET(CPACK_PACKAGE_VERSION_MAJOR "3")
 SET(CPACK_PACKAGE_VERSION_MINOR "4")
 SET(CPACK_PACKAGE_VERSION_PATCH "1")
-SET(CPACK_RESOURCE_FILE_LICENSE "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/LICENSE")
+SET(CPACK_RESOURCE_FILE_LICENSE "C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/LICENSE")
 SET(CPACK_RESOURCE_FILE_README "C:/Program Files/CMake/share/cmake-3.10/Templates/CPack.GenericDescription.txt")
 SET(CPACK_RESOURCE_FILE_WELCOME "C:/Program Files/CMake/share/cmake-3.10/Templates/CPack.GenericWelcome.txt")
 SET(CPACK_RPM_COMPONENT_INSTALL "TRUE")
@@ -1801,9 +1893,9 @@ SET(CPACK_SOURCE_7Z "ON")
 SET(CPACK_SOURCE_CYGWIN "")
 SET(CPACK_SOURCE_GENERATOR "7Z;ZIP")
 SET(CPACK_SOURCE_IGNORE_FILES "/CVS/;/\\.svn/;/\\.bzr/;/\\.hg/;/\\.git/;\\.swp\$;\\.#;/#")
-SET(CPACK_SOURCE_INSTALLED_DIRECTORIES "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources;/")
-SET(CPACK_SOURCE_OUTPUT_CONFIG_FILE "C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/CPackSourceConfig.cmake")
-SET(CPACK_SOURCE_PACKAGE_FILE_NAME "OpenCV-unknown-AMD64")
+SET(CPACK_SOURCE_INSTALLED_DIRECTORIES "C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources;/")
+SET(CPACK_SOURCE_OUTPUT_CONFIG_FILE "C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CPackSourceConfig.cmake")
+SET(CPACK_SOURCE_PACKAGE_FILE_NAME "OpenCV-c8ae6fe-dirty-AMD64")
 SET(CPACK_SOURCE_RPM "")
 SET(CPACK_SOURCE_TBZ2 "")
 SET(CPACK_SOURCE_TGZ "")
@@ -1831,11 +1923,11 @@ _PLATFORM_LINK_FLAGS=
 _RTC1=/RTC1
 _compile_flags=    
 _compiler_version=19.0.23918.0
-_fname=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/concurrencytest.cpp
+_fname=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/CMakeFiles/CMakeTmp/concurrencytest.cpp
 _lang=CXX
 _lib_suffix=lib
 _list=SSE4_1;SSE4_2;AVX;FP16;AVX2;AVX512_SKX
-_rev_deps=opencv_objdetect;opencv_imgproc;opencv_core
+_rev_deps=opencv_videoio;opencv_imgcodecs;opencv_imgproc;opencv_core
 _var=
 _varname=HAVE_CPU_AVX512_SKX_SUPPORT
 apps_status=-
@@ -1848,42 +1940,42 @@ cpack_input_file=C:/Program Files/CMake/share/cmake-3.10/Templates/CPackConfig.c
 cpack_source_input_file=C:/Program Files/CMake/share/cmake-3.10/Templates/CPackConfig.cmake.in
 d=
 dep=
-deps=opencv_core;opencv_imgproc
+deps=opencv_core;opencv_imgproc;opencv_imgcodecs
 deps_3rdparty=
 deps_extra=
-deps_modules=opencv_highgui;opencv_imgcodecs;opencv_objdetect;opencv_imgproc;opencv_core
+deps_modules=opencv_highgui;opencv_objdetect;opencv_video;opencv_videoio;opencv_imgcodecs;opencv_imgproc;opencv_core
 docs_status=NO
 f=
 flag_var=
 flags=
 github_path=
 hal=
-ippiw_BINARY_DIR=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/3rdparty/ippiw
+ippiw_BINARY_DIR=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/3rdparty/ippiw
 ippiw_LIB_DEPENDS=
-ippiw_SOURCE_DIR=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/3rdparty/ippicv/ippiw_win
+ippiw_SOURCE_DIR=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/3rdparty/ippicv/ippiw_win
 item=
-ittnotify_BINARY_DIR=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/3rdparty/ittnotify
+ittnotify_BINARY_DIR=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/3rdparty/ittnotify
 ittnotify_LIB_DEPENDS=
-ittnotify_SOURCE_DIR=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/3rdparty/ittnotify
+ittnotify_SOURCE_DIR=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/3rdparty/ittnotify
 lang=
-libjasper_BINARY_DIR=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/3rdparty/libjasper
+libjasper_BINARY_DIR=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/3rdparty/libjasper
 libjasper_LIB_DEPENDS=
-libjasper_SOURCE_DIR=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/3rdparty/libjasper
-libjpeg_BINARY_DIR=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/3rdparty/libjpeg
+libjasper_SOURCE_DIR=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/3rdparty/libjasper
+libjpeg_BINARY_DIR=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/3rdparty/libjpeg
 libjpeg_LIB_DEPENDS=
-libjpeg_SOURCE_DIR=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/3rdparty/libjpeg
-libpng_BINARY_DIR=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/3rdparty/libpng
+libjpeg_SOURCE_DIR=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/3rdparty/libjpeg
+libpng_BINARY_DIR=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/3rdparty/libpng
 libpng_LIB_DEPENDS=general;zlib;
-libpng_SOURCE_DIR=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/3rdparty/libpng
-libprotobuf_BINARY_DIR=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/3rdparty/protobuf
+libpng_SOURCE_DIR=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/3rdparty/libpng
+libprotobuf_BINARY_DIR=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/3rdparty/protobuf
 libprotobuf_LIB_DEPENDS=
-libprotobuf_SOURCE_DIR=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/3rdparty/protobuf
-libtiff_BINARY_DIR=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/3rdparty/libtiff
+libprotobuf_SOURCE_DIR=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/3rdparty/protobuf
+libtiff_BINARY_DIR=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/3rdparty/libtiff
 libtiff_LIB_DEPENDS=general;zlib;
-libtiff_SOURCE_DIR=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/3rdparty/libtiff
-libwebp_BINARY_DIR=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/3rdparty/libwebp
+libtiff_SOURCE_DIR=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/3rdparty/libtiff
+libwebp_BINARY_DIR=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/3rdparty/libwebp
 libwebp_LIB_DEPENDS=
-libwebp_SOURCE_DIR=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/3rdparty/libwebp
+libwebp_SOURCE_DIR=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/3rdparty/libwebp
 logluv=ON
 lst=
 lzw=ON
@@ -1894,23 +1986,29 @@ module=
 name=
 next=ON
 old-jpeg=OFF
-opencv_core_BINARY_DIR=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/modules/core
+opencv_core_BINARY_DIR=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/modules/core
 opencv_core_LIB_DEPENDS=general;zlib;
-opencv_core_SOURCE_DIR=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/core
-opencv_highgui_BINARY_DIR=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/modules/highgui
-opencv_highgui_LIB_DEPENDS=general;opencv_core;general;opencv_imgproc;general;opencv_imgcodecs;general;comctl32;general;gdi32;general;ole32;general;setupapi;general;ws2_32;
-opencv_highgui_SOURCE_DIR=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/highgui
-opencv_imgcodecs_BINARY_DIR=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/modules/imgcodecs
-opencv_imgcodecs_LIB_DEPENDS=general;opencv_core;general;opencv_imgproc;general;zlib;general;libjpeg;general;libwebp;general;libpng;general;IlmImf;
-opencv_imgcodecs_SOURCE_DIR=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs
-opencv_imgproc_BINARY_DIR=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/modules/imgproc
+opencv_core_SOURCE_DIR=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/core
+opencv_highgui_BINARY_DIR=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/modules/highgui
+opencv_highgui_LIB_DEPENDS=general;opencv_core;general;opencv_imgproc;general;opencv_imgcodecs;general;opencv_videoio;general;comctl32;general;gdi32;general;ole32;general;setupapi;general;ws2_32;
+opencv_highgui_SOURCE_DIR=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/highgui
+opencv_imgcodecs_BINARY_DIR=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/modules/imgcodecs
+opencv_imgcodecs_LIB_DEPENDS=general;opencv_core;general;opencv_imgproc;general;zlib;general;libjpeg;general;libwebp;general;libpng;general;libjasper;general;IlmImf;
+opencv_imgcodecs_SOURCE_DIR=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgcodecs
+opencv_imgproc_BINARY_DIR=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/modules/imgproc
 opencv_imgproc_LIB_DEPENDS=general;opencv_core;
-opencv_imgproc_SOURCE_DIR=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc
-opencv_objdetect_BINARY_DIR=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/modules/objdetect
+opencv_imgproc_SOURCE_DIR=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/imgproc
+opencv_objdetect_BINARY_DIR=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/modules/objdetect
 opencv_objdetect_LIB_DEPENDS=general;opencv_core;general;opencv_imgproc;
-opencv_objdetect_SOURCE_DIR=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/modules/objdetect
-openexr_BINARY_DIR=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/3rdparty/openexr
-openexr_SOURCE_DIR=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/3rdparty/openexr
+opencv_objdetect_SOURCE_DIR=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/objdetect
+opencv_video_BINARY_DIR=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/modules/video
+opencv_video_LIB_DEPENDS=general;opencv_core;general;opencv_imgproc;
+opencv_video_SOURCE_DIR=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/video
+opencv_videoio_BINARY_DIR=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/modules/videoio
+opencv_videoio_LIB_DEPENDS=general;opencv_core;general;opencv_imgproc;general;opencv_imgcodecs;general;vfw32;
+opencv_videoio_SOURCE_DIR=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/modules/videoio
+openexr_BINARY_DIR=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/3rdparty/openexr
+openexr_SOURCE_DIR=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/3rdparty/openexr
 packbits=ON
 parallel_status=Concurrency
 s=
@@ -1922,6 +2020,6 @@ v=
 var=
 vars_regex=PNG_LIBPNG_VER_MAJOR|PNG_LIBPNG_VER_MINOR|PNG_LIBPNG_VER_RELEASE
 warning=
-zlib_BINARY_DIR=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/build/3rdparty/zlib
+zlib_BINARY_DIR=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/build/3rdparty/zlib
 zlib_LIB_DEPENDS=
-zlib_SOURCE_DIR=C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/3rdparty/zlib
+zlib_SOURCE_DIR=C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/3rdparty/zlib

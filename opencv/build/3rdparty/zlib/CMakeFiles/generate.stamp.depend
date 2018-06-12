@@ -1,5 +1,5 @@
 # CMake generation dependency list for this directory.
-C:/Users/ngodwin/Desktop/class_labs/Src/cuViolaJones/opencv/sources/3rdparty/zlib/CMakeLists.txt
+C:/Users/erho/Desktop/ECE 285 GPU Processing/class_labs/Src/cuViolaJones/opencv/sources/3rdparty/zlib/CMakeLists.txt
 C:/Program Files/CMake/share/cmake-3.10/Modules/CheckFunctionExists.cmake
 C:/Program Files/CMake/share/cmake-3.10/Modules/CheckIncludeFile.cmake
 C:/Program Files/CMake/share/cmake-3.10/Modules/CheckCSourceCompiles.cmake
