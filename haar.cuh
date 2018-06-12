@@ -116,7 +116,7 @@ __device__ bool operation(unsigned int* sum, unsigned int* sqsum, unsigned int i
 
 		unsigned int mask = __ballot(pass == false);
 		unsigned int falseCount = __popc(mask);
-		if (falseCount > 18)
+		if (falseCount > PRUNING)
 			pass = false;
 
 		if (!pass)
