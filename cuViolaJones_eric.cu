@@ -14,7 +14,6 @@
 using namespace std;
 using namespace cv;
 
-void run_vj_gpu(Mat gray_face);
 
 int main(int argc, char** argv )
 {	
@@ -51,25 +50,3 @@ int main(int argc, char** argv )
     return 0;
 }
 
-
-void gpuSingleDetection(Mat gray_face) {
-
-	MyImage imageObj;
-	MyImage *image = &imageObj;
-	image->data = gray_face.data;
-	image->width = gray_face.cols;
-	image->height = gray_face.rows;
-	image->maxgrey = 255;
-
-	std::vector<MyRect> result;
-	detect_faces(image->width, image->height, result, image, SCALING, MIN_NEIGH);
-	cout << "Size: " << result.size() << endl;
-	for (int i = 0; i < result.size(); i++) {
-		MyRect r = result[i];
-		drawRectangle(image, r);
-	}
-
-	imshow("CPU Result", gray_face);
-	waitKey(0);
-
-}
