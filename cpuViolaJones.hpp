@@ -103,6 +103,9 @@ void testCpuViolaJones(Image * imgs, int numImgs, bool display) {
 }
 
 
+/*
+*	Only CPU face detection
+*/
 void cpuWebcam() {
 
 	cout << "Starting webcam..." << endl << endl;
@@ -156,9 +159,11 @@ void cpuWebcam() {
 		face_cascade.detectMultiScale(img, faces, SCALING, MIN_NEIGH, 0 | CV_HAAR_SCALE_IMAGE, Size(WIN_SIZE, WIN_SIZE));
 
 		// To draw rectangles around detected faces
-		for (unsigned i = 0; i<faces.size(); i++)
-			rectangle(img, faces[i], Scalar(255, 0, 0), 2); // BLUE
-
+		if (faces.size() > 0) {
+			for (unsigned i = 0; i<faces.size(); i++)
+				rectangle(img, faces[i], Scalar(255, 0, 0), 2); // BLUE
+		}
+		
 		imshow("CPU", img);
 		char c = waitKey(10);
 		if (c == 'b') {

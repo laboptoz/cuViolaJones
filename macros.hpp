@@ -1,4 +1,4 @@
-#define SINGLE_IMG 0	// Detect only one image?
+#define MODE 2			// 0: Single image detection, 1: Run metric test, 2: Webcam mode
 #define DISPLAY 0       // Display images?
 
 #define GPUII 0

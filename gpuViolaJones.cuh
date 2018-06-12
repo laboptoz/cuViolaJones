@@ -130,7 +130,9 @@ void testGpuViolaJones(Image *faces, int numImgs, bool display) {
 	printf("Time elapsed: %.8lfs\n\n", (clock() - start) / (double)CLOCKS_PER_SEC);
 }
 
-
+/*
+*	Only GPU face detection
+*/
 void gpuWebcam() {
 
 	cout << "Starting webcam..." << endl << endl;
@@ -166,9 +168,11 @@ void gpuWebcam() {
 		std::vector<MyRect> result;
 		detect_faces(image->width, image->height, result, image, SCALING, MIN_NEIGH);
 
-		for (int i = 0; i < result.size(); i++) {
-			Rect pred = Rect(result[i].x, result[i].y, result[i].width, result[i].height);
-			rectangle(img, pred, Scalar(255, 0, 0), 2); // GREEN
+		if (result.size() > 0) {
+			for (int i = 0; i < result.size(); i++) {
+				Rect pred = Rect(result[i].x, result[i].y, result[i].width, result[i].height);
+				rectangle(img, pred, Scalar(255, 0, 0), 2); // GREEN
+			}
 		}
 
 		imshow("GPU", img);
@@ -181,7 +185,10 @@ void gpuWebcam() {
 
 }
 
-void webcam() {
+/*
+*	Displays ALL faces after detection
+*/
+void webcamGeneral() {
 
 	cout << "Starting webcam..." << endl << endl;
 	cout << "GPU is red. CPU is blue." << endl << endl;
@@ -220,9 +227,11 @@ void webcam() {
 		std::vector<MyRect> result;
 		detect_faces(image->width, image->height, result, image, SCALING, MIN_NEIGH);
 
-		for (int i = 0; i < result.size(); i++) {
-			Rect pred = Rect(result[i].x, result[i].y, result[i].width, result[i].height);
-			rectangle(img, pred, Scalar(0, 0, 255), 2); // RED
+		if (result.size() > 0) {
+			for (int i = 0; i < result.size(); i++) {
+				Rect pred = Rect(result[i].x, result[i].y, result[i].width, result[i].height);
+				rectangle(img, pred, Scalar(0, 0, 255), 2); // RED
+			}
 		}
 
 		// CPU CODE
@@ -233,10 +242,83 @@ void webcam() {
 		face_cascade.detectMultiScale(img, faces, SCALING, MIN_NEIGH, 0 | CV_HAAR_SCALE_IMAGE, Size(WIN_SIZE, WIN_SIZE));
 
 		// To draw rectangles around detected faces
-		for (unsigned i = 0; i<faces.size(); i++)
-			rectangle(img, faces[i], Scalar(255, 0, 0), 2); // BLUE
+		if (faces.size() > 0) {
+			for (unsigned i = 0; i<faces.size(); i++)
+				rectangle(img, faces[i], Scalar(255, 0, 0), 2); // BLUE
+		}
 
 
+		imshow("CPU and GPU", img);
+		char c = waitKey(10);
+		if (c == 'b') {
+			break; //break when b is pressed
+		}
+
+	}
+
+}
+
+
+/*
+*	Only displays the LAST face after detection
+*/
+void webcamTest() {
+
+	cout << "Starting webcam..." << endl << endl;
+	cout << "GPU is red. CPU is blue." << endl << endl;
+
+	// capture from web camera init
+	VideoCapture cap(0);
+	//cap.set(CV_CAP_PROP_FRAME_WIDTH, 720);
+	//cap.set(CV_CAP_PROP_FRAME_HEIGHT, 480);
+
+	cout << "Camera found!" << endl;
+	if (!cap.isOpened()) {
+		cout << "Error opening video stream or file" << endl;
+		return;
+	}
+
+	CascadeClassifier face_cascade;
+	face_cascade.load(CASCADE_PATH);
+
+	Mat img;
+	MyImage imageObj;
+	MyImage *image = &imageObj;
+	for (;;) {
+
+		// Image from camera to Mat
+		cap.read(img);
+
+		// GPU CODE
+		Mat gray_face;
+		cvtColor(img, gray_face, CV_BGR2GRAY);
+
+		image->data = gray_face.data;
+		image->width = gray_face.cols;
+		image->height = gray_face.rows;
+		image->maxgrey = 255;
+
+		std::vector<MyRect> result;
+		detect_faces(image->width, image->height, result, image, SCALING, MIN_NEIGH);
+
+		if (result.size() > 0) {
+			MyRect last = result.back();
+			Rect pred = Rect(last.x, last.y, last.width, last.height);
+			rectangle(img, pred, Scalar(0, 0, 255), 2); // RED
+		}
+
+		// CPU CODE
+		// Container of faces
+		vector<Rect> faces;
+
+		// Detect faces
+		face_cascade.detectMultiScale(img, faces, SCALING, MIN_NEIGH, 0 | CV_HAAR_SCALE_IMAGE, Size(WIN_SIZE, WIN_SIZE));
+
+		if (faces.size() > 0) {
+		// To draw rectangles around detected faces
+			Rect face = faces.back();
+			rectangle(img, face, Scalar(255, 0, 0), 2); // BLUE
+		}
 
 		imshow("CPU and GPU", img);
 		char c = waitKey(10);
