@@ -74,8 +74,7 @@ Image * loadData(string textFile, string imagePath, int *numImgs) {
 
 /*
 *	Calculates the intersection over union of two bboxes
-*	Returns if face detected or not
-*	TODO: Fix arguments to correct data type
+*	Update true and false positive pointers
 */
 void IOU(Rect pred, Rect gt, int *tp, int *fp) {
 	

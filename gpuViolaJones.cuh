@@ -7,6 +7,7 @@
 #include "image.h"
 #include "cuda_error_check.h"
 #include "parameter_loader.h"
+#include <sstream>
 
 using namespace std;
 using namespace cv;
@@ -84,8 +85,6 @@ void testGpuViolaJones(Image *faces, int numImgs, bool display) {
 	int *tp = new int, *fp = new int; 
 	*tp = *fp = 0;
 
-	MyImage imageObj;
-	MyImage *image = &imageObj;
 	clock_t start = clock();
 	for (int n = 0; n < numImgs; n++) {
 		if (PRINT)
@@ -94,6 +93,8 @@ void testGpuViolaJones(Image *faces, int numImgs, bool display) {
 		// Ground truth bbox
 		Rect gt = Rect(faces[n].x, faces[n].y, faces[n].w, faces[n].h);
 
+		MyImage imageObj;
+		MyImage *image = &imageObj;
 		image->data = faces[n].grayscale.data;
 		image->width = faces[n].grayscale.cols;
 		image->height = faces[n].grayscale.rows;
@@ -118,12 +119,15 @@ void testGpuViolaJones(Image *faces, int numImgs, bool display) {
 
 		if (display) {
 			// Draw predicted faces
-			rectangle(faces[n].image, pred, Scalar(255, 0, 0), 2); // GREEN
+			rectangle(faces[n].image, pred, Scalar(255, 0, 0), 2); // BLUE
 
 			// Draw gt face
 			rectangle(faces[n].image, gt, Scalar(0, 0, 255), 2);  // RED
 
 			imshow("GPU Result", faces[n].image);
+			//ostringstream name;
+			//name << "bush_" << n << ".jpg";
+			//imwrite(name.str().c_str(), faces[n].image);
 			waitKey(1);
 		}
 	}
@@ -136,7 +140,10 @@ void testGpuViolaJones(Image *faces, int numImgs, bool display) {
 /*
 *	Detects only one face on GPU
 */
-void gpuSingleDetection(Mat gray_face) {
+void gpuSingleDetection(Mat face) {
+
+	Mat gray_face;
+	cvtColor(face, gray_face, CV_BGR2GRAY);
 
 	MyImage imageObj;
 	MyImage *image = &imageObj;
@@ -147,13 +154,14 @@ void gpuSingleDetection(Mat gray_face) {
 
 	std::vector<MyRect> result;
 	detect_faces(image->width, image->height, result, image, SCALING, MIN_NEIGH);
-	cout << "Size: " << result.size() << endl;
-	for (int i = 0; i < result.size(); i++) {
-		MyRect r = result[i];
-		drawRectangle(image, r);
-	}
 
-	imshow("CPU Result", gray_face);
+	if (result.size() > 0) {
+		for (int i = 0; i < result.size(); i++) {
+			Rect pred = Rect(result[i].x, result[i].y, result[i].width, result[i].height);
+			rectangle(face, pred, Scalar(0, 255, 0), 2); // GREEN
+		}
+	}
+	imshow("GPU Result", face);
 	waitKey(0);
 
 }
