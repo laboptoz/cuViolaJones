@@ -73,6 +73,9 @@ __global__ void cascadeClassifier(Stage * stages, unsigned int num_stages, unsig
 	activationMask[blockIdx.y*width + threadIdx.x] = (unsigned char) (255*((1.0*pass)/num_stages));
 }
 
+/*
+*	Main test for GPU code
+*/
 void testGpuViolaJones(Image *faces, int numImgs, bool display) {
 
 	cout << "Using GPU..." << endl << endl;
@@ -131,6 +134,32 @@ void testGpuViolaJones(Image *faces, int numImgs, bool display) {
 }
 
 /*
+*	Detects only one face on GPU
+*/
+void gpuSingleDetection(Mat gray_face) {
+
+	MyImage imageObj;
+	MyImage *image = &imageObj;
+	image->data = gray_face.data;
+	image->width = gray_face.cols;
+	image->height = gray_face.rows;
+	image->maxgrey = 255;
+
+	std::vector<MyRect> result;
+	detect_faces(image->width, image->height, result, image, SCALING, MIN_NEIGH);
+	cout << "Size: " << result.size() << endl;
+	for (int i = 0; i < result.size(); i++) {
+		MyRect r = result[i];
+		drawRectangle(image, r);
+	}
+
+	imshow("CPU Result", gray_face);
+	waitKey(0);
+
+}
+
+
+/*
 *	Only GPU face detection
 */
 void gpuWebcam() {
@@ -186,7 +215,7 @@ void gpuWebcam() {
 }
 
 /*
-*	Displays ALL faces after detection
+*	Displays ALL faces after detection of CPU and GPU
 */
 void webcamGeneral() {
 

@@ -28,7 +28,7 @@ int main(int argc, char** argv )
 
 			Mat gray_face;
 			cvtColor(image, gray_face, CV_BGR2GRAY);
-			run_vj_gpu(gray_face);
+			gpuSingleDetection(gray_face);
 			break;
 		}
 
@@ -52,7 +52,7 @@ int main(int argc, char** argv )
 }
 
 
-void run_vj_gpu(Mat gray_face) {
+void gpuSingleDetection(Mat gray_face) {
 
 	MyImage imageObj;
 	MyImage *image = &imageObj;
