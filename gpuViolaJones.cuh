@@ -1,7 +1,6 @@
 #pragma once
 #include <stdio.h>
 #include <cuda_runtime.h>
-//#include "cuNNII.h"
 #include "Filter.cuh"
 #include "haar.cuh"
 #include "cuda_error_check.h"
@@ -23,6 +22,8 @@ void testGpuViolaJones(Image *faces, int numImgs, bool display) {
 	*tp = *fp = 0;
 
 	clock_t start = clock();
+	unsigned int * num_stages = new unsigned int;
+	Stage * stages_gpu = loadParametersToGPU(num_stages);
 	for (int n = 0; n < numImgs; n++) {
 		if (PRINT)
 			cout << "Image " << faces[n].im_name << endl;
@@ -34,9 +35,6 @@ void testGpuViolaJones(Image *faces, int numImgs, bool display) {
 		image->dataChar = faces[n].grayscale.data;
 		image->width = faces[n].grayscale.cols;
 		image->height = faces[n].grayscale.rows;
-
-		unsigned int * num_stages = new unsigned int;
-		Stage * stages_gpu = loadParametersToGPU(num_stages);
 
 		std::vector<Rectangle> result;
 		detect_faces(image->width, image->height, result, image, SCALING, MIN_NEIGH, num_stages, stages_gpu);
