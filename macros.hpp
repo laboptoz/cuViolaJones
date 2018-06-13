@@ -1,6 +1,6 @@
 #define MODE 1			// 0: Single image detection, 1: Run metric test, 2: Webcam mode
 
-#define CPUMULTI 0		//use cpu multithreadings
+#define CPUMULTI 1		//use cpu multithreadings
 
 #define GPUII 1			//use gpu integral image
 #if GPUII
@@ -8,7 +8,7 @@
 #endif
 
 #define PRINT 0			// Output details?
-#define REPORT_GMEM 1
+#define REPORT_GMEM 0
 
 // Parameters for both CPU and GPU
 #define SCALING 1.2
@@ -20,6 +20,6 @@
 //Parameters for run metric test
 #define NUMIMGS 1000
 #define IMGDELAY 0		//not used
-#define CPUTEST 0
-#define DISPLAY 0       // Display images?
+#define CPUTEST 1
+#define DISPLAY 1       // Display images?
 #define GPUTEST 1
