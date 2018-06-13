@@ -1,7 +1,74 @@
 # cuViolaJones
-A CUDA implementation of Viola Jones
-
-Files are:
+A CUDA implementation of Viola Jones<br>
+Runtime parameters can be set in the file "macros.hpp".<br>
+The options are:<br>
+<table>
+  <tr>
+    <th>Macro</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <th>MODE</th>
+    <th>0 = Single Image Detection<br>
+        1 = Metric Test<br>
+        2 = Webcam mode</th>
+  </tr>
+  <tr>
+    <th>CPUMULTI</th>
+    <th>1 = CPU multithreading enabled<br>
+        0 = CPU multithreading disabled</th>
+  </tr>
+  <tr>
+    <th>GPUII</th>
+    <th>1 = Integral image pyramid calculation on GPU<br>
+        0 = Integral image pyramid calculation on CPU</th>
+  </tr>
+  <tr>
+    <th>TEST</th>
+    <th>1 = Print integral image pyramid levels to .csv files</th>
+  </tr>
+  <tr>
+    <th>PRINT</th>
+    <th>1 = Print details during metric test</th>
+  </tr>
+  <tr>
+    <th>REPORT_GMEM</th>
+    <th>1 = Print global memory values to confirm no memory leaks</th>
+  </tr>
+  <tr>
+    <th>SCALING</th>
+    <th>The image pyramid scaling factor</th>
+  </tr>
+  <tr>
+    <th>MIN_NEIGH</th>
+    <th>Minimum neighbor rectangules used for rectangle grouping</th>
+  </tr>
+  <tr>
+    <th>WIN_SIZE</th>
+    <th>The size of the scanning window</th>
+  </tr>
+  <tr>
+    <th>PRUNING</th>
+    <th>The number of threads for warp pruning</th>
+  </tr>
+  <tr>
+    <th>NUMIMGS</th>
+    <th>Number of images to run during metric test</th>
+  </tr>
+  <tr>
+    <th>CPUTEST</th>
+    <th>If 1, runs OpenCV classifer for metric test</th>
+  </tr>
+  <tr>
+    <th>DISPLAY</th>
+    <th>If 1, displays images during metric test</th>
+  </tr>
+  <tr>
+    <th>GPUTEST</th>
+    <th>If 1, runs GPU classifier for metric test</th>
+  </tr>
+</table>
+<br>Files are:
 <table>
   <tr>
     <th>File</th>
