@@ -2,6 +2,7 @@
 
 int partition(std::vector<Rectangle>& _vec, std::vector<int>& labels, float eps);
 
+// takes the max of two integers
 int myMax(int a, int b)
 {
   if (a >= b)
@@ -10,6 +11,7 @@ int myMax(int a, int b)
     return b;
 }
 
+// takes the min of two integers
 int myMin(int a, int b)
 {
   if (a <= b)
@@ -18,11 +20,13 @@ int myMin(int a, int b)
     return b;
 }
 
+// rounds a floating point number to the closest integer
 inline  int  myRound( float value )
 {
   return (int)(value + (value >= 0 ? 0.5 : -0.5));
 }
 
+// takes the absolute value of an integer
 int myAbs(int n)
 {
   if (n >= 0)
@@ -31,6 +35,7 @@ int myAbs(int n)
     return -n;
 }
 
+// evalutes whether the two rectangles overlap sufficiently to be the same
 int predicate(float eps, Rectangle& r1, Rectangle& r2)
 {
   float delta = eps*(myMin(r1.width, r2.width) + myMin(r1.height, r2.height))*0.5;
@@ -40,6 +45,7 @@ int predicate(float eps, Rectangle& r1, Rectangle& r2)
     myAbs(r1.y + r1.height - r2.y - r2.height) <= delta;
 }
 
+// performs the merging of rectangles based on a theshold
 void groupRectangles(std::vector<Rectangle>& rectList, int groupThreshold, float eps)
 {
   if( groupThreshold <= 0 || rectList.empty() )
@@ -117,7 +123,7 @@ void groupRectangles(std::vector<Rectangle>& rectList, int groupThreshold, float
 
 }
 
-
+// Uses a disjoint set in order to merge connected rectangles
 int partition(std::vector<Rectangle>& _vec, std::vector<int>& labels, float eps)
 {
   int i, j, N = (int)_vec.size();
