@@ -35,6 +35,7 @@ void cpuViolaJones(Mat face, String cascade_path) {
 	imshow("CPU Result", face);
 }
 
+//Run the OpenCV Viola-Jones
 void cpuVJ(Image img, String cascade_path, int *tp, int *fp, bool display) {
 	
 	// Ground truth bbox
@@ -124,28 +125,6 @@ void cpuWebcam() {
 		return;
 	}
 
-	/*
-	while (1) {
-		cout << "Running.." << endl;
-		//Mat img;
-		//cap >> img;
-		//imshow("Window 1", img);
-
-		Mat img2;
-		bool success = cap.read(img2);
-		imshow(window_name, img2);
-
-		if (success == false) {
-			cout << "Video camera is disconnected" << endl;
-			break;
-		}
-
-		char c = waitKey(10);
-		if (c == 'b') {
-			break; //break when b is pressed
-		}
-	}
-	*/
 	Mat img;
 	for (;;){
 
