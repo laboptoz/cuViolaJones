@@ -2,7 +2,7 @@
 
 #define CPUMULTI 0		//use cpu multithreadings
 
-#define GPUII 0			//use gpu integral image
+#define GPUII 1			//use gpu integral image
 #if GPUII
 	#define TEST 0			//print test information
 #endif
@@ -20,6 +20,6 @@
 //Parameters for run metric test
 #define NUMIMGS 1000
 #define IMGDELAY 0		//not used
-#define CPUTEST 1
+#define CPUTEST 0
 #define DISPLAY 0       // Display images?
-#define GPUTEST 0
+#define GPUTEST 1

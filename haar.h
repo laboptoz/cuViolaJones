@@ -1,36 +1,3 @@
-/*
- *  TU Eindhoven
- *  Eindhoven, The Netherlands
- *
- *  Name            :   haar.h
- *
- *  Author          :   Francesco Comaschi (f.comaschi@tue.nl)
- *
- *  Date            :   November 12, 2012
- *
- *  Function        :   Haar features evaluation for face detection
- *
- *  History         :
- *      12-11-12    :   Initial version.
- *
- *
- * This program is free software; you can redistribute it and/or modify it
- * under the terms of the GNU General Public License as published by the
- * Free Software Foundation.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program;  If not, see <http://www.gnu.org/licenses/>
- *
- * In other words, you are welcome to use, share and improve this program.
- * You are forbidden to forbid anyone else to use, share and improve
- * what you give them.   Happy coding!
- */
-
 #ifndef __HAAR_H__
 #define __HAAR_H__
 
