@@ -3,25 +3,33 @@
 
 class Filter {
 public:
+	//Rectangular feature 1
 	unsigned int x1;
 	unsigned int y1;
 	unsigned int width1;
 	unsigned int height1;
 	int weight1;
+	
+	//Rectangular feature 2
 	unsigned int x2;
 	unsigned int y2;
 	unsigned int width2;
 	unsigned int height2;
 	int weight2;
+	
+	//Rectangular feature 3
 	unsigned int x3;
 	unsigned int y3;
 	unsigned int width3;
 	unsigned int height3;
 	int weight3;
+	
+	//Filter parameters
 	int threshold;
 	int alpha1;
 	int alpha2;
 
+	//Gets the area from in a rectangular region of an integral image
 	template <typename T>
 	__inline__ __device__ T getSummedArea(T * arr, unsigned int arr_width, unsigned int x, unsigned int y, unsigned int width, unsigned int height) {
 
@@ -34,6 +42,7 @@ public:
 			*(arr + x + (y + height)*arr_width);
 	}
 
+	//Default constructor
 	__host__ __device__ Filter() {}
 
 	//Default 3 rectangle filter constructor (2 rectangle uses 0s in place of rectangle 3 values)
@@ -56,26 +65,34 @@ public:
 		int alpha1,
 		int alpha2) {
 
+		//Assign rectangle 1 values
 		this->x1 = x1;
 		this->y1 = y1;
 		this->width1 = width1;
 		this->height1 = height1;
 		this->weight1 = weight1;
+		
+		//Assign rectangle 2 values
 		this->x2 = x2;
 		this->y2 = y2;
 		this->width2 = width2;
 		this->height2 = height2;
 		this->weight2 = weight2;
+		
+		//Assign rectangle 3 values
 		this->x3 = x3;
 		this->y3 = y3;
 		this->width3 = width3;
 		this->height3 = height3;
 		this->weight3 = weight3;
+		
+		//Assign filter parameters
 		this->threshold = threshold;
 		this->alpha1 = alpha1;
 		this->alpha2 = alpha2;
 	}
 
+	//Gives the result of the filter
 	template <typename T>
 	__host__ __device__ T getValue(T * arr, int norm_factor, unsigned int arr_width) {
 		int s1 = getSummedArea<T>(arr, arr_width, x1, y1, width1, height1);
@@ -100,13 +117,22 @@ public:
 	}
 };
 
+//Class for each filter stage
 class Stage {
 public:
+	//Pointer to filters
 	Filter * filters = nullptr;
+	
+	//Number of filters in stage
 	unsigned int num_filters = 0;
+	
+	//Stage threshold
 	int threshold = 0;
 
+	//Default constructor
 	__host__ __device__ Stage() {}
+	
+	//Stage constructor
 	__host__ __device__ Stage(int threshold, const unsigned int num_filters) {
 		this->threshold = threshold;
 		this->num_filters = num_filters;
@@ -126,7 +152,6 @@ public:
 			//break;
 
 		}
-		//printf("%d\n", activations);
 		return (activations >= threshold);
 	}
 
