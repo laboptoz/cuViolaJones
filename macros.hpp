@@ -13,7 +13,7 @@
 // Parameters for both CPU and GPU
 #define SCALING 1.2
 #define MIN_NEIGH 1
-#define WIN_SIZE 24
+#define WIN_SIZE 26
 #define PRUNING 9
 
 
