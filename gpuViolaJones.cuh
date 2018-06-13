@@ -20,10 +20,15 @@ void testGpuViolaJones(Image *faces, int numImgs, bool display) {
 	// True positive and false positive variables
 	int *tp = new int, *fp = new int; 
 	*tp = *fp = 0;
-
+	
+	//Start timing
 	clock_t start = clock();
+	
+	//Load stage information from file
 	unsigned int * num_stages = new unsigned int;
 	Stage * stages_gpu = loadParametersToGPU(num_stages);
+	
+	//Loop over number of images
 	for (int n = 0; n < numImgs; n++) {
 		if (PRINT)
 			cout << "Image " << faces[n].im_name << endl;
@@ -31,12 +36,16 @@ void testGpuViolaJones(Image *faces, int numImgs, bool display) {
 		// Ground truth bbox
 		Rect gt = Rect(faces[n].x, faces[n].y, faces[n].w, faces[n].h);
 
+		//Set image data
 		ImageUnion *image = new ImageUnion();
 		image->dataChar = faces[n].grayscale.data;
 		image->width = faces[n].grayscale.cols;
 		image->height = faces[n].grayscale.rows;
 
+		//The result of the detect faces function
 		std::vector<Rectangle> result;
+		
+		//Call detect faces function
 		detect_faces(image->width, image->height, result, image, SCALING, MIN_NEIGH, num_stages, stages_gpu);
 
 		// No faces detected
@@ -60,14 +69,13 @@ void testGpuViolaJones(Image *faces, int numImgs, bool display) {
 			// Draw gt face
 			rectangle(faces[n].image, gt, Scalar(0, 0, 255), 2);  // RED
 
+			//Display the face
 			imshow("GPU Result", faces[n].image);
-			//ostringstream name;
-			//name << "bush_" << n << ".jpg";
-			//imwrite(name.str().c_str(), faces[n].image);
 			waitKey(1);
 		}
 	}
 
+	//Print GPU test information
 	printf("Final GPU accuracy: %d/%d = %f\n", *tp, numImgs, (float)*tp / numImgs);
 	printf("Final GPU false positives: %d/%d = %f\n", *fp, numImgs, (float)*fp / numImgs);
 	printf("Time elapsed: %.8lfs\n\n", (clock() - start) / (double)CLOCKS_PER_SEC);
