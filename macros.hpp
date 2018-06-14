@@ -21,5 +21,5 @@
 #define NUMIMGS 1000
 #define IMGDELAY 0		//not used
 #define CPUTEST 1
-#define DISPLAY 1       // Display images?
+#define DISPLAY 0       // Display images?
 #define GPUTEST 1
